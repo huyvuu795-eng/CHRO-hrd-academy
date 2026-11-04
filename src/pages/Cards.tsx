@@ -44,6 +44,15 @@ export default function Cards() {
         </p>
       </section>
 
+      <button onClick={() => go('/library')} className="card mb-4 flex w-full items-center gap-3 text-left hover:border-brand-400">
+        <span className="text-2xl">📚</span>
+        <span className="flex-1">
+          <span className="block font-semibold">Thư viện văn bản gốc</span>
+          <span className="block text-xs text-stone-500">BLLĐ, NĐ 145, Thuế TNCN 2025, lương tối thiểu 2026–2027, BHXH…</span>
+        </span>
+        <span className="text-stone-400">›</span>
+      </button>
+
       <h2 className="label mb-2">Theo chủ đề</h2>
       <div className="space-y-2">
         {decks.map((d) => {

@@ -26,7 +26,7 @@
         "Tạo ô nhập: Gross, lương đóng bảo hiểm, số người phụ thuộc, các khoản miễn thuế",
         "Tạo bảng tham số riêng (tỷ lệ bảo hiểm, giảm trừ, biểu thuế) để dễ cập nhật khi luật đổi",
         "Viết công thức tính bảo hiểm NLĐ, thu nhập tính thuế, thuế luỹ tiến (gợi ý: dùng bảng bậc + SUMPRODUCT)",
-        "Kiểm tra bằng ví dụ trong bài: Gross 25tr → Net 21.937.500đ",
+        "Kiểm tra bằng ví dụ trong bài: Gross 25tr → Net 22.031.250đ; Gross 60tr → thuế 4.140.000đ",
         "Bổ sung cột 'Chi phí công ty'"
       ],
       "deliverable": "File Sheets dùng được khi tư vấn ứng viên; ghi rõ ngày cập nhật tham số."
@@ -58,16 +58,16 @@
         "explain": "BH NLĐ = 2.100.000. Thu nhập tính thuế = 20.000.000 − 2.100.000 − 15.500.000 = 2.400.000đ."
       },
       {
-        "q": "Với thu nhập tính thuế 2.400.000đ theo biểu 7 bậc, thuế TNCN tháng là?",
+        "q": "Với thu nhập tính thuế 2.400.000đ theo biểu thuế 5 bậc (kỳ tính thuế 2026), thuế TNCN tháng là?",
         "options": ["240.000đ", "120.000đ", "360.000đ", "0đ"],
         "answer": 1,
-        "explain": "2.400.000 thuộc bậc 1 (đến 5tr, 5%): 2.400.000 × 5% = 120.000đ."
+        "explain": "2.400.000 thuộc bậc 1 (đến 10 triệu, 5%): 2.400.000 × 5% = 120.000đ."
       },
       {
-        "q": "Thu nhập tính thuế 12.000.000đ. Thuế TNCN theo biểu luỹ tiến từng phần 7 bậc là?",
-        "options": ["1.800.000đ", "1.050.000đ", "1.200.000đ", "600.000đ"],
+        "q": "Thu nhập tính thuế 12.000.000đ/tháng. Thuế TNCN theo biểu luỹ tiến từng phần 5 bậc (Luật 109/2025) là?",
+        "options": ["1.200.000đ", "700.000đ", "1.050.000đ", "600.000đ"],
         "answer": 1,
-        "explain": "5tr×5% = 250k; 5tr×10% = 500k; 2tr×15% = 300k. Tổng = 1.050.000đ. Đáp án 1.800.000đ là lỗi áp 15% cho toàn bộ thu nhập tính thuế."
+        "explain": "10tr × 5% = 500.000đ; 2tr × 10% = 200.000đ. Tổng = 700.000đ. 1.200.000đ là lỗi áp 10% cho toàn bộ; 1.050.000đ là kết quả theo biểu 7 bậc cũ, không còn áp dụng từ kỳ tính thuế 2026."
       },
       {
         "q": "Lỗi phổ biến nhất khi tính thuế luỹ tiến từng phần là gì?",

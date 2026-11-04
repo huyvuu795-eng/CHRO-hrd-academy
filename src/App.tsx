@@ -10,6 +10,7 @@ import Roadmap from './pages/Roadmap';
 import Cards from './pages/Cards';
 import Review from './pages/Review';
 import Settings from './pages/Settings';
+import Library from './pages/Library';
 
 function useTheme() {
   const theme = useStore().state.settings.theme;
@@ -44,6 +45,10 @@ export default function App() {
     page = <Review topic={query.get('topic') ?? 'all'} />;
     tab = 'cards';
   } else if (p0 === 'cards') page = <Cards />;
+  else if (p0 === 'library') {
+    page = <Library />;
+    tab = 'cards';
+  }
   else if (p0 === 'settings') page = <Settings />;
   else page = <Dashboard />;
 

@@ -1,9 +1,10 @@
 // Nạp toàn bộ nội dung từ thư mục /content lúc build.
 // Thêm file mới đúng định dạng là app tự nhận — không cần sửa code (xem CONTENT_GUIDE.md).
-import type { Competency, FlashcardDeck, OutlineWeek, Stage, WeekContent } from '../types';
+import type { Competency, FlashcardDeck, LegalDoc, OutlineWeek, Stage, WeekContent } from '../types';
 import roadmapJson from '../../content/roadmap.json';
 import competenciesJson from '../../content/competencies.json';
 import outlineJson from '../../content/year1-outline.json';
+import libraryJson from '../../content/library.json';
 
 const weekModules = import.meta.glob<WeekContent>('../../content/weeks/*.json', {
   eager: true,
@@ -21,6 +22,7 @@ const deckModules = import.meta.glob<FlashcardDeck>('../../content/flashcards/*.
 
 export const stages = roadmapJson.stages as Stage[];
 export const competencies = competenciesJson as Competency[];
+export const library = libraryJson as LegalDoc[];
 
 export const weeks: WeekContent[] = Object.values(weekModules).sort((a, b) => a.week - b.week);
 const weekMap = new Map(weeks.map((w) => [w.week, w]));

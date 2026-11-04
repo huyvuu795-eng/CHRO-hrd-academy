@@ -4,3 +4,6 @@ dev-dist
 *.local
 .DS_Store
 .vercel
+
+# Tài liệu gốc chỉ để tra cứu cục bộ — không push lên repo public
+tai-lieu/

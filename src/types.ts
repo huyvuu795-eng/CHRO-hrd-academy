@@ -77,6 +77,19 @@ export interface FlashcardDeck {
   cards: Flashcard[];
 }
 
+export interface LegalDoc {
+  id: string;
+  group: string;
+  number: string;
+  title: string;
+  issued: string;
+  effective: string;
+  /** verified = nội dung app đã đối chiếu với văn bản gốc; link = mới chỉ có đường dẫn */
+  status: 'verified' | 'link';
+  highlights: string[];
+  links: { label: string; url: string }[];
+}
+
 // ===== Tiến độ người dùng (lưu localStorage) =====
 
 export interface CardState {

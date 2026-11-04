@@ -40,7 +40,7 @@ Employee Relations bao gồm mọi hoạt động giữ cho quan hệ giữa cô
 **Quy trình thực hành:**
 
 1. **Lập biên bản vi phạm** ngay khi phát hiện (có chứng cứ: camera, chứng từ, nhân chứng).
-2. **Thông báo họp** kỷ luật đến các thành phần tham dự **ít nhất 5 ngày làm việc** trước cuộc họp (⚠️ theo NĐ 145/2020 — cần kiểm tra lại số điều).
+2. **Thông báo họp** kỷ luật đến các thành phần tham dự **ít nhất 5 ngày làm việc** trước cuộc họp (điểm a khoản 2 Điều 70 NĐ 145/2020/NĐ-CP). Nếu thành phần phải dự không xác nhận hoặc vắng mặt, công ty vẫn được tiến hành họp (điểm c).
 3. **Tổ chức họp**: trình bày vi phạm, NLĐ giải trình, lập biên bản có chữ ký.
 4. **Ban hành quyết định** kỷ luật trong **thời hiệu** và gửi đến các bên.
 

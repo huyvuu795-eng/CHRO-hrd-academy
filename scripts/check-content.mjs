@@ -56,11 +56,23 @@ for (const f of readdirSync(join(root, 'flashcards')).filter((f) => f.endsWith('
   }
 }
 
+const lib = read(join(root, 'library.json')) ?? [];
+const libIds = new Set();
+for (const d of lib) {
+  const where = `library.json: "${d.id ?? '?'}"`;
+  for (const k of ['id', 'group', 'number', 'title', 'issued', 'effective']) if (!d[k]) errors.push(`${where} thiếu "${k}"`);
+  if (!['verified', 'link'].includes(d.status)) errors.push(`${where} "status" phải là "verified" hoặc "link"`);
+  if (libIds.has(d.id)) errors.push(`${where} trùng id`);
+  libIds.add(d.id);
+  if (!Array.isArray(d.links) || !d.links.length) errors.push(`${where} cần ít nhất 1 link`);
+  for (const l of d.links ?? []) if (!/^https:\/\//.test(l.url ?? '')) errors.push(`${where} link phải bắt đầu bằng https://`);
+}
+
 read(join(root, 'roadmap.json'));
 read(join(root, 'competencies.json'));
 read(join(root, 'year1-outline.json'));
 
-console.log(`✔ ${weekNums.size} tuần · ${cardCount} thẻ luật`);
+console.log(`✔ ${weekNums.size} tuần · ${cardCount} thẻ luật · ${lib.length} văn bản trong thư viện`);
 warn.forEach((w) => console.log('⚠ ' + w));
 if (errors.length) {
   errors.forEach((e) => console.error('✖ ' + e));

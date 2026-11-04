@@ -1,0 +1,35 @@
+{
+  "topic": { "id": "thue-tncn", "name": "Thuế TNCN từ tiền lương", "order": 9 },
+  "cards": [
+    {
+      "id": "tn-01",
+      "front": "Biểu thuế luỹ tiến từng phần với thu nhập từ tiền lương, tiền công theo Luật Thuế TNCN 2025?",
+      "back": "5 bậc (thu nhập tính thuế/tháng):\n• Đến 10 triệu: 5%\n• Trên 10 – 30 triệu: 10%\n• Trên 30 – 60 triệu: 20%\n• Trên 60 – 100 triệu: 30%\n• Trên 100 triệu: 35%\n(Thay biểu 7 bậc cũ của Luật 04/2007/QH12.)",
+      "ref": "Khoản 2 Điều 9 Luật Thuế TNCN số 109/2025/QH15"
+    },
+    {
+      "id": "tn-02",
+      "front": "Mức giảm trừ gia cảnh áp dụng từ kỳ tính thuế 2026?",
+      "back": "• Bản thân người nộp thuế: 15,5 triệu đồng/tháng (186 triệu đồng/năm).\n• Mỗi người phụ thuộc: 6,2 triệu đồng/tháng.\nBan đầu quy định tại NQ 110/2025/UBTVQH15 (hiệu lực 01/01/2026, thay NQ 954/2020), sau đó được luật hoá tại Điều 10 Luật Thuế TNCN 2025.",
+      "ref": "Điều 1, 2 NQ 110/2025/UBTVQH15; khoản 1 Điều 10 Luật 109/2025/QH15"
+    },
+    {
+      "id": "tn-03",
+      "front": "Luật Thuế TNCN 2025 có hiệu lực khi nào? Biểu thuế mới áp dụng cho thu nhập tiền lương từ thời điểm nào?",
+      "back": "• Luật có hiệu lực từ 01/7/2026.\n• Riêng các quy định về thu nhập từ kinh doanh, từ tiền lương, tiền công của cá nhân cư trú áp dụng từ kỳ tính thuế năm 2026 — tức áp dụng cho cả năm 2026, kể cả 6 tháng đầu năm (khi quyết toán).",
+      "ref": "Khoản 1, 2 Điều 29 Luật 109/2025/QH15"
+    },
+    {
+      "id": "tn-04",
+      "front": "Tiền lương làm thêm giờ, làm việc ban đêm có phải chịu thuế TNCN không (theo luật 2025)?",
+      "back": "Được miễn thuế toàn bộ: tiền lương làm việc ban đêm, làm thêm giờ và tiền lương trả cho những ngày không nghỉ phép theo quy định của pháp luật.\n(Luật cũ chỉ miễn phần tiền lương làm thêm cao hơn so với lương làm việc trong giờ.)",
+      "ref": "Khoản 8 Điều 4 Luật 109/2025/QH15"
+    },
+    {
+      "id": "tn-05",
+      "front": "Công thức thu nhập tính thuế từ tiền lương, tiền công?",
+      "back": "Thu nhập tính thuế = Tổng thu nhập chịu thuế − các khoản đóng BHXH, BHYT, BHTN (và bảo hiểm trách nhiệm nghề nghiệp bắt buộc), đóng quỹ hưu trí bổ sung/tự nguyện, bảo hiểm nhân thọ trong mức Chính phủ quy định − các khoản giảm trừ tại Điều 10, 11.\nThuế = Thu nhập tính thuế × biểu luỹ tiến từng phần (Điều 9), không phân biệt nơi trả thu nhập.",
+      "ref": "Khoản 1, 2 Điều 8 Luật 109/2025/QH15"
+    }
+  ]
+}

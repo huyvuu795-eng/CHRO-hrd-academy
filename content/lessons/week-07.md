@@ -46,7 +46,11 @@ Kho vận e-commerce không có tên trong danh mục ngành; mùa sale chỉ c�
 - Thêm 20% lương ban ngày cho làm thêm vào ban đêm: 30.000 × 20% = 6.000đ/giờ
 - Tổng: **60.000đ/giờ** (tức 200%) × 2 giờ = 120.000đ
 
-⚠️ Cách tính chi tiết (đặc biệt điều kiện "đã làm thêm giờ vào ban ngày" trước khi làm đêm) được hướng dẫn tại NĐ 145/2020/NĐ-CP — cần kiểm tra lại văn bản gốc khi tính lương thực tế.
+Công thức trên đúng với **Điều 57 NĐ 145/2020/NĐ-CP** cho trường hợp nhân viên *không* làm thêm giờ vào ban ngày trước đó. Nếu hôm đó nhân viên **đã làm thêm ban ngày** rồi mới làm thêm sang đêm, khoản 20% được tính trên mức **150%** lương giờ (điểm b1 khoản 1 Điều 57): 150% + 30% + 20% × 150% = **210%**.
+
+"Lương giờ thực trả" để tính làm thêm không gồm thưởng, tiền ăn giữa ca, hỗ trợ xăng xe, điện thoại, nhà ở… (điểm a khoản 1 Điều 55 NĐ 145).
+
+**Thuế TNCN:** từ kỳ tính thuế 2026, **toàn bộ** tiền lương làm thêm giờ và làm việc ban đêm được miễn thuế TNCN (khoản 8 Điều 4 Luật Thuế TNCN 109/2025/QH15) — một điểm nên giải thích cho nhân viên trong mùa cao điểm.
 
 ## 4. Thời giờ nghỉ ngơi
 

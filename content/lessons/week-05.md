@@ -2,7 +2,7 @@
 
 Ứng viên hỏi: *"Gross 25 triệu thì em thực nhận bao nhiêu?"* Nếu bạn phải nói "để em hỏi kế toán", bạn đang bỏ lỡ cơ hội chốt offer và chưa chạm tới C&B. Tuần này bạn sẽ tự tính được.
 
-> ⚠️ **Lưu ý quan trọng về số liệu:** Tỷ lệ đóng bảo hiểm, mức giảm trừ gia cảnh, biểu thuế và lương tối thiểu vùng **thay đổi theo từng giai đoạn**. Bài học dùng số liệu để minh hoạ **phương pháp tính**. Trước khi tư vấn chính thức cho ứng viên/nhân viên, luôn kiểm tra văn bản hiện hành hoặc hỏi bộ phận C&B/Kế toán.
+> **Về số liệu:** Phần thuế TNCN (biểu 5 bậc, giảm trừ 15,5tr/6,2tr) đã được đối chiếu với văn bản gốc Luật 109/2025/QH15 và NQ 110/2025/UBTVQH15. ⚠️ Tỷ lệ đóng bảo hiểm và mức trần đóng chưa đối chiếu được với văn bản gốc Luật BHXH 41/2024 — cần kiểm tra lại văn bản gốc hoặc hỏi bộ phận C&B/Kế toán trước khi tư vấn chính thức.
 
 ## 1. Bức tranh tổng: một đồng lương đi đâu?
 
@@ -36,45 +36,47 @@ Tỷ lệ đóng phổ biến cho doanh nghiệp (trên tiền lương tháng đ
 
 ### Các bước tính
 
-1. **Thu nhập chịu thuế** = Tổng thu nhập − Các khoản được miễn/không chịu thuế (vd: một phần phụ cấp ăn trưa theo quy định, tiền làm thêm giờ phần cao hơn lương ngày thường…).
-2. **Thu nhập tính thuế** = Thu nhập chịu thuế − Bảo hiểm bắt buộc NLĐ đóng − Giảm trừ gia cảnh.
-3. **Thuế TNCN** = áp biểu thuế luỹ tiến từng phần lên thu nhập tính thuế.
+**Căn cứ:** Luật Thuế thu nhập cá nhân số **109/2025/QH15** (thông qua 10/12/2025, hiệu lực 01/7/2026). Theo khoản 2 Điều 29, các quy định về thu nhập từ tiền lương, tiền công **áp dụng cho cả kỳ tính thuế năm 2026**.
 
-### Giảm trừ gia cảnh
+1. **Thu nhập chịu thuế** = Tổng thu nhập − Các khoản được miễn/không chịu thuế. Điểm mới quan trọng: **toàn bộ** tiền lương làm việc ban đêm, làm thêm giờ và tiền lương trả cho những ngày không nghỉ phép được miễn thuế (khoản 8 Điều 4).
+2. **Thu nhập tính thuế** = Thu nhập chịu thuế − Bảo hiểm bắt buộc NLĐ đóng − Giảm trừ gia cảnh (khoản 2 Điều 8).
+3. **Thuế TNCN** = áp biểu thuế luỹ tiến từng phần lên thu nhập tính thuế (Điều 9).
 
-- Theo NQ 954/2020/UBTVQH14: **11 triệu/tháng** cho bản thân, **4,4 triệu/tháng** cho mỗi người phụ thuộc.
-- Từ kỳ tính thuế 2026: điều chỉnh lên **15,5 triệu** (bản thân) và **6,2 triệu** (mỗi người phụ thuộc). ⚠️ Cần kiểm tra lại văn bản gốc (Nghị quyết của UBTVQH năm 2025).
+### Giảm trừ gia cảnh (Điều 10 Luật 109/2025; NQ 110/2025/UBTVQH15)
 
-### Biểu thuế luỹ tiến từng phần (7 bậc — áp dụng cho thu nhập từ tiền lương, tiền công)
+- Bản thân người nộp thuế: **15,5 triệu đồng/tháng** (186 triệu/năm).
+- Mỗi người phụ thuộc: **6,2 triệu đồng/tháng**.
+- Mức cũ (NQ 954/2020) là 11 triệu và 4,4 triệu — đã hết hiệu lực từ 01/01/2026.
+
+### Biểu thuế luỹ tiến từng phần — 5 bậc (khoản 2 Điều 9)
 
 | Bậc | Thu nhập tính thuế/tháng | Thuế suất |
 |---|---|---|
-| 1 | Đến 5 triệu | 5% |
-| 2 | Trên 5 – 10 triệu | 10% |
-| 3 | Trên 10 – 18 triệu | 15% |
-| 4 | Trên 18 – 32 triệu | 20% |
-| 5 | Trên 32 – 52 triệu | 25% |
-| 6 | Trên 52 – 80 triệu | 30% |
-| 7 | Trên 80 triệu | 35% |
+| 1 | Đến 10 triệu | 5% |
+| 2 | Trên 10 – 30 triệu | 10% |
+| 3 | Trên 30 – 60 triệu | 20% |
+| 4 | Trên 60 – 100 triệu | 30% |
+| 5 | Trên 100 triệu | 35% |
 
-⚠️ **Luật Thuế TNCN sửa đổi** được Quốc hội thông qua năm 2025 có thể thay đổi số bậc và khoảng thu nhập của biểu thuế từ năm 2026. Cần kiểm tra lại văn bản gốc trước khi áp dụng con số — **phương pháp tính luỹ tiến từng phần thì không đổi**.
+Biểu 7 bậc cũ (5% đến 35%, ngưỡng 5–10–18–32–52–80 triệu) **không còn áp dụng** cho kỳ tính thuế 2026. Nếu gặp tài liệu cũ dùng biểu 7 bậc, hãy cập nhật — **phương pháp luỹ tiến từng phần thì không đổi**.
 
 ## 4. Ví dụ tính đầy đủ
 
-**Ứng viên:** Senior Content, Gross 25.000.000đ/tháng, toàn bộ là lương đóng bảo hiểm, không có khoản miễn thuế, chưa có người phụ thuộc. Dùng giảm trừ 15,5 triệu.
+**Ứng viên:** Senior Content, Gross 25.000.000đ/tháng, toàn bộ là lương đóng bảo hiểm, không có khoản miễn thuế, chưa có người phụ thuộc. Tính theo biểu 5 bậc và giảm trừ 15,5 triệu (kỳ tính thuế 2026).
 
 | Bước | Tính toán | Kết quả |
 |---|---|---|
 | Bảo hiểm NLĐ (10,5%) | 25.000.000 × 10,5% | 2.625.000 |
 | Thu nhập tính thuế | 25.000.000 − 2.625.000 − 15.500.000 | 6.875.000 |
-| Thuế bậc 1 | 5.000.000 × 5% | 250.000 |
-| Thuế bậc 2 | 1.875.000 × 10% | 187.500 |
-| **Thuế TNCN** | | **437.500** |
-| **Net** | 25.000.000 − 2.625.000 − 437.500 | **21.937.500** |
+| Thuế bậc 1 (đến 10 triệu, 5%) | 6.875.000 × 5% | 343.750 |
+| **Thuế TNCN** | | **343.750** |
+| **Net** | 25.000.000 − 2.625.000 − 343.750 | **22.031.250** |
 | Bảo hiểm công ty (21,5%) | 25.000.000 × 21,5% | 5.375.000 |
 | **Chi phí công ty** | 25.000.000 + 5.375.000 | **30.375.000** |
 
-Nếu ứng viên có **1 người phụ thuộc** đã đăng ký: thu nhập tính thuế = 6.875.000 − 6.200.000 = 675.000 → thuế = 33.750đ → Net ≈ 22.341.250đ.
+Nếu ứng viên có **1 người phụ thuộc** đã đăng ký: thu nhập tính thuế = 6.875.000 − 6.200.000 = 675.000 → thuế = 33.750đ → Net = 22.341.250đ.
+
+**Ví dụ thu nhập cao hơn — Gross 60 triệu**, bảo hiểm tạm tính trên toàn bộ lương (thực tế có mức trần), không người phụ thuộc: thu nhập tính thuế = 60 − 6,3 − 15,5 = 38,2 triệu → thuế = 10 × 5% + 20 × 10% + 8,2 × 20% = 0,5 + 2 + 1,64 = **4,14 triệu/tháng**.
 
 ## 5. Offer theo Net — cẩn thận!
 
@@ -89,6 +91,7 @@ Nếu ứng viên có **1 người phụ thuộc** đã đăng ký: thu nhập t
 ## Tóm tắt
 
 - Chi phí công ty = Gross + ~21,5%; Net = Gross − 10,5% − thuế TNCN.
-- Thuế TNCN: thu nhập chịu thuế → trừ bảo hiểm & giảm trừ gia cảnh → áp biểu luỹ tiến từng phần.
+- Thuế TNCN: thu nhập chịu thuế → trừ bảo hiểm & giảm trừ gia cảnh (15,5tr + 6,2tr/người phụ thuộc) → áp biểu luỹ tiến 5 bậc (Luật 109/2025, áp dụng từ kỳ tính thuế 2026).
+- Tiền làm thêm giờ, làm đêm được miễn thuế toàn bộ.
 - Số liệu thay đổi theo thời kỳ — học phương pháp, kiểm tra số liệu hiện hành trước khi tư vấn.
 - Ký HĐ theo Gross; tách lương để "né" bảo hiểm là rủi ro truy thu.

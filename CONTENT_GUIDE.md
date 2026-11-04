@@ -183,7 +183,30 @@ Khi đã có `weeks/week-14.json`, app tự dùng file đầy đủ; dòng dàn 
 
 ---
 
-## 6. Lỗi thường gặp
+## 6. Thư viện văn bản — `library.json`
+
+Mỗi văn bản là một object trong mảng:
+
+```json
+{
+  "id": "nd-399-2026",
+  "group": "Tiền lương",
+  "number": "399/2026/NĐ-CP",
+  "title": "Nghị định quy định mức lương tối thiểu (áp dụng từ 2027)",
+  "issued": "02/11/2026",
+  "effective": "01/01/2027",
+  "status": "verified",
+  "highlights": ["Ý chính 1 cho HR", "Ý chính 2"],
+  "links": [{ "label": "PDF Nghị định (Cổng TTĐT Chính phủ)", "url": "https://..." }]
+}
+```
+
+- `group`: tạo tab lọc trong trang Thư viện (văn bản cùng nhóm hiện chung một tab).
+- `status`: `"verified"` khi nội dung thẻ/bài học đã được đối chiếu với văn bản gốc; `"link"` khi mới chỉ lưu đường dẫn.
+- `links`: ưu tiên link chính thức (`chinhphu.vn`, `congbao.chinhphu.vn`, `vbpl.vn`), bắt buộc `https://`.
+- **Không chép file PDF vào repo** (repo đang public). Nếu muốn giữ bản tải về, để trong thư mục `tai-lieu/` — thư mục này đã được `.gitignore` nên không bị push.
+
+## 7. Lỗi thường gặp
 
 | Thông báo | Cách sửa |
 |---|---|

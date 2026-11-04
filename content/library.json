@@ -1,0 +1,164 @@
+[
+  {
+    "id": "blld-2019",
+    "group": "Lao động",
+    "number": "45/2019/QH14",
+    "title": "Bộ luật Lao động",
+    "issued": "20/11/2019",
+    "effective": "01/01/2021",
+    "status": "verified",
+    "highlights": [
+      "Nền tảng của mọi quy định về HĐLĐ, thử việc, giờ làm, tiền lương, kỷ luật, chấm dứt HĐLĐ",
+      "Thử việc 1 lần, trần 180/60/30/6 ngày, lương ≥ 85% (Điều 25–26)",
+      "Làm thêm ≤ 40 giờ/tháng, ≤ 200 giờ/năm (một số ngành 300 giờ) — Điều 107",
+      "Mang thai từ tháng thứ 7: cấm làm đêm, làm thêm, công tác xa kể cả khi đồng ý (Điều 137)"
+    ],
+    "links": [{ "label": "Tra cứu trên CSDL quốc gia (vbpl.vn)", "url": "https://vbpl.vn/" }]
+  },
+  {
+    "id": "nd-145-2020",
+    "group": "Lao động",
+    "number": "145/2020/NĐ-CP",
+    "title": "Nghị định hướng dẫn Bộ luật Lao động về điều kiện lao động và quan hệ lao động",
+    "issued": "14/12/2020",
+    "effective": "01/02/2021",
+    "status": "verified",
+    "highlights": [
+      "Điều 8: cách tính thời gian và tiền lương làm trợ cấp thôi việc, mất việc (có tính thời gian thử việc)",
+      "Điều 55–57: công thức lương làm thêm giờ, làm đêm, làm thêm ban đêm",
+      "Điều 69: nội dung nội quy; dưới 10 NLĐ phải thoả thuận kỷ luật trong HĐLĐ",
+      "Điều 70: thông báo họp kỷ luật ít nhất 5 ngày làm việc",
+      "Điều 80: nghỉ hành kinh 30 phút/ngày, tối thiểu 3 ngày làm việc/tháng"
+    ],
+    "links": [
+      { "label": "PDF gốc (Công báo Chính phủ)", "url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2020/12/32732/33806-1-20201203-1204145-2020-nd-cp.pdf" },
+      { "label": "CSDL quốc gia (vbpl.vn)", "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-145-2020-nd-cp-quy-dinh-chi-tiet-va-huong-dan-thi-hanh-mot-so-dieu-cua-bo-luat-lao-dong-ve-dieu-kien-lao-dong-va-quan-he-lao-dong--152668" }
+    ]
+  },
+  {
+    "id": "luat-109-2025",
+    "group": "Thuế TNCN",
+    "number": "109/2025/QH15",
+    "title": "Luật Thuế thu nhập cá nhân",
+    "issued": "10/12/2025",
+    "effective": "01/07/2026 (tiền lương, tiền công: áp dụng cho kỳ tính thuế 2026)",
+    "status": "verified",
+    "highlights": [
+      "Biểu thuế 5 bậc: ≤10tr 5% · 10–30tr 10% · 30–60tr 20% · 60–100tr 30% · >100tr 35% (Điều 9)",
+      "Giảm trừ gia cảnh 15,5tr bản thân, 6,2tr mỗi người phụ thuộc (Điều 10)",
+      "Miễn thuế toàn bộ tiền lương làm đêm, làm thêm giờ, ngày không nghỉ phép (khoản 8 Điều 4)",
+      "Thay thế Luật Thuế TNCN 04/2007/QH12 (Điều 29)"
+    ],
+    "links": [
+      { "label": "PDF gốc (Cổng TTĐT Chính phủ)", "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/01/luat109-2025.pdf" },
+      { "label": "CSDL quốc gia (vbpl.vn)", "url": "https://vbpl.vn/van-ban/chi-tiet/luat-thue-thu-nhap-ca-nhan-so-109-2025-qh15--187045" }
+    ]
+  },
+  {
+    "id": "nq-110-2025",
+    "group": "Thuế TNCN",
+    "number": "110/2025/UBTVQH15",
+    "title": "Nghị quyết điều chỉnh mức giảm trừ gia cảnh của thuế thu nhập cá nhân",
+    "issued": "17/10/2025",
+    "effective": "01/01/2026 (kỳ tính thuế 2026)",
+    "status": "verified",
+    "highlights": [
+      "Bản thân 15,5 triệu/tháng (186 triệu/năm); người phụ thuộc 6,2 triệu/tháng",
+      "Thay thế NQ 954/2020/UBTVQH14 (mức cũ 11tr / 4,4tr)"
+    ],
+    "links": [{ "label": "PDF gốc (Cổng TTĐT Chính phủ)", "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/11/nq110cuaubtvqh.pdf" }]
+  },
+  {
+    "id": "nd-293-2025",
+    "group": "Tiền lương",
+    "number": "293/2025/NĐ-CP",
+    "title": "Nghị định quy định mức lương tối thiểu (áp dụng năm 2026)",
+    "issued": "10/11/2025",
+    "effective": "01/01/2026 – 31/12/2026",
+    "status": "verified",
+    "highlights": [
+      "Lương tối thiểu tháng: Vùng I 5.310.000đ · II 4.730.000đ · III 4.140.000đ · IV 3.700.000đ",
+      "Lương tối thiểu giờ: 25.500đ · 22.700đ · 20.000đ · 17.800đ",
+      "Áp dụng theo nơi NSDLĐ/chi nhánh hoạt động; thay NĐ 74/2024/NĐ-CP"
+    ],
+    "links": [
+      { "label": "PDF ký số (Cổng TTĐT Chính phủ)", "url": "https://xdcs.cdnchinhphu.vn/446259493575335936/2025/11/10/293-2025-nd-cp-10112025-3-signed-1762770239794100377083.pdf" },
+      { "label": "CSDL quốc gia (vbpl.vn)", "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-293-2025-nd-cp-quy-dinh-muc-luong-toi-thieu-doi-voi-nguoi-lao-dong-lam-viec-theo-hop-dong-lao-dong--183939" }
+    ]
+  },
+  {
+    "id": "nd-399-2026",
+    "group": "Tiền lương",
+    "number": "399/2026/NĐ-CP",
+    "title": "Nghị định quy định mức lương tối thiểu (áp dụng từ 2027)",
+    "issued": "02/11/2026",
+    "effective": "01/01/2027",
+    "status": "verified",
+    "highlights": [
+      "Lương tối thiểu tháng: Vùng I 5.700.000đ · II 5.080.000đ · III 4.450.000đ · IV 4.040.000đ",
+      "Lương tối thiểu giờ: 27.400đ · 24.400đ · 21.400đ · 19.400đ",
+      "Danh mục vùng theo xã/phường mới sau sắp xếp hành chính (Phụ lục); thay NĐ 293/2025",
+      "Việc cần làm trước 01/01/2027: rà soát lương thấp nhất, lương đóng BHXH, thang bảng lương"
+    ],
+    "links": [
+      { "label": "PDF Nghị định (Cổng TTĐT Chính phủ)", "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/399_2026_nd-cp_02112026_6-signed.signed.pdf" },
+      { "label": "PDF Phụ lục địa bàn vùng", "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/11/399_2026_nd-cp_02112026_7-signed.pdf" }
+    ]
+  },
+  {
+    "id": "nd-158-2025",
+    "group": "BHXH",
+    "number": "158/2025/NĐ-CP",
+    "title": "Nghị định hướng dẫn Luật Bảo hiểm xã hội về bảo hiểm xã hội bắt buộc",
+    "issued": "25/06/2025",
+    "effective": "01/07/2025",
+    "status": "link",
+    "highlights": [
+      "Văn bản hướng dẫn chính của Luật BHXH 41/2024 cho doanh nghiệp: đối tượng, tiền lương làm căn cứ đóng, chế độ ốm đau, thai sản, hưu trí, tử tuất",
+      "Bản PDF là ảnh scan — app chưa đối chiếu chi tiết từng Điều"
+    ],
+    "links": [
+      { "label": "PDF ký số (Cổng TTĐT Chính phủ)", "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2025/6/158-ndcp.signed.pdf" },
+      { "label": "Trang văn bản (Cổng TTĐT Chính phủ)", "url": "https://vanban.chinhphu.vn/?docid=214189&pageid=27160" }
+    ]
+  },
+  {
+    "id": "nd-274-2025",
+    "group": "BHXH",
+    "number": "274/2025/NĐ-CP",
+    "title": "Nghị định về chậm đóng, trốn đóng BHXH bắt buộc, BHTN; khiếu nại, tố cáo về BHXH",
+    "issued": "16/10/2025",
+    "effective": "30/11/2025",
+    "status": "link",
+    "highlights": ["Quan trọng với HR khi xử lý đóng BHXH trễ hạn — app chưa đối chiếu nội dung"],
+    "links": [
+      { "label": "Trang văn bản (Cổng TTĐT Chính phủ)", "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=215646" },
+      { "label": "Công báo Chính phủ", "url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-274-2025-nd-cp-46418/59403.htm" }
+    ]
+  },
+  {
+    "id": "luat-74-2025",
+    "group": "BHTN & Việc làm",
+    "number": "74/2025/QH15",
+    "title": "Luật Việc làm",
+    "issued": "16/06/2025",
+    "effective": "01/01/2026",
+    "status": "link",
+    "highlights": ["Thay Luật Việc làm 2013; quy định bảo hiểm thất nghiệp — app chưa đối chiếu nội dung"],
+    "links": [
+      { "label": "Trang văn bản (Cổng TTĐT Chính phủ)", "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=214560" },
+      { "label": "CSDL quốc gia (vbpl.vn)", "url": "https://vbpl.vn/van-ban/chi-tiet/luat-viec-lam-so-74-2025-qh15--179273" }
+    ]
+  },
+  {
+    "id": "vbhn-15-2026",
+    "group": "BHXH",
+    "number": "15/2026/VBHN-NĐ-BYT",
+    "title": "Văn bản hợp nhất Nghị định về trợ cấp hưu trí xã hội (NĐ 176/2025, sửa đổi bởi NĐ 335/2026)",
+    "issued": "04/09/2026",
+    "effective": "NĐ 176/2025 từ 01/07/2025",
+    "status": "link",
+    "highlights": ["Chế độ trợ cấp hưu trí xã hội cho người cao tuổi — ít liên quan công việc HR doanh nghiệp"],
+    "links": [{ "label": "PDF ký số (Cổng TTĐT Chính phủ)", "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/9/15-vbhn-byt.signed.pdf" }]
+  }
+]
