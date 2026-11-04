@@ -3,9 +3,10 @@
   "cards": [
     {
       "id": "kl-01",
-      "front": "Từ bao nhiêu NLĐ thì NSDLĐ bắt buộc ban hành nội quy lao động bằng văn bản?",
-      "back": "Sử dụng từ 10 NLĐ trở lên phải ban hành nội quy lao động bằng văn bản. Dưới 10 NLĐ không bắt buộc bằng văn bản nhưng phải thoả thuận nội dung kỷ luật, trách nhiệm vật chất trong HĐLĐ.",
-      "ref": "Khoản 1 Điều 118 BLLĐ 2019"
+      "front": "NSDLĐ nào phải ban hành nội quy lao động? Khi nào nội quy bắt buộc bằng văn bản?",
+      "back": "• Mọi NSDLĐ đều phải ban hành nội quy lao động.\n• Sử dụng từ 10 NLĐ trở lên → nội quy phải bằng văn bản.\n• Trước khi ban hành hoặc sửa đổi phải tham khảo ý kiến tổ chức đại diện NLĐ tại cơ sở (nếu có); nội quy phải được thông báo đến NLĐ và niêm yết nội dung chính tại nơi làm việc.\n⚠️ Cách thể hiện nội quy với NSDLĐ dưới 10 NLĐ được hướng dẫn tại nghị định — cần kiểm tra lại văn bản gốc.",
+      "ref": "Khoản 1, 3, 4 Điều 118 BLLĐ 2019",
+      "verify": true
     },
     {
       "id": "kl-02",
@@ -41,7 +42,7 @@
     {
       "id": "kl-07",
       "front": "Không được xử lý kỷ luật NLĐ đang trong thời gian nào?",
-      "back": "• Nghỉ ốm đau, điều dưỡng; nghỉ việc được sự đồng ý của NSDLĐ.\n• Đang bị tạm giữ, tạm giam.\n• Đang chờ kết quả xác minh, kết luận của cơ quan có thẩm quyền đối với hành vi trộm cắp, tham ô… (khoản 1 Điều 125).\n• Lao động nữ mang thai; NLĐ nghỉ thai sản, nuôi con dưới 12 tháng tuổi.\nNgoài ra: không xử lý NLĐ vi phạm khi mắc bệnh tâm thần/bệnh khác làm mất khả năng nhận thức, điều khiển hành vi.",
+      "back": "• Nghỉ ốm đau, điều dưỡng; nghỉ việc được sự đồng ý của NSDLĐ.\n• Đang bị tạm giữ, tạm giam.\n• Đang chờ kết quả xác minh, kết luận của cơ quan có thẩm quyền đối với hành vi tại khoản 1 và khoản 2 Điều 125 (trộm cắp, tham ô, tiết lộ bí mật kinh doanh, gây thiệt hại nghiêm trọng…).\n• Lao động nữ mang thai; NLĐ nghỉ thai sản, nuôi con dưới 12 tháng tuổi.\nNgoài ra: không xử lý NLĐ vi phạm khi mắc bệnh tâm thần/bệnh khác làm mất khả năng nhận thức, điều khiển hành vi.",
       "ref": "Khoản 4, 5 Điều 122 BLLĐ 2019"
     },
     {
@@ -59,7 +60,7 @@
     {
       "id": "kl-10",
       "front": "Tạm đình chỉ công việc: thời hạn tối đa và lương trong thời gian tạm đình chỉ?",
-      "back": "• Khi vụ việc vi phạm có tình tiết phức tạp, nếu xét thấy để NLĐ tiếp tục làm việc sẽ gây khó khăn cho việc xác minh; phải tham khảo ý kiến tổ chức đại diện NLĐ (nếu NLĐ là thành viên).\n• Không quá 15 ngày, trường hợp đặc biệt không quá 90 ngày.\n• NLĐ được tạm ứng 50% tiền lương trước khi bị đình chỉ. Nếu không bị kỷ luật → được trả đủ lương.",
+      "back": "• Khi vụ việc vi phạm có tình tiết phức tạp, nếu xét thấy để NLĐ tiếp tục làm việc sẽ gây khó khăn cho việc xác minh; phải tham khảo ý kiến tổ chức đại diện NLĐ (nếu NLĐ là thành viên).\n• Không quá 15 ngày, trường hợp đặc biệt không quá 90 ngày.\n• NLĐ được tạm ứng 50% tiền lương trước khi bị đình chỉ. Hết thời hạn, NSDLĐ phải nhận NLĐ trở lại làm việc.\n• Bị kỷ luật → không phải trả lại tiền đã tạm ứng; không bị kỷ luật → được trả đủ lương cho thời gian bị đình chỉ.",
       "ref": "Điều 128 BLLĐ 2019"
     },
     {

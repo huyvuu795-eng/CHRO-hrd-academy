@@ -21,9 +21,9 @@ NSDLĐ có quyền quy định thời giờ làm việc theo ngày hoặc tuần
 1. Phải được **NLĐ đồng ý**.
 2. Số giờ làm thêm không quá **50%** số giờ làm việc bình thường trong 1 ngày; nếu làm theo tuần thì tổng giờ bình thường + thêm không quá **12 giờ/ngày**.
 3. Không quá **40 giờ/tháng**.
-4. Không quá **200 giờ/năm**; một số ngành, nghề, công việc được tới **300 giờ/năm** (dệt may, da giày, điện tử, chế biến nông lâm thuỷ sản, cung cấp điện, viễn thông, công việc cấp bách do tính thời vụ…) và phải thông báo cơ quan chuyên môn về lao động.
+4. Không quá **200 giờ/năm**; một số ngành, nghề, công việc được tới **300 giờ/năm** (khoản 3 Điều 107: dệt may, da giày, điện, điện tử, chế biến nông lâm thuỷ sản; điện, viễn thông, lọc dầu, cấp thoát nước; công việc cần lao động chuyên môn cao mà thị trường không cung ứng kịp; công việc cấp bách do tính thời vụ hoặc yếu tố khách quan không dự liệu trước) và phải **thông báo bằng văn bản** cho cơ quan chuyên môn về lao động thuộc UBND cấp tỉnh (khoản 4).
 
-⚠️ Danh mục trường hợp được làm 300 giờ và thủ tục thông báo chi tiết theo nghị định hướng dẫn — cần kiểm tra lại văn bản gốc xem doanh nghiệp e-commerce/kho vận của bạn có thuộc diện nào không.
+Kho vận e-commerce không có tên trong danh mục ngành; mùa sale chỉ có thể viện dẫn nhóm "công việc cấp bách do tính thời vụ" — cần cân nhắc kỹ và ⚠️ đối chiếu hướng dẫn tại nghị định (khoản đ: "trường hợp khác do Chính phủ quy định").
 
 **Ví dụ tính nhanh:** Nhân viên kho làm 8 giờ/ngày. Ngày cao điểm, tối đa làm thêm 4 giờ (50% của 8). Cả tháng 11, tổng giờ làm thêm không vượt 40 giờ — tức chỉ khoảng 10 ngày làm thêm 4 tiếng. Nếu kế hoạch cần nhiều hơn → phải **tuyển thời vụ** hoặc **chia ca**, không thể "dồn" cho nhân viên hiện tại.
 
@@ -50,7 +50,7 @@ NSDLĐ có quyền quy định thời giờ làm việc theo ngày hoặc tuần
 
 ## 4. Thời giờ nghỉ ngơi
 
-- **Nghỉ giữa giờ (Điều 109):** làm từ 6 giờ/ngày trở lên → nghỉ ít nhất 30 phút liên tục; làm ban đêm → ít nhất 45 phút. Thời gian nghỉ giữa giờ được tính vào thời giờ làm việc khi làm việc liên tục 6 giờ theo Điều 105 (⚠️ đối chiếu Điều 58 NĐ 145/2020 về trường hợp tính vào giờ làm việc).
+- **Nghỉ giữa giờ (Điều 109):** làm từ 6 giờ/ngày trở lên → nghỉ ít nhất 30 phút liên tục; làm ban đêm → ít nhất 45 phút. Nếu làm việc **theo ca liên tục từ 6 giờ trở lên** thì thời gian nghỉ giữa giờ được tính vào giờ làm việc (khoản 1 Điều 109).
 - **Nghỉ chuyển ca (Điều 110):** ít nhất 12 giờ trước khi chuyển sang ca khác.
 - **Nghỉ hằng tuần (Điều 111):** ít nhất 24 giờ liên tục/tuần; trường hợp đặc biệt bình quân ít nhất 4 ngày/tháng.
 - **Nghỉ lễ, tết (Điều 112):** 11 ngày/năm hưởng nguyên lương. Nếu ngày lễ trùng ngày nghỉ hằng tuần → được nghỉ bù vào ngày làm việc kế tiếp.

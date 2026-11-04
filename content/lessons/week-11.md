@@ -10,7 +10,7 @@ Employee Relations bao gồm mọi hoạt động giữ cho quan hệ giữa cô
 
 ## 2. Nội quy lao động — nền tảng của mọi kỷ luật
 
-- Sử dụng **từ 10 NLĐ trở lên** phải ban hành nội quy bằng văn bản (Điều 118).
+- Mọi NSDLĐ đều phải ban hành nội quy; sử dụng **từ 10 NLĐ trở lên** thì nội quy phải **bằng văn bản** (khoản 1 Điều 118).
 - Nội dung bắt buộc gồm: thời giờ làm việc, trật tự, an toàn vệ sinh lao động, **phòng chống quấy rối tình dục**, bảo vệ tài sản và bí mật kinh doanh, các trường hợp được tạm thời chuyển NLĐ làm việc khác, **các hành vi vi phạm và hình thức xử lý kỷ luật tương ứng**, trách nhiệm vật chất, người có thẩm quyền xử lý kỷ luật.
 - Phải **tham khảo ý kiến tổ chức đại diện NLĐ tại cơ sở** (nếu có) trước khi ban hành, và **đăng ký** với cơ quan chuyên môn về lao động cấp tỉnh (Điều 119) đối với NSDLĐ từ 10 NLĐ trở lên. ⚠️ Cơ quan tiếp nhận có thể thay đổi sau tái cơ cấu bộ máy nhà nước 2025 — cần kiểm tra lại.
 
@@ -68,7 +68,7 @@ Employee Relations bao gồm mọi hoạt động giữ cho quan hệ giữa cô
 | NLĐ đơn phương | Điều 35 | Báo trước 45/30/3 ngày; một số trường hợp không cần báo trước |
 | NSDLĐ đơn phương | Điều 36 | Chỉ khi có căn cứ luật định + báo trước; cấm trong trường hợp Điều 37 |
 | Sa thải | Điều 125 | Hình thức kỷ luật, phải đủ trình tự |
-| Lý do kinh tế, thay đổi cơ cấu | Điều 42, 44 | Phải có phương án sử dụng lao động, trao đổi tổ chức đại diện NLĐ, báo trước cơ quan nhà nước |
+| Thay đổi cơ cấu, công nghệ hoặc lý do kinh tế | Điều 42, 44 | "Lý do kinh tế" chỉ gồm khủng hoảng/suy thoái kinh tế hoặc thực hiện chính sách nhà nước; phải có phương án sử dụng lao động, trao đổi tổ chức đại diện NLĐ, báo trước 30 ngày cho UBND cấp tỉnh và NLĐ |
 
 **Hậu quả khi NSDLĐ chấm dứt trái luật (Điều 41):** nhận NLĐ trở lại, trả lương + BHXH những ngày không được làm việc, cộng **ít nhất 2 tháng lương**; nếu vi phạm báo trước thì trả thêm lương những ngày không báo trước. Đây là lý do vì sao "cho nghỉ ngay từ mai" là quyết định cực kỳ tốn kém.
 

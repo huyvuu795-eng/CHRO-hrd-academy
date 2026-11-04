@@ -22,14 +22,13 @@
     {
       "id": "tg-04",
       "front": "Những ngành/trường hợp nào được làm thêm tối đa 300 giờ/năm?",
-      "back": "Ví dụ: sản xuất, gia công xuất khẩu hàng dệt, may, da, giày, điện, điện tử, chế biến nông lâm thuỷ sản; sản xuất, cung cấp điện, viễn thông, cấp thoát nước; công việc đòi hỏi lao động chuyên môn cao mà thị trường không cung ứng kịp; công việc cấp bách do tính thời vụ, nguyên vật liệu… NSDLĐ phải thông báo cho cơ quan chuyên môn về lao động.\n⚠️ Danh mục chi tiết và thủ tục thông báo do nghị định hướng dẫn — cần kiểm tra lại văn bản gốc.",
-      "ref": "Khoản 3 Điều 107 BLLĐ 2019",
-      "verify": true
+      "back": "• Sản xuất, gia công xuất khẩu hàng dệt, may, da, giày, điện, điện tử, chế biến nông, lâm, diêm nghiệp, thuỷ sản.\n• Sản xuất, cung cấp điện, viễn thông, lọc dầu; cấp, thoát nước.\n• Công việc đòi hỏi lao động chuyên môn, kỹ thuật cao mà thị trường không cung ứng đầy đủ, kịp thời.\n• Công việc cấp bách, không thể trì hoãn do tính thời vụ, thời điểm của nguyên liệu, sản phẩm, hoặc do yếu tố khách quan không dự liệu trước (thời tiết, thiên tai, thiếu điện, sự cố dây chuyền…).\n• Trường hợp khác do Chính phủ quy định.\nKhi tổ chức làm thêm đến 300 giờ, NSDLĐ phải thông báo bằng văn bản cho cơ quan chuyên môn về lao động thuộc UBND cấp tỉnh.",
+      "ref": "Khoản 3, 4 Điều 107 BLLĐ 2019"
     },
     {
       "id": "tg-05",
       "front": "Thời gian nghỉ giữa giờ tối thiểu?",
-      "back": "• Làm việc từ 06 giờ trở lên/ngày (theo khoản 1 Điều 109): nghỉ giữa giờ ít nhất 30 phút liên tục.\n• Làm việc ban đêm: ít nhất 45 phút liên tục.",
+      "back": "• Làm việc theo thời giờ bình thường từ 06 giờ trở lên trong một ngày: nghỉ giữa giờ ít nhất 30 phút liên tục.\n• Làm việc ban đêm: ít nhất 45 phút liên tục.\n• Làm việc theo ca liên tục từ 06 giờ trở lên: thời gian nghỉ giữa giờ được tính vào giờ làm việc.",
       "ref": "Điều 109 BLLĐ 2019"
     },
     {
@@ -41,15 +40,15 @@
     {
       "id": "tg-07",
       "front": "Nghỉ lễ, tết có hưởng nguyên lương gồm những ngày nào (tổng 11 ngày)?",
-      "back": "• Tết Dương lịch: 01 ngày (1/1)\n• Tết Âm lịch: 05 ngày\n• Ngày Chiến thắng: 01 ngày (30/4)\n• Quốc tế lao động: 01 ngày (1/5)\n• Quốc khánh: 02 ngày (2/9 và 01 ngày liền kề trước hoặc sau)\n• Giỗ Tổ Hùng Vương: 01 ngày (10/3 âm lịch)\nNLĐ nước ngoài được nghỉ thêm 1 ngày Tết cổ truyền + 1 ngày Quốc khánh nước họ.\n⚠️ Số ngày nghỉ lễ có thể được điều chỉnh bởi văn bản mới — cần kiểm tra lại văn bản gốc.",
+      "back": "• Tết Dương lịch: 01 ngày (1/1)\n• Tết Âm lịch: 05 ngày\n• Ngày Chiến thắng: 01 ngày (30/4)\n• Quốc tế lao động: 01 ngày (1/5)\n• Quốc khánh: 02 ngày (2/9 và 01 ngày liền kề trước hoặc sau)\n• Giỗ Tổ Hùng Vương: 01 ngày (10/3 âm lịch)\nNLĐ nước ngoài được nghỉ thêm 1 ngày Tết cổ truyền + 1 ngày Quốc khánh nước họ. Thủ tướng quyết định cụ thể ngày nghỉ Tết Âm lịch và Quốc khánh hằng năm.\n⚠️ Đúng theo bản gốc BLLĐ 2019; cần kiểm tra lại văn bản gốc xem có luật sửa đổi bổ sung ngày nghỉ lễ hay không.",
       "ref": "Điều 112 BLLĐ 2019",
       "verify": true
     },
     {
       "id": "tg-08",
       "front": "Số ngày nghỉ hằng năm (phép năm) theo điều kiện làm việc?",
-      "back": "Làm đủ 12 tháng cho một NSDLĐ:\n• 12 ngày: điều kiện bình thường.\n• 14 ngày: NLĐ chưa thành niên, NLĐ khuyết tật, nghề nặng nhọc, độc hại, nguy hiểm.\n• 16 ngày: nghề đặc biệt nặng nhọc, độc hại, nguy hiểm.\nLàm chưa đủ 12 tháng → tính theo tỷ lệ số tháng làm việc.",
-      "ref": "Khoản 1, 2 Điều 113 BLLĐ 2019"
+      "back": "Làm đủ 12 tháng cho một NSDLĐ, hưởng nguyên lương theo HĐLĐ:\n• 12 ngày làm việc: điều kiện bình thường.\n• 14 ngày làm việc: NLĐ chưa thành niên, NLĐ khuyết tật, nghề nặng nhọc, độc hại, nguy hiểm.\n• 16 ngày làm việc: nghề đặc biệt nặng nhọc, độc hại, nguy hiểm.\nLàm chưa đủ 12 tháng → tính theo tỷ lệ số tháng làm việc. Có thể thoả thuận nghỉ nhiều lần hoặc nghỉ gộp tối đa 03 năm một lần.",
+      "ref": "Khoản 1, 2, 4 Điều 113 BLLĐ 2019"
     },
     {
       "id": "tg-09",
