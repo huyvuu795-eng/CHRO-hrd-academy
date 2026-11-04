@@ -98,7 +98,17 @@ Dự án đã có sẵn file tự động `.github/workflows/deploy.yml`.
 
 ---
 
-## 5. Thêm nội dung mới
+## 5. Mục Hỏi đáp luật (Claude)
+
+- Tab **Hỏi đáp** mở trang [Hỏi đáp Luật Lao động](https://claude.ai/artifact/FC3HH7jDRUGnzUe6e3c3dX) trên claude.ai.
+- Trang gọi Claude bằng **tài khoản Claude của chính bạn** (tính vào hạn mức gói Claude), **không cần API key** và không có máy chủ riêng.
+- Claude đọc nguyên văn Bộ luật Lao động 2019 qua công cụ tra cứu ngay trong trang, cộng với các thẻ luật và thư viện văn bản đã đối chiếu, rồi trả lời kèm số Điều.
+- Phải mở trong trình duyệt hoặc app Claude **đã đăng nhập** tài khoản sở hữu trang (trang đang để riêng tư). Lần đầu, chọn **Cho phép** khi Claude hỏi quyền.
+- Chế độ **Tra Điều** tìm theo từ khoá hoặc số Điều ngay trên máy, không tốn lượt dùng Claude.
+
+**Khi cập nhật thẻ luật hoặc thư viện:** chạy `npm run qa` để sinh lại `qa-page/hoi-dap-luat.html`, rồi nhờ Claude Code đăng lại lên đúng link cũ (link không đổi).
+
+## 6. Thêm nội dung mới
 
 Xem **[CONTENT_GUIDE.md](CONTENT_GUIDE.md)**: thêm tuần 13+, thêm thẻ luật, sửa lộ trình — chỉ sửa file trong `/content`, không đụng tới code.
 

@@ -206,7 +206,16 @@ Mỗi văn bản là một object trong mảng:
 - `links`: ưu tiên link chính thức (`chinhphu.vn`, `congbao.chinhphu.vn`, `vbpl.vn`), bắt buộc `https://`.
 - **Không chép file PDF vào repo** (repo đang public). Nếu muốn giữ bản tải về, để trong thư mục `tai-lieu/` — thư mục này đã được `.gitignore` nên không bị push.
 
-## 7. Lỗi thường gặp
+## 7. Dữ liệu cho mục Hỏi đáp
+
+Trang Hỏi đáp trên claude.ai được sinh từ chính `/content`:
+
+- `content/legal/blld-2019.txt` — toàn văn Bộ luật Lao động (script tự tách thành 220 Điều).
+- `content/flashcards/*.json` và `content/library.json` — các điểm đã tóm tắt, đã đối chiếu.
+
+Sau khi sửa những file này: `npm run qa` → nhờ Claude Code đăng lại `qa-page/hoi-dap-luat.html` lên link cũ. Script sẽ báo lỗi nếu tách Bộ luật không ra đúng 220 Điều.
+
+## 8. Lỗi thường gặp
 
 | Thông báo | Cách sửa |
 |---|---|

@@ -11,6 +11,7 @@ import Cards from './pages/Cards';
 import Review from './pages/Review';
 import Settings from './pages/Settings';
 import Library from './pages/Library';
+import Ask from './pages/Ask';
 
 function useTheme() {
   const theme = useStore().state.settings.theme;
@@ -50,6 +51,7 @@ export default function App() {
     tab = 'cards';
   }
   else if (p0 === 'settings') page = <Settings />;
+  else if (p0 === 'ask') page = <Ask />;
   else page = <Dashboard />;
 
   const hideNav = p2 === 'quiz' || (p0 === 'cards' && p1 === 'review');
