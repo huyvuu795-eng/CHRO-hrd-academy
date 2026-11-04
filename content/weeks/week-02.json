@@ -1,0 +1,121 @@
+{
+  "week": 2,
+  "title": "Luật Lao động 1: Hợp đồng lao động & thử việc",
+  "phase": "Luật LĐ",
+  "readingMinutes": 14,
+  "objectives": [
+    "Phân biệt HĐLĐ với hợp đồng dịch vụ dựa trên bản chất (Điều 13)",
+    "Áp dụng đúng quy định về loại HĐ, số lần ký HĐ xác định thời hạn (Điều 20)",
+    "Xác định đúng thời gian và lương thử việc cho từng vị trí (Điều 24–27)",
+    "Rà soát được offer letter và HĐLĐ mẫu của công ty"
+  ],
+  "lesson": "week-02.md",
+  "daily": {
+    "mon": ["Đọc bài học phần 1–3", "Ôn thẻ luật chủ đề Hợp đồng lao động"],
+    "tue": ["Đọc bài học phần 4–7", "Ôn thẻ luật chủ đề Thử việc"],
+    "wed": ["Tra Điều 13–29 BLLĐ 2019 trên vbpl.vn, đọc lướt văn bản gốc", "Ôn thẻ luật đến hạn"],
+    "thu": ["Bài thực hành 1: rà soát offer letter/HĐ mẫu", "Ôn thẻ luật đến hạn"],
+    "fri": ["Bài thực hành 2: bảng thời gian thử việc theo vị trí", "Ôn thẻ luật đến hạn"],
+    "sat": ["Làm mini test tuần 2", "Ghi lại 3 điểm luật bạn từng hiểu sai"],
+    "sun": ["Viết nhật ký tuần", "Export JSON sao lưu"]
+  },
+  "practice": [
+    {
+      "title": "Rà soát offer letter và HĐLĐ mẫu đang dùng ở công ty",
+      "context": "Dùng bản mẫu (đã xoá thông tin cá nhân). Mục tiêu không phải 'bắt lỗi' mà là hiểu từng điều khoản dựa trên điều luật nào.",
+      "steps": [
+        "Đối chiếu offer/HĐ với checklist 7 điểm ở cuối bài học",
+        "Với mỗi điều khoản về thử việc, loại HĐ, lương: ghi số Điều tương ứng",
+        "Đánh dấu điểm nghi sai hoặc thiếu (vd: thử việc vượt trần, thiếu thông tin BHXH)",
+        "Trao đổi 15 phút với HR Manager/C&B về các điểm bạn đánh dấu"
+      ],
+      "deliverable": "Bảng đối chiếu: điều khoản – điều luật – đúng/cần xem lại – ghi chú."
+    },
+    {
+      "title": "Lập bảng thời gian & lương thử việc chuẩn cho 6 vị trí bạn hay tuyển",
+      "steps": [
+        "Liệt kê 6 vị trí (vd: nhân viên kho, CS, content, data analyst, trưởng nhóm kho, Head of Marketing)",
+        "Xác định yêu cầu trình độ thực tế của từng vị trí",
+        "Gán thời gian thử việc tối đa theo Điều 25 và lương thử việc tối thiểu 85%",
+        "Đề xuất thời gian thử việc phù hợp (có thể ngắn hơn trần) kèm lý do"
+      ],
+      "deliverable": "Bảng 6 dòng dùng làm tài liệu tham chiếu nhanh khi lên offer."
+    }
+  ],
+  "quiz": {
+    "mcq": [
+      {
+        "q": "Công ty ký 'Hợp đồng cộng tác viên' với host livestream: lên sóng theo lịch cố định do trưởng nhóm phân, chấm công, nhận lương cứng 8 triệu/tháng. Đánh giá nào đúng?",
+        "options": ["Hợp đồng dịch vụ hợp lệ vì hai bên đã ký tên gọi CTV", "Là HĐLĐ vì có trả lương và có sự quản lý, điều hành, giám sát", "Chỉ là HĐLĐ nếu thời hạn trên 12 tháng", "Không cần đóng BHXH vì là CTV"],
+        "answer": 1,
+        "explain": "Khoản 1 Điều 13: tên gọi khác nhưng nội dung có trả lương và có quản lý, điều hành, giám sát thì vẫn coi là HĐLĐ, kéo theo nghĩa vụ BHXH và các quyền lợi khác."
+      },
+      {
+        "q": "Nhân viên CS đã ký 2 HĐ xác định thời hạn liên tiếp (12 tháng + 12 tháng). Công ty muốn ký tiếp HĐ 6 tháng. Đúng luật không?",
+        "options": ["Đúng, vì tổng thời gian chưa quá 36 tháng", "Không đúng, phải ký HĐ không xác định thời hạn", "Đúng nếu NLĐ đồng ý bằng văn bản", "Đúng nếu ký dưới dạng phụ lục"],
+        "answer": 1,
+        "explain": "Điểm c khoản 2 Điều 20: chỉ được ký thêm 1 lần HĐ xác định thời hạn; sau đó phải ký HĐ không xác định thời hạn (trừ các trường hợp ngoại lệ luật định)."
+      },
+      {
+        "q": "HĐ 12 tháng của nhân viên kho hết hạn ngày 01/3, anh ấy vẫn đi làm bình thường và đến 15/4 hai bên chưa ký gì. Hệ quả pháp lý?",
+        "options": ["HĐ tự gia hạn thêm 12 tháng", "HĐ đã giao kết trở thành HĐLĐ không xác định thời hạn", "Quan hệ lao động chấm dứt từ 01/3", "Công ty được tự chọn loại HĐ mới"],
+        "answer": 1,
+        "explain": "Điểm b khoản 2 Điều 20: quá 30 ngày kể từ ngày hết hạn mà không ký HĐ mới thì HĐ đã giao kết trở thành HĐ không xác định thời hạn."
+      },
+      {
+        "q": "Bạn tuyển Data Analyst (yêu cầu đại học). Thời gian thử việc tối đa hợp pháp là?",
+        "options": ["30 ngày", "60 ngày", "90 ngày", "180 ngày"],
+        "answer": 1,
+        "explain": "Điều 25: công việc của chức danh nghề cần trình độ chuyên môn, kỹ thuật từ cao đẳng trở lên được thử việc tối đa 60 ngày."
+      },
+      {
+        "q": "Trưởng phòng muốn 'gia hạn thử việc thêm 1 tháng' cho một nhân viên vì chưa đủ dữ liệu đánh giá. Tư vấn đúng là?",
+        "options": ["Được, nếu NLĐ ký xác nhận", "Không được, vì mỗi công việc chỉ được thử việc 1 lần; cần quyết định đạt/không đạt", "Được, nếu tổng thời gian không quá 180 ngày", "Được, nếu giảm lương thử việc xuống 70%"],
+        "answer": 1,
+        "explain": "Điều 25: chỉ được thử việc 1 lần đối với 1 công việc. Giải pháp: chuẩn bị tiêu chí đánh giá ngay từ đầu và review trước khi hết thử việc."
+      },
+      {
+        "q": "Lương chính thức của vị trí là 15.000.000đ. Mức lương thử việc nào vi phạm Điều 26?",
+        "options": ["15.000.000đ", "13.000.000đ", "12.750.000đ", "12.000.000đ"],
+        "answer": 3,
+        "explain": "Lương thử việc tối thiểu 85% × 15tr = 12.750.000đ. 12.000.000đ (80%) là vi phạm."
+      },
+      {
+        "q": "Cửa hàng yêu cầu nhân viên mới nộp bằng tốt nghiệp gốc và đặt cọc 1 triệu tiền đồng phục. Nhận định nào đúng?",
+        "options": ["Hợp pháp nếu ghi trong nội quy", "Cả hai đều vi phạm Điều 17", "Chỉ giữ bằng gốc là vi phạm", "Chỉ đặt cọc là vi phạm"],
+        "answer": 1,
+        "explain": "Điều 17 cấm NSDLĐ giữ bản chính văn bằng, chứng chỉ và cấm yêu cầu biện pháp bảo đảm bằng tiền/tài sản."
+      },
+      {
+        "q": "Sau 2 tháng làm việc, công ty phát hiện ứng viên khai gian bằng đại học trong form ứng tuyển mà công ty đã yêu cầu điền. Căn cứ phù hợp nhất để xử lý?",
+        "options": ["Sa thải theo Điều 125", "Đơn phương chấm dứt HĐLĐ theo điểm g khoản 1 Điều 36", "Trừ 30% lương theo Điều 102", "Không làm gì được vì đã qua thử việc"],
+        "answer": 1,
+        "explain": "Điểm g khoản 1 Điều 36: NLĐ cung cấp không trung thực thông tin theo khoản 2 Điều 16 khi giao kết HĐ làm ảnh hưởng đến việc tuyển dụng — NSDLĐ có quyền đơn phương chấm dứt."
+      },
+      {
+        "q": "Công ty muốn đổi HĐ 12 tháng của nhân viên thành 24 tháng bằng cách ký phụ lục. Đánh giá?",
+        "options": ["Hợp lệ nếu hai bên đồng ý", "Không hợp lệ, phụ lục không được sửa đổi thời hạn HĐLĐ", "Hợp lệ nếu báo trước 3 ngày", "Chỉ hợp lệ với HĐ không xác định thời hạn"],
+        "answer": 1,
+        "explain": "Điều 22: phụ lục HĐLĐ không được sửa đổi thời hạn của HĐLĐ."
+      },
+      {
+        "q": "Mùa sale 11.11, công ty điều 1 nhân viên marketing xuống hỗ trợ đóng gói 2 tuần, nhân viên không đồng ý. Điều kiện nào KHÔNG bắt buộc theo Điều 29?",
+        "options": ["Báo trước ít nhất 3 ngày làm việc", "Trường hợp được điều chuyển phải quy định trong nội quy lao động", "Giữ nguyên lương cũ trong 30 ngày làm việc đầu", "Phải có quyết định của Sở Lao động"],
+        "answer": 3,
+        "explain": "Điều 29 yêu cầu: nhu cầu đột xuất được quy định trong nội quy, báo trước 3 ngày làm việc, tối đa 60 ngày làm việc cộng dồn/năm, giữ lương cũ 30 ngày làm việc đầu. Không cần quyết định của cơ quan nhà nước."
+      }
+    ],
+    "cases": [
+      {
+        "scenario": "Một startup e-commerce 60 người đang dùng mẫu offer: 'Thử việc 3 tháng, lương thử việc 80%. Sau thử việc ký HĐ 6 tháng, sau đó ký tiếp HĐ 1 năm, rồi HĐ 2 năm. Nhân viên mới nộp bản gốc bằng tốt nghiệp cho phòng HR giữ trong thời gian làm việc.' Mẫu này dùng chung cho mọi vị trí từ nhân viên kho đến trưởng phòng.",
+        "question": "Chỉ ra các điểm sai luật và viết lại chính sách đúng.",
+        "guide": "Các điểm sai:\n• Thử việc 3 tháng cho mọi vị trí: vượt trần (180/60/30/6 ngày theo Điều 25 — chỉ người quản lý DN mới tới 180 ngày).\n• Lương thử việc 80% < 85% (Điều 26).\n• Chuỗi HĐ 6 tháng → 1 năm → 2 năm: lần ký HĐ xác định thời hạn thứ 3 vi phạm điểm c khoản 2 Điều 20; HĐ thứ 3 phải là không xác định thời hạn.\n• Giữ bản gốc bằng: vi phạm Điều 17.\nChính sách đúng: thử việc theo trình độ từng vị trí, lương ≥ 85%, tối đa 2 HĐ xác định thời hạn rồi chuyển không xác định, chỉ nhận bản sao chứng thực/đối chiếu bản gốc rồi trả lại."
+      },
+      {
+        "scenario": "Một ứng viên Senior Developer nhận offer. Trưởng nhóm muốn thử việc 60 ngày, nhưng ứng viên đang có offer khác không thử việc và đề nghị bỏ thử việc.",
+        "question": "Công ty có được bỏ thử việc không? Bạn tư vấn trưởng nhóm thế nào để cân bằng rủi ro và khả năng chốt ứng viên?",
+        "guide": "• Thử việc là thoả thuận, không bắt buộc (Điều 24 — 'có thể thoả thuận'); công ty hoàn toàn có thể bỏ hoặc rút ngắn.\n• Phương án: rút ngắn thử việc (vd 30 ngày), hoặc không thử việc nhưng ký HĐ xác định thời hạn 12 tháng với mục tiêu 90 ngày rõ ràng và check-in hằng tháng.\n• Giảm rủi ro bằng tuyển chọn kỹ hơn: technical test, reference check.\n• Lưu ý: không thử việc thì không còn quyền huỷ ngang không báo trước theo khoản 2 Điều 27."
+      }
+    ]
+  }
+}

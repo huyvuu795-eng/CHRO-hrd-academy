@@ -1,0 +1,150 @@
+{
+  "stages": [
+    {
+      "id": "specialist",
+      "title": "Giai đoạn 1 · HR Specialist → Generalist",
+      "role": "Recruiter / Talent Acquisition Specialist → HR Generalist",
+      "years": "Năm 0 – 2 (2026 – 2028)",
+      "summary": "Biến thế mạnh tuyển dụng thành nền móng, đồng thời phủ kín các mảng HR vận hành: C&B, luật lao động, onboarding, hiệu suất cơ bản. Mục tiêu cuối giai đoạn: có thể một mình vận hành HR cho một team 50–100 người.",
+      "competencies": [
+        "Tuyển dụng dựa trên năng lực (Competency-based Hiring), phỏng vấn có cấu trúc (Structured Interview)",
+        "Nắm chắc Bộ luật Lao động 2019: HĐLĐ, thử việc, thời giờ làm việc, kỷ luật, chấm dứt HĐLĐ",
+        "Tính lương Gross–Net, BHXH/BHYT/BHTN, thuế TNCN; đọc được bảng lương",
+        "Đo lường tuyển dụng (Recruitment Metrics) và làm báo cáo bằng Excel/Google Sheets",
+        "Thiết kế onboarding và quản lý thử việc (Probation Management)"
+      ],
+      "experience": [
+        "Tự tay tuyển ≥ 50 vị trí ở ít nhất 3 nhóm nghề (vận hành, tech, kinh doanh)",
+        "Tham gia ít nhất 1 chu kỳ tính lương hoặc rà soát bảng lương",
+        "Soạn/rà soát HĐLĐ, quyết định, biên bản theo đúng luật",
+        "Chủ động nhận 1 dự án ngoài tuyển dụng (onboarding, survey, chính sách)"
+      ],
+      "certifications": [
+        "aPHRi hoặc PHRi (HRCI) — nền tảng HR quốc tế",
+        "Khoá Luật Lao động thực hành (các trung tâm đào tạo pháp lý uy tín trong nước)",
+        "Google Data Analytics / Excel nâng cao cho HR"
+      ],
+      "milestones": [
+        "Được giao phụ trách HR cho 1 phòng ban/khối ngoài tuyển dụng",
+        "Tự đánh giá ≥ 3/5 ở ít nhất 6/10 mảng năng lực",
+        "Hoàn thành 52 tuần trên HRD Academy"
+      ]
+    },
+    {
+      "id": "senior",
+      "title": "Giai đoạn 2 · Senior HR / HRBP Junior",
+      "role": "Senior HR Executive / HR Business Partner (Junior)",
+      "years": "Năm 2 – 4 (2028 – 2030)",
+      "summary": "Chuyển từ 'làm đúng việc HR' sang 'giải bài toán kinh doanh bằng con người'. Làm việc trực tiếp với trưởng bộ phận, hiểu P&L của khối mình phụ trách, đề xuất giải pháp thay vì chỉ thực thi.",
+      "competencies": [
+        "Tư vấn cho quản lý (HR Consulting), quản lý các bên liên quan (Stakeholder Management)",
+        "Thiết kế hệ thống đánh giá hiệu suất (Performance Management) và KPI/OKR",
+        "Đánh giá nhu cầu đào tạo (TNA), thiết kế chương trình L&D theo ADDIE, đo lường Kirkpatrick",
+        "Quan hệ lao động (Employee Relations): xử lý khiếu nại, kỷ luật, đối thoại tại nơi làm việc",
+        "Phân tích dữ liệu nhân sự trung cấp: turnover, engagement, cohort analysis"
+      ],
+      "experience": [
+        "Làm HRBP cho ít nhất 1 khối 80–200 người",
+        "Chủ trì 1 chu kỳ đánh giá hiệu suất từ đầu đến cuối",
+        "Xử lý ≥ 5 ca quan hệ lao động phức tạp (kỷ luật, chấm dứt, tranh chấp)",
+        "Thiết kế và triển khai 1 chương trình đào tạo đo được tác động"
+      ],
+      "certifications": [
+        "SHRM-CP (SHRM Certified Professional)",
+        "CIPD Level 5 Associate Diploma in People Management (nếu muốn theo hướng Anh/Úc)",
+        "Chứng chỉ Coaching cơ bản (ICF ACC track)"
+      ],
+      "milestones": [
+        "Trưởng bộ phận chủ động mời bạn vào họp kế hoạch kinh doanh",
+        "Đề xuất 1 chính sách nhân sự được ban giám đốc phê duyệt",
+        "Có người mentor ở cấp HR Manager/Head trở lên"
+      ]
+    },
+    {
+      "id": "manager",
+      "title": "Giai đoạn 3 · HR Manager / Senior HRBP",
+      "role": "HR Manager / Senior HR Business Partner",
+      "years": "Năm 4 – 6 (2030 – 2032)",
+      "summary": "Lần đầu quản lý đội ngũ HR và chịu trách nhiệm ngân sách nhân sự. Xây hệ thống thay vì giải quyết từng ca: khung lương, khung năng lực, quy trình, HRIS.",
+      "competencies": [
+        "Thiết kế cơ cấu lương (Salary Structure), đánh giá giá trị công việc (Job Evaluation), Total Rewards",
+        "Lập kế hoạch nhân lực (Workforce Planning) gắn với kế hoạch kinh doanh năm",
+        "Phát triển tổ chức cơ bản (OD): thiết kế cơ cấu, quản trị thay đổi (Change Management)",
+        "Quản lý đội ngũ HR, ngân sách HR, lựa chọn và triển khai HRIS",
+        "Xây khung năng lực (Competency Framework) và lộ trình nghề nghiệp (Career Path)"
+      ],
+      "experience": [
+        "Quản lý trực tiếp 3–6 nhân sự HR",
+        "Xây hoặc tái cấu trúc thang bảng lương cho toàn công ty",
+        "Dẫn dắt 1 dự án thay đổi lớn (tái cơ cấu, sáp nhập, chuyển đổi HRIS)",
+        "Trình bày báo cáo nhân sự định kỳ cho Ban Giám đốc"
+      ],
+      "certifications": [
+        "SHRM-SCP hoặc SPHRi (HRCI)",
+        "CIPD Level 7 (nếu theo hướng chiến lược quốc tế)",
+        "Chứng chỉ C&B chuyên sâu (WorldatWork CCP hoặc tương đương)"
+      ],
+      "milestones": [
+        "Chịu trách nhiệm toàn bộ HR cho 1 công ty/khối 200–500 người",
+        "Có hệ thống HR metrics báo cáo hằng tháng cho CEO",
+        "Đào tạo được người kế nhiệm cho vị trí của mình"
+      ]
+    },
+    {
+      "id": "head",
+      "title": "Giai đoạn 4 · Head of HR / HR Senior Manager",
+      "role": "Head of People / HR Senior Manager",
+      "years": "Năm 6 – 8 (2032 – 2034)",
+      "summary": "Thành viên cấp quản lý cao, định hướng chiến lược con người và văn hoá. Ra quyết định ở cấp hệ thống, cân bằng lợi ích cổ đông – nhân viên – khách hàng.",
+      "competencies": [
+        "Chiến lược nhân sự (People Strategy) gắn với chiến lược kinh doanh 3–5 năm",
+        "Văn hoá doanh nghiệp, Employer Value Proposition, lãnh đạo thay đổi quy mô lớn",
+        "Quản trị nhân tài (Talent Management), kế hoạch kế nhiệm (Succession Planning)",
+        "HR Analytics nâng cao: dự báo nghỉ việc, ROI của chương trình nhân sự",
+        "Am hiểu tài chính doanh nghiệp, M&A, tuân thủ pháp luật đa vùng"
+      ],
+      "experience": [
+        "Dẫn dắt HR qua 1 giai đoạn tăng trưởng nhanh hoặc tái cấu trúc",
+        "Xây dựng và vận hành chương trình kế nhiệm cho các vị trí then chốt",
+        "Làm việc với HĐQT/nhà đầu tư về chính sách ESOP, đãi ngộ cấp cao"
+      ],
+      "certifications": [
+        "Chương trình Executive Education về HR chiến lược (vd. các trường kinh doanh khu vực)",
+        "Cân nhắc MBA/EMBA nếu muốn lên C-level ở tập đoàn"
+      ],
+      "milestones": [
+        "Là người được CEO tham vấn đầu tiên về mọi quyết định con người",
+        "Văn hoá & engagement đo được và cải thiện qua ≥ 2 năm",
+        "Có mạng lưới HR leader trong ngành (diễn đàn, cộng đồng CHRO)"
+      ]
+    },
+    {
+      "id": "hrd",
+      "title": "Giai đoạn 5 · HR Director / CHRO",
+      "role": "Giám đốc Nhân sự (HR Director) / Chief Human Resources Officer",
+      "years": "Năm 8 – 10 (2034 – 2036)",
+      "summary": "Đối tác chiến lược của CEO và HĐQT. Chịu trách nhiệm năng lực tổ chức để thực thi chiến lược, quản trị rủi ro con người, và xây dựng thế hệ lãnh đạo kế tiếp.",
+      "competencies": [
+        "Tư duy CEO: đọc báo cáo tài chính, định giá tác động của quyết định nhân sự lên lợi nhuận",
+        "Thiết kế tổ chức (Organization Design) và mô hình vận hành HR (HR Operating Model)",
+        "Quản trị nhân sự cấp cao: đãi ngộ điều hành, đánh giá CEO/Ban điều hành, quản trị công ty",
+        "Lãnh đạo đội ngũ HR đa chức năng (COE, HRBP, Shared Services)",
+        "Đại diện doanh nghiệp với cơ quan nhà nước, công đoàn, truyền thông"
+      ],
+      "experience": [
+        "Ngồi trong Ban điều hành, tham gia lập chiến lược công ty",
+        "Báo cáo trực tiếp CEO, làm việc với Uỷ ban Nhân sự & Lương thưởng của HĐQT",
+        "Đã dẫn dắt ít nhất 1 cuộc chuyển đổi tổ chức quy mô lớn"
+      ],
+      "certifications": [
+        "Chứng chỉ quản trị công ty / thành viên HĐQT (các viện thành viên HĐQT trong nước hoặc khu vực)",
+        "CIPD Chartered Fellow (nếu theo hệ CIPD)"
+      ],
+      "milestones": [
+        "Chức danh HR Director/CHRO tại doanh nghiệp ≥ 500 người",
+        "Có người kế nhiệm sẵn sàng trong ≤ 2 năm",
+        "Tạo được dấu ấn rõ ràng lên kết quả kinh doanh thông qua con người"
+      ]
+    }
+  ]
+}

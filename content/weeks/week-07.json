@@ -1,0 +1,117 @@
+{
+  "week": 7,
+  "title": "Luật Lao động 2: Giờ làm, nghỉ ngơi & làm thêm giờ",
+  "phase": "Luật LĐ",
+  "readingMinutes": 13,
+  "objectives": [
+    "Áp dụng đúng giới hạn thời giờ làm việc và làm thêm giờ (Điều 105–108)",
+    "Tính tiền lương làm thêm giờ, làm đêm theo Điều 98",
+    "Nắm các loại thời giờ nghỉ ngơi và cách tính phép năm (Điều 109–115)",
+    "Lập kế hoạch nhân lực mùa cao điểm tuân thủ luật"
+  ],
+  "lesson": "week-07.md",
+  "daily": {
+    "mon": ["Đọc bài học phần 1–3", "Ôn thẻ luật chủ đề Thời giờ làm việc"],
+    "tue": ["Đọc bài học phần 4–6", "Ôn thẻ luật chủ đề Tiền lương"],
+    "wed": ["Đọc nội quy lao động công ty: phần thời giờ làm việc, làm thêm giờ", "Ôn thẻ luật đến hạn"],
+    "thu": ["Bài thực hành 1: kế hoạch nhân lực mùa sale", "Ôn thẻ luật đến hạn"],
+    "fri": ["Bài thực hành 2: tính lương làm thêm giờ", "Ôn thẻ luật đến hạn"],
+    "sat": ["Làm mini test tuần 7", "Ôn lại câu sai"],
+    "sun": ["Viết nhật ký tuần", "Export JSON sao lưu"]
+  },
+  "practice": [
+    {
+      "title": "Lập kế hoạch nhân lực tuân thủ luật cho đợt sale 12.12",
+      "context": "Giả định: kho xử lý bình thường 3.000 đơn/ngày với 30 nhân viên (8 giờ/ngày). Dự kiến 12.10–12.14 lên 9.000 đơn/ngày. Năng suất 12,5 đơn/giờ/người.",
+      "steps": [
+        "Tính số giờ công cần thiết mỗi ngày cao điểm (9.000 ÷ 12,5)",
+        "Tính năng lực tối đa hợp pháp của 30 người hiện có (giờ chuẩn + tối đa 4 giờ làm thêm/ngày, kiểm tra trần 40 giờ/tháng)",
+        "Tính số lao động thời vụ cần bổ sung và loại HĐ phù hợp",
+        "Liệt kê các biểu mẫu cần chuẩn bị (xác nhận đồng ý làm thêm giờ, bảng theo dõi giờ luỹ kế)"
+      ],
+      "deliverable": "Bảng tính 1 trang + danh sách việc cần làm trước sale."
+    },
+    {
+      "title": "Tính lương làm thêm giờ cho 3 tình huống",
+      "steps": [
+        "Chọn một mức lương giờ giả định (vd 30.000đ)",
+        "TH1: làm thêm 3 giờ tối thứ Tư (18h–21h)",
+        "TH2: làm 8 giờ ngày Chủ nhật (ngày nghỉ hằng tuần)",
+        "TH3: làm thêm 22h–01h đêm ngày thường; đối chiếu cách tính trong NĐ 145/2020",
+        "So sánh kết quả với cách tính trong bảng lương thực tế công ty (nếu được xem)"
+      ],
+      "deliverable": "Bảng tính 3 tình huống có ghi căn cứ điều luật."
+    }
+  ],
+  "quiz": {
+    "mcq": [
+      {
+        "q": "Công ty quy định giờ làm theo tuần. Mức nào sau đây hợp lệ cho thời giờ làm việc bình thường?",
+        "options": ["11 giờ/ngày, 44 giờ/tuần", "10 giờ/ngày, 48 giờ/tuần", "9 giờ/ngày, 54 giờ/tuần", "12 giờ/ngày, 48 giờ/tuần"],
+        "answer": 1,
+        "explain": "Khoản 1 Điều 105: nếu quy định theo tuần thì không quá 10 giờ/ngày và không quá 48 giờ/tuần."
+      },
+      {
+        "q": "Nhân viên kho làm 8 giờ/ngày. Số giờ làm thêm tối đa trong 1 ngày là?",
+        "options": ["2 giờ", "4 giờ", "6 giờ", "8 giờ"],
+        "answer": 1,
+        "explain": "Điểm b khoản 2 Điều 107: không quá 50% số giờ làm việc bình thường trong 1 ngày → 4 giờ."
+      },
+      {
+        "q": "Đến ngày 20/11, một nhân viên đã làm thêm 38 giờ trong tháng 11. Trưởng kho muốn họ làm thêm 4 giờ ngày 21/11. Tư vấn đúng?",
+        "options": ["Được, vì chưa quá 200 giờ/năm", "Không được, vì sẽ vượt trần 40 giờ/tháng", "Được, nếu trả 300%", "Được, vì mùa sale là trường hợp đặc biệt theo Điều 108"],
+        "answer": 1,
+        "explain": "38 + 4 = 42 giờ > 40 giờ/tháng (điểm b khoản 2 Điều 107). Mùa sale không thuộc trường hợp đặc biệt tại Điều 108."
+      },
+      {
+        "q": "Lương giờ 40.000đ. Làm thêm 5 giờ vào Chủ nhật (ngày nghỉ hằng tuần theo nội quy), ban ngày. Tiền làm thêm tối thiểu?",
+        "options": ["300.000đ", "400.000đ", "600.000đ", "200.000đ"],
+        "answer": 1,
+        "explain": "Ngày nghỉ hằng tuần: ít nhất 200% → 40.000 × 200% × 5 = 400.000đ."
+      },
+      {
+        "q": "Lương giờ 30.000đ. Nhân viên làm việc trong giờ bình thường theo ca đêm từ 22h–6h (không phải làm thêm). Mức lương tối thiểu mỗi giờ?",
+        "options": ["30.000đ", "39.000đ", "45.000đ", "60.000đ"],
+        "answer": 1,
+        "explain": "Khoản 2 Điều 98: làm việc vào ban đêm được trả thêm ít nhất 30% → 30.000 × 130% = 39.000đ."
+      },
+      {
+        "q": "Ngày lễ Quốc tế Lao động 1/5 rơi vào Chủ nhật — ngày nghỉ hằng tuần của công ty. Quy định đúng?",
+        "options": ["Mất ngày nghỉ lễ đó", "NLĐ được nghỉ bù vào ngày làm việc kế tiếp", "Công ty trả thêm 300% thay cho nghỉ bù bắt buộc", "Tuỳ công ty quyết định"],
+        "answer": 1,
+        "explain": "Khoản 3 Điều 111: nếu ngày nghỉ hằng tuần trùng ngày nghỉ lễ, tết thì NLĐ được nghỉ bù ngày nghỉ hằng tuần vào ngày làm việc kế tiếp."
+      },
+      {
+        "q": "Nhân viên vào làm 01/3, nghỉ việc 31/8 cùng năm (đủ 6 tháng), chưa nghỉ phép ngày nào, điều kiện làm việc bình thường. Số ngày phép được thanh toán?",
+        "options": ["12 ngày", "6 ngày", "0 ngày vì chưa đủ 12 tháng", "3 ngày"],
+        "answer": 1,
+        "explain": "Khoản 2, 3 Điều 113: làm chưa đủ 12 tháng thì phép năm tính theo tỷ lệ (12 × 6/12 = 6 ngày); chưa nghỉ thì được thanh toán tiền lương những ngày chưa nghỉ."
+      },
+      {
+        "q": "Ca 1 kết thúc 22h, nhân viên được xếp vào ca 3 bắt đầu 6h sáng hôm sau. Vấn đề pháp lý?",
+        "options": ["Không vấn đề", "Vi phạm thời gian nghỉ chuyển ca tối thiểu 12 giờ", "Vi phạm thời giờ làm việc ban đêm", "Chỉ vi phạm nếu NLĐ là nữ"],
+        "answer": 1,
+        "explain": "Điều 110: NLĐ làm việc theo ca được nghỉ ít nhất 12 giờ trước khi chuyển sang ca làm việc khác. Từ 22h đến 6h chỉ 8 giờ."
+      },
+      {
+        "q": "Startup trả 'phụ cấp sale' cố định 500.000đ/tháng cho nhân viên thường xuyên ở lại đến 22h trong mùa cao điểm, không ghi nhận giờ làm thêm. Rủi ro chính?",
+        "options": ["Không có rủi ro vì có phụ cấp", "Có thể phải truy trả lương làm thêm giờ theo hệ số luật định nếu phụ cấp thấp hơn và vi phạm trần giờ làm thêm", "Chỉ rủi ro thuế", "Vi phạm Điều 17"],
+        "answer": 1,
+        "explain": "Lương làm thêm phải ít nhất theo Điều 98 và giờ làm thêm phải trong giới hạn Điều 107; phụ cấp cố định không thay thế được nghĩa vụ này."
+      },
+      {
+        "q": "Kho cần 1.080 giờ công/ngày trong đợt cao điểm. 30 nhân viên hiện có, mỗi người tối đa 12 giờ/ngày (8 chuẩn + 4 làm thêm). Cần bổ sung tối thiểu bao nhiêu lao động thời vụ làm 8 giờ/ngày?",
+        "options": ["0 người", "90 người", "45 người", "30 người"],
+        "answer": 1,
+        "explain": "Năng lực hiện có: 30 × 12 = 360 giờ. Thiếu 1.080 − 360 = 720 giờ ÷ 8 giờ/người = 90 người. Lưu ý thêm: 30 người không thể làm thêm 4 giờ mỗi ngày quá 10 ngày/tháng vì trần 40 giờ/tháng — kế hoạch thực tế cần dư thêm người."
+      }
+    ],
+    "cases": [
+      {
+        "scenario": "Giám đốc Vận hành nói: 'Mùa sale năm ngoái anh cho cả kho làm 12 tiếng/ngày suốt 3 tuần, trả gấp rưỡi là xong. Năm nay cứ thế mà làm.' Kho có 40 người, trong đó 3 lao động nữ đang mang thai tháng thứ 7 và 2 người đang nuôi con dưới 12 tháng tuổi.",
+        "question": "Phân tích các rủi ro pháp lý trong kế hoạch này và đề xuất phương án thay thế khả thi.",
+        "guide": "Rủi ro:\n• 12 giờ/ngày × 3 tuần (~18 ngày làm việc) → làm thêm ~72 giờ, vượt trần 40 giờ/tháng (Điều 107); nếu có làm ngày nghỉ hằng tuần thì phải trả ≥ 200%, không phải 150%.\n• Phải có sự đồng ý của NLĐ.\n• Lao động nữ mang thai từ tháng thứ 7 và nuôi con dưới 12 tháng: không được làm thêm giờ, làm đêm trừ khi NLĐ đồng ý (khoản 1 Điều 137).\n• Nghỉ hằng tuần ít nhất 24 giờ liên tục (Điều 111).\nPhương án: tính giờ công cần thiết → giới hạn làm thêm hợp pháp → tuyển thời vụ/thuê qua đơn vị cung ứng hợp pháp; chia 2–3 ca; theo dõi giờ luỹ kế; lấy xác nhận đồng ý làm thêm; trả đúng hệ số; bố trí công việc phù hợp cho lao động nữ mang thai/nuôi con nhỏ."
+      }
+    ]
+  }
+}

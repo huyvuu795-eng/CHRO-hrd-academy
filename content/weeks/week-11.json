@@ -1,0 +1,121 @@
+{
+  "week": 11,
+  "title": "Luật Lao động 3: Kỷ luật & chấm dứt HĐLĐ",
+  "phase": "Quan hệ LĐ",
+  "readingMinutes": 15,
+  "objectives": [
+    "Xác định hình thức kỷ luật hợp pháp và các hành vi bị cấm (Điều 124, 127)",
+    "Thực hiện đúng nguyên tắc, trình tự, thời hiệu xử lý kỷ luật (Điều 122–123)",
+    "Phân biệt các con đường chấm dứt HĐLĐ và hậu quả khi làm sai (Điều 34–41)",
+    "Tính trợ cấp thôi việc, mất việc làm và thời hạn thanh toán (Điều 46–48)"
+  ],
+  "lesson": "week-11.md",
+  "daily": {
+    "mon": ["Đọc bài học phần 1–4", "Ôn thẻ luật chủ đề Kỷ luật lao động"],
+    "tue": ["Đọc bài học phần 5–8", "Ôn thẻ luật chủ đề Chấm dứt HĐLĐ"],
+    "wed": ["Đọc nội quy lao động công ty phần hành vi vi phạm & hình thức kỷ luật", "Ôn thẻ luật đến hạn"],
+    "thu": ["Bài thực hành 1: rà soát nội quy", "Ôn thẻ luật đến hạn"],
+    "fri": ["Bài thực hành 2: hồ sơ kỷ luật giả định", "Ôn thẻ luật đến hạn"],
+    "sat": ["Làm mini test tuần 11", "Ôn lại câu sai"],
+    "sun": ["Viết nhật ký tuần", "Export JSON sao lưu"]
+  },
+  "practice": [
+    {
+      "title": "Rà soát nội quy lao động của công ty",
+      "steps": [
+        "Đối chiếu nội dung nội quy với danh sách nội dung bắt buộc tại khoản 2 Điều 118",
+        "Tìm các quy định 'phạt tiền', 'trừ lương' (nếu có) và đánh dấu rủi ro theo Điều 127",
+        "Kiểm tra nội quy có quy định phòng chống quấy rối tình dục chưa",
+        "Liệt kê 3 hành vi vi phạm thường gặp thực tế nhưng nội quy chưa quy định"
+      ],
+      "deliverable": "Bảng rà soát: nội dung – có/không – rủi ro – đề xuất."
+    },
+    {
+      "title": "Dựng hồ sơ xử lý kỷ luật cho một tình huống giả định",
+      "context": "Tình huống: nhân viên kho bị camera ghi lại lấy 2 tai nghe bluetooth trong kho mang về. Nhân viên là thành viên công đoàn cơ sở.",
+      "steps": [
+        "Liệt kê chứng cứ cần thu thập và biên bản vi phạm",
+        "Soạn thông báo họp xử lý kỷ luật (thành phần, thời gian — đảm bảo ít nhất 5 ngày làm việc)",
+        "Soạn khung biên bản họp và quyết định kỷ luật",
+        "Kiểm tra thời hiệu và các trường hợp không được xử lý"
+      ],
+      "deliverable": "Bộ 4 biểu mẫu nháp + timeline xử lý."
+    }
+  ],
+  "quiz": {
+    "mcq": [
+      {
+        "q": "Nội quy kho quy định 'Đi trễ trên 15 phút phạt 100.000đ trừ vào lương'. Đánh giá?",
+        "options": ["Hợp pháp nếu NLĐ đã ký nội quy", "Trái luật vì phạt tiền, cắt lương thay việc xử lý kỷ luật bị nghiêm cấm", "Hợp pháp nếu không quá 30% lương", "Hợp pháp nếu đã đăng ký nội quy"],
+        "answer": 1,
+        "explain": "Khoản 2 Điều 127 cấm dùng hình thức phạt tiền, cắt lương thay việc xử lý kỷ luật lao động."
+      },
+      {
+        "q": "Nhân viên CS đi trễ 12 lần trong tháng, chưa từng bị kỷ luật. Công ty muốn sa thải. Tư vấn đúng?",
+        "options": ["Được sa thải vì vi phạm nhiều lần", "Không thuộc trường hợp sa thải theo Điều 125; xử lý bằng hình thức nhẹ hơn theo nội quy", "Được sa thải nếu báo trước 45 ngày", "Được sa thải nếu có biên bản"],
+        "answer": 1,
+        "explain": "Đi trễ không thuộc 4 nhóm trường hợp sa thải tại Điều 125. Chỉ khi tái phạm trong thời gian đang bị kéo dài nâng lương/cách chức mới có thể tính đến sa thải."
+      },
+      {
+        "q": "Nhân viên tự ý nghỉ không lý do: 3 ngày đầu tháng 3 và 2 ngày giữa tháng 3 (trong vòng 30 ngày tính từ ngày đầu tiên). Căn cứ áp dụng?",
+        "options": ["Không thể xử lý vì không liên tục", "Có thể sa thải theo khoản 4 Điều 125 (5 ngày cộng dồn trong 30 ngày) nếu tuân thủ trình tự", "Chỉ được khiển trách", "Phải chờ đủ 20 ngày"],
+        "answer": 1,
+        "explain": "Khoản 4 Điều 125: tự ý bỏ việc 5 ngày cộng dồn trong thời hạn 30 ngày kể từ ngày đầu tiên tự ý bỏ việc mà không có lý do chính đáng."
+      },
+      {
+        "q": "Hành vi vi phạm thông thường xảy ra ngày 10/01. Hạn cuối cùng để ra quyết định kỷ luật (thời hiệu chung) là khoảng?",
+        "options": ["10/02", "10/04", "10/07", "10/01 năm sau"],
+        "answer": 2,
+        "explain": "Khoản 1 Điều 123: thời hiệu 6 tháng kể từ ngày xảy ra vi phạm (12 tháng nếu liên quan tài chính, tài sản, bí mật kinh doanh)."
+      },
+      {
+        "q": "Nhân viên nữ vi phạm nội quy nghiêm trọng, sau đó thông báo đang mang thai. Công ty nên làm gì?",
+        "options": ["Xử lý kỷ luật ngay", "Không được xử lý kỷ luật trong thời gian mang thai; thời hiệu được kéo dài theo Điều 123 khi hết thời gian này", "Đơn phương chấm dứt HĐLĐ ngay", "Phạt tiền thay kỷ luật"],
+        "answer": 1,
+        "explain": "Khoản 4 Điều 122: không xử lý kỷ luật lao động nữ mang thai. Điều 123 cho phép kéo dài thời hiệu (không quá 60 ngày) khi hết thời gian này."
+      },
+      {
+        "q": "Công ty đơn phương chấm dứt HĐLĐ trái luật với nhân viên lương 20 triệu. NLĐ muốn quay lại làm việc. Ngoài lương những ngày không được làm việc, công ty phải trả thêm ít nhất?",
+        "options": ["Nửa tháng lương", "1 tháng lương", "2 tháng lương", "Không phải trả thêm"],
+        "answer": 2,
+        "explain": "Khoản 1 Điều 41: phải nhận lại NLĐ, trả lương, đóng bảo hiểm những ngày không được làm việc và trả thêm ít nhất 2 tháng tiền lương theo HĐLĐ."
+      },
+      {
+        "q": "Nhân viên làm việc 4 năm (01/2022 – 12/2025), toàn bộ thời gian đều đóng BHTN, nghỉ việc theo thoả thuận. Trợ cấp thôi việc công ty phải trả?",
+        "options": ["2 tháng lương", "1 tháng lương", "0 đồng", "4 tháng lương"],
+        "answer": 2,
+        "explain": "Điều 46: thời gian tính trợ cấp thôi việc = tổng thời gian làm việc thực tế trừ thời gian đã tham gia BHTN. Đóng BHTN toàn bộ → 0 đồng (NLĐ hưởng chế độ qua quỹ BHTN nếu đủ điều kiện)."
+      },
+      {
+        "q": "Khi chấm dứt HĐLĐ thông thường, thời hạn thanh toán đầy đủ các khoản cho NLĐ là?",
+        "options": ["7 ngày làm việc", "14 ngày làm việc", "30 ngày làm việc", "45 ngày"],
+        "answer": 1,
+        "explain": "Khoản 1 Điều 48: trong 14 ngày làm việc; một số trường hợp đặc biệt có thể kéo dài nhưng không quá 30 ngày."
+      },
+      {
+        "q": "Muốn sa thải nhân viên vì quấy rối tình dục tại nơi làm việc. Điều kiện tiên quyết theo Điều 125?",
+        "options": ["Có đơn tố cáo của nạn nhân gửi công an", "Hành vi quấy rối tình dục tại nơi làm việc phải được quy định trong nội quy lao động", "Phải có quyết định của toà án", "Nhân viên đã bị khiển trách trước đó"],
+        "answer": 1,
+        "explain": "Khoản 2 Điều 125: quấy rối tình dục tại nơi làm việc được quy định trong nội quy lao động. Nội quy thiếu nội dung này sẽ gây khó khăn khi xử lý."
+      },
+      {
+        "q": "Một nhân viên hiệu suất thấp, công ty chưa có quy chế đánh giá. Con đường chấm dứt ít rủi ro pháp lý nhất là?",
+        "options": ["Sa thải theo Điều 125", "Đơn phương chấm dứt theo điểm a khoản 1 Điều 36", "Thoả thuận chấm dứt HĐLĐ (khoản 3 Điều 34) với các quyền lợi được ghi rõ", "Cho nghỉ ngay, trả 1 tháng lương"],
+        "answer": 2,
+        "explain": "Không có quy chế đánh giá → khó dùng Điều 36; không thuộc trường hợp sa thải. Thoả thuận chấm dứt dựa trên sự tự nguyện của hai bên là phương án ít rủi ro nhất."
+      }
+    ],
+    "cases": [
+      {
+        "scenario": "11h đêm 11/11, trưởng ca kho phát hiện một nhân viên (HĐ không xác định thời hạn, thành viên công đoàn) cãi nhau và xô ngã đồng nghiệp, đồng nghiệp bị xây xát nhẹ. Sáng hôm sau, Giám đốc Vận hành nhắn: 'Cho nó nghỉ ngay hôm nay, không cần thủ tục.'",
+        "question": "Bạn xử lý thế nào trong 24 giờ đầu và các bước tiếp theo để đúng luật?",
+        "guide": "24 giờ đầu:\n• Đảm bảo an toàn, hỗ trợ y tế cho người bị thương.\n• Lập biên bản sự việc, thu thập camera, lời khai nhân chứng.\n• Giải thích với Giám đốc: cho nghỉ ngay không theo trình tự = có thể bị coi là đơn phương chấm dứt trái luật (Điều 41: nhận lại + lương những ngày nghỉ + ít nhất 2 tháng lương).\n• Nếu cần tách khỏi nơi làm việc: tạm đình chỉ công việc (Điều 128), tham khảo ý kiến công đoàn, tạm ứng 50% lương.\nTiếp theo:\n• Xác định hành vi: 'cố ý gây thương tích tại nơi làm việc' (khoản 1 Điều 125) cần đánh giá mức độ, đối chiếu nội quy.\n• Thông báo họp ≥ 5 ngày làm việc, có đại diện công đoàn, NLĐ có mặt và được bào chữa, lập biên bản.\n• Quyết định hình thức tương xứng (khiển trách → sa thải) trong thời hạn tạm đình chỉ và thời hiệu."
+      },
+      {
+        "scenario": "Công ty giảm 30% đơn hàng, CEO muốn cắt 15 nhân viên CS trong tháng tới vì 'lý do kinh tế'.",
+        "question": "Nêu các nghĩa vụ chính của công ty theo Điều 42, 44, 47 trước khi cho thôi việc.",
+        "guide": "• Xác định đúng trường hợp lý do kinh tế (Điều 42) và cố gắng sắp xếp việc làm khác trước.\n• Xây dựng phương án sử dụng lao động (Điều 44): danh sách, tiêu chí lựa chọn, giải pháp đào tạo/chuyển đổi, nguồn tài chính.\n• Trao đổi ý kiến với tổ chức đại diện NLĐ tại cơ sở (nếu có), công khai phương án.\n• Thông báo trước cho cơ quan chuyên môn về lao động cấp tỉnh và NLĐ (⚠️ thời hạn cụ thể — cần kiểm tra lại văn bản gốc, thường là 30 ngày).\n• Trả trợ cấp mất việc làm: mỗi năm 1 tháng lương, tối thiểu 2 tháng (Điều 47), trừ thời gian đã đóng BHTN.\n• Thanh toán trong thời hạn Điều 48."
+      }
+    ]
+  }
+}

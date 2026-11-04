@@ -1,0 +1,65 @@
+{
+  "topic": { "id": "hop-dong", "name": "Hợp đồng lao động", "order": 1 },
+  "cards": [
+    {
+      "id": "hd-01",
+      "front": "Một thoả thuận tên là 'Hợp đồng dịch vụ/cộng tác viên' nhưng có trả lương và có sự quản lý, điều hành, giám sát của một bên. Pháp luật coi đây là gì?",
+      "back": "Được coi là hợp đồng lao động (HĐLĐ). Tên gọi không quyết định — nội dung thể hiện việc làm có trả công, tiền lương và có sự quản lý, điều hành, giám sát thì là HĐLĐ.",
+      "ref": "Khoản 1 Điều 13 BLLĐ 2019"
+    },
+    {
+      "id": "hd-02",
+      "front": "HĐLĐ phải giao kết bằng hình thức nào? Khi nào được giao kết bằng lời nói?",
+      "back": "• Bằng văn bản, làm thành 2 bản (mỗi bên giữ 1).\n• Giao kết qua phương tiện điện tử dưới dạng thông điệp dữ liệu có giá trị như văn bản.\n• Được giao kết bằng lời nói với HĐLĐ có thời hạn dưới 01 tháng (trừ một số trường hợp luật bắt buộc văn bản: thuê qua nhóm NLĐ, NLĐ dưới 15 tuổi, lao động giúp việc gia đình).",
+      "ref": "Điều 14 BLLĐ 2019"
+    },
+    {
+      "id": "hd-03",
+      "front": "Có mấy loại HĐLĐ theo BLLĐ 2019? Thời hạn tối đa của HĐ xác định thời hạn?",
+      "back": "2 loại:\n1. HĐLĐ không xác định thời hạn.\n2. HĐLĐ xác định thời hạn — tối đa 36 tháng.\n(BLLĐ 2019 đã bỏ loại 'HĐ mùa vụ/theo công việc nhất định dưới 12 tháng' của luật cũ.)",
+      "ref": "Khoản 1 Điều 20 BLLĐ 2019"
+    },
+    {
+      "id": "hd-04",
+      "front": "HĐ xác định thời hạn hết hạn, NLĐ vẫn tiếp tục làm việc. Trong bao lâu phải ký HĐ mới? Nếu không ký thì sao?",
+      "back": "Trong 30 ngày kể từ ngày hết hạn, hai bên phải ký HĐLĐ mới. Trong thời gian chưa ký, quyền lợi theo HĐ cũ.\nHết 30 ngày mà không ký → HĐ đã giao kết trở thành HĐLĐ không xác định thời hạn.",
+      "ref": "Điểm a, b khoản 2 Điều 20 BLLĐ 2019"
+    },
+    {
+      "id": "hd-05",
+      "front": "Được ký HĐ xác định thời hạn tối đa mấy lần liên tiếp với cùng một NLĐ?",
+      "back": "Chỉ được ký thêm 01 lần HĐ xác định thời hạn. Sau đó nếu NLĐ tiếp tục làm việc thì phải ký HĐLĐ không xác định thời hạn.\nNgoại lệ: người được thuê làm giám đốc trong DN có vốn nhà nước, NLĐ cao tuổi, NLĐ nước ngoài, cán bộ công đoàn chuyên trách đang trong nhiệm kỳ… (khoản 2 Điều 20 dẫn chiếu).",
+      "ref": "Điểm c khoản 2 Điều 20 BLLĐ 2019"
+    },
+    {
+      "id": "hd-06",
+      "front": "3 hành vi người sử dụng lao động (NSDLĐ) KHÔNG được làm khi giao kết, thực hiện HĐLĐ?",
+      "back": "1. Giữ bản chính giấy tờ tuỳ thân, văn bằng, chứng chỉ của NLĐ.\n2. Yêu cầu NLĐ thực hiện biện pháp bảo đảm bằng tiền hoặc tài sản khác.\n3. Buộc NLĐ thực hiện HĐLĐ để trả nợ cho NSDLĐ.",
+      "ref": "Điều 17 BLLĐ 2019"
+    },
+    {
+      "id": "hd-07",
+      "front": "NLĐ và NSDLĐ có nghĩa vụ cung cấp thông tin gì cho nhau khi giao kết HĐLĐ?",
+      "back": "• NSDLĐ: công việc, địa điểm, điều kiện làm việc, thời giờ làm việc – nghỉ ngơi, an toàn vệ sinh lao động, tiền lương, hình thức trả lương, BHXH, BHYT, BHTN, quy định bảo vệ bí mật kinh doanh…\n• NLĐ: họ tên, ngày sinh, giới tính, nơi cư trú, trình độ, kỹ năng nghề, xác nhận tình trạng sức khoẻ và vấn đề khác liên quan trực tiếp mà NSDLĐ yêu cầu.\n(Cung cấp thông tin không trung thực có thể là căn cứ đơn phương chấm dứt.)",
+      "ref": "Điều 16 BLLĐ 2019"
+    },
+    {
+      "id": "hd-08",
+      "front": "Phụ lục HĐLĐ có được dùng để sửa đổi thời hạn của HĐLĐ không?",
+      "back": "Không. Phụ lục HĐLĐ không được sửa đổi thời hạn của HĐLĐ. Phụ lục dùng để quy định chi tiết, sửa đổi, bổ sung một số điều khoản; nếu phụ lục có nội dung trái với HĐ thì phụ lục không có hiệu lực ở phần đó (trừ khi hai bên thoả thuận khác).",
+      "ref": "Điều 22 BLLĐ 2019"
+    },
+    {
+      "id": "hd-09",
+      "front": "Khi cần sửa đổi, bổ sung nội dung HĐLĐ, bên đề xuất phải báo trước tối thiểu bao lâu?",
+      "back": "Ít nhất 03 ngày làm việc về nội dung cần sửa đổi, bổ sung. Nếu thống nhất → ký phụ lục hoặc ký HĐ mới; không thống nhất → tiếp tục thực hiện HĐ đã giao kết.",
+      "ref": "Điều 33 BLLĐ 2019"
+    },
+    {
+      "id": "hd-10",
+      "front": "NSDLĐ chuyển NLĐ làm công việc khác so với HĐLĐ (do nhu cầu đột xuất) tối đa bao lâu nếu NLĐ không đồng ý? Lương được hưởng?",
+      "back": "• Không quá 60 ngày làm việc cộng dồn trong 01 năm; quá thời hạn phải được NLĐ đồng ý bằng văn bản.\n• Báo trước ít nhất 03 ngày làm việc.\n• Lương công việc mới ít nhất bằng 85% lương công việc cũ nhưng không thấp hơn lương tối thiểu; được giữ nguyên lương cũ trong 30 ngày làm việc đầu.",
+      "ref": "Điều 29 BLLĐ 2019"
+    }
+  ]
+}

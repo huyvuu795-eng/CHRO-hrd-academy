@@ -1,0 +1,67 @@
+{
+  "topic": { "id": "thoi-gio", "name": "Thời giờ làm việc – nghỉ ngơi", "order": 3 },
+  "cards": [
+    {
+      "id": "tg-01",
+      "front": "Giới hạn thời giờ làm việc bình thường?",
+      "back": "• Không quá 08 giờ/ngày và 48 giờ/tuần.\n• Nếu quy định theo tuần: không quá 10 giờ/ngày và không quá 48 giờ/tuần.\n• Nhà nước khuyến khích tuần làm việc 40 giờ.",
+      "ref": "Điều 105 BLLĐ 2019"
+    },
+    {
+      "id": "tg-02",
+      "front": "Giờ làm việc ban đêm được tính từ mấy giờ đến mấy giờ?",
+      "back": "Từ 22 giờ đến 06 giờ sáng ngày hôm sau.",
+      "ref": "Điều 106 BLLĐ 2019"
+    },
+    {
+      "id": "tg-03",
+      "front": "Điều kiện để tổ chức làm thêm giờ và giới hạn số giờ làm thêm?",
+      "back": "• Phải được NLĐ đồng ý.\n• Không quá 50% số giờ làm việc bình thường trong 01 ngày; nếu làm theo tuần thì tổng giờ bình thường + làm thêm không quá 12 giờ/ngày.\n• Không quá 40 giờ/tháng.\n• Không quá 200 giờ/năm (một số ngành, nghề được tới 300 giờ/năm).",
+      "ref": "Khoản 2 Điều 107 BLLĐ 2019"
+    },
+    {
+      "id": "tg-04",
+      "front": "Những ngành/trường hợp nào được làm thêm tối đa 300 giờ/năm?",
+      "back": "Ví dụ: sản xuất, gia công xuất khẩu hàng dệt, may, da, giày, điện, điện tử, chế biến nông lâm thuỷ sản; sản xuất, cung cấp điện, viễn thông, cấp thoát nước; công việc đòi hỏi lao động chuyên môn cao mà thị trường không cung ứng kịp; công việc cấp bách do tính thời vụ, nguyên vật liệu… NSDLĐ phải thông báo cho cơ quan chuyên môn về lao động.\n⚠️ Danh mục chi tiết và thủ tục thông báo do nghị định hướng dẫn — cần kiểm tra lại văn bản gốc.",
+      "ref": "Khoản 3 Điều 107 BLLĐ 2019",
+      "verify": true
+    },
+    {
+      "id": "tg-05",
+      "front": "Thời gian nghỉ giữa giờ tối thiểu?",
+      "back": "• Làm việc từ 06 giờ trở lên/ngày (theo khoản 1 Điều 109): nghỉ giữa giờ ít nhất 30 phút liên tục.\n• Làm việc ban đêm: ít nhất 45 phút liên tục.",
+      "ref": "Điều 109 BLLĐ 2019"
+    },
+    {
+      "id": "tg-06",
+      "front": "Nghỉ hằng tuần tối thiểu bao nhiêu?",
+      "back": "Mỗi tuần ít nhất 24 giờ liên tục. Trường hợp đặc biệt do chu kỳ lao động không thể nghỉ hằng tuần thì phải bảo đảm bình quân 01 tháng ít nhất 04 ngày.",
+      "ref": "Khoản 1 Điều 111 BLLĐ 2019"
+    },
+    {
+      "id": "tg-07",
+      "front": "Nghỉ lễ, tết có hưởng nguyên lương gồm những ngày nào (tổng 11 ngày)?",
+      "back": "• Tết Dương lịch: 01 ngày (1/1)\n• Tết Âm lịch: 05 ngày\n• Ngày Chiến thắng: 01 ngày (30/4)\n• Quốc tế lao động: 01 ngày (1/5)\n• Quốc khánh: 02 ngày (2/9 và 01 ngày liền kề trước hoặc sau)\n• Giỗ Tổ Hùng Vương: 01 ngày (10/3 âm lịch)\nNLĐ nước ngoài được nghỉ thêm 1 ngày Tết cổ truyền + 1 ngày Quốc khánh nước họ.\n⚠️ Số ngày nghỉ lễ có thể được điều chỉnh bởi văn bản mới — cần kiểm tra lại văn bản gốc.",
+      "ref": "Điều 112 BLLĐ 2019",
+      "verify": true
+    },
+    {
+      "id": "tg-08",
+      "front": "Số ngày nghỉ hằng năm (phép năm) theo điều kiện làm việc?",
+      "back": "Làm đủ 12 tháng cho một NSDLĐ:\n• 12 ngày: điều kiện bình thường.\n• 14 ngày: NLĐ chưa thành niên, NLĐ khuyết tật, nghề nặng nhọc, độc hại, nguy hiểm.\n• 16 ngày: nghề đặc biệt nặng nhọc, độc hại, nguy hiểm.\nLàm chưa đủ 12 tháng → tính theo tỷ lệ số tháng làm việc.",
+      "ref": "Khoản 1, 2 Điều 113 BLLĐ 2019"
+    },
+    {
+      "id": "tg-09",
+      "front": "Phép năm tăng theo thâm niên thế nào? Nghỉ việc chưa nghỉ hết phép thì sao?",
+      "back": "• Cứ đủ 05 năm làm việc cho một NSDLĐ thì được tăng thêm 01 ngày phép năm.\n• Thôi việc, mất việc mà chưa nghỉ hằng năm hoặc chưa nghỉ hết → được NSDLĐ thanh toán tiền lương cho những ngày chưa nghỉ.",
+      "ref": "Điều 114; khoản 3 Điều 113 BLLĐ 2019"
+    },
+    {
+      "id": "tg-10",
+      "front": "Nghỉ việc riêng có hưởng nguyên lương trong những trường hợp nào?",
+      "back": "• Kết hôn: 03 ngày.\n• Con đẻ, con nuôi kết hôn: 01 ngày.\n• Cha đẻ, mẹ đẻ, cha nuôi, mẹ nuôi; cha/mẹ đẻ, cha/mẹ nuôi của vợ hoặc chồng; vợ hoặc chồng; con đẻ, con nuôi chết: 03 ngày.\n(Nghỉ không lương 01 ngày khi ông bà, anh chị em ruột chết; cha/mẹ kết hôn; anh chị em ruột kết hôn — phải thông báo NSDLĐ.)",
+      "ref": "Điều 115 BLLĐ 2019"
+    }
+  ]
+}

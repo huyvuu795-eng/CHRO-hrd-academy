@@ -1,0 +1,49 @@
+{
+  "topic": { "id": "lao-dong-nu", "name": "Lao động nữ & bình đẳng giới", "order": 8 },
+  "cards": [
+    {
+      "id": "nu-01",
+      "front": "Thời gian nghỉ thai sản khi sinh con của lao động nữ?",
+      "back": "Nghỉ trước và sau khi sinh con là 06 tháng; thời gian nghỉ trước khi sinh không quá 02 tháng. Sinh đôi trở lên: từ con thứ 2 trở đi, mỗi con được nghỉ thêm 01 tháng.\nHết thời gian nghỉ, nếu có nhu cầu có thể nghỉ thêm không hưởng lương theo thoả thuận.",
+      "ref": "Khoản 1, 3 Điều 139 BLLĐ 2019"
+    },
+    {
+      "id": "nu-02",
+      "front": "Lao động nữ mang thai/nuôi con nhỏ được bảo vệ thế nào về làm đêm, làm thêm giờ, đi công tác xa?",
+      "back": "NSDLĐ không được sử dụng lao động nữ làm việc ban đêm, làm thêm giờ, đi công tác xa khi: mang thai từ tháng thứ 07 (hoặc từ tháng thứ 06 nếu làm việc ở vùng cao, vùng sâu, vùng xa, biên giới, hải đảo); đang nuôi con dưới 12 tháng tuổi — trừ trường hợp NLĐ đồng ý.",
+      "ref": "Khoản 1 Điều 137 BLLĐ 2019"
+    },
+    {
+      "id": "nu-03",
+      "front": "NSDLĐ có được chấm dứt HĐLĐ với lao động nữ vì lý do kết hôn, mang thai không?",
+      "back": "Không. NSDLĐ không được sa thải hoặc đơn phương chấm dứt HĐLĐ với NLĐ vì lý do kết hôn, mang thai, nghỉ thai sản, nuôi con dưới 12 tháng tuổi (trừ trường hợp NSDLĐ là cá nhân chết, bị tuyên bố mất năng lực hành vi dân sự…, hoặc NSDLĐ không phải cá nhân chấm dứt hoạt động).\nNếu HĐLĐ hết hạn trong thời gian mang thai/nuôi con dưới 12 tháng tuổi → được ưu tiên giao kết HĐLĐ mới.",
+      "ref": "Khoản 3 Điều 137 BLLĐ 2019"
+    },
+    {
+      "id": "nu-04",
+      "front": "Lao động nữ trong kỳ kinh nguyệt và nuôi con dưới 12 tháng tuổi được nghỉ bao nhiêu mỗi ngày?",
+      "back": "• Trong kỳ kinh nguyệt: nghỉ 30 phút mỗi ngày.\n• Nuôi con dưới 12 tháng tuổi: nghỉ 60 phút mỗi ngày trong thời gian làm việc.\nĐều được hưởng đủ tiền lương theo HĐLĐ.\n⚠️ Số ngày tối thiểu trong kỳ kinh nguyệt được hưởng và cách thông báo do nghị định hướng dẫn — cần kiểm tra lại văn bản gốc.",
+      "ref": "Khoản 4 Điều 137 BLLĐ 2019",
+      "verify": true
+    },
+    {
+      "id": "nu-05",
+      "front": "Lao động nữ mang thai có giấy xác nhận của cơ sở y tế rằng tiếp tục làm việc sẽ ảnh hưởng xấu tới thai nhi thì có quyền gì?",
+      "back": "Có quyền đơn phương chấm dứt HĐLĐ hoặc tạm hoãn thực hiện HĐLĐ. Phải thông báo cho NSDLĐ kèm xác nhận của cơ sở khám chữa bệnh có thẩm quyền. Thời gian tạm hoãn do hai bên thoả thuận nhưng tối thiểu bằng thời gian chỉ định tạm nghỉ của cơ sở y tế.",
+      "ref": "Điều 138 BLLĐ 2019"
+    },
+    {
+      "id": "nu-06",
+      "front": "Lao động nam được nghỉ bao nhiêu ngày hưởng chế độ thai sản khi vợ sinh con?",
+      "back": "Theo Luật BHXH 2014 (Điều 34): 05 ngày làm việc (sinh thường); 07 ngày (sinh phẫu thuật, sinh con dưới 32 tuần); 10 ngày (sinh đôi), thêm 03 ngày cho mỗi con từ con thứ 3; 14 ngày (sinh đôi trở lên phải phẫu thuật). Nghỉ trong 30 ngày đầu kể từ ngày vợ sinh.\n⚠️ Luật BHXH 2024 (hiệu lực 01/7/2025) có điều chỉnh cách nghỉ (có thể nghỉ nhiều lần trong 60 ngày) — cần kiểm tra lại văn bản gốc.",
+      "ref": "Điều 34 Luật BHXH 2014; Điều 53 Luật BHXH 2024",
+      "verify": true
+    },
+    {
+      "id": "nu-07",
+      "front": "Quấy rối tình dục tại nơi làm việc được định nghĩa thế nào? Nội quy lao động phải có nội dung gì về vấn đề này?",
+      "back": "Là hành vi có tính chất tình dục của bất kỳ người nào đối với người khác tại nơi làm việc mà không được người đó mong muốn hoặc chấp nhận. Nơi làm việc là bất kỳ nơi nào NLĐ thực tế làm việc theo thoả thuận hoặc phân công.\nNội quy lao động bắt buộc phải có nội dung phòng, chống quấy rối tình dục tại nơi làm việc; trình tự, thủ tục xử lý hành vi quấy rối tình dục.",
+      "ref": "Khoản 9 Điều 3; điểm h khoản 2 Điều 118 BLLĐ 2019"
+    }
+  ]
+}

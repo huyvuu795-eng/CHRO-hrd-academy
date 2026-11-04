@@ -1,0 +1,115 @@
+{
+  "week": 3,
+  "title": "Tuyển dụng dựa trên năng lực & phỏng vấn có cấu trúc",
+  "phase": "Tuyển dụng",
+  "readingMinutes": 13,
+  "objectives": [
+    "Thực hiện phân tích công việc và chọn 4–6 năng lực cốt lõi cho một vị trí",
+    "Viết câu hỏi hành vi theo STAR và câu hỏi đào sâu",
+    "Xây scorecard có thang mô tả hành vi (BARS)",
+    "Nhận diện và hạn chế các thiên kiến phổ biến khi phỏng vấn"
+  ],
+  "lesson": "week-03.md",
+  "daily": {
+    "mon": ["Đọc bài học phần 1–2", "Ôn thẻ luật đến hạn"],
+    "tue": ["Đọc bài học phần 3–5", "Ôn thẻ luật đến hạn"],
+    "wed": ["Phỏng vấn hiring manager 20' về 1 vị trí theo 3 câu hỏi Job Analysis", "Ôn thẻ luật đến hạn"],
+    "thu": ["Bài thực hành 1: bộ câu hỏi + scorecard", "Ôn thẻ luật đến hạn"],
+    "fri": ["Dùng thử scorecard trong 1 buổi phỏng vấn thật", "Ghi lại 1 thiên kiến bạn nhận thấy ở bản thân"],
+    "sat": ["Làm mini test tuần 3", "Bài thực hành 2: debrief template"],
+    "sun": ["Viết nhật ký tuần", "Ôn thẻ luật đến hạn"]
+  },
+  "practice": [
+    {
+      "title": "Xây bộ câu hỏi và scorecard cho một vị trí bạn đang tuyển",
+      "steps": [
+        "Ghi 3–5 kết quả then chốt của vị trí trong 12 tháng (từ buổi gặp hiring manager)",
+        "Chọn 4–6 năng lực, mỗi năng lực 1 câu hỏi hành vi chính + 2 câu đào sâu",
+        "Viết mô tả hành vi cho mức 1, 3, 5 của từng năng lực",
+        "Gửi hiring manager góp ý và chốt phiên bản dùng chung"
+      ],
+      "deliverable": "Scorecard 1 trang (Google Docs/Sheets) dùng được ngay cho cả hội đồng."
+    },
+    {
+      "title": "Thiết kế mẫu biên bản debrief sau phỏng vấn",
+      "steps": [
+        "Tạo form gồm: điểm từng năng lực, bằng chứng (trích câu trả lời), điểm lo ngại, đề xuất",
+        "Quy định thứ tự: mỗi người tự điền trước, sau đó mới họp",
+        "Thêm ô 'Nếu tuyển, cần hỗ trợ gì trong onboarding?'",
+        "Áp dụng thử cho 1 ứng viên"
+      ],
+      "deliverable": "Template debrief + 1 bản đã điền (ẩn danh)."
+    }
+  ],
+  "quiz": {
+    "mcq": [
+      {
+        "q": "Một ứng viên tốt nghiệp trường top, nói chuyện lưu loát; cả hội đồng chấm cao mọi năng lực dù phần case chuyên môn làm trung bình. Đây có thể là thiên kiến nào?",
+        "options": ["Hiệu ứng hào quang (Halo effect)", "Thiên kiến xác nhận ngược", "Hiệu ứng tương phản", "Thiên kiến khan hiếm"],
+        "answer": 0,
+        "explain": "Halo effect: một điểm mạnh nổi bật (trường top, giao tiếp tốt) làm người đánh giá chấm cao cả những năng lực không liên quan."
+      },
+      {
+        "q": "Câu hỏi nào là câu hỏi hành vi (behavioral) đúng nghĩa?",
+        "options": ["Điểm mạnh lớn nhất của bạn là gì?", "Nếu khách hàng giận dữ, bạn sẽ làm gì?", "Kể về lần gần nhất bạn phải xử lý một khách hàng giận dữ mà quy trình không giải quyết được", "Bạn có chịu được áp lực không?"],
+        "answer": 2,
+        "explain": "Câu hỏi hành vi yêu cầu ví dụ cụ thể trong quá khứ. 'Nếu khách hàng giận dữ, bạn sẽ làm gì?' là câu hỏi tình huống (giả định); 'Điểm mạnh lớn nhất' và 'Có chịu được áp lực không' là câu hỏi chung chung, dễ trả lời theo kịch bản."
+      },
+      {
+        "q": "Ứng viên trả lời: 'Chúng tôi đã tăng CSAT từ 82% lên 90%.' Câu đào sâu tốt nhất theo STAR là?",
+        "options": ["Tuyệt vời, câu tiếp theo nhé", "Cụ thể bạn đã tự mình làm những gì để đạt kết quả đó?", "Công ty cũ có thưởng cho bạn không?", "Bạn có thích công ty cũ không?"],
+        "answer": 1,
+        "explain": "Chữ 'chúng tôi' che mất đóng góp cá nhân. Cần làm rõ phần Action của chính ứng viên."
+      },
+      {
+        "q": "Vì sao nên yêu cầu mỗi người phỏng vấn chấm scorecard độc lập trước buổi debrief?",
+        "options": ["Để tiết kiệm thời gian họp", "Để tránh người có chức vụ cao hoặc nói trước ảnh hưởng tới đánh giá của người khác", "Vì luật lao động yêu cầu", "Để recruiter có quyền quyết định cuối"],
+        "answer": 1,
+        "explain": "Chấm độc lập hạn chế hiệu ứng đám đông (groupthink) và ảnh hưởng của cấp bậc, giúp quyết định dựa trên nhiều góc nhìn thật."
+      },
+      {
+        "q": "Bạn đang tuyển CS Team Lead. Bộ năng lực nào hợp lý nhất?",
+        "options": ["12 năng lực để đánh giá toàn diện", "Xử lý khiếu nại phức tạp, huấn luyện đội ngũ, ra quyết định dựa trên dữ liệu, bình tĩnh dưới áp lực", "Chỉ cần 'thái độ tốt'", "Tiếng Anh, Excel, Photoshop, lập trình"],
+        "answer": 1,
+        "explain": "Nên chọn 4–6 năng lực gắn trực tiếp với kết quả then chốt của vị trí. Quá nhiều năng lực làm buổi phỏng vấn hời hợt."
+      },
+      {
+        "q": "Thang chấm BARS khác thang 1–5 thông thường ở điểm nào?",
+        "options": ["BARS dùng thang 1–10", "BARS mô tả hành vi cụ thể cho từng mức điểm", "BARS chỉ dùng cho vị trí quản lý", "BARS không cần ghi bằng chứng"],
+        "answer": 1,
+        "explain": "Behaviorally Anchored Rating Scale gắn mỗi mức điểm với mô tả hành vi quan sát được, giúp các người chấm hiểu '3 điểm' giống nhau."
+      },
+      {
+        "q": "Câu hỏi nào nên LOẠI BỎ khỏi buổi phỏng vấn?",
+        "options": ["Bạn mong muốn phát triển kỹ năng gì trong 2 năm tới?", "Em đã có gia đình chưa, có định sinh con trong 1–2 năm tới không?", "Hãy kể về một dự án bạn tự hào nhất", "Bạn kỳ vọng mức thu nhập bao nhiêu?"],
+        "answer": 1,
+        "explain": "Hỏi về hôn nhân, sinh con dễ dẫn đến phân biệt đối xử vì giới tính, tình trạng hôn nhân, mang thai — bị cấm theo khoản 1 Điều 8 BLLĐ 2019."
+      },
+      {
+        "q": "Quy trình 4 vòng nhưng vòng 2, 3, 4 đều hỏi 'Giới thiệu bản thân và kinh nghiệm'. Vấn đề chính là gì?",
+        "options": ["Quá ít vòng", "Các vòng trùng lặp, không đánh giá năng lực khác nhau, lãng phí thời gian và làm ứng viên mệt", "Thiếu bài test IQ", "Không có vấn đề gì"],
+        "answer": 1,
+        "explain": "Mỗi vòng nên được giao đánh giá những năng lực cụ thể, khác nhau, để tổng hợp được bức tranh đầy đủ."
+      },
+      {
+        "q": "Sau 1 năm, bạn thấy các nhân viên được chấm phỏng vấn 4–5 điểm vẫn trượt thử việc nhiều. Hướng xử lý đúng nhất?",
+        "options": ["Tăng số vòng phỏng vấn", "Rà soát lại năng lực, câu hỏi và scorecard vì chúng có thể chưa đo đúng yếu tố dự báo hiệu suất", "Giảm tiêu chí thử việc", "Bỏ phỏng vấn có cấu trúc"],
+        "answer": 1,
+        "explain": "Đây là bài toán độ hiệu lực dự báo (predictive validity). Phải đối chiếu dữ liệu phỏng vấn với kết quả thực tế để điều chỉnh công cụ."
+      },
+      {
+        "q": "Hiring manager gửi CV ứng viên vào nhóm Zalo cá nhân của team để 'mọi người xem cho vui'. Rủi ro chính?",
+        "options": ["Không có rủi ro", "Vi phạm quy định bảo vệ dữ liệu cá nhân của ứng viên", "Vi phạm luật sở hữu trí tuệ", "Ảnh hưởng tốc độ mạng"],
+        "answer": 1,
+        "explain": "CV chứa dữ liệu cá nhân; chia sẻ ngoài mục đích tuyển dụng, không có sự đồng ý của ứng viên là rủi ro theo quy định bảo vệ dữ liệu cá nhân (NĐ 13/2023/NĐ-CP và các văn bản mới)."
+      }
+    ],
+    "cases": [
+      {
+        "scenario": "Head of Operations muốn tuyển 'Warehouse Supervisor' và nói: 'Anh chỉ cần người chăm chỉ, chịu khó, phỏng vấn 15 phút là anh biết'. 3 supervisor gần nhất đều nghỉ trong 4 tháng.",
+        "question": "Bạn thuyết phục anh ấy chuyển sang phỏng vấn có cấu trúc như thế nào? Đề xuất 4 năng lực và 1 câu hỏi hành vi cho mỗi năng lực.",
+        "guide": "Thuyết phục bằng dữ liệu và chi phí: 3 người nghỉ trong 4 tháng = chi phí tuyển lại, đào tạo, sai sót kho mùa cao điểm. Đề xuất thử nghiệm cho 1 đợt tuyển.\nNăng lực gợi ý:\n• Quản lý ca & phân công (Kể về lần bạn phải xếp lại ca khi thiếu 30% nhân sự)\n• Kiểm soát sai sót/tồn kho (Kể về lần bạn phát hiện chênh lệch tồn kho và cách bạn tìm nguyên nhân)\n• Dẫn dắt đội ngũ lao động phổ thông (Kể về lần bạn phải xử lý một nhân viên đi trễ nhiều lần)\n• Chịu áp lực cao điểm (Kể về đợt cao điểm vất vả nhất và bạn giữ tiến độ thế nào)\nChấm theo BARS, debrief có bằng chứng; theo dõi tỷ lệ ở lại sau 6 tháng."
+      }
+    ]
+  }
+}

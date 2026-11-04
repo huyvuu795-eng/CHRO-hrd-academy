@@ -1,0 +1,117 @@
+{
+  "week": 5,
+  "title": "C&B 1: Gross – Net, bảo hiểm bắt buộc & thuế TNCN",
+  "phase": "C&B",
+  "readingMinutes": 14,
+  "objectives": [
+    "Phân biệt Gross, Net và chi phí công ty",
+    "Tính bảo hiểm bắt buộc phần NLĐ và phần công ty",
+    "Tính thuế TNCN theo phương pháp luỹ tiến từng phần",
+    "Tư vấn ứng viên về lương thực nhận một cách tự tin, đúng rủi ro"
+  ],
+  "lesson": "week-05.md",
+  "daily": {
+    "mon": ["Đọc bài học phần 1–2", "Ôn thẻ luật chủ đề BHXH"],
+    "tue": ["Đọc bài học phần 3–4, tự tính lại ví dụ bằng tay", "Ôn thẻ luật đến hạn"],
+    "wed": ["Tra mức giảm trừ gia cảnh và biểu thuế đang áp dụng trên trang của Tổng cục/Cục Thuế", "Ôn thẻ luật đến hạn"],
+    "thu": ["Bài thực hành 1: máy tính Gross–Net bằng Google Sheets", "Ôn thẻ luật đến hạn"],
+    "fri": ["Bài thực hành 2: so sánh 2 offer", "Hỏi bộ phận C&B 1 câu về cấu trúc lương công ty"],
+    "sat": ["Làm mini test tuần 5", "Ôn thẻ luật chủ đề Tiền lương"],
+    "sun": ["Viết nhật ký tuần", "Export JSON sao lưu"]
+  },
+  "practice": [
+    {
+      "title": "Tự xây máy tính Gross ↔ Net bằng Google Sheets",
+      "steps": [
+        "Tạo ô nhập: Gross, lương đóng bảo hiểm, số người phụ thuộc, các khoản miễn thuế",
+        "Tạo bảng tham số riêng (tỷ lệ bảo hiểm, giảm trừ, biểu thuế) để dễ cập nhật khi luật đổi",
+        "Viết công thức tính bảo hiểm NLĐ, thu nhập tính thuế, thuế luỹ tiến (gợi ý: dùng bảng bậc + SUMPRODUCT)",
+        "Kiểm tra bằng ví dụ trong bài: Gross 25tr → Net 21.937.500đ",
+        "Bổ sung cột 'Chi phí công ty'"
+      ],
+      "deliverable": "File Sheets dùng được khi tư vấn ứng viên; ghi rõ ngày cập nhật tham số."
+    },
+    {
+      "title": "So sánh hai offer cho một ứng viên đang phân vân",
+      "context": "Offer A: Gross 22tr, lương tháng 13, bảo hiểm trên toàn bộ lương. Offer B: lương cơ bản 8tr + phụ cấp cố định 14tr, thưởng KPI tối đa 2 tháng/năm, bảo hiểm chỉ trên lương cơ bản.",
+      "steps": [
+        "Tính Net hằng tháng của từng offer",
+        "Tính tổng thu nhập năm (kịch bản thưởng thấp – trung bình – cao)",
+        "Phân tích quyền lợi dài hạn bị ảnh hưởng khi bảo hiểm đóng trên mức thấp (thai sản, thất nghiệp, hưu trí)",
+        "Viết 5 dòng tư vấn khách quan cho ứng viên"
+      ],
+      "deliverable": "Bảng so sánh + đoạn tư vấn 5 dòng."
+    }
+  ],
+  "quiz": {
+    "mcq": [
+      {
+        "q": "Gross 20.000.000đ, toàn bộ là lương đóng bảo hiểm. Chi phí công ty cho bảo hiểm bắt buộc phần công ty (21,5%) là?",
+        "options": ["2.100.000đ", "4.300.000đ", "6.400.000đ", "3.500.000đ"],
+        "answer": 1,
+        "explain": "20.000.000 × 21,5% = 4.300.000đ. Tổng chi phí công ty = 24.300.000đ."
+      },
+      {
+        "q": "Gross 20.000.000đ, bảo hiểm trên toàn bộ lương, giảm trừ bản thân 15,5tr, không người phụ thuộc. Thu nhập tính thuế là?",
+        "options": ["4.500.000đ", "2.400.000đ", "17.900.000đ", "8.900.000đ"],
+        "answer": 1,
+        "explain": "BH NLĐ = 2.100.000. Thu nhập tính thuế = 20.000.000 − 2.100.000 − 15.500.000 = 2.400.000đ."
+      },
+      {
+        "q": "Với thu nhập tính thuế 2.400.000đ theo biểu 7 bậc, thuế TNCN tháng là?",
+        "options": ["240.000đ", "120.000đ", "360.000đ", "0đ"],
+        "answer": 1,
+        "explain": "2.400.000 thuộc bậc 1 (đến 5tr, 5%): 2.400.000 × 5% = 120.000đ."
+      },
+      {
+        "q": "Thu nhập tính thuế 12.000.000đ. Thuế TNCN theo biểu luỹ tiến từng phần 7 bậc là?",
+        "options": ["1.800.000đ", "1.050.000đ", "1.200.000đ", "600.000đ"],
+        "answer": 1,
+        "explain": "5tr×5% = 250k; 5tr×10% = 500k; 2tr×15% = 300k. Tổng = 1.050.000đ. Đáp án 1.800.000đ là lỗi áp 15% cho toàn bộ thu nhập tính thuế."
+      },
+      {
+        "q": "Lỗi phổ biến nhất khi tính thuế luỹ tiến từng phần là gì?",
+        "options": ["Quên cộng bảo hiểm công ty", "Áp thuế suất của bậc cao nhất cho toàn bộ thu nhập tính thuế", "Trừ giảm trừ gia cảnh hai lần", "Tính thuế trên lương Net"],
+        "answer": 1,
+        "explain": "Luỹ tiến TỪNG PHẦN: mỗi phần thu nhập chịu thuế suất của bậc tương ứng, không phải toàn bộ chịu thuế suất cao nhất."
+      },
+      {
+        "q": "Ứng viên yêu cầu ký HĐ theo lương Net 25 triệu. Rủi ro chính cho công ty là gì?",
+        "options": ["Không có rủi ro", "Công ty gánh toàn bộ phần chênh lệch khi thuế, bảo hiểm, giảm trừ thay đổi", "Vi phạm Điều 17 BLLĐ", "Ứng viên không được đóng BHXH"],
+        "answer": 1,
+        "explain": "Thoả thuận Net nghĩa là công ty cam kết số thực nhận; mọi thay đổi chính sách thuế/bảo hiểm sẽ làm thay đổi chi phí công ty."
+      },
+      {
+        "q": "Công ty trả 'lương cơ bản 6 triệu + phụ cấp trách nhiệm cố định 15 triệu/tháng' và chỉ đóng bảo hiểm trên 6 triệu. Nhận định đúng?",
+        "options": ["Hợp pháp vì phụ cấp không bao giờ phải đóng bảo hiểm", "Rủi ro bị truy thu vì khoản trả thường xuyên, ổn định thường thuộc tiền lương đóng BHXH", "Bắt buộc với mọi startup", "Chỉ rủi ro nếu NLĐ khiếu nại"],
+        "answer": 1,
+        "explain": "Tiền lương tháng đóng BHXH gồm mức lương, phụ cấp lương và khoản bổ sung trả thường xuyên, ổn định. Tách lương để giảm đóng là rủi ro truy thu và xử phạt."
+      },
+      {
+        "q": "Khi trình ngân sách tuyển thêm 10 nhân viên cho Ban Giám đốc, con số nào nên dùng?",
+        "options": ["Tổng lương Net", "Tổng lương Gross", "Tổng chi phí công ty (Gross + bảo hiểm công ty + phúc lợi khác)", "Chỉ lương thử việc"],
+        "answer": 2,
+        "explain": "Ngân sách headcount phản ánh chi phí thật mà doanh nghiệp bỏ ra, gồm cả phần bảo hiểm công ty đóng và phúc lợi."
+      },
+      {
+        "q": "Một nhân viên đăng ký thêm 1 người phụ thuộc. Điều gì thay đổi?",
+        "options": ["Bảo hiểm NLĐ đóng giảm", "Thu nhập tính thuế giảm thêm một khoản giảm trừ cho người phụ thuộc, nên thuế TNCN giảm", "Lương Gross tăng", "Chi phí công ty giảm"],
+        "answer": 1,
+        "explain": "Giảm trừ người phụ thuộc chỉ ảnh hưởng thu nhập tính thuế → thuế TNCN → Net. Gross, bảo hiểm và chi phí công ty không đổi."
+      },
+      {
+        "q": "Vì sao nên đặt các tham số (tỷ lệ bảo hiểm, giảm trừ, biểu thuế) ở một bảng riêng trong file tính lương?",
+        "options": ["Để file đẹp hơn", "Vì các tham số này thay đổi theo văn bản pháp luật; tách riêng giúp cập nhật một chỗ, tránh sai hàng loạt", "Vì Google Sheets bắt buộc", "Để giấu công thức"],
+        "answer": 1,
+        "explain": "Mức giảm trừ, lương tối thiểu, biểu thuế thay đổi theo thời kỳ. Thiết kế tham số hoá giúp file luôn đúng khi luật đổi."
+      }
+    ],
+    "cases": [
+      {
+        "scenario": "Ứng viên Product Manager đang nhận Net 35 triệu ở công ty cũ, đòi 'tăng 20%'. Hiring manager duyệt ngân sách Gross tối đa 45 triệu. Ứng viên có 2 con nhỏ (đã đăng ký người phụ thuộc).",
+        "question": "Bạn sẽ làm gì để biết offer Gross 45 triệu có đáp ứng kỳ vọng không, và trao đổi với ứng viên ra sao?",
+        "guide": "• Làm rõ 'tăng 20%' trên cơ sở nào: Net hay Gross, có tính thưởng/phúc lợi không. Net mục tiêu ≈ 42 triệu.\n• Quy đổi Gross 45tr → Net với 2 người phụ thuộc theo tham số hiện hành (bảo hiểm 10,5% trên lương đóng BH, lưu ý mức trần; giảm trừ 15,5tr + 2×6,2tr). Tự tính bằng máy tính tuần này.\n• Nếu Net thấp hơn kỳ vọng: đề xuất bù bằng thưởng hiệu suất, ESOP, phúc lợi (bảo hiểm sức khoẻ cho con), lộ trình review lương sau 6 tháng.\n• Luôn trình bày bằng Gross trong offer chính thức, kèm bảng ước tính Net có ghi chú 'tạm tính theo quy định hiện hành'."
+      }
+    ]
+  }
+}

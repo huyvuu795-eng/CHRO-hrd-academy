@@ -1,0 +1,72 @@
+{
+  "topic": { "id": "cham-dut", "name": "Chấm dứt HĐLĐ", "order": 6 },
+  "cards": [
+    {
+      "id": "cd-01",
+      "front": "NLĐ đơn phương chấm dứt HĐLĐ phải báo trước bao lâu?",
+      "back": "• HĐLĐ không xác định thời hạn: ít nhất 45 ngày.\n• HĐ xác định thời hạn từ 12–36 tháng: ít nhất 30 ngày.\n• HĐ xác định thời hạn dưới 12 tháng: ít nhất 03 ngày làm việc.\n• Một số ngành nghề đặc thù: theo quy định của Chính phủ.\nNLĐ không cần nêu lý do.",
+      "ref": "Khoản 1 Điều 35 BLLĐ 2019"
+    },
+    {
+      "id": "cd-02",
+      "front": "Những trường hợp NLĐ được nghỉ việc KHÔNG cần báo trước?",
+      "back": "• Không được bố trí đúng công việc, địa điểm, điều kiện làm việc đã thoả thuận (trừ Điều 29).\n• Không được trả đủ lương hoặc trả không đúng hạn (trừ trường hợp bất khả kháng tại khoản 4 Điều 97).\n• Bị ngược đãi, đánh đập, xúc phạm danh dự, cưỡng bức lao động.\n• Bị quấy rối tình dục tại nơi làm việc.\n• Lao động nữ mang thai phải nghỉ việc theo khoản 1 Điều 138.\n• Đủ tuổi nghỉ hưu (trừ khi có thoả thuận khác).\n• NSDLĐ cung cấp thông tin không trung thực ảnh hưởng đến việc thực hiện HĐLĐ.",
+      "ref": "Khoản 2 Điều 35 BLLĐ 2019"
+    },
+    {
+      "id": "cd-03",
+      "front": "Các căn cứ để NSDLĐ đơn phương chấm dứt HĐLĐ (Điều 36)?",
+      "back": "a) NLĐ thường xuyên không hoàn thành công việc theo tiêu chí trong quy chế đánh giá do NSDLĐ ban hành (có tham khảo ý kiến tổ chức đại diện NLĐ).\nb) Ốm đau, tai nạn đã điều trị 12 tháng liên tục (HĐ không xác định), 06 tháng (HĐ 12–36 tháng), quá nửa thời hạn (HĐ dưới 12 tháng) mà chưa hồi phục.\nc) Thiên tai, hoả hoạn, dịch bệnh, di dời theo yêu cầu cơ quan nhà nước… buộc phải giảm chỗ làm việc.\nd) NLĐ không có mặt tại nơi làm việc sau 15 ngày kể từ ngày hết thời hạn tạm hoãn HĐLĐ.\nđ) NLĐ đủ tuổi nghỉ hưu (trừ thoả thuận khác).\ne) Tự ý bỏ việc không lý do chính đáng từ 05 ngày làm việc liên tục trở lên.\ng) NLĐ cung cấp không trung thực thông tin theo khoản 2 Điều 16.",
+      "ref": "Khoản 1 Điều 36 BLLĐ 2019"
+    },
+    {
+      "id": "cd-04",
+      "front": "NSDLĐ đơn phương chấm dứt HĐLĐ phải báo trước bao lâu? Trường hợp nào không cần báo trước?",
+      "back": "• HĐ không xác định thời hạn: ít nhất 45 ngày.\n• HĐ 12–36 tháng: ít nhất 30 ngày.\n• HĐ dưới 12 tháng và trường hợp ốm đau (điểm b khoản 1): ít nhất 03 ngày làm việc.\nKhông cần báo trước: NLĐ không có mặt sau 15 ngày hết tạm hoãn (điểm d) và tự ý bỏ việc từ 5 ngày làm việc liên tục (điểm e).",
+      "ref": "Khoản 2, 3 Điều 36 BLLĐ 2019"
+    },
+    {
+      "id": "cd-05",
+      "front": "Những trường hợp NSDLĐ KHÔNG được đơn phương chấm dứt HĐLĐ?",
+      "back": "1. NLĐ ốm đau, bị TNLĐ, BNN đang điều trị, điều dưỡng theo chỉ định của cơ sở y tế (trừ điểm b khoản 1 Điều 36).\n2. NLĐ đang nghỉ hằng năm, nghỉ việc riêng và trường hợp nghỉ khác được NSDLĐ đồng ý.\n3. Lao động nữ mang thai; NLĐ đang nghỉ thai sản hoặc nuôi con dưới 12 tháng tuổi.",
+      "ref": "Điều 37 BLLĐ 2019"
+    },
+    {
+      "id": "cd-06",
+      "front": "NSDLĐ đơn phương chấm dứt HĐLĐ trái pháp luật phải chịu trách nhiệm gì?",
+      "back": "• Phải nhận NLĐ trở lại làm việc theo HĐ đã giao kết; trả tiền lương, đóng BHXH, BHYT, BHTN trong những ngày NLĐ không được làm việc + ít nhất 02 tháng tiền lương theo HĐLĐ.\n• Vi phạm thời hạn báo trước → trả thêm tiền lương tương ứng những ngày không báo trước.\n• Nếu NLĐ không muốn trở lại → ngoài khoản trên còn trả trợ cấp thôi việc.\n• Nếu NSDLĐ không muốn nhận lại và NLĐ đồng ý → hai bên thoả thuận thêm khoản bồi thường ít nhất bằng 02 tháng lương.",
+      "ref": "Điều 41 BLLĐ 2019"
+    },
+    {
+      "id": "cd-07",
+      "front": "NLĐ đơn phương chấm dứt HĐLĐ trái pháp luật phải chịu trách nhiệm gì?",
+      "back": "• Không được trợ cấp thôi việc.\n• Phải bồi thường cho NSDLĐ nửa tháng tiền lương theo HĐLĐ và một khoản tiền tương ứng với tiền lương những ngày không báo trước.\n• Phải hoàn trả chi phí đào tạo cho NSDLĐ (theo Điều 62).",
+      "ref": "Điều 40 BLLĐ 2019"
+    },
+    {
+      "id": "cd-08",
+      "front": "Điều kiện và mức hưởng trợ cấp thôi việc?",
+      "back": "• Khi HĐLĐ chấm dứt theo một số khoản của Điều 34 (hết hạn, hoàn thành công việc, thoả thuận, đơn phương đúng luật…), NLĐ đã làm việc thường xuyên từ đủ 12 tháng trở lên.\n• Mỗi năm làm việc được trợ cấp nửa tháng tiền lương.\n• Không áp dụng nếu NLĐ đủ điều kiện hưởng lương hưu hoặc tự ý bỏ việc từ 05 ngày làm việc liên tục (điểm e khoản 1 Điều 36).\n• Thời gian tính = tổng thời gian làm việc thực tế trừ thời gian đã tham gia BHTN và thời gian đã được chi trả trợ cấp.\n• Tiền lương tính = bình quân 06 tháng liền kề theo HĐLĐ trước khi nghỉ.",
+      "ref": "Điều 46 BLLĐ 2019"
+    },
+    {
+      "id": "cd-09",
+      "front": "Trợ cấp mất việc làm khác trợ cấp thôi việc thế nào?",
+      "back": "Trợ cấp mất việc làm áp dụng khi NLĐ mất việc do thay đổi cơ cấu, công nghệ, lý do kinh tế (Điều 42) hoặc chia, tách, sáp nhập (Điều 43).\n• Mức: mỗi năm làm việc 01 tháng tiền lương, nhưng ít nhất bằng 02 tháng tiền lương.\n• Cách tính thời gian và tiền lương: tương tự trợ cấp thôi việc (trừ thời gian tham gia BHTN).",
+      "ref": "Điều 47 BLLĐ 2019"
+    },
+    {
+      "id": "cd-10",
+      "front": "Khi chấm dứt HĐLĐ, thời hạn thanh toán các khoản cho NLĐ là bao lâu?",
+      "back": "Trong 14 ngày làm việc kể từ ngày chấm dứt HĐLĐ, hai bên phải thanh toán đầy đủ các khoản liên quan. Có thể kéo dài nhưng không quá 30 ngày trong một số trường hợp (NSDLĐ không phải cá nhân chấm dứt hoạt động; thay đổi cơ cấu, công nghệ, lý do kinh tế; chia, tách, sáp nhập…; thiên tai, hoả hoạn, dịch bệnh…).\nNSDLĐ còn phải hoàn thành thủ tục xác nhận thời gian đóng BHXH, BHTN và trả lại bản chính giấy tờ đã giữ (nếu có).",
+      "ref": "Khoản 1, 3 Điều 48 BLLĐ 2019"
+    },
+    {
+      "id": "cd-11",
+      "front": "NSDLĐ phải thông báo bằng văn bản cho NLĐ về việc HĐLĐ chấm dứt khi nào?",
+      "back": "NSDLĐ phải thông báo bằng văn bản cho NLĐ về việc chấm dứt HĐLĐ khi HĐLĐ chấm dứt theo quy định (trừ một số trường hợp như NLĐ chết, mất tích, NSDLĐ cá nhân chết…). Thông thường áp dụng cả với trường hợp HĐ hết hạn.\n⚠️ Thời hạn báo trước khi HĐ hết hạn được hướng dẫn tại nghị định — cần kiểm tra lại văn bản gốc.",
+      "ref": "Điều 45 BLLĐ 2019",
+      "verify": true
+    }
+  ]
+}

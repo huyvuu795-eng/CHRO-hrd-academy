@@ -1,0 +1,116 @@
+{
+  "week": 6,
+  "title": "C&B 2: Khung lương, đánh giá công việc & benchmark",
+  "phase": "C&B",
+  "readingMinutes": 13,
+  "objectives": [
+    "Giải thích 3 loại công bằng trong trả lương",
+    "Đọc và dựng được một khung lương Min–Mid–Max",
+    "Tính và diễn giải compa-ratio, range penetration",
+    "Dùng dữ liệu tuyển dụng làm nguồn benchmark lương"
+  ],
+  "lesson": "week-06.md",
+  "daily": {
+    "mon": ["Đọc bài học phần 1–3", "Ôn thẻ luật đến hạn"],
+    "tue": ["Đọc bài học phần 4–6", "Ôn thẻ luật đến hạn"],
+    "wed": ["Tìm 2 báo cáo lương công khai năm gần nhất, ghi số liệu 3 vị trí bạn hay tuyển", "Ôn thẻ luật đến hạn"],
+    "thu": ["Bài thực hành 1: bảng benchmark từ dữ liệu ứng viên", "Ôn thẻ luật đến hạn"],
+    "fri": ["Bài thực hành 2: dựng khung lương mini", "Ôn thẻ luật đến hạn"],
+    "sat": ["Làm mini test tuần 6", "Ôn lại công thức compa-ratio"],
+    "sun": ["Viết nhật ký tuần", "Cập nhật tự đánh giá năng lực nếu đã sang tháng mới"]
+  },
+  "practice": [
+    {
+      "title": "Biến dữ liệu tuyển dụng thành bảng benchmark lương",
+      "context": "Chỉ dùng số liệu tổng hợp, không gắn tên ứng viên. Đây là tài sản dữ liệu mà recruiter có lợi thế nhất.",
+      "steps": [
+        "Chọn 3 vị trí có ≥ 8 ứng viên đã trao đổi lương trong 6 tháng qua",
+        "Ghi lương hiện tại và kỳ vọng (quy về Gross), số năm kinh nghiệm, loại công ty cũ",
+        "Tính P25, P50 (trung vị), P75 bằng hàm PERCENTILE hoặc QUARTILE",
+        "So sánh với 1–2 báo cáo lương công khai và với lương nội bộ (nếu được phép xem tổng hợp)"
+      ],
+      "deliverable": "Bảng benchmark 3 vị trí + 3 nhận xét về vị thế lương của công ty."
+    },
+    {
+      "title": "Dựng khung lương mini cho một nhóm vị trí",
+      "steps": [
+        "Chọn 4–5 vị trí trong cùng một phòng ban, chấm điểm theo 4 yếu tố đơn giản",
+        "Nhóm thành 2–3 grade",
+        "Đặt Midpoint theo P50 thị trường từ bài thực hành 1, chọn spread 40–50%",
+        "Tính Min, Max và compa-ratio giả định cho 2–3 nhân viên (dùng số giả định nếu không có quyền xem lương thật)"
+      ],
+      "deliverable": "Bảng khung lương + ghi chú giả định."
+    }
+  ],
+  "quiz": {
+    "mcq": [
+      {
+        "q": "Nhân viên lương 18 triệu, midpoint của grade là 20 triệu. Compa-ratio là?",
+        "options": ["1,11", "0,90", "0,80", "1,00"],
+        "answer": 1,
+        "explain": "Compa-ratio = 18 ÷ 20 = 0,90."
+      },
+      {
+        "q": "Khung lương Min 16tr, Max 24tr. Nhân viên lương 20tr có range penetration là?",
+        "options": ["25%", "50%", "83%", "125%"],
+        "answer": 1,
+        "explain": "(20 − 16) ÷ (24 − 16) = 4 ÷ 8 = 50%."
+      },
+      {
+        "q": "Đánh giá giá trị công việc (Job Evaluation) chủ yếu phục vụ loại công bằng nào?",
+        "options": ["Cạnh tranh bên ngoài", "Công bằng nội bộ", "Công bằng cá nhân", "Công bằng giới"],
+        "answer": 1,
+        "explain": "Job Evaluation xếp hạng công việc theo giá trị nội bộ, làm nền cho việc vị trí giá trị cao hơn được trả cao hơn."
+      },
+      {
+        "q": "Khi benchmark, công ty startup 60 người có chức danh 'Marketing Manager' nhưng thực tế không quản lý ai và làm việc thực thi. Nên so khớp thế nào?",
+        "options": ["So với Marketing Manager ở tập đoàn", "So theo nội dung công việc và cấp độ thực tế, có thể tương đương Senior Executive", "Không thể benchmark", "Lấy trung bình mọi vị trí marketing"],
+        "answer": 1,
+        "explain": "Job matching dựa trên nội dung, phạm vi trách nhiệm và cấp độ, không dựa trên chức danh."
+      },
+      {
+        "q": "Startup giai đoạn đầu chọn trả lương ở P25 thị trường cho phần lớn vị trí. Họ nên bù đắp bằng gì để vẫn thu hút người giỏi?",
+        "options": ["Không cần bù đắp", "ESOP, cơ hội học hỏi nhanh, linh hoạt, lộ trình thăng tiến rõ ràng", "Tăng giờ làm", "Giảm thời gian thử việc xuống 0"],
+        "answer": 1,
+        "explain": "Chiến lược Lag cần một Employee Value Proposition bù đắp bằng phần thưởng phi tiền mặt hoặc dài hạn."
+      },
+      {
+        "q": "Bạn chuẩn bị offer Data Analyst mới 22 triệu; người cũ cùng grade, hiệu suất tốt, đang 18 triệu. Hành động đúng nhất?",
+        "options": ["Offer bình thường, giữ bí mật lương", "Báo HR Manager/C&B, đề xuất điều chỉnh lương thị trường cho người cũ cùng lúc hoặc xem lại offer", "Hạ offer xuống 17 triệu", "Yêu cầu người cũ ký cam kết không hỏi lương"],
+        "answer": 1,
+        "explain": "Đây là salary compression; xử lý chủ động giúp tránh mất người giỏi và giữ công bằng nội bộ."
+      },
+      {
+        "q": "Theo khoản 3 Điều 90 BLLĐ 2019, nguyên tắc nào được quy định rõ?",
+        "options": ["Lương phải công khai cho toàn công ty", "Trả lương bình đẳng, không phân biệt giới tính đối với NLĐ làm công việc có giá trị như nhau", "Lương nữ phải bằng 85% lương nam", "Mọi nhân viên cùng phòng phải bằng lương"],
+        "answer": 1,
+        "explain": "Khoản 3 Điều 90: NSDLĐ phải bảo đảm trả lương bình đẳng, không phân biệt giới tính đối với NLĐ làm công việc có giá trị như nhau."
+      },
+      {
+        "q": "Midpoint của một khung lương thường được neo theo điều gì?",
+        "options": ["Lương tối thiểu vùng", "Mức thị trường mục tiêu theo chiến lược trả lương (vd P50)", "Lương của CEO", "Lương trung bình toàn công ty"],
+        "answer": 1,
+        "explain": "Midpoint thường phản ánh mức thị trường mục tiêu cho người làm tốt hoàn toàn công việc."
+      },
+      {
+        "q": "Một nhân viên đã chạm Max của grade nhưng hiệu suất vẫn xuất sắc. Hướng xử lý hợp lý?",
+        "options": ["Tiếp tục tăng lương vượt Max mỗi năm", "Xem xét thăng grade, mở rộng trách nhiệm, hoặc dùng thưởng một lần thay vì tăng lương cố định", "Giảm lương", "Không làm gì"],
+        "answer": 1,
+        "explain": "Max là trần của grade; giữ người giỏi bằng lộ trình thăng tiến hoặc thưởng biến đổi thay vì phá khung."
+      },
+      {
+        "q": "Bạn có lương kỳ vọng của 12 ứng viên Data Analyst. Chỉ số nào phù hợp nhất để đại diện 'mức thị trường điển hình' khi có vài giá trị rất cao bất thường?",
+        "options": ["Trung bình cộng", "Trung vị (P50)", "Giá trị lớn nhất", "Giá trị nhỏ nhất"],
+        "answer": 1,
+        "explain": "Trung vị ít bị ảnh hưởng bởi giá trị ngoại lai hơn trung bình cộng, nên được dùng phổ biến trong khảo sát lương."
+      }
+    ],
+    "cases": [
+      {
+        "scenario": "Công ty e-commerce 150 người chưa có khung lương. Lương do từng trưởng phòng tự đề xuất khi tuyển. Kết quả: 2 CS Team Lead cùng việc chênh nhau 6 triệu; nhân viên nữ phòng Marketing phản ánh lương thấp hơn đồng nghiệp nam cùng vị trí.",
+        "question": "Đề xuất kế hoạch 3 bước (trong 3 tháng) để xây khung lương cơ bản và xử lý hai vấn đề trên.",
+        "guide": "Bước 1 (tháng 1): Chuẩn hoá danh mục vị trí, viết JD tối thiểu, đánh giá giá trị công việc đơn giản (point-factor 4–5 yếu tố) → grade.\nBước 2 (tháng 2): Benchmark (báo cáo lương + dữ liệu tuyển dụng), chọn vị thế P50 cho đa số, Lead cho vị trí khan hiếm; dựng Min–Mid–Max.\nBước 3 (tháng 3): Đặt toàn bộ nhân viên vào khung, tính compa-ratio; rà soát chênh lệch theo giới tính ở cùng grade + hiệu suất (Điều 90 khoản 3); lập ngân sách điều chỉnh ưu tiên người dưới Min và chênh lệch không giải thích được.\nNguyên tắc: quy trình phê duyệt offer phải kiểm tra khung; truyền thông minh bạch về nguyên tắc (không nhất thiết công khai số)."
+      }
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "week": 9,
+  "title": "Quản lý hiệu suất: KPI, OKR & phản hồi",
+  "phase": "Hiệu suất",
+  "readingMinutes": 13,
+  "objectives": [
+    "Phân biệt đánh giá hiệu suất với quản lý hiệu suất",
+    "Viết mục tiêu SMART, KPI và OKR cho vị trí thực tế",
+    "Đưa phản hồi theo mô hình SBI",
+    "Hiểu điều kiện pháp lý khi chấm dứt HĐLĐ vì không hoàn thành công việc"
+  ],
+  "lesson": "week-09.md",
+  "daily": {
+    "mon": ["Đọc bài học phần 1–2", "Ôn thẻ luật đến hạn"],
+    "tue": ["Đọc bài học phần 3–6", "Ôn thẻ luật chủ đề Chấm dứt HĐLĐ"],
+    "wed": ["Xin xem quy chế/biểu mẫu đánh giá hiệu suất hiện tại của công ty", "Ôn thẻ luật đến hạn"],
+    "thu": ["Bài thực hành 1: viết KPI/OKR cho chính bạn", "Ôn thẻ luật đến hạn"],
+    "fri": ["Bài thực hành 2: 3 phản hồi SBI", "Ôn thẻ luật đến hạn"],
+    "sat": ["Làm mini test tuần 9", "Ôn lại câu sai"],
+    "sun": ["Viết nhật ký tuần", "Export JSON sao lưu"]
+  },
+  "practice": [
+    {
+      "title": "Viết bộ mục tiêu quý cho chính vị trí Recruiter của bạn",
+      "steps": [
+        "Viết 1 Objective gắn với mục tiêu kinh doanh quý tới (vd mùa sale, mở kho)",
+        "Viết 3 Key Results đo được, có baseline và target",
+        "Viết 4 KPI thường xuyên (tốc độ, chất lượng, trải nghiệm, hiệu quả)",
+        "Kiểm tra từng mục theo SMART; mang đi thảo luận 1:1 với quản lý"
+      ],
+      "deliverable": "Bảng mục tiêu quý được quản lý góp ý/đồng ý."
+    },
+    {
+      "title": "Luyện phản hồi SBI",
+      "steps": [
+        "Chọn 2 tình huống ghi nhận và 1 tình huống góp ý với hiring manager hoặc đồng nghiệp trong tuần",
+        "Viết nháp theo S – B – I, loại bỏ từ ngữ phán xét",
+        "Thực hiện ít nhất 1 phản hồi trực tiếp",
+        "Ghi lại phản ứng của người nhận và điều bạn sẽ làm khác lần sau"
+      ],
+      "deliverable": "3 câu SBI + 5 dòng tự rút kinh nghiệm."
+    }
+  ],
+  "quiz": {
+    "mcq": [
+      {
+        "q": "Mục tiêu nào đạt chuẩn SMART nhất?",
+        "options": ["Cải thiện chất lượng tuyển dụng", "Tuyển nhanh hơn trong năm nay", "Đến 31/3, tăng tỷ lệ nhân viên kho qua thử việc từ 60% lên 75%", "Cố gắng hết sức để đạt KPI"],
+        "answer": 2,
+        "explain": "Có thời hạn (31/3), đo được (60% → 75%), cụ thể (nhân viên kho, qua thử việc)."
+      },
+      {
+        "q": "Công ty gắn 100% thưởng quý với mức đạt OKR. Hệ quả dễ xảy ra nhất?",
+        "options": ["Nhân viên đặt mục tiêu tham vọng hơn", "Nhân viên đặt OKR an toàn, dễ đạt để nhận thưởng", "OKR trở nên chính xác hơn", "Không ảnh hưởng gì"],
+        "answer": 1,
+        "explain": "OKR được thiết kế để tham vọng (đạt ~70% là tốt). Gắn chặt với thưởng triệt tiêu tính tham vọng đó."
+      },
+      {
+        "q": "Câu phản hồi nào đúng mô hình SBI?",
+        "options": ["Em làm việc rất cẩu thả", "Trong báo cáo tuyển dụng gửi chiều thứ Sáu, bảng chi phí bị lệch số so với dữ liệu gốc, nên anh Giám đốc phải hỏi lại 2 lần trong cuộc họp", "Em nên chuyên nghiệp hơn", "Mọi người phàn nàn về em"],
+        "answer": 1,
+        "explain": "Có tình huống (báo cáo chiều thứ Sáu), hành vi quan sát được (bảng chi phí lệch số), tác động (giám đốc phải hỏi lại). Các câu khác phán xét con người hoặc mơ hồ."
+      },
+      {
+        "q": "Quản lý chấm cả 8 nhân viên đều 3/5 'cho an toàn'. Đây là lỗi gì?",
+        "options": ["Hiệu ứng gần đây", "Xu hướng trung bình (central tendency)", "Hiệu ứng hào quang", "Nghiêm khắc"],
+        "answer": 1,
+        "explain": "Central tendency: tránh mức cao/thấp, làm mất khả năng phân biệt người hiệu suất cao và thấp."
+      },
+      {
+        "q": "Mục đích chính của buổi họp hiệu chỉnh (calibration)?",
+        "options": ["Để HR quyết định điểm thay quản lý", "Để các quản lý so sánh và thống nhất tiêu chuẩn đánh giá, giảm thiên kiến cá nhân", "Để cắt giảm ngân sách thưởng", "Để công bố điểm cho toàn công ty"],
+        "answer": 1,
+        "explain": "Calibration giúp các quản lý dùng chung một 'thước đo', giảm hiện tượng quản lý dễ/khó tính."
+      },
+      {
+        "q": "Công ty muốn đơn phương chấm dứt HĐLĐ với nhân viên vì 'thường xuyên không hoàn thành công việc'. Điều kiện quan trọng nhất cần có theo điểm a khoản 1 Điều 36?",
+        "options": ["Ý kiến của toàn thể phòng ban", "Quy chế đánh giá mức độ hoàn thành công việc do NSDLĐ ban hành (có tham khảo tổ chức đại diện NLĐ nếu có) và căn cứ đánh giá theo quy chế đó", "Chỉ cần quản lý trực tiếp xác nhận bằng lời", "Nhân viên phải bị kỷ luật khiển trách trước"],
+        "answer": 1,
+        "explain": "Điểm a khoản 1 Điều 36: tiêu chí đánh giá phải nằm trong quy chế của NSDLĐ; quy chế ban hành sau khi tham khảo ý kiến tổ chức đại diện NLĐ tại cơ sở (nếu có)."
+      },
+      {
+        "q": "Trong ma trận tăng lương theo hiệu suất (merit matrix), ai thường được tăng tỷ lệ cao nhất?",
+        "options": ["Hiệu suất cao, compa-ratio cao", "Hiệu suất cao, compa-ratio thấp", "Hiệu suất thấp, compa-ratio thấp", "Thâm niên lâu nhất"],
+        "answer": 1,
+        "explain": "Người giỏi nhưng đang được trả thấp so với midpoint là rủi ro nghỉ việc lớn nhất và cần được điều chỉnh mạnh nhất."
+      },
+      {
+        "q": "Buổi 1:1 hiệu quả nhất nên được thiết kế thế nào?",
+        "options": ["Nhân viên báo cáo tiến độ cho quản lý ghi chép", "Là thời gian của nhân viên: thảo luận vướng mắc, phát triển, quản lý hỗ trợ", "Chỉ tổ chức khi có vấn đề", "Thay thế hoàn toàn đánh giá cuối năm"],
+        "answer": 1,
+        "explain": "1:1 là công cụ phản hồi liên tục; tập trung vào nhu cầu và sự phát triển của nhân viên."
+      },
+      {
+        "q": "Mục đích đúng đắn nhất của một PIP (Performance Improvement Plan)?",
+        "options": ["Thủ tục để sa thải nhanh", "Giúp nhân viên cải thiện với mục tiêu và hỗ trợ cụ thể, đồng thời tạo hồ sơ minh bạch", "Phạt tiền nhân viên", "Thay cho hợp đồng lao động"],
+        "answer": 1,
+        "explain": "PIP chân thành hướng đến cải thiện; nếu dùng như 'thủ tục sa thải' sẽ làm mất niềm tin và dễ bị coi là hình thức."
+      },
+      {
+        "q": "Chỉ số nào phù hợp làm KPI cho nhân viên CS hơn là OKR?",
+        "options": ["Ra mắt kênh hỗ trợ qua chatbot trong quý", "Thời gian phản hồi lần đầu ≤ 2 giờ (duy trì hằng tháng)", "Xây dựng văn hoá dịch vụ xuất sắc", "Thiết kế lại toàn bộ quy trình đổi trả"],
+        "answer": 1,
+        "explain": "KPI đo hiệu suất công việc thường xuyên và ổn định; các lựa chọn khác mang tính dự án/thay đổi phù hợp với OKR."
+      }
+    ],
+    "cases": [
+      {
+        "scenario": "Trưởng phòng Kinh doanh muốn cho nghỉ một nhân viên sales 'vì không đạt doanh số 3 tháng liền'. Công ty chưa có quy chế đánh giá hiệu suất bằng văn bản; chỉ tiêu được giao qua tin nhắn; nhân viên đang có HĐLĐ không xác định thời hạn và vợ vừa sinh con.",
+        "question": "Bạn tư vấn trưởng phòng thế nào về rủi ro pháp lý và lộ trình xử lý đúng?",
+        "guide": "Rủi ro:\n• Không có quy chế đánh giá → khó dùng điểm a khoản 1 Điều 36; dễ bị coi là đơn phương chấm dứt trái luật → hậu quả Điều 41 (nhận lại, trả lương những ngày không được làm, ít nhất 2 tháng lương…).\n• Chỉ tiêu qua tin nhắn thiếu tính chính thức.\n• Vợ sinh con không thuộc trường hợp cấm tại Điều 37 (áp dụng với lao động nữ mang thai/nghỉ thai sản/nuôi con dưới 12 tháng là NLĐ), nhưng cần cân nhắc yếu tố con người.\nLộ trình:\n1. Ban hành quy chế đánh giá (tham khảo tổ chức đại diện NLĐ nếu có).\n2. Giao chỉ tiêu bằng văn bản, check-in định kỳ, xác định nguyên nhân (thị trường, kỹ năng, hỗ trợ).\n3. PIP 60 ngày với hỗ trợ cụ thể.\n4. Nếu vẫn không đạt theo quy chế → đơn phương chấm dứt với báo trước 45 ngày, hoặc thoả thuận chấm dứt (khoản 3 Điều 34) với gói hỗ trợ."
+      }
+    ]
+  }
+}

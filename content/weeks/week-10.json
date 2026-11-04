@@ -1,0 +1,116 @@
+{
+  "week": 10,
+  "title": "Đào tạo & Phát triển (L&D): TNA, ADDIE, Kirkpatrick",
+  "phase": "L&D",
+  "readingMinutes": 13,
+  "objectives": [
+    "Phân tích nhu cầu đào tạo 3 cấp và phân biệt vấn đề đào tạo với vấn đề khác",
+    "Viết mục tiêu học tập bằng động từ đo được",
+    "Thiết kế chương trình theo ADDIE và đo lường theo Kirkpatrick",
+    "Nắm quy định về hợp đồng đào tạo (Điều 62)"
+  ],
+  "lesson": "week-10.md",
+  "daily": {
+    "mon": ["Đọc bài học phần 1–2", "Ôn thẻ luật đến hạn"],
+    "tue": ["Đọc bài học phần 3–6", "Ôn thẻ luật đến hạn"],
+    "wed": ["Phỏng vấn 1 quản lý: 'Kỹ năng nào team anh/chị thiếu nhất ảnh hưởng đến kết quả?'", "Ôn thẻ luật đến hạn"],
+    "thu": ["Bài thực hành 1: TNA mini", "Ôn thẻ luật đến hạn"],
+    "fri": ["Bài thực hành 2: thiết kế workshop 60 phút", "Ôn thẻ luật đến hạn"],
+    "sat": ["Làm mini test tuần 10", "Ôn lại câu sai"],
+    "sun": ["Viết nhật ký tuần", "Export JSON sao lưu"]
+  },
+  "practice": [
+    {
+      "title": "TNA mini cho một vấn đề hiệu suất có thật",
+      "steps": [
+        "Chọn một vấn đề quản lý từng than phiền (vd quản lý phỏng vấn kém, CS xử lý khiếu nại chậm)",
+        "Thu thập dữ liệu: 2 cuộc phỏng vấn ngắn + số liệu sẵn có",
+        "Phân loại nguyên nhân: kiến thức/kỹ năng – quy trình – công cụ – động lực/đãi ngộ",
+        "Kết luận: phần nào giải quyết bằng đào tạo, phần nào cần giải pháp khác"
+      ],
+      "deliverable": "Báo cáo TNA 1 trang với bảng phân loại nguyên nhân."
+    },
+    {
+      "title": "Thiết kế workshop 60 phút 'Phỏng vấn có cấu trúc cho quản lý tuyến đầu'",
+      "context": "Tận dụng scorecard bạn làm ở tuần 3. Đây là cách recruiter tạo ảnh hưởng vượt ra ngoài công việc tuyển dụng.",
+      "steps": [
+        "Viết 3 mục tiêu học tập với động từ đo được",
+        "Lên agenda: 10' vì sao, 15' STAR + scorecard, 25' thực hành đóng vai theo cặp, 10' cam kết áp dụng",
+        "Thiết kế đo lường cấp 1, 2, 3 (cấp 3: kiểm tra scorecard sau 1 tháng)",
+        "Đề xuất với quản lý để tổ chức thử 1 buổi"
+      ],
+      "deliverable": "Agenda + slide khung (≤ 8 slide) + phiếu đánh giá."
+    }
+  ],
+  "quiz": {
+    "mcq": [
+      {
+        "q": "CSAT đội CS giảm. Phân tích cho thấy nhân viên biết cách xử lý nhưng phải chờ cấp trên duyệt đổi trả 48 giờ. Giải pháp phù hợp nhất?",
+        "options": ["Mở khoá kỹ năng giao tiếp", "Điều chỉnh quy trình phân quyền xử lý đổi trả", "Tăng KPI CSAT", "Tuyển thêm nhân viên CS"],
+        "answer": 1,
+        "explain": "Đây là vấn đề quy trình, không phải thiếu kỹ năng. TNA giúp tránh lãng phí ngân sách vào đào tạo không giải quyết nguyên nhân gốc."
+      },
+      {
+        "q": "Mục tiêu học tập nào được viết tốt nhất?",
+        "options": ["Học viên hiểu về OKR", "Học viên nắm được phương pháp SBI", "Sau buổi học, quản lý viết được 3 OKR đạt chuẩn SMART cho đội của mình", "Học viên biết tầm quan trọng của phản hồi"],
+        "answer": 2,
+        "explain": "Dùng động từ hành động đo được ('viết được') và tiêu chí rõ ('3 OKR đạt chuẩn SMART')."
+      },
+      {
+        "q": "3 tháng sau khoá phỏng vấn, HR kiểm tra thấy 85% buổi phỏng vấn có scorecard đầy đủ. Đây là đo lường cấp nào của Kirkpatrick?",
+        "options": ["Cấp 1 – Phản ứng", "Cấp 2 – Học tập", "Cấp 3 – Hành vi", "Cấp 4 – Kết quả"],
+        "answer": 2,
+        "explain": "Cấp 3 đo việc áp dụng hành vi mới vào công việc thực tế."
+      },
+      {
+        "q": "Theo mô hình 70-20-10, hoạt động nào thuộc nhóm '70'?",
+        "options": ["Tham gia khoá học online về C&B", "Được giao tự xây khung lương mini cho một phòng ban dưới sự hướng dẫn của HR Manager", "Đọc sách quản trị nhân sự", "Nghe podcast HR"],
+        "answer": 1,
+        "explain": "Nhóm 70 là học qua trải nghiệm thực tế, nhận việc mới, giải quyết vấn đề thật."
+      },
+      {
+        "q": "Bước nào trong ADDIE nên xác định cách đo lường cấp 3–4?",
+        "options": ["Chỉ ở bước Evaluation cuối cùng", "Ngay từ Analysis/Design", "Implementation", "Không cần xác định"],
+        "answer": 1,
+        "explain": "Muốn đo được thay đổi hành vi và kết quả kinh doanh, phải xác định baseline và chỉ số từ đầu."
+      },
+      {
+        "q": "Theo nguyên tắc học tập của người trưởng thành, thiết kế nào hiệu quả nhất cho khoá đào tạo quản lý cấp trung?",
+        "options": ["90 phút giảng lý thuyết liên tục", "Dựa trên tình huống thật của học viên, nhiều thực hành, áp dụng được ngay", "Học thuộc định nghĩa và làm bài kiểm tra trắc nghiệm", "Xem video dài 2 giờ"],
+        "answer": 1,
+        "explain": "Người lớn học tốt khi nội dung giải quyết vấn đề thật, tận dụng kinh nghiệm và áp dụng ngay."
+      },
+      {
+        "q": "Công ty chi 60 triệu cho nhân viên học chứng chỉ quốc tế, muốn nhân viên cam kết làm việc 2 năm. Việc cần làm theo Điều 62 BLLĐ 2019?",
+        "options": ["Chỉ cần thoả thuận miệng", "Ký hợp đồng đào tạo ghi rõ chi phí, thời gian cam kết làm việc, trách nhiệm hoàn trả", "Giữ bằng gốc của nhân viên làm bảo đảm", "Trừ dần vào lương 30% mỗi tháng"],
+        "answer": 1,
+        "explain": "Điều 62 yêu cầu ký hợp đồng đào tạo khi đào tạo bằng kinh phí NSDLĐ. Giữ bằng gốc vi phạm Điều 17."
+      },
+      {
+        "q": "Khoản nào được tính vào chi phí đào tạo theo Điều 62?",
+        "options": ["Tiền thưởng Tết của nhân viên", "Tiền lương và tiền đóng BHXH, BHYT, BHTN cho người học trong thời gian đi học", "Chi phí tuyển người thay thế", "Chi phí cơ hội do nhân viên vắng mặt"],
+        "answer": 1,
+        "explain": "Khoản 3 Điều 62 liệt kê các khoản chi có chứng từ hợp lệ, gồm cả tiền lương, BHXH, BHYT, BHTN cho người học trong thời gian đi học."
+      },
+      {
+        "q": "Khảo sát cuối buổi đào tạo đạt 4,8/5. Kết luận nào đúng nhất?",
+        "options": ["Khoá học chắc chắn đã cải thiện hiệu suất", "Học viên hài lòng (cấp 1), chưa đủ để kết luận về học tập, hành vi hay kết quả", "Không cần đo thêm", "Nên tăng gấp đôi ngân sách ngay"],
+        "answer": 1,
+        "explain": "Mức hài lòng cao không đảm bảo có thay đổi hành vi hay kết quả kinh doanh."
+      },
+      {
+        "q": "Startup không có ngân sách L&D. Giải pháp nào tận dụng tốt nhất nhóm '20'?",
+        "options": ["Mua khoá học đắt tiền", "Chương trình mentoring ghép senior – junior định kỳ", "In tài liệu phát cho nhân viên", "Bỏ qua L&D"],
+        "answer": 1,
+        "explain": "Nhóm 20 là học qua người khác — mentoring, coaching, phản hồi. Chi phí thấp, tác động cao."
+      }
+    ],
+    "cases": [
+      {
+        "scenario": "CEO muốn 'đào tạo kỹ năng lãnh đạo' cho 12 trưởng nhóm mới được đề bạt trong năm (đa số từ nhân viên giỏi chuyên môn). Ngân sách 80 triệu. Vấn đề hiện tại: 3 trong 12 đội có tỷ lệ nghỉ việc cao gấp đôi trung bình.",
+        "question": "Phác thảo chương trình phát triển 3 tháng theo ADDIE + 70-20-10, và cách đo lường đến cấp 4.",
+        "guide": "Analysis: phỏng vấn 12 trưởng nhóm + nhân viên của 3 đội nghỉ việc cao; xác định khoảng cách (giao việc, phản hồi, 1:1, xử lý xung đột).\nDesign/Development:\n• 10%: 3 workshop thực hành (1:1 & SBI, giao việc & mục tiêu SMART, xử lý tình huống khó).\n• 20%: mỗi trưởng nhóm có mentor là quản lý cấp trên; học nhóm 2 tuần/lần chia sẻ tình huống.\n• 70%: mỗi người thực hiện 1:1 hằng tuần, làm 1 dự án cải thiện đội.\nĐo lường: cấp 1 khảo sát; cấp 2 tình huống mô phỏng trước–sau; cấp 3 tỷ lệ 1:1 thực hiện, khảo sát nhân viên về quản lý trực tiếp; cấp 4 tỷ lệ nghỉ việc 3 đội nóng sau 6 tháng, so với baseline.\nNgân sách: phần lớn cho thiết kế workshop/coach; ít cho khoá học đại trà."
+      }
+    ]
+  }
+}

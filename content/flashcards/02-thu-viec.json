@@ -1,0 +1,42 @@
+{
+  "topic": { "id": "thu-viec", "name": "Thử việc", "order": 2 },
+  "cards": [
+    {
+      "id": "tv-01",
+      "front": "Thời gian thử việc tối đa cho từng loại công việc?",
+      "back": "• 180 ngày: công việc của người quản lý doanh nghiệp (theo Luật Doanh nghiệp, Luật Quản lý, sử dụng vốn nhà nước…).\n• 60 ngày: chức danh nghề cần trình độ chuyên môn, kỹ thuật từ cao đẳng trở lên.\n• 30 ngày: trình độ trung cấp, công nhân kỹ thuật, nhân viên nghiệp vụ.\n• 06 ngày làm việc: công việc khác.",
+      "ref": "Điều 25 BLLĐ 2019"
+    },
+    {
+      "id": "tv-02",
+      "front": "Một NLĐ được thử việc bao nhiêu lần cho cùng một công việc?",
+      "back": "Chỉ được thử việc 01 lần đối với 01 công việc. Không được 'gia hạn thử việc' hay ký HĐ thử việc lần 2 cho cùng công việc.",
+      "ref": "Điều 25 BLLĐ 2019"
+    },
+    {
+      "id": "tv-03",
+      "front": "Lương thử việc tối thiểu là bao nhiêu?",
+      "back": "Do hai bên thoả thuận nhưng ít nhất bằng 85% mức lương của công việc đó.",
+      "ref": "Điều 26 BLLĐ 2019"
+    },
+    {
+      "id": "tv-04",
+      "front": "Trường hợp nào KHÔNG được áp dụng thử việc?",
+      "back": "NLĐ giao kết HĐLĐ có thời hạn dưới 01 tháng thì không áp dụng thử việc.",
+      "ref": "Khoản 3 Điều 24 BLLĐ 2019"
+    },
+    {
+      "id": "tv-05",
+      "front": "Trong thời gian thử việc, mỗi bên có quyền chấm dứt như thế nào?",
+      "back": "Mỗi bên có quyền huỷ bỏ hợp đồng thử việc hoặc HĐLĐ đã giao kết (có thoả thuận thử việc) mà không cần báo trước và không phải bồi thường.",
+      "ref": "Khoản 2 Điều 27 BLLĐ 2019"
+    },
+    {
+      "id": "tv-06",
+      "front": "Kết thúc thử việc, NSDLĐ phải làm gì? Nếu đạt yêu cầu thì sao?",
+      "back": "NSDLĐ phải thông báo kết quả thử việc cho NLĐ.\n• Đạt: tiếp tục thực hiện HĐLĐ đã giao kết (nếu thử việc ghi trong HĐLĐ) hoặc phải giao kết HĐLĐ (nếu ký HĐ thử việc riêng).\n• Không đạt: chấm dứt HĐLĐ đã giao kết hoặc hợp đồng thử việc.\n⚠️ Thời hạn thông báo kết quả được hướng dẫn tại nghị định — cần kiểm tra lại văn bản gốc.",
+      "ref": "Khoản 1 Điều 27 BLLĐ 2019",
+      "verify": true
+    }
+  ]
+}

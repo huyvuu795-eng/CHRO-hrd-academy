@@ -1,0 +1,116 @@
+{
+  "week": 1,
+  "title": "Bức tranh HR toàn cảnh & điểm xuất phát của bạn",
+  "phase": "Nền tảng",
+  "readingMinutes": 12,
+  "objectives": [
+    "Mô tả được vòng đời nhân viên và vai trò của từng mảng HR",
+    "Giải thích mô hình 3 trụ cột Ulrich và vị trí của Recruiter trong đó",
+    "Tự đánh giá 10 mảng năng lực để có điểm xuất phát",
+    "Vẽ được sơ đồ phòng HR ở công ty hiện tại"
+  ],
+  "lesson": "week-01.md",
+  "daily": {
+    "mon": ["Đọc bài học tuần 1 (phần 1–3)", "Ôn 10 thẻ luật mới"],
+    "tue": ["Đọc bài học (phần 4–6)", "Tự đánh giá 10 mảng năng lực trên Dashboard"],
+    "wed": ["Hỏi 1 đồng nghiệp HR: 'Việc nào tốn thời gian nhất của bạn?'", "Ôn thẻ luật đến hạn"],
+    "thu": ["Làm bài thực hành 1: sơ đồ phòng HR", "Ôn thẻ luật đến hạn"],
+    "fri": ["Làm bài thực hành 2: phân tích 1 order tuyển theo 5 góc nhìn", "Ôn thẻ luật đến hạn"],
+    "sat": ["Làm mini test tuần 1", "Ôn lại câu sai"],
+    "sun": ["Viết nhật ký tuần", "Export JSON sao lưu tiến độ"]
+  },
+  "practice": [
+    {
+      "title": "Vẽ sơ đồ phòng HR công ty bạn theo mô hình Ulrich",
+      "context": "Mục tiêu là nhìn rõ ai đang làm gì, mảng nào đang trống — đó thường là cơ hội để bạn nhận thêm việc và học nhanh.",
+      "steps": [
+        "Liệt kê toàn bộ thành viên phòng HR/HCNS và công việc chính của từng người",
+        "Xếp mỗi đầu việc vào HRBP, COE (ghi rõ mảng) hoặc Shared Services",
+        "Đánh dấu những việc không ai phụ trách rõ ràng hoặc đang thuê ngoài",
+        "Khoanh 1–2 mảng bạn có thể xin tham gia hỗ trợ trong quý tới"
+      ],
+      "deliverable": "Sơ đồ 1 trang (vẽ tay chụp ảnh hoặc Google Slides) + 3 dòng nhận xét."
+    },
+    {
+      "title": "Phân tích một order tuyển dụng gần đây theo góc nhìn HR Generalist",
+      "steps": [
+        "Chọn 1 vị trí bạn đang/đã tuyển trong tháng",
+        "Trả lời 5 câu hỏi: vì sao trống vị trí, khung lương nội bộ, rủi ro pháp lý (loại HĐ, thử việc), có ứng viên nội bộ không, KPI vị trí là gì",
+        "Ghi rõ câu nào bạn chưa trả lời được và ai trong công ty có thể trả lời",
+        "Gặp hiring manager 10 phút hỏi 1–2 câu bạn còn thiếu"
+      ],
+      "deliverable": "Bảng 5 dòng (góc nhìn – câu trả lời – nguồn) lưu trong Notion/Drive."
+    }
+  ],
+  "quiz": {
+    "mcq": [
+      {
+        "q": "Một recruiter offer lương cao hơn khung 20% để chốt nhanh ứng viên. 3 tháng sau, 2 nhân viên cũ cùng vị trí xin nghỉ. Vấn đề này chủ yếu thuộc chặng nào của vòng đời nhân viên?",
+        "options": ["Thu hút (Attract)", "Giữ chân (Retain) — hệ quả của quyết định tuyển chọn", "Hội nhập (Onboard)", "Rời đi (Offboard)"],
+        "answer": 1,
+        "explain": "Quyết định ở chặng tuyển chọn tạo ra bất công bằng nội bộ về lương, gây hệ quả ở chặng Giữ chân. Đây là ví dụ điển hình cho việc các chặng liên kết với nhau."
+      },
+      {
+        "q": "Trong mô hình Ulrich, ai là người phù hợp nhất để thiết kế khung lương mới cho toàn công ty?",
+        "options": ["HRBP của khối Kinh doanh", "COE C&B", "HR Shared Services", "Trưởng phòng Tài chính"],
+        "answer": 1,
+        "explain": "COE (Center of Excellence) là nơi chuyên gia sâu từng mảng thiết kế chính sách, công cụ dùng chung. HRBP đóng vai trò thu thập nhu cầu và triển khai cho khối của mình."
+      },
+      {
+        "q": "Trưởng phòng Marketing phàn nàn team mình nghỉ việc nhiều. Vai trò nào trong mô hình Ulrich nên là người đầu tiên ngồi lại với anh ấy?",
+        "options": ["HR Shared Services", "COE Talent Acquisition", "HRBP phụ trách khối Marketing", "Bộ phận Pháp chế"],
+        "answer": 2,
+        "explain": "HRBP là 'bác sĩ gia đình' của khối, chịu trách nhiệm chẩn đoán vấn đề kinh doanh – con người, sau đó mới kéo COE vào nếu cần giải pháp chuyên sâu."
+      },
+      {
+        "q": "Việc nào sau đây thuộc HR Shared Services?",
+        "options": ["Thiết kế chương trình đào tạo quản lý cấp trung", "Tư vấn trưởng bộ phận về tái cơ cấu team", "Xử lý thủ tục báo tăng BHXH cho nhân viên mới", "Xây dựng EVP (Employer Value Proposition)"],
+        "answer": 2,
+        "explain": "Shared Services phụ trách các giao dịch vận hành lặp lại: hồ sơ, BHXH, chấm công, lương. Ba lựa chọn còn lại thuộc COE hoặc HRBP."
+      },
+      {
+        "q": "Vì sao con đường lên HR Director thường đi qua vị trí HRBP?",
+        "options": ["Vì HRBP có mức lương cao nhất phòng HR", "Vì HRBP buộc phải hiểu kinh doanh và phối hợp nhiều mảng HR cùng lúc", "Vì HRBP không cần biết luật lao động", "Vì luật quy định HRD phải từng làm HRBP"],
+        "answer": 1,
+        "explain": "HRBP làm việc sát quản lý, chuyển bài toán kinh doanh thành giải pháp con người và điều phối nhiều COE — đúng các năng lực mà HRD cần ở quy mô lớn hơn."
+      },
+      {
+        "q": "Một startup e-commerce 120 người chỉ có 4 nhân sự HR. Nhận định nào hợp lý nhất?",
+        "options": ["Không thể áp dụng tư duy mô hình Ulrich", "Mỗi người kiêm nhiều vai trò; mô hình Ulrich vẫn hữu ích để phân loại công việc và phát hiện lỗ hổng", "Nên tuyển ngay đủ 3 trụ cột riêng biệt", "Chỉ cần tập trung vào tuyển dụng"],
+        "answer": 1,
+        "explain": "Mô hình là công cụ tư duy, không phải sơ đồ tổ chức bắt buộc. Ở công ty nhỏ, nó giúp nhìn ra việc gì đang bị bỏ trống."
+      },
+      {
+        "q": "Câu hỏi nào khi nhận order tuyển thể hiện rõ nhất góc nhìn 'Talent/Succession'?",
+        "options": ["Deadline onboard là ngày nào?", "Trong team có ai đủ khả năng được đề bạt vào vị trí này không?", "JD đã có chưa?", "Đăng tin trên kênh nào?"],
+        "answer": 1,
+        "explain": "Câu hỏi về ứng viên nội bộ kết nối tuyển dụng với phát triển nhân tài và kế hoạch kế nhiệm."
+      },
+      {
+        "q": "Lợi thế nào của Recruiter là 'cửa ngõ' trực tiếp vào mảng HR Analytics?",
+        "options": ["Kỹ năng viết JD", "Quen làm việc với số liệu phễu tuyển dụng (conversion, time-to-fill)", "Có nhiều mối quan hệ với ứng viên", "Biết dùng LinkedIn Recruiter"],
+        "answer": 1,
+        "explain": "Số liệu phễu là dạng dữ liệu nhân sự đầu tiên mà recruiter tiếp xúc; từ đó mở rộng sang turnover, engagement, cost là bước tự nhiên."
+      },
+      {
+        "q": "Bạn tự chấm mảng C&B được 1/5. Theo thang trong app, điều đó có nghĩa gì và hành động nào hợp lý nhất?",
+        "options": ["Đã làm độc lập — không cần học thêm", "Chưa biết — ưu tiên học nền tảng Gross–Net, BHXH trong quý 1", "Có thể dạy người khác", "Nên bỏ qua mảng này vì không liên quan tuyển dụng"],
+        "answer": 1,
+        "explain": "1 = chưa biết. C&B gắn trực tiếp với offer, nên đây là mảng ưu tiên trong lộ trình quý 1 (tuần 5–6)."
+      },
+      {
+        "q": "Mục đích chính của việc viết nhật ký học tập (reflection) mỗi tuần là gì?",
+        "options": ["Để có bằng chứng nộp cho quản lý", "Biến thông tin đã đọc thành hiểu biết và kế hoạch áp dụng cụ thể", "Để app tính streak", "Không có tác dụng thực tế"],
+        "answer": 1,
+        "explain": "Viết lại bằng lời của mình và gắn với việc thật là cách củng cố trí nhớ dài hạn và chuyển kiến thức thành hành vi."
+      }
+    ],
+    "cases": [
+      {
+        "scenario": "Bạn là recruiter duy nhất của một công ty e-commerce 200 người. Phòng HR gồm: 1 HR Manager (kiêm C&B), 1 chuyên viên hành chính – BHXH, và bạn. Công ty sắp mở thêm kho ở Bình Dương, cần tuyển 40 nhân viên kho trong 6 tuần.",
+        "question": "Ngoài việc tuyển đủ số lượng, hãy nêu ít nhất 4 vấn đề HR khác cần chuẩn bị và ai trong phòng nên phụ trách.",
+        "guide": "Gợi ý các ý chính:\n• Khung lương/phụ cấp cho kho mới — cần xét mức lương tối thiểu vùng áp dụng cho địa bàn kho (C&B – HR Manager)\n• Loại HĐLĐ, thử việc, hồ sơ, báo tăng BHXH cho 40 người (Shared Services – chuyên viên BHXH)\n• Chương trình onboarding & an toàn lao động cho kho (bạn + quản lý kho)\n• Bố trí ca, giờ làm thêm mùa cao điểm đúng giới hạn luật (HR Manager + quản lý kho)\n• Cơ cấu team, trưởng ca: đề bạt nội bộ hay tuyển ngoài (bạn đóng vai HRBP với quản lý vận hành)\n• Nội quy lao động áp dụng cho địa điểm mới\nTự chấm: đủ 4 ý + có phân vai hợp lý = đạt."
+      }
+    ]
+  }
+}

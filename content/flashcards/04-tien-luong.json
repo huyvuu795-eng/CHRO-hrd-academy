@@ -1,0 +1,60 @@
+{
+  "topic": { "id": "tien-luong", "name": "Tiền lương", "order": 4 },
+  "cards": [
+    {
+      "id": "tl-01",
+      "front": "Tiền lương theo BLLĐ 2019 gồm những thành phần nào?",
+      "back": "Là số tiền NSDLĐ trả cho NLĐ theo thoả thuận để thực hiện công việc, gồm: mức lương theo công việc hoặc chức danh, phụ cấp lương và các khoản bổ sung khác. Mức lương theo công việc/chức danh không được thấp hơn mức lương tối thiểu.",
+      "ref": "Khoản 1, 2 Điều 90 BLLĐ 2019"
+    },
+    {
+      "id": "tl-02",
+      "front": "Mức lương tối thiểu vùng áp dụng từ 01/01/2026 (NĐ 293/2025/NĐ-CP)?",
+      "back": "Mức lương tối thiểu tháng:\n• Vùng I: 5.310.000 đ\n• Vùng II: 4.730.000 đ\n• Vùng III: 4.140.000 đ\n• Vùng IV: 3.700.000 đ\n(Trước đó, NĐ 74/2024/NĐ-CP từ 01/7/2024: 4,96tr / 4,41tr / 3,86tr / 3,45tr.)\n⚠️ Mức lương và danh mục địa bàn theo vùng thay đổi thường xuyên (đặc biệt sau sắp xếp đơn vị hành chính 2025) — cần kiểm tra lại văn bản gốc.",
+      "ref": "Điều 91 BLLĐ 2019; NĐ 293/2025/NĐ-CP",
+      "verify": true
+    },
+    {
+      "id": "tl-03",
+      "front": "Kỳ hạn trả lương theo tháng và mức trả chậm tối đa?",
+      "back": "• Lương tháng: trả 01 tháng/lần hoặc nửa tháng/lần; thời điểm trả do hai bên thoả thuận và phải được ấn định vào một thời điểm có tính chu kỳ.\n• Nếu vì lý do bất khả kháng không trả đúng hạn thì không được chậm quá 30 ngày.\n• Trả chậm từ 15 ngày trở lên → phải đền bù ít nhất bằng số tiền lãi của số tiền trả chậm tính theo lãi suất huy động tiền gửi kỳ hạn 01 tháng.",
+      "ref": "Điều 97 BLLĐ 2019"
+    },
+    {
+      "id": "tl-04",
+      "front": "Tiền lương làm thêm giờ tối thiểu?",
+      "back": "Tính theo đơn giá tiền lương/lương thực trả của công việc đang làm:\n• Ngày thường: ít nhất 150%.\n• Ngày nghỉ hằng tuần: ít nhất 200%.\n• Ngày nghỉ lễ, tết, ngày nghỉ có hưởng lương: ít nhất 300% (chưa kể tiền lương ngày lễ, tết, ngày nghỉ có hưởng lương với NLĐ hưởng lương ngày).",
+      "ref": "Khoản 1 Điều 98 BLLĐ 2019"
+    },
+    {
+      "id": "tl-05",
+      "front": "Làm việc vào ban đêm và làm thêm giờ vào ban đêm được trả thêm bao nhiêu?",
+      "back": "• Làm việc ban đêm: thêm ít nhất 30% tiền lương của công việc làm vào ban ngày.\n• Làm thêm giờ vào ban đêm: ngoài 2 khoản trên còn được trả thêm 20% tiền lương tính theo công việc làm vào ban ngày của ngày làm việc bình thường / ngày nghỉ hằng tuần / ngày lễ, tết.",
+      "ref": "Khoản 2, 3 Điều 98 BLLĐ 2019"
+    },
+    {
+      "id": "tl-06",
+      "front": "Nguyên tắc trả lương: NSDLĐ có được giữ thẻ ATM hoặc bắt NLĐ mua hàng của công ty bằng lương không?",
+      "back": "Không. NSDLĐ phải trả lương trực tiếp, đầy đủ, đúng hạn cho NLĐ; không được hạn chế hoặc can thiệp vào quyền tự quyết chi tiêu lương của NLĐ; không được ép buộc NLĐ chi tiêu lương vào việc mua hàng hoá, sử dụng dịch vụ của NSDLĐ hoặc đơn vị khác do NSDLĐ chỉ định.",
+      "ref": "Điều 94 BLLĐ 2019"
+    },
+    {
+      "id": "tl-07",
+      "front": "NSDLĐ được khấu trừ lương của NLĐ trong trường hợp nào và tối đa bao nhiêu?",
+      "back": "• Chỉ được khấu trừ để bồi thường thiệt hại do làm hư hỏng dụng cụ, thiết bị, tài sản của NSDLĐ (theo Điều 129).\n• NLĐ có quyền được biết lý do khấu trừ.\n• Mức khấu trừ hằng tháng không quá 30% tiền lương thực trả hằng tháng sau khi trích nộp BHXH bắt buộc, BHYT, BHTN, thuế TNCN.",
+      "ref": "Điều 102 BLLĐ 2019"
+    },
+    {
+      "id": "tl-08",
+      "front": "Khi trả lương, NSDLĐ có nghĩa vụ gì về thông tin cho NLĐ?",
+      "back": "Mỗi lần trả lương phải thông báo bảng kê trả lương cho NLĐ, trong đó ghi rõ tiền lương, tiền lương làm thêm giờ, tiền lương làm việc vào ban đêm, nội dung và số tiền bị khấu trừ (nếu có).",
+      "ref": "Khoản 2 Điều 95 BLLĐ 2019"
+    },
+    {
+      "id": "tl-09",
+      "front": "Thưởng có bắt buộc không? Ai quyết định quy chế thưởng?",
+      "back": "Thưởng là số tiền/tài sản/hình thức khác NSDLĐ thưởng căn cứ kết quả SXKD, mức độ hoàn thành công việc. Quy chế thưởng do NSDLĐ quyết định và công bố công khai tại nơi làm việc sau khi tham khảo ý kiến tổ chức đại diện NLĐ (nếu có). Luật không bắt buộc 'lương tháng 13'.",
+      "ref": "Điều 104 BLLĐ 2019"
+    }
+  ]
+}

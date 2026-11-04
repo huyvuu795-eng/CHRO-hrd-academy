@@ -1,0 +1,115 @@
+{
+  "week": 8,
+  "title": "Onboarding & quản lý thử việc",
+  "phase": "Hội nhập",
+  "readingMinutes": 12,
+  "objectives": [
+    "Thiết kế hành trình preboarding – onboarding theo mô hình 4C",
+    "Xây kế hoạch 30-60-90 ngày gắn với tiêu chí thử việc",
+    "Vận hành quy trình đánh giá thử việc đúng luật",
+    "Đo lường và chẩn đoán nghỉ việc sớm"
+  ],
+  "lesson": "week-08.md",
+  "daily": {
+    "mon": ["Đọc bài học phần 1–4", "Ôn thẻ luật chủ đề Thử việc"],
+    "tue": ["Đọc bài học phần 5–7", "Ôn thẻ luật đến hạn"],
+    "wed": ["Hỏi 2 nhân viên mới (< 6 tháng): 'Tuần đầu, điều gì khó nhất?'", "Ôn thẻ luật đến hạn"],
+    "thu": ["Bài thực hành 1: kế hoạch 30-60-90 cho 1 vị trí", "Ôn thẻ luật đến hạn"],
+    "fri": ["Bài thực hành 2: quy trình thử việc + phiếu đánh giá", "Ôn thẻ luật đến hạn"],
+    "sat": ["Làm mini test tuần 8", "Gọi 1 người đã nghỉ trong 90 ngày (nếu có) hỏi 3 câu"],
+    "sun": ["Viết nhật ký tuần", "Export JSON sao lưu"]
+  },
+  "practice": [
+    {
+      "title": "Thiết kế kế hoạch 30-60-90 ngày cho một vị trí bạn vừa tuyển",
+      "steps": [
+        "Gặp hiring manager 20 phút để xác định 3 mục tiêu đo được cho mỗi giai đoạn",
+        "Bổ sung hoạt động theo 4C (tài liệu cần đọc, người cần gặp, buổi đào tạo)",
+        "Chỉ định buddy và lịch check-in của quản lý",
+        "Gửi bản kế hoạch cho người mới vào ngày đầu tiên"
+      ],
+      "deliverable": "Kế hoạch 30-60-90 một trang dùng làm template cho vị trí tương tự."
+    },
+    {
+      "title": "Chuẩn hoá quy trình & phiếu đánh giá thử việc",
+      "steps": [
+        "Vẽ quy trình từ ngày 1 đến ngày thông báo kết quả, ghi rõ người chịu trách nhiệm và hạn",
+        "Thiết kế phiếu đánh giá: tiêu chí (từ kế hoạch 30-60-90), thang điểm, nhận xét, đề xuất",
+        "Tạo lịch nhắc tự động (Google Calendar/Sheets) cho HR 7 ngày trước hạn thử việc",
+        "Soạn mẫu thông báo kết quả đạt/không đạt"
+      ],
+      "deliverable": "Sơ đồ quy trình + phiếu đánh giá + 2 mẫu thông báo."
+    }
+  ],
+  "quiz": {
+    "mcq": [
+      {
+        "q": "Người mới nói: 'Tuần đầu em được giới thiệu nội quy, ký giấy tờ đầy đủ, nhưng vẫn không biết mình được đánh giá dựa trên gì.' Onboarding đang thiếu chữ C nào?",
+        "options": ["Compliance", "Clarification", "Culture", "Connection"],
+        "answer": 1,
+        "explain": "Clarification là làm rõ vai trò, kỳ vọng và tiêu chí đánh giá. Compliance (nội quy, giấy tờ) đã làm tốt."
+      },
+      {
+        "q": "Ứng viên nhận offer ngày 1/11, đi làm ngày 1/12 vì phải báo trước công ty cũ. Rủi ro lớn nhất trong khoảng thời gian này?",
+        "options": ["Ứng viên quên mật khẩu email", "Ứng viên nhận counter-offer từ công ty cũ hoặc offer khác và từ chối đi làm", "Công ty phải đóng BHXH sớm", "Không có rủi ro"],
+        "answer": 1,
+        "explain": "Giai đoạn preboarding là lúc dễ mất ứng viên nhất; cần giữ liên lạc và tạo gắn kết sớm."
+      },
+      {
+        "q": "Khi chuẩn bị hồ sơ người mới, việc nào đúng luật?",
+        "options": ["Giữ bản gốc bằng đại học đến khi hết thử việc", "Nhận bản sao, đối chiếu bản gốc rồi trả lại ngay", "Giữ CCCD gốc để làm thẻ ra vào", "Yêu cầu đặt cọc tài sản công ty"],
+        "answer": 1,
+        "explain": "Điều 17 BLLĐ 2019 cấm giữ bản chính giấy tờ tuỳ thân, văn bằng và yêu cầu biện pháp bảo đảm bằng tiền/tài sản."
+      },
+      {
+        "q": "Vai trò phù hợp nhất của một buddy là gì?",
+        "options": ["Đánh giá thử việc thay quản lý", "Đồng nghiệp ngang cấp hỗ trợ người mới hoà nhập, trả lời các câu hỏi thường ngày", "Người ký HĐLĐ", "Người giám sát chấm công"],
+        "answer": 1,
+        "explain": "Buddy không phải sếp; giá trị nằm ở việc tạo kết nối (Connection) và giải đáp các câu hỏi người mới ngại hỏi quản lý."
+      },
+      {
+        "q": "Nhân viên Data Analyst (thử việc 60 ngày) được thông báo không đạt vào ngày 59, trước đó chưa từng nhận phản hồi. Vấn đề chính?",
+        "options": ["Vi phạm thời gian thử việc", "Thiếu check-in giữa kỳ và tiêu chí rõ ràng từ đầu, dễ gây cảm giác bất công và rủi ro khiếu nại", "Lương thử việc sai", "Không có vấn đề vì vẫn trong thời hạn"],
+        "answer": 1,
+        "explain": "Thông báo trong thời hạn là đúng luật, nhưng quy trình thiếu phản hồi giữa kỳ làm tổn hại trải nghiệm, thương hiệu tuyển dụng và tăng rủi ro tranh chấp."
+      },
+      {
+        "q": "Mục tiêu nào phù hợp nhất cho giai đoạn ngày 61–90 của nhân viên CS?",
+        "options": ["Đọc tài liệu chính sách đổi trả", "Đạt 100% chỉ tiêu năng suất, CSAT ≥ 90% và đề xuất 1 cải tiến", "Làm quen đồng nghiệp", "Nhận laptop"],
+        "answer": 1,
+        "explain": "Giai đoạn 61–90 hướng đến làm việc độc lập ở tiêu chuẩn đầy đủ và bắt đầu đóng góp cải tiến."
+      },
+      {
+        "q": "Dữ liệu: nghỉ việc sớm của kho tập trung ở ca đêm và dưới 2 trưởng ca cụ thể. Kết luận hợp lý nhất?",
+        "options": ["Recruiter tuyển sai người", "Nguyên nhân nhiều khả năng nằm ở điều kiện ca đêm và phong cách quản lý trực tiếp; cần điều tra thêm", "Nên ngừng tuyển ca đêm", "Do lương quá cao"],
+        "answer": 1,
+        "explain": "Phân đoạn dữ liệu chỉ ra yếu tố môi trường và quản lý; đây là gợi ý để phỏng vấn sâu, không phải kết luận cuối cùng."
+      },
+      {
+        "q": "Câu hỏi phỏng vấn nghỉ việc sớm nào giúp recruiter cải thiện khâu tuyển dụng nhiều nhất?",
+        "options": ["Bạn có hài lòng với lương không?", "Điều gì khác với kỳ vọng của bạn khi nhận offer?", "Bạn sẽ đi đâu tiếp theo?", "Bạn có giới thiệu bạn bè không?"],
+        "answer": 1,
+        "explain": "Khoảng cách giữa kỳ vọng và thực tế thường bắt nguồn từ JD, lời hứa trong phỏng vấn — những thứ recruiter kiểm soát được."
+      },
+      {
+        "q": "Kết thúc thử việc, nhân viên đạt yêu cầu và thử việc được ghi trong HĐLĐ. Theo Điều 27, điều gì xảy ra?",
+        "options": ["Phải ký lại HĐ thử việc mới", "Tiếp tục thực hiện HĐLĐ đã giao kết", "Phải thử việc thêm 1 lần nữa với vị trí khác", "HĐ tự chấm dứt"],
+        "answer": 1,
+        "explain": "Khoản 1 Điều 27: nếu thử việc thoả thuận trong HĐLĐ và đạt yêu cầu thì tiếp tục thực hiện HĐLĐ đã giao kết."
+      },
+      {
+        "q": "Chỉ số nào đo trực tiếp hiệu quả onboarding về mặt năng suất?",
+        "options": ["Cost-per-hire", "Time-to-productivity", "Số CV nhận được", "Offer acceptance rate"],
+        "answer": 1,
+        "explain": "Time-to-productivity đo thời gian để người mới đạt mức năng suất kỳ vọng — kết quả trực tiếp của onboarding."
+      }
+    ],
+    "cases": [
+      {
+        "scenario": "Công ty tuyển 25 nhân viên CS cho mùa Tết. Sau 2 tháng, 11 người đã nghỉ. Khảo sát nhanh: 'Ngày đầu không có ai hướng dẫn', 'Bị đưa thẳng vào trực ticket', 'Quản lý chỉ nói chuyện khi em làm sai', 'Lương thực nhận thấp hơn em nghĩ'.",
+        "question": "Chẩn đoán nguyên nhân theo 4C và hành trình tuyển dụng – onboarding, rồi đề xuất 5 hành động cụ thể cho đợt tuyển tiếp theo.",
+        "guide": "Chẩn đoán:\n• Clarification & Connection yếu: không hướng dẫn, không buddy, đưa vào việc ngay.\n• Quản lý trực tiếp chỉ phản hồi tiêu cực → thiếu check-in.\n• 'Lương thực nhận thấp hơn nghĩ' → lỗ hổng ở khâu tuyển dụng: chưa giải thích Gross/Net, bảo hiểm (liên hệ tuần 5).\nHành động:\n1. Kế hoạch 30-60-90 rút gọn cho CS thời vụ, tuần đầu có đào tạo + shadowing trước khi trực.\n2. Buddy 1:3.\n3. Lịch check-in quản lý ngày 1, 7, 30 với nội dung cả ghi nhận lẫn góp ý.\n4. Recruiter gửi bảng ước tính Net khi offer.\n5. Khảo sát ngày 14 và 30 + gọi điện người nghỉ sớm; theo dõi early turnover theo trưởng nhóm."
+      }
+    ]
+  }
+}

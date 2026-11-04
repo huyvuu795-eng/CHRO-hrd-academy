@@ -1,0 +1,116 @@
+{
+  "week": 4,
+  "title": "Recruitment Analytics: nhập môn HR Analytics",
+  "phase": "Analytics",
+  "readingMinutes": 12,
+  "objectives": [
+    "Tính đúng time-to-fill, cost-per-hire, offer acceptance rate, early turnover",
+    "Đọc phễu tuyển dụng để tìm điểm nghẽn",
+    "Phân tích hiệu quả kênh theo kết quả cuối thay vì số lượng CV",
+    "Trình bày một insight dưới dạng kết luận + biểu đồ + đề xuất"
+  ],
+  "lesson": "week-04.md",
+  "daily": {
+    "mon": ["Đọc bài học phần 1–3", "Ôn thẻ luật đến hạn"],
+    "tue": ["Đọc bài học phần 4–6", "Ôn thẻ luật đến hạn"],
+    "wed": ["Xuất dữ liệu tuyển dụng 3–6 tháng gần nhất ra Google Sheets", "Chuẩn hoá cột kênh, phòng ban"],
+    "thu": ["Bài thực hành 1: tính bộ chỉ số", "Ôn thẻ luật đến hạn"],
+    "fri": ["Bài thực hành 2: 1 slide insight", "Ôn thẻ luật đến hạn"],
+    "sat": ["Làm mini test tuần 4", "Luyện Pivot Table 20 phút"],
+    "sun": ["Viết nhật ký tuần", "Export JSON sao lưu"]
+  },
+  "practice": [
+    {
+      "title": "Dựng bảng chỉ số tuyển dụng từ dữ liệu thật",
+      "context": "Dùng dữ liệu tuyển dụng của bạn (ẩn tên ứng viên). Nếu dữ liệu chưa đủ, ghi rõ trường nào đang thiếu — đó cũng là một phát hiện.",
+      "steps": [
+        "Tạo sheet dữ liệu: mã yêu cầu, vị trí, phòng ban, ngày mở, ngày nhận offer, kênh, trạng thái sau 90 ngày",
+        "Tính time-to-fill trung bình theo phòng ban (AVERAGEIFS hoặc Pivot)",
+        "Tính offer acceptance rate và funnel conversion cho 1–2 vị trí số lượng lớn",
+        "Lập bảng source of hire: CV – tuyển được – tỷ lệ – còn làm sau 90 ngày"
+      ],
+      "deliverable": "File Google Sheets gồm sheet Data + sheet Dashboard."
+    },
+    {
+      "title": "Viết 1 slide insight gửi quản lý",
+      "steps": [
+        "Chọn phát hiện đáng chú ý nhất từ bảng chỉ số",
+        "Viết tiêu đề slide dưới dạng kết luận",
+        "Chọn 1 biểu đồ duy nhất chứng minh kết luận",
+        "Thêm 1 đề xuất có con số (ngân sách, thời gian, kết quả kỳ vọng)"
+      ],
+      "deliverable": "1 slide (Google Slides) — gửi quản lý trực tiếp xin góp ý."
+    }
+  ],
+  "quiz": {
+    "mcq": [
+      {
+        "q": "Yêu cầu tuyển mở ngày 1/9, ứng viên nộp CV ngày 15/9, nhận offer ngày 10/10, đi làm ngày 1/11. Time-to-fill (theo định nghĩa trong bài) là bao nhiêu ngày lịch?",
+        "options": ["25 ngày", "39 ngày", "61 ngày", "47 ngày"],
+        "answer": 1,
+        "explain": "Time-to-fill: từ lúc mở yêu cầu (1/9) đến khi nhận offer (10/10) = 39 ngày. Từ 15/9 đến 10/10 (25 ngày) là time-to-hire."
+      },
+      {
+        "q": "Quý 3: job board 30tr, headhunter 45tr, thưởng referral 10tr, chi phí nội bộ phân bổ 60tr, tuyển được 29 người. Cost-per-hire xấp xỉ?",
+        "options": ["2,9 triệu", "5,0 triệu", "3,4 triệu", "2,6 triệu"],
+        "answer": 1,
+        "explain": "CPH = (30+45+10+60)/29 = 145/29 ≈ 5,0 triệu. Nhớ cộng cả chi phí nội bộ."
+      },
+      {
+        "q": "Phễu: 120 qua sàng lọc CV → 50 qua phỏng vấn sơ bộ → 5 qua phỏng vấn quản lý. Giả thuyết hợp lý nhất cần kiểm tra đầu tiên?",
+        "options": ["Đăng tin trên quá ít kênh", "Recruiter và hiring manager chưa thống nhất tiêu chí đánh giá", "Mức lương quá cao", "Ứng viên không thích văn phòng"],
+        "answer": 1,
+        "explain": "Tỷ lệ rớt rất cao ở vòng quản lý (10%) thường cho thấy tiêu chí sàng lọc của recruiter khác kỳ vọng của quản lý."
+      },
+      {
+        "q": "Kênh nào hiệu quả nhất nếu mục tiêu là tuyển người ở lại lâu dài? Job board: 250 CV, tuyển 6, còn 3 sau 6 tháng. Referral: 30 CV, tuyển 5, còn 5.",
+        "options": ["Job board vì nhiều CV hơn", "Referral vì tỷ lệ chuyển đổi và giữ chân đều cao hơn", "Bằng nhau", "Không đủ dữ liệu để kết luận bất kỳ điều gì"],
+        "answer": 1,
+        "explain": "Referral: 16,7% chuyển đổi, 100% ở lại; job board: 2,4% và 50%. Cần đánh giá kênh theo kết quả cuối, dù cỡ mẫu nhỏ nên tiếp tục theo dõi."
+      },
+      {
+        "q": "'Tháng 10 tỷ lệ nhận offer giảm từ 80% xuống 55%; phân tích lý do từ chối cho thấy 70% vì lương thấp hơn đối thủ.' Đây là cấp độ analytics nào?",
+        "options": ["Mô tả", "Chẩn đoán", "Dự báo", "Đề xuất"],
+        "answer": 1,
+        "explain": "Giải thích 'vì sao' tỷ lệ giảm là phân tích chẩn đoán (diagnostic)."
+      },
+      {
+        "q": "Tiêu đề slide nào tốt nhất theo nguyên tắc data storytelling?",
+        "options": ["Báo cáo tuyển dụng Quý 3", "Số liệu các kênh tuyển dụng", "Referral rẻ hơn 60% và giữ người tốt gấp đôi job board", "Biểu đồ 1"],
+        "answer": 2,
+        "explain": "Tiêu đề nên là kết luận (takeaway) để người đọc hiểu thông điệp ngay cả khi chỉ đọc tiêu đề."
+      },
+      {
+        "q": "Hàm nào phù hợp nhất để tính tổng chi phí tuyển dụng của phòng 'Kinh doanh' trong tháng '2026-10'?",
+        "options": ["VLOOKUP", "SUMIFS", "COUNTIF", "NETWORKDAYS"],
+        "answer": 1,
+        "explain": "SUMIFS cộng giá trị theo nhiều điều kiện (phòng ban và tháng)."
+      },
+      {
+        "q": "Vì sao chỉ báo cáo một con số cost-per-hire bình quân cho toàn công ty có thể gây hiểu lầm?",
+        "options": ["Vì CPH không quan trọng", "Vì chi phí giữa vị trí quản lý (qua headhunter) và vị trí số lượng lớn chênh lệch rất nhiều", "Vì luật cấm công bố chi phí", "Vì Excel tính sai trung bình"],
+        "answer": 1,
+        "explain": "Số bình quân che giấu sự khác biệt. Nên tách theo nhóm vị trí/cấp bậc để quyết định ngân sách đúng."
+      },
+      {
+        "q": "Early turnover (nghỉ trong 90 ngày) của nhân viên kho là 45%. Hành động phân tích tiếp theo hợp lý nhất?",
+        "options": ["Tăng số lượng tuyển lên 45%", "Phân tích theo kênh, ca làm, quản lý trực tiếp và lý do nghỉ để tìm nguyên nhân gốc", "Ngừng tuyển nhân viên kho", "Giảm thời gian thử việc"],
+        "answer": 1,
+        "explain": "Chia nhỏ dữ liệu (segmentation) theo các chiều để tìm nguyên nhân gốc trước khi đề xuất giải pháp."
+      },
+      {
+        "q": "Nguyên tắc nào giúp đảm bảo chất lượng dữ liệu tuyển dụng tốt nhất?",
+        "options": ["Cập nhật dữ liệu một lần vào cuối quý", "Cho mỗi người tự đặt tên kênh theo ý mình", "Dùng danh mục chuẩn hoá (dropdown) và cập nhật ngay khi trạng thái thay đổi", "Chỉ lưu dữ liệu ứng viên được tuyển"],
+        "answer": 2,
+        "explain": "Chuẩn hoá danh mục và cập nhật kịp thời giúp dữ liệu nhất quán, so sánh được giữa các kỳ."
+      }
+    ],
+    "cases": [
+      {
+        "scenario": "CEO hỏi trong cuộc họp: 'Tại sao năm nay chi tuyển dụng tăng 40% mà vẫn thiếu người?' Dữ liệu bạn có: số yêu cầu tuyển tăng 60% (mở kho mới), chi headhunter tăng mạnh do 4 vị trí quản lý, offer acceptance giảm từ 78% xuống 60%, early turnover kho 40%.",
+        "question": "Dựng cấu trúc câu trả lời 3 thông điệp + 1–2 đề xuất bạn sẽ trình bày cho CEO.",
+        "guide": "Thông điệp gợi ý:\n1. Chi phí tăng 40% nhưng khối lượng tuyển tăng 60% → CPH bình quân thực tế giảm (cần tính lại để chứng minh).\n2. Phần chi tăng đột biến đến từ 4 vị trí quản lý qua headhunter — tách riêng con số này.\n3. 'Thiếu người' chủ yếu do rò rỉ: offer acceptance giảm (lương kém cạnh tranh?) và 40% nhân viên kho nghỉ trong 90 ngày → phải tuyển lại.\nĐề xuất: (a) benchmark lương vị trí kho/quản lý, (b) chương trình onboarding + buddy cho kho để giảm early turnover, (c) xây pipeline quản lý nội bộ để giảm phụ thuộc headhunter. Mỗi đề xuất có con số kỳ vọng."
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+[
+  { "id": "ta", "name": "Tuyển dụng & Employer Branding", "short": "Tuyển dụng", "description": "Thu hút, sàng lọc, phỏng vấn, offer; thương hiệu nhà tuyển dụng." },
+  { "id": "cb", "name": "Lương thưởng & Phúc lợi (C&B)", "short": "C&B", "description": "Gross–Net, BHXH, thuế TNCN, cơ cấu lương, benchmark, Total Rewards." },
+  { "id": "law", "name": "Luật Lao động Việt Nam", "short": "Luật LĐ", "description": "BLLĐ 2019, Luật BHXH, nghị định hướng dẫn; soạn và rà soát văn bản." },
+  { "id": "ld", "name": "Đào tạo & Phát triển (L&D)", "short": "L&D", "description": "TNA, thiết kế chương trình, đo lường hiệu quả đào tạo." },
+  { "id": "pm", "name": "Quản lý hiệu suất (Performance Management)", "short": "Hiệu suất", "description": "KPI/OKR, đánh giá, feedback, gắn kết quả với đãi ngộ." },
+  { "id": "er", "name": "Quan hệ lao động (Employee Relations)", "short": "Quan hệ LĐ", "description": "Kỷ luật, khiếu nại, đối thoại, chấm dứt HĐLĐ, văn hoá ứng xử." },
+  { "id": "analytics", "name": "Phân tích dữ liệu nhân sự (HR Analytics)", "short": "Analytics", "description": "Metrics, dashboard, phân tích nguyên nhân, kể chuyện bằng dữ liệu." },
+  { "id": "od", "name": "Phát triển tổ chức (OD) & Văn hoá", "short": "OD", "description": "Cơ cấu tổ chức, quản trị thay đổi, văn hoá, engagement." },
+  { "id": "strategy", "name": "Chiến lược nhân sự & Hiểu biết kinh doanh", "short": "Chiến lược", "description": "Hiểu P&L, workforce planning, gắn HR với mục tiêu kinh doanh." },
+  { "id": "leadership", "name": "Lãnh đạo & Ảnh hưởng", "short": "Lãnh đạo", "description": "Tư vấn, thuyết phục, coaching, dẫn dắt đội ngũ và các bên liên quan." }
+]
