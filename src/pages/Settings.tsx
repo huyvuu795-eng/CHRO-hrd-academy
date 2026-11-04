@@ -1,9 +1,9 @@
 import { useRef, useState } from 'react';
 import { PageHeader } from '../components/ui';
-import { today } from '../lib/date';
 import { defaultState, normalize, useStore } from '../lib/store';
 import type { Theme } from '../types';
 import { sfx } from '../lib/sound';
+import { daysSinceBackup, downloadBackup } from '../lib/backup';
 
 function Toggle({ label, hint, on, onChange }: { label: string; hint?: string; on: boolean; onChange: (v: boolean) => void }) {
   return (
@@ -36,17 +36,11 @@ export default function Settings() {
   const [msg, setMsg] = useState('');
 
   const exportJson = () => {
-    const blob = new Blob([JSON.stringify({ app: 'hrd-academy', exportedAt: new Date().toISOString(), state }, null, 2)], {
-      type: 'application/json',
-    });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `hrd-academy-backup-${today()}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
+    downloadBackup(state);
+    update((d) => void (d.lastBackup = new Date().toISOString()));
     setMsg('Đã tải file sao lưu.');
   };
+  const since = daysSinceBackup(state);
 
   const importJson = async (f: File) => {
     try {
@@ -160,7 +154,10 @@ export default function Settings() {
 
       <section className="card mb-4">
         <div className="label mb-1">Sao lưu & chuyển máy</div>
-        <p className="mb-3 text-sm text-stone-500">Dữ liệu chỉ nằm trong trình duyệt này. Export định kỳ (vd. mỗi Chủ nhật) và lưu lên Google Drive.</p>
+        <p className="mb-1 text-sm text-stone-500">Dữ liệu chỉ nằm trong trình duyệt này. Export định kỳ (vd. mỗi Chủ nhật) và lưu lên Google Drive.</p>
+        <p className="mb-3 text-xs font-medium text-stone-500">
+          {since === null ? 'Chưa sao lưu lần nào.' : since === 0 ? 'Lần sao lưu gần nhất: hôm nay.' : `Lần sao lưu gần nhất: ${since} ngày trước.`}
+        </p>
         <div className="grid grid-cols-2 gap-2">
           <button className="btn-primary" onClick={exportJson}>
             Export JSON

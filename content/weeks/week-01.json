@@ -46,7 +46,7 @@
     "mcq": [
       {
         "q": "Một recruiter offer lương cao hơn khung 20% để chốt nhanh ứng viên. 3 tháng sau, 2 nhân viên cũ cùng vị trí xin nghỉ. Vấn đề này chủ yếu thuộc chặng nào của vòng đời nhân viên?",
-        "options": ["Thu hút (Attract)", "Giữ chân (Retain) — hệ quả của quyết định tuyển chọn", "Hội nhập (Onboard)", "Rời đi (Offboard)"],
+        "options": ["Thu hút (Attract)", "Giữ chân (Retain)", "Hội nhập (Onboard)", "Rời đi (Offboard)"],
         "answer": 1,
         "explain": "Quyết định ở chặng tuyển chọn tạo ra bất công bằng nội bộ về lương, gây hệ quả ở chặng Giữ chân. Đây là ví dụ điển hình cho việc các chặng liên kết với nhau."
       },

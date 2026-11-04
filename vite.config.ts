@@ -8,15 +8,8 @@ const base = process.env.BASE_PATH || '/';
 export default defineConfig({
   base,
   build: {
+    // Biểu đồ và markdown được tải động (React.lazy) nên tự tách thành gói riêng, không tải lúc mở app
     chunkSizeWarningLimit: 700,
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          charts: ['recharts'],
-          markdown: ['react-markdown', 'remark-gfm'],
-        },
-      },
-    },
   },
   plugins: [
     react(),

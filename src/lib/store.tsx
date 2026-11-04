@@ -20,6 +20,7 @@ export function defaultState(): AppState {
     selfAssessments: [],
     reflections: {},
     streakRewards: [],
+    mistakes: {},
     settings: { theme: 'system', dailyNewCards: 10, sound: { ...defaultSound } },
   };
 }

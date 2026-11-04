@@ -4,19 +4,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap">
 <style>
-/* Layout: một cột hội thoại kiểu sổ tra cứu — thanh đầu dính, chế độ Hỏi/Tra, ngăn kéo hiện nguyên văn Điều */
+/* Layout: một cột hội thoại kiểu Tàng Kinh Các — thanh đầu dính, chế độ Hỏi/Tra, ngăn kéo hiện nguyên văn Điều.
+   Màu: sương núi, ngọc bích, vàng kim — đồng bộ với app HRD Academy phong cách tu tiên */
 :root {
-  --bg: #f4f6f5;
+  --bg: #eef2f7;
   --surface: #ffffff;
-  --sunken: #e9eeec;
-  --fg: #17211e;
-  --muted: #5d6b66;
-  --line: #d7dfdc;
-  --accent: #0f766e;
+  --sunken: #e3e9f1;
+  --fg: #171e2c;
+  --muted: #5b6d83;
+  --line: #d3dce7;
+  --accent: #136b55;
   --accent-ink: #ffffff;
-  --accent-soft: #dcefeb;
-  --warn-bg: #fff4dc;
-  --warn-fg: #7a4b00;
+  --accent-soft: #f6ecd0;
+  --gold: #bf9536;
+  --warn-bg: #fbf3dc;
+  --warn-fg: #79591a;
   --err-bg: #fde8e6;
   --err-fg: #8a1c12;
   --ff-ui: "Be Vietnam Pro", "Segoe UI", Roboto, system-ui, sans-serif;
@@ -25,16 +27,16 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0f1513; --surface: #17201d; --sunken: #1e2926; --fg: #e6eeeb; --muted: #9aaba5; --line: #2b3834;
-    --accent: #2bb3a4; --accent-ink: #06201c; --accent-soft: #163a35;
-    --warn-bg: #3a2c0c; --warn-fg: #f3cf7a; --err-bg: #3d1713; --err-fg: #f4b4ac;
+    --bg: #0d121c; --surface: #171e2c; --sunken: #1f2838; --fg: #ece6d4; --muted: #9aa6ba; --line: #2a3446;
+    --accent: #3fb894; --accent-ink: #08201a; --accent-soft: #3a3220; --gold: #e6c977;
+    --warn-bg: #33291a; --warn-fg: #f0dea4; --err-bg: #3d1713; --err-fg: #f4b4ac;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0f1513; --surface: #17201d; --sunken: #1e2926; --fg: #e6eeeb; --muted: #9aaba5; --line: #2b3834;
-  --accent: #2bb3a4; --accent-ink: #06201c; --accent-soft: #163a35;
-  --warn-bg: #3a2c0c; --warn-fg: #f3cf7a; --err-bg: #3d1713; --err-fg: #f4b4ac;
+  --bg: #0d121c; --surface: #171e2c; --sunken: #1f2838; --fg: #ece6d4; --muted: #9aa6ba; --line: #2a3446;
+  --accent: #3fb894; --accent-ink: #08201a; --accent-soft: #3a3220; --gold: #e6c977;
+  --warn-bg: #33291a; --warn-fg: #f0dea4; --err-bg: #3d1713; --err-fg: #f4b4ac;
   color-scheme: dark;
 }
 html, body { height: 100%; }
@@ -133,7 +135,7 @@ button:focus-visible, textarea:focus-visible, input:focus-visible, .chip:focus-v
   <header>
     <div class="brand">
       <h1>Hỏi đáp Luật Lao động</h1>
-      <span class="src">BLLĐ 45/2019/QH14 · NĐ 145/2020 · Thuế TNCN 2025 · Lương tối thiểu 2026–2027 · dữ liệu __BUILT__</span>
+      <span class="src">Hỏi Trưởng lão · BLLĐ 45/2019/QH14 · NĐ 145/2020 · Thuế TNCN 2025 · Lương tối thiểu 2026–2027 · dữ liệu __BUILT__</span>
     </div>
     <div class="modes" role="tablist" aria-label="Chế độ">
       <button id="tab-ask" role="tab" aria-selected="true">Hỏi Claude</button>
@@ -143,7 +145,7 @@ button:focus-visible, textarea:focus-visible, input:focus-visible, .chip:focus-v
 
   <main id="ask-view">
     <section class="intro" id="intro">
-      <p>Hỏi bằng tiếng Việt như khi hỏi một đồng nghiệp pháp chế. Claude đọc nguyên văn Bộ luật Lao động 2019 ngay trong trang này cùng các điểm đã đối chiếu (Nghị định 145, thuế TNCN, lương tối thiểu), rồi trả lời kèm số Điều. Câu hỏi dùng hạn mức tài khoản Claude của bạn.</p>
+      <p>Hỏi bằng tiếng Việt như khi hỏi một đồng nghiệp pháp chế. Trưởng lão đọc nguyên văn Bộ luật Lao động 2019 và Nghị định 145/2020 (Điều 1–101) ngay trong trang này cùng các điểm đã đối chiếu (thuế TNCN, lương tối thiểu), rồi trả lời kèm số Điều. Câu hỏi dùng hạn mức tài khoản Claude của bạn.</p>
       <div class="label">Thử hỏi</div>
       <div class="chips" id="chips"></div>
     </section>
@@ -182,42 +184,58 @@ button:focus-visible, textarea:focus-visible, input:focus-visible, .chip:focus-v
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
 <script>
 const ARTICLES = /*__ARTICLES__*/[];
+const ND145 = /*__ND145__*/[];
 const FACTS = /*__FACTS__*/"";
-const byN = new Map(ARTICLES.map((a) => [a.n, a]));
 const $ = (id) => document.getElementById(id);
+
+// Hai văn bản tra cứu được: Bộ luật Lao động 2019 và Nghị định 145/2020 (bản đã tải có Điều 1–101)
+const DOCS = {
+  blld: { name: 'Bộ luật Lao động 2019', short: 'BLLĐ 2019', list: ARTICLES },
+  nd145: { name: 'Nghị định 145/2020/NĐ-CP', short: 'NĐ 145/2020', list: ND145 },
+};
+for (const d of Object.values(DOCS)) d.byN = new Map(d.list.map((a) => [a.n, a]));
+const byN = DOCS.blld.byN;
 
 // ---------- Tìm kiếm cục bộ (TF-IDF trên âm tiết + cặp âm tiết, bỏ dấu) ----------
 const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd');
 const toks = (s) => norm(s).split(/[^a-z0-9]+/).filter(Boolean);
 const grams = (t) => { const out = new Set(t); for (let i = 0; i + 1 < t.length; i++) out.add(t[i] + '_' + t[i + 1]); return out; };
-const INDEX = ARTICLES.map((a) => ({ a, title: grams(toks(a.t)), body: grams(toks(a.x)) }));
+const INDEX = Object.entries(DOCS).flatMap(([doc, d]) => d.list.map((a) => ({ doc, a, title: grams(toks(a.t)), body: grams(toks(a.x)) })));
 const DF = new Map();
 for (const d of INDEX) for (const g of new Set([...d.title, ...d.body])) DF.set(g, (DF.get(g) || 0) + 1);
-const idf = (g) => Math.log((ARTICLES.length + 1) / ((DF.get(g) || 0) + 1));
+const idf = (g) => Math.log((INDEX.length + 1) / ((DF.get(g) || 0) + 1));
 
-function searchLaw(query, k = 5) {
-  const nums = [...String(query).matchAll(/(?:điều|dieu)\s*(\d{1,3})/gi)].map((m) => Number(m[1])).filter((n) => byN.has(n));
-  const q = grams(toks(query));
-  const scored = INDEX.map((d) => {
+/** Tìm Điều liên quan trong cả hai văn bản; trả về [{doc, a}] */
+function searchLaw(query, k = 5, onlyDoc) {
+  const text = String(query);
+  const wantNd = /145|ngh[iị] đ[iị]nh|\bnđ\b/i.test(text);
+  const nums = [...text.matchAll(/(?:điều|dieu)\s*(\d{1,3})/gi)].map((m) => Number(m[1]));
+  const q = grams(toks(text));
+  const scored = INDEX.filter((d) => !onlyDoc || d.doc === onlyDoc).map((d) => {
     let s = 0;
     for (const g of q) {
       const w = idf(g) * (g.includes('_') ? 2.5 : 1);
       if (d.title.has(g)) s += 4 * w;
       if (d.body.has(g)) s += w;
     }
-    return { a: d.a, s };
+    return { doc: d.doc, a: d.a, s };
   }).filter((r) => r.s > 0).sort((x, y) => y.s - x.s);
-  const out = nums.map((n) => byN.get(n));
-  for (const r of scored) { if (out.length >= k) break; if (!out.includes(r.a)) out.push(r.a); }
+  const out = [];
+  for (const n of nums) {
+    const doc = onlyDoc || (wantNd && DOCS.nd145.byN.has(n) ? 'nd145' : 'blld');
+    const a = DOCS[doc].byN.get(n);
+    if (a) out.push({ doc, a });
+  }
+  for (const r of scored) { if (out.length >= k) break; if (!out.some((o) => o.a === r.a)) out.push(r); }
   return out;
 }
 const clip = (s, n) => (s.length > n ? s.slice(0, n) + ' …[đã rút gọn — gọi doc_dieu để đọc đủ]' : s);
-const artText = (a, n) => `Điều ${a.n}. ${a.t}\n(${a.c})\n${clip(a.x, n)}`;
+const artText = (doc, a, n) => `[${DOCS[doc].name}] Điều ${a.n}. ${a.t}\n(${a.c})\n${clip(a.x, n)}`;
 
 // ---------- Ngăn kéo hiện nguyên văn Điều ----------
-function openArticle(n) {
-  const a = byN.get(n); if (!a) return;
-  $('sheet-chap').textContent = `Bộ luật Lao động 2019 · ${a.c}`;
+function openArticle(n, doc = 'blld') {
+  const a = DOCS[doc].byN.get(n); if (!a) return;
+  $('sheet-chap').textContent = `${DOCS[doc].name} · ${a.c}`;
   $('sheet-title').textContent = `Điều ${a.n}. ${a.t}`;
   $('sheet-body').textContent = a.x;
   $('sheet').hidden = false; $('sheet-bg').hidden = false; $('sheet').scrollTop = 0;
@@ -227,8 +245,16 @@ function closeArticle() { $('sheet').hidden = true; $('sheet-bg').hidden = true;
 $('sheet-close').onclick = closeArticle; $('sheet-bg').onclick = closeArticle;
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !$('sheet').hidden) closeArticle(); });
 
-// ---------- Hiển thị Markdown + biến "Điều N" (của BLLĐ) thành nút ----------
+// ---------- Hiển thị Markdown + biến "Điều N" (BLLĐ hoặc NĐ 145) thành nút ----------
 const OTHER_DOC = /(NĐ|Nghị định|Nghị quyết|NQ|Thông tư|Luật (?!Lao động)|Luật BHXH|Luật Thuế|Luật Việc làm)/;
+/** Đoán "Điều N" thuộc văn bản nào từ phần chữ ngay sau nó; null nếu là văn bản không có trong trang */
+function docOf(n, tail) {
+  const before = tail.split(OTHER_DOC)[0];
+  if (/BLLĐ|Bộ luật Lao động/.test(before)) return DOCS.blld.byN.has(n) ? 'blld' : null;
+  if (/145/.test(tail) && OTHER_DOC.test(tail)) return DOCS.nd145.byN.has(n) ? 'nd145' : null;
+  if (OTHER_DOC.test(tail)) return null;
+  return DOCS.blld.byN.has(n) ? 'blld' : null;
+}
 function linkify(root) {
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
   const nodes = []; while (walker.nextNode()) nodes.push(walker.currentNode);
@@ -238,12 +264,12 @@ function linkify(root) {
     while ((m = re.exec(text))) {
       const n = Number(m[1]);
       const tail = text.slice(m.index + m[0].length).split(/[.;\n]/)[0];
-      const isBlld = byN.has(n) && (!OTHER_DOC.test(tail) || /BLLĐ|Bộ luật Lao động/.test(tail.split(OTHER_DOC)[0]));
-      if (!isBlld) continue;
+      const doc = docOf(n, tail);
+      if (!doc) continue;
       hit = true;
       frag.append(text.slice(last, m.index));
       const b = document.createElement('button'); b.className = 'art-link'; b.type = 'button'; b.textContent = m[0];
-      b.title = `Xem nguyên văn Điều ${n} BLLĐ 2019`; b.onclick = () => openArticle(n); frag.append(b);
+      b.title = `Xem nguyên văn Điều ${n} ${DOCS[doc].short}`; b.onclick = () => openArticle(n, doc); frag.append(b);
       last = m.index + m[0].length;
     }
     if (hit) { frag.append(text.slice(last)); node.replaceWith(frag); }
@@ -284,15 +310,19 @@ function note(kind, text) { const n = $('ask-note'); if (!text) { n.hidden = tru
 const RULES = `Bạn là trợ lý tra cứu pháp luật lao động Việt Nam cho một chuyên viên nhân sự (tuyển dụng nội bộ ở công ty thương mại điện tử tại TP.HCM, định hướng lên HR Director).
 
 NGUỒN, theo thứ tự ưu tiên:
-1. Nguyên văn Bộ luật Lao động 45/2019/QH14 — đọc qua công cụ doc_dieu (theo số Điều) và tra_cuu_luat (theo từ khoá). MỤC LỤC 220 Điều ở cuối giúp bạn chọn đúng Điều. Đây là bản gốc 2019, chưa hợp nhất các lần sửa đổi (nếu có).
-2. CÁC ĐIỂM ĐÃ TÓM TẮT bên dưới: đã đối chiếu văn bản gốc (NĐ 145/2020, Luật Thuế TNCN 109/2025, NQ 110/2025, NĐ 293/2025, NĐ 399/2026), trừ ý ghi "chưa đối chiếu".
+1. Nguyên văn hai văn bản, đọc qua công cụ doc_dieu (theo số Điều, chọn van_ban) và tra_cuu_luat (theo từ khoá, tìm cả hai):
+   - Bộ luật Lao động 45/2019/QH14 (van_ban "blld", 220 Điều) — bản gốc 2019, chưa hợp nhất các lần sửa đổi (nếu có).
+   - Nghị định 145/2020/NĐ-CP hướng dẫn BLLĐ (van_ban "nd145") — bản trong trang chỉ có Điều 1–101; Điều 102–115 (trọng tài lao động, đình công, hiệu lực) không có, nếu cần hãy nói rõ.
+   Hai MỤC LỤC ở cuối giúp bạn chọn đúng Điều. NĐ 145 hướng dẫn chi tiết: công thức lương làm thêm giờ, trình tự kỷ luật, nội quy, trợ cấp thôi việc, lao động nữ…
+2. CÁC ĐIỂM ĐÃ TÓM TẮT bên dưới: đã đối chiếu văn bản gốc (Luật Thuế TNCN 109/2025, NQ 110/2025, NĐ 293/2025, NĐ 399/2026…), trừ ý ghi "chưa đối chiếu".
 3. Kiến thức chung — chỉ khi hai nguồn trên không đủ, và phải nói rõ.
 
 QUY TẮC:
-- Trước khi trích một Điều của Bộ luật Lao động, hãy đọc nguyên văn Điều đó bằng doc_dieu (gọi một lần cho nhiều Điều). Không trích số Điều chưa đọc.
+- Trước khi trích một Điều của BLLĐ hoặc NĐ 145, hãy đọc nguyên văn Điều đó bằng doc_dieu (gọi một lần cho nhiều Điều). Không trích số Điều chưa đọc.
+- Khi BLLĐ chỉ quy định khung và NĐ 145 hướng dẫn chi tiết, trích cả hai.
 - Tiếng Việt, giữ thuật ngữ tiếng Anh trong ngoặc khi cần.
 - Mở đầu bằng câu trả lời trực tiếp (có/không, con số, thời hạn); rồi giải thích ngắn; ví dụ áp dụng nếu giúp ích (bối cảnh e-commerce/startup).
-- Kết thúc bằng "**Căn cứ:**" liệt kê Điều, Khoản, Điểm và tên văn bản. Ghi "BLLĐ 2019" sau số Điều của Bộ luật; ghi rõ tên nghị định/luật khác.
+- Kết thúc bằng "**Căn cứ:**" liệt kê Điều, Khoản, Điểm và tên văn bản. Ghi "BLLĐ 2019" sau số Điều của Bộ luật, "NĐ 145/2020" sau số Điều của Nghị định; ghi rõ tên văn bản khác.
 - Nội dung không có trong nguồn 1–2 (chi tiết Luật BHXH 41/2024, Luật Việc làm 74/2025, văn bản chưa có, quy định có thể đã sửa): đánh dấu "⚠️ Cần kiểm tra lại văn bản gốc". Không bịa số hiệu văn bản hay số Điều.
 - Câu hỏi thiếu dữ kiện quyết định (loại HĐ, số lao động, thời gian làm việc…): nêu giả định hoặc hỏi lại ngắn.
 - Chỉ nhắc "không thay thế tư vấn luật sư" khi câu hỏi liên quan tranh chấp, kiện tụng.
@@ -300,8 +330,11 @@ QUY TẮC:
 
 ${FACTS}
 
-# MỤC LỤC BỘ LUẬT LAO ĐỘNG 2019
-${ARTICLES.map((a) => `Điều ${a.n}. ${a.t}`).join('\n')}`;
+# MỤC LỤC BỘ LUẬT LAO ĐỘNG 2019 (van_ban "blld")
+${ARTICLES.map((a) => `Điều ${a.n}. ${a.t}`).join('\n')}
+
+# MỤC LỤC NGHỊ ĐỊNH 145/2020/NĐ-CP (van_ban "nd145", Điều 1–101)
+${ND145.map((a) => `Điều ${a.n}. ${a.t}`).join('\n')}`;
 
 let sample = null, canTools = false, busy = false, ctl = null;
 (async () => {
@@ -315,25 +348,33 @@ let sample = null, canTools = false, busy = false, ctl = null;
 const TOOLS = [
   {
     name: 'doc_dieu',
-    description: 'Đọc NGUYÊN VĂN các Điều của Bộ luật Lao động 45/2019/QH14 theo số Điều (1–220), tối đa 5 Điều mỗi lần. Trả về văn bản.',
-    inputSchema: { type: 'object', properties: { so_dieu: { type: 'array', items: { type: 'integer' }, description: 'Danh sách số Điều, vd [24, 25, 26]' } }, required: ['so_dieu'] },
+    description: 'Đọc NGUYÊN VĂN các Điều theo số Điều, tối đa 5 Điều mỗi lần. van_ban: "blld" = Bộ luật Lao động 2019 (Điều 1–220, mặc định); "nd145" = Nghị định 145/2020 (Điều 1–101).',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        so_dieu: { type: 'array', items: { type: 'integer' }, description: 'Danh sách số Điều, vd [24, 25, 26]' },
+        van_ban: { type: 'string', enum: ['blld', 'nd145'], description: 'Văn bản cần đọc; mặc định blld' },
+      },
+      required: ['so_dieu'],
+    },
     execute(input) {
-      const ns = (Array.isArray(input.so_dieu) ? input.so_dieu : [input.so_dieu]).map(Number).filter((n) => byN.has(n)).slice(0, 5);
-      if (!ns.length) throw new Error('Không có số Điều hợp lệ (1–220).');
-      setStatus(`Đang đọc ${ns.map((n) => 'Điều ' + n).join(', ')}…`);
-      return ns.map((n) => artText(byN.get(n), 6000)).join('\n\n---\n\n');
+      const doc = input.van_ban === 'nd145' ? 'nd145' : 'blld';
+      const ns = (Array.isArray(input.so_dieu) ? input.so_dieu : [input.so_dieu]).map(Number).filter((n) => DOCS[doc].byN.has(n)).slice(0, 5);
+      if (!ns.length) throw new Error(doc === 'nd145' ? 'Không có số Điều hợp lệ (NĐ 145: 1–101).' : 'Không có số Điều hợp lệ (BLLĐ: 1–220).');
+      setStatus(`Đang đọc ${ns.map((n) => 'Điều ' + n).join(', ')} ${DOCS[doc].short}…`);
+      return ns.map((n) => artText(doc, DOCS[doc].byN.get(n), 6000)).join('\n\n---\n\n');
     },
   },
   {
     name: 'tra_cuu_luat',
-    description: 'Tìm trong toàn văn Bộ luật Lao động 2019 theo từ khoá tiếng Việt khi chưa biết số Điều. Trả về tối đa 5 Điều liên quan nhất (nội dung có thể bị rút gọn).',
-    inputSchema: { type: 'object', properties: { tu_khoa: { type: 'string', description: 'Từ khoá, vd "thời gian thử việc", "làm thêm giờ"' } }, required: ['tu_khoa'] },
+    description: 'Tìm theo từ khoá tiếng Việt trong toàn văn BLLĐ 2019 và NĐ 145/2020 khi chưa biết số Điều. Trả về tối đa 6 Điều liên quan nhất, ghi rõ thuộc văn bản nào (nội dung có thể bị rút gọn).',
+    inputSchema: { type: 'object', properties: { tu_khoa: { type: 'string', description: 'Từ khoá, vd "thời gian thử việc", "làm thêm giờ ban đêm"' } }, required: ['tu_khoa'] },
     execute(input) {
       const q = String(input.tu_khoa || '').slice(0, 200);
       setStatus(`Đang tra “${q}”…`);
-      const found = searchLaw(q, 5);
+      const found = searchLaw(q, 6);
       if (!found.length) return 'Không tìm thấy Điều phù hợp. Thử từ khoá khác hoặc dùng mục lục.';
-      return found.map((a) => artText(a, 2500)).join('\n\n---\n\n');
+      return found.map((r) => artText(r.doc, r.a, 2200)).join('\n\n---\n\n');
     },
   },
 ];
@@ -368,7 +409,7 @@ async function ask(text) {
   const today = new Date().toLocaleDateString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh' });
   const history = turns.slice(0, -1).slice(-8);
   let extra = '';
-  if (!canTools) extra = '\n\n(Trang không chạy được công cụ tra cứu — các Điều liên quan nhất, tìm sẵn:)\n\n' + searchLaw(question, 6).map((a) => artText(a, 3500)).join('\n\n---\n\n');
+  if (!canTools) extra = '\n\n(Trang không chạy được công cụ tra cứu — các Điều liên quan nhất, tìm sẵn:)\n\n' + searchLaw(question, 6).map((r) => artText(r.doc, r.a, 3500)).join('\n\n---\n\n');
   const input = [{ role: 'user', content: RULES }, ...history, { role: 'user', content: `(Hôm nay: ${today})\n\n${question}${extra}` }];
   let pending = 0;
   try {
@@ -414,12 +455,13 @@ function showMode(m) {
 $('tab-ask').onclick = () => showMode('ask'); $('tab-find').onclick = () => showMode('find');
 function renderFind() {
   const q = $('find-q').value.trim();
-  const list = !q ? [24, 25, 35, 36, 98, 107, 113, 125, 137].map((n) => byN.get(n))
-    : /^\d{1,3}$/.test(q) ? [byN.get(Number(q))].filter(Boolean) : searchLaw(q, 12);
-  $('find-res').replaceChildren(...(list.length ? list.map((a) => {
-    const b = document.createElement('button'); b.className = 'res'; b.type = 'button'; b.onclick = () => openArticle(a.n);
+  const pick = (doc, ns) => ns.map((n) => DOCS[doc].byN.get(n)).filter(Boolean).map((a) => ({ doc, a }));
+  const list = !q ? [...pick('blld', [24, 25, 35, 36, 98, 107, 113, 125, 137]), ...pick('nd145', [8, 55, 57, 69, 70])]
+    : /^\d{1,3}$/.test(q) ? [...pick('blld', [Number(q)]), ...pick('nd145', [Number(q)])] : searchLaw(q, 12);
+  $('find-res').replaceChildren(...(list.length ? list.map(({ doc, a }) => {
+    const b = document.createElement('button'); b.className = 'res'; b.type = 'button'; b.onclick = () => openArticle(a.n, doc);
     const t = document.createElement('b'); t.textContent = `Điều ${a.n}. ${a.t}`;
-    const c = document.createElement('span'); c.textContent = a.c;
+    const c = document.createElement('span'); c.textContent = `${DOCS[doc].short} · ${a.c}`;
     const x = document.createElement('em'); x.textContent = a.x.slice(0, 160).replace(/\s+/g, ' ') + '…';
     b.append(t, c, x); return b;
   }) : [Object.assign(document.createElement('p'), { className: 'note warn', textContent: 'Không thấy Điều phù hợp. Thử từ khoá ngắn hơn.' })]));

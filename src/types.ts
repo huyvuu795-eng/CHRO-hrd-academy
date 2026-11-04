@@ -152,7 +152,22 @@ export interface AppState {
   reflections: Record<string, Reflection>;
   /** các rương streak đã mở, dạng "<ngày bắt đầu chuỗi>:<mốc>" */
   streakRewards: string[];
+  /** ISO datetime lần Export JSON gần nhất */
+  lastBackup?: string;
+  /** YYYY-MM-DD: không nhắc sao lưu trước ngày này */
+  backupSnoozeUntil?: string;
+  /** sổ câu sai: key "<tuần>-<chỉ số câu gốc>" */
+  mistakes: Record<string, MistakeState>;
   settings: { theme: Theme; dailyNewCards: number; sound: SoundSettings };
+}
+
+export interface MistakeState extends CardState {
+  week: number;
+  /** chỉ số câu trong quiz.mcq của tuần (thứ tự gốc, trước khi xáo) */
+  q: number;
+  /** đã thuộc: trả lời đúng liên tiếp đến khi khoảng ôn ≥ 21 ngày */
+  mastered?: boolean;
+  wrongCount: number;
 }
 
 export interface SoundSettings {

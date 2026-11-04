@@ -5,11 +5,12 @@ import { getWeek } from '../lib/content';
 import { go } from '../lib/router';
 import { PASS_PCT, markStudied, useStore } from '../lib/store';
 import type { MCQ } from '../types';
+import { recordMistake } from '../lib/mistakes';
 
 type Phase = 'mcq' | 'case' | 'result';
 
 /** Xáo thứ tự đáp án mỗi lần làm bài để không thể "đoán theo vị trí" */
-function shuffleOptions(list: MCQ[]): MCQ[] {
+export function shuffleOptions(list: MCQ[]): MCQ[] {
   return list.map((q) => {
     const order = q.options.map((_, i) => i);
     for (let i = order.length - 1; i > 0; i--) {
@@ -82,6 +83,8 @@ export default function Quiz({ week }: { week: number }) {
           picked={picked}
           onPick={setPicked}
           onNext={() => {
+            // câu sai vào Sổ câu sai (thứ tự câu không đổi khi xáo, chỉ xáo đáp án)
+            if (picked !== mcq[idx].answer) update((d) => recordMistake(d, week, idx));
             const next = [...answers, picked!];
             setAnswers(next);
             setPicked(null);
@@ -146,7 +149,7 @@ export default function Quiz({ week }: { week: number }) {
   );
 }
 
-function McqView({
+export function McqView({
   n,
   total,
   q,
@@ -238,7 +241,12 @@ function ResultView({ week, pct, correct, mcq, answers }: { week: number; pct: n
       </div>
       {wrong.length > 0 && (
         <div className="card mb-4">
-          <div className="label mb-2">Ôn lại câu sai</div>
+          <div className="mb-2 flex items-center justify-between gap-2">
+            <span className="label">Ôn lại câu sai</span>
+            <button className="text-xs font-semibold text-brand-700 dark:text-brand-400" onClick={() => go('/mistakes')}>
+              Đã ghi {wrong.length} câu vào Sổ câu sai →
+            </button>
+          </div>
           <ul className="space-y-3">
             {wrong.map(({ q, i }) => (
               <li key={i} className="text-sm leading-relaxed">

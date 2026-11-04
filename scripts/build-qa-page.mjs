@@ -4,34 +4,41 @@
 import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-// ---- Bộ luật Lao động → mảng Điều ----
-const law = readFileSync('content/legal/blld-2019.txt', 'utf8').split('\n');
-const articles = [];
-let chapter = '';
-for (let i = 0; i < law.length; i++) {
-  const line = law[i];
-  const ch = line.match(/^Chương ([IVXLC]+)\s*$/);
-  if (ch) {
-    chapter = `Chương ${ch[1]}. ${(law[i + 1] ?? '').trim()}`;
-    continue;
+// ---- Văn bản luật → mảng Điều ----
+function parseLaw(file, expected) {
+  const law = readFileSync(file, 'utf8').split('\n');
+  const articles = [];
+  let chapter = '';
+  for (let i = 0; i < law.length; i++) {
+    const line = law[i];
+    const ch = line.match(/^Chương ([IVXLC]+)\s*$/);
+    if (ch) {
+      chapter = `Chương ${ch[1]}. ${(law[i + 1] ?? '').trim()}`;
+      continue;
+    }
+    const m = line.match(/^Điều (\d+)\. (.*)$/);
+    if (m) {
+      articles.push({ n: Number(m[1]), title: m[2].trim(), chapter, lines: [] });
+      continue;
+    }
+    if (articles.length && !/^Mục \d+\./.test(line)) articles[articles.length - 1].lines.push(line);
   }
-  const m = line.match(/^Điều (\d+)\. (.*)$/);
-  if (m) {
-    articles.push({ n: Number(m[1]), title: m[2].trim(), chapter, lines: [] });
-    continue;
+  // Tiêu đề Điều dài bị xuống dòng: dòng kế tiếp bắt đầu bằng chữ thường (không phải "a) ") là phần nối
+  const lowerStart = /^\p{Ll}/u;
+  for (const a of articles) {
+    while (a.lines.length && lowerStart.test(a.lines[0]) && !/^\p{Ll}\) /u.test(a.lines[0])) {
+      a.title += ' ' + a.lines.shift().trim();
+    }
+    a.text = a.lines.join('\n').replace(/\n(Chương [IVXLC]+)\s*$/, '').trim();
+    delete a.lines;
   }
-  if (articles.length && !/^Mục \d+\./.test(line)) articles[articles.length - 1].lines.push(line);
+  if (articles.length !== expected) throw new Error(`${file}: tách được ${articles.length} Điều, mong đợi ${expected}`);
+  return articles.map(({ n, title, chapter, text }) => ({ n, t: title, c: chapter, x: text }));
 }
-// Tiêu đề Điều dài bị xuống dòng: dòng kế tiếp bắt đầu bằng chữ thường (không phải "a) ") là phần nối
-const lowerStart = /^\p{Ll}/u;
-for (const a of articles) {
-  while (a.lines.length && lowerStart.test(a.lines[0]) && !/^\p{Ll}\) /u.test(a.lines[0])) {
-    a.title += ' ' + a.lines.shift().trim();
-  }
-  a.text = a.lines.join('\n').replace(/\n(Chương [IVXLC]+)\s*$/, '').trim();
-  delete a.lines;
-}
-if (articles.length !== 220) throw new Error(`Tách được ${articles.length} Điều, mong đợi 220`);
+
+const articles = parseLaw('content/legal/blld-2019.txt', 220);
+// Bản Công báo đã tải chỉ có Điều 1–101 của NĐ 145 (Điều 102–115 nằm ở số Công báo kế tiếp)
+const nd145 = parseLaw('content/legal/nd-145-2020.txt', 101);
 
 // ---- Thẻ luật + thư viện văn bản ----
 const decks = readdirSync('content/flashcards')
@@ -53,10 +60,13 @@ const built = new Date().toLocaleDateString('vi-VN', { timeZone: 'Asia/Ho_Chi_Mi
 
 const template = readFileSync('scripts/qa-page.template.html', 'utf8');
 const html = template
-  .replace('/*__ARTICLES__*/[]', embed(articles.map(({ n, title, chapter, text }) => ({ n, t: title, c: chapter, x: text }))))
+  .replace('/*__ARTICLES__*/[]', embed(articles))
+  .replace('/*__ND145__*/[]', embed(nd145))
   .replace('/*__FACTS__*/""', embed(facts))
   .replace('__BUILT__', built);
 
 mkdirSync('qa-page', { recursive: true });
 writeFileSync('qa-page/hoi-dap-luat.html', html);
-console.log(`qa-page/hoi-dap-luat.html — ${articles.length} Điều · ${(html.length / 1024).toFixed(0)} KB · tóm tắt ${(Buffer.byteLength(facts) / 1024).toFixed(0)} KB`);
+console.log(
+  `qa-page/hoi-dap-luat.html — BLLĐ ${articles.length} Điều · NĐ 145 ${nd145.length} Điều · ${(html.length / 1024).toFixed(0)} KB · tóm tắt ${(Buffer.byteLength(facts) / 1024).toFixed(0)} KB`,
+);

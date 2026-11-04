@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { Suspense, lazy, useEffect, useState } from 'react';
 import { useRoute } from './lib/router';
 import { useStore } from './lib/store';
 import { setSoundConfig, unlockAudio } from './lib/sound';
@@ -7,15 +7,18 @@ import { Breakthrough } from './components/Breakthrough';
 import { BottomNav } from './components/BottomNav';
 import { PhuonHaiBen, TienBackground } from './components/Scenery';
 import Dashboard from './pages/Dashboard';
-import Learn from './pages/Learn';
-import Week from './pages/Week';
-import Quiz from './pages/Quiz';
-import Roadmap from './pages/Roadmap';
-import Cards from './pages/Cards';
-import Review from './pages/Review';
-import Settings from './pages/Settings';
-import Library from './pages/Library';
-import Ask from './pages/Ask';
+
+// Các trang khác chỉ tải khi mở tới — trang đầu tiên hiện nhanh hơn
+const Learn = lazy(() => import('./pages/Learn'));
+const Week = lazy(() => import('./pages/Week'));
+const Quiz = lazy(() => import('./pages/Quiz'));
+const Roadmap = lazy(() => import('./pages/Roadmap'));
+const Cards = lazy(() => import('./pages/Cards'));
+const Review = lazy(() => import('./pages/Review'));
+const Settings = lazy(() => import('./pages/Settings'));
+const Library = lazy(() => import('./pages/Library'));
+const Ask = lazy(() => import('./pages/Ask'));
+const Mistakes = lazy(() => import('./pages/Mistakes'));
 
 function useTheme() {
   const theme = useStore().state.settings.theme;
@@ -116,6 +119,10 @@ export default function App() {
   }
   else if (p0 === 'settings') page = <Settings />;
   else if (p0 === 'ask') page = <Ask />;
+  else if (p0 === 'mistakes') {
+    page = <Mistakes />;
+    tab = 'learn';
+  }
   else page = <Dashboard />;
 
   const hideNav = p2 === 'quiz' || (p0 === 'cards' && p1 === 'review');
@@ -130,9 +137,11 @@ export default function App() {
       <TienBackground />
       <PhuonHaiBen />
       <main className={`px-4 ${hideNav ? 'pb-8' : 'pb-28'}`}>
-        <div key={parts.join('/')} className="page-enter">
-          {page}
-        </div>
+        <Suspense fallback={<div className="pt-10 text-center text-sm text-stone-400">Đang mở…</div>}>
+          <div key={parts.join('/')} className="page-enter">
+            {page}
+          </div>
+        </Suspense>
       </main>
       {!hideNav && <BottomNav active={tab === 'week' ? 'learn' : tab} />}
       {treasure.shown && <Breakthrough treasure={treasure.shown} onClose={treasure.close} />}

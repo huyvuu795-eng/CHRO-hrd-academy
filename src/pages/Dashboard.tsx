@@ -1,25 +1,19 @@
-import { useState } from 'react';
-import {
-  CartesianGrid,
-  Legend,
-  Line,
-  LineChart,
-  PolarAngleAxis,
-  PolarGrid,
-  PolarRadiusAxis,
-  Radar,
-  RadarChart,
-  ReferenceLine,
-  ResponsiveContainer,
-  Tooltip,
-  XAxis,
-  YAxis,
-} from 'recharts';
+import { Suspense, lazy, useState } from 'react';
+
+// Biểu đồ tải sau, không chặn phần chính của trang
+const ScoreChart = lazy(() => import('../components/Charts').then((m) => ({ default: m.ScoreChart })));
+const CompetencyRadar = lazy(() => import('../components/Charts').then((m) => ({ default: m.CompetencyRadar })));
+
+function ChartSkeleton() {
+  return <div className="h-full w-full animate-pulse rounded-xl bg-stone-100 dark:bg-stone-800/60" />;
+}
 import { Check, Empty, Progress, Stat } from '../components/ui';
 import { QuoteCard, TongMonHero } from '../components/Scenery';
 import { sfx } from '../lib/sound';
 import { allCards, competencies, stages } from '../lib/content';
-import { DAYS, formatDate, streak, thisMonth, todayKey } from '../lib/date';
+import { DAYS, addDays, formatDate, streak, thisMonth, today, todayKey } from '../lib/date';
+import { daysSinceBackup, downloadBackup, needsBackup } from '../lib/backup';
+import { mistakeStats } from '../lib/mistakes';
 import { currentWeek, weekPct } from '../lib/progress';
 import { go } from '../lib/router';
 import { isDue } from '../lib/sm2';
@@ -28,6 +22,7 @@ import { PASS_PCT, markStudied, useStore } from '../lib/store';
 export default function Dashboard() {
   const { state, update } = useStore();
   const sound = state.settings.sound;
+  const mist = mistakeStats(state);
   const cw = currentWeek(state);
   const stage = stages.find((s) => s.id === state.currentStage);
   const dueCount = allCards.filter((c) => isDue(state.cards[c.id])).length;
@@ -88,6 +83,7 @@ export default function Dashboard() {
           </div>
         </div>
       </TongMonHero>
+      <BackupReminder />
       <QuoteCard />
 
       <div className="mb-4 grid grid-cols-3 gap-2">
@@ -122,6 +118,11 @@ export default function Dashboard() {
               Ôn thẻ luật
             </button>
           </div>
+          {mist.due > 0 && (
+            <button onClick={() => go('/mistakes')} className="mt-2 w-full rounded-xl bg-kim-100 px-3 py-2 text-left text-sm font-medium text-kim-700 dark:bg-kim-700/25 dark:text-kim-200">
+              📕 {mist.due} câu trong Sổ câu sai đến hạn ôn →
+            </button>
+          )}
         </section>
       )}
 
@@ -129,20 +130,9 @@ export default function Dashboard() {
         <div className="label mb-3">Điểm mini test theo thời gian</div>
         {scoreData.length ? (
           <div className="h-52">
-            <ResponsiveContainer>
-              <LineChart data={scoreData} margin={{ top: 5, right: 10, bottom: 0, left: -20 }}>
-                <CartesianGrid strokeDasharray="3 3" stroke="currentColor" className="text-stone-200 dark:text-stone-800" />
-                <XAxis dataKey="name" tick={{ fontSize: 11 }} stroke="#8395aa" />
-                <YAxis domain={[0, 100]} tick={{ fontSize: 11 }} stroke="#8395aa" />
-                <Tooltip
-                  formatter={(v: number) => [`${v}%`, 'Điểm']}
-                  labelFormatter={(_, p) => (p?.[0] ? `${p[0].payload.name} · ${p[0].payload.date}` : '')}
-                  contentStyle={{ borderRadius: 12, fontSize: 12 }}
-                />
-                <ReferenceLine y={PASS_PCT} stroke="#f59e0b" strokeDasharray="4 4" />
-                <Line type="monotone" dataKey="pct" stroke="#178568" strokeWidth={2.5} dot={{ r: 4 }} />
-              </LineChart>
-            </ResponsiveContainer>
+            <Suspense fallback={<ChartSkeleton />}>
+              <ScoreChart data={scoreData} pass={PASS_PCT} />
+            </Suspense>
           </div>
         ) : (
           <Empty>Làm mini test cuối tuần để thấy biểu đồ tiến bộ.</Empty>
@@ -151,6 +141,39 @@ export default function Dashboard() {
 
       <SelfAssessCard />
     </div>
+  );
+}
+
+/** Nhắc Export JSON khi đã quá 7 ngày chưa sao lưu — tiến độ chỉ nằm trong trình duyệt */
+function BackupReminder() {
+  const { state, update } = useStore();
+  if (!needsBackup(state)) return null;
+  const since = daysSinceBackup(state);
+  return (
+    <section className="mb-5 flex items-start gap-3 rounded-2xl border border-kim-400/60 bg-kim-100/95 p-4 text-kim-700 dark:border-kim-600/60 dark:bg-stone-900/95 dark:text-kim-200">
+      <span className="text-2xl" aria-hidden>
+        📜
+      </span>
+      <div className="min-w-0 flex-1">
+        <p className="text-sm font-semibold">{since === null ? 'Bạn chưa sao lưu tiến độ lần nào' : `Đã ${since} ngày chưa sao lưu`}</p>
+        <p className="mt-0.5 text-xs leading-relaxed opacity-80">Tiến độ chỉ nằm trong trình duyệt này. Tải file sao lưu và cất lên Google Drive để không mất khi đổi máy.</p>
+        <div className="mt-3 flex gap-2">
+          <button
+            className="btn-primary min-h-[36px] px-3 text-xs"
+            onClick={() => {
+              downloadBackup(state);
+              update((d) => void (d.lastBackup = new Date().toISOString()));
+              sfx.drop();
+            }}
+          >
+            Sao lưu ngay
+          </button>
+          <button className="btn-ghost min-h-[36px] px-3 text-xs" onClick={() => update((d) => void (d.backupSnoozeUntil = addDays(today(), 3)))}>
+            Để sau
+          </button>
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -191,16 +214,9 @@ function SelfAssessCard() {
 
       {!editing && latest && (
         <div className="h-72">
-          <ResponsiveContainer>
-            <RadarChart data={data} outerRadius="70%">
-              <PolarGrid stroke="#aebccd" />
-              <PolarAngleAxis dataKey="area" tick={{ fontSize: 10, fill: '#5b6d83' }} />
-              <PolarRadiusAxis domain={[0, 5]} tickCount={6} tick={false} axisLine={false} />
-              {prev && <Radar name={`Tháng ${prev.month}`} dataKey="before" stroke="#8395aa" fill="#8395aa" fillOpacity={0.15} />}
-              <Radar name={`Tháng ${latest.month}`} dataKey="now" stroke="#178568" fill="#3fb894" fillOpacity={0.35} />
-              <Legend wrapperStyle={{ fontSize: 11 }} />
-            </RadarChart>
-          </ResponsiveContainer>
+          <Suspense fallback={<ChartSkeleton />}>
+            <CompetencyRadar data={data} latest={latest.month} prev={prev?.month} />
+          </Suspense>
         </div>
       )}
 

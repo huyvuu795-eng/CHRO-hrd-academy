@@ -3,15 +3,31 @@ import { getWeek, yearPlan } from '../lib/content';
 import { weekPct } from '../lib/progress';
 import { go } from '../lib/router';
 import { bestScore, isPassed, isUnlocked, useStore } from '../lib/store';
+import { mistakeStats } from '../lib/mistakes';
 
 export default function Learn() {
   const { state } = useStore();
+  const mist = mistakeStats(state);
   const quarters = [1, 2, 3, 4].map((q) => yearPlan.filter((w) => Math.ceil(w.week / 13) === q));
   const names = ['Q1 · Nền tảng HR Generalist', 'Q2 · Mở rộng chuyên môn', 'Q3 · Tư duy HRBP', 'Q4 · Chiến lược & chứng chỉ'];
 
   return (
     <div>
       <PageHeader title="Lộ trình năm 1" subtitle="Công pháp 52 tuần · qua khảo hạch ≥ 70% để mở tuần sau" />
+      {mist.total > 0 && (
+        <button onClick={() => go('/mistakes')} className="card mb-5 flex w-full items-center gap-3 text-left hover:border-brand-400">
+          <span className="text-2xl" aria-hidden>
+            📕
+          </span>
+          <span className="min-w-0 flex-1">
+            <span className="block font-semibold">Sổ câu sai</span>
+            <span className="block text-xs text-stone-500">
+              {mist.due ? `${mist.due} câu đến hạn ôn` : 'Chưa có câu đến hạn'} · {mist.mastered}/{mist.total} câu đã thuộc
+            </span>
+          </span>
+          {mist.due > 0 && <span className="rounded-full bg-kim-100 px-2 py-0.5 text-xs font-bold text-kim-700">{mist.due}</span>}
+        </button>
+      )}
       {quarters.map((list, qi) =>
         list.length ? (
           <section key={qi} className="mb-6">
