@@ -202,6 +202,120 @@
   to { opacity: 1; transform: none; }
 }
 
+/* ================= Hai bên màn hình rộng — mệnh Thủy ================= */
+.water-side {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: calc(50vw - 21rem);
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+  color: #0c4a5e;
+  background:
+    radial-gradient(60% 40% at 50% 18%, rgba(255, 255, 255, 0.55), transparent 70%),
+    radial-gradient(70% 50% at 40% 85%, rgba(214, 184, 106, 0.14), transparent 70%),
+    repeating-radial-gradient(circle at 30% 40%, rgba(255, 255, 255, 0.0) 0 26px, rgba(255, 255, 255, 0.22) 27px 28px, rgba(255, 255, 255, 0) 29px 60px),
+    linear-gradient(180deg, #d6eef2 0%, #e8f5f6 55%, #f3efe4 100%);
+}
+.water-side.left { left: 0; mask-image: linear-gradient(90deg, #000 78%, transparent); -webkit-mask-image: linear-gradient(90deg, #000 78%, transparent); }
+.water-side.right { right: 0; mask-image: linear-gradient(270deg, #000 78%, transparent); -webkit-mask-image: linear-gradient(270deg, #000 78%, transparent); }
+.dark .water-side {
+  color: #a9dbe6;
+  background:
+    radial-gradient(60% 40% at 50% 15%, rgba(56, 160, 190, 0.18), transparent 70%),
+    radial-gradient(70% 45% at 45% 88%, rgba(214, 178, 90, 0.12), transparent 70%),
+    repeating-radial-gradient(circle at 30% 40%, rgba(255, 255, 255, 0) 0 26px, rgba(140, 220, 235, 0.07) 27px 28px, rgba(255, 255, 255, 0) 29px 60px),
+    linear-gradient(180deg, #06283a 0%, #041b29 60%, #031520 100%);
+}
+.water-glyph {
+  position: absolute;
+  top: 4%;
+  right: 6%;
+  font: 400 clamp(150px, 17vw, 320px) / 1 'Noto Serif CJK SC', 'Noto Serif SC', 'SimSun', 'Songti SC', serif;
+  color: currentColor;
+  opacity: 0.07;
+}
+.water-verse {
+  position: absolute;
+  top: 9%;
+  left: 9%;
+  display: flex;
+  gap: 10px;
+  writing-mode: vertical-rl;
+}
+.water-verse .cjk { font: 500 26px/1.3 'Noto Serif CJK SC', 'Noto Serif SC', 'SimSun', 'Songti SC', serif; letter-spacing: 0.35em; color: #b8902c; }
+.water-verse .viet { font: italic 12px/1.4 'Noto Serif', Georgia, serif; letter-spacing: 0.08em; opacity: 0.6; }
+.dark .water-verse .cjk { color: #e2c36a; }
+
+.koi-pond { position: absolute; top: 34%; left: 50%; width: 300px; height: 300px; margin-left: -150px; }
+.koi-orbit { position: absolute; inset: 0; animation: koi-spin 26s linear infinite; }
+.koi { position: absolute; left: 50%; }
+.koi-a { top: 0; transform: translateX(-50%); }
+.koi-b { bottom: 0; transform: translateX(-50%) rotate(180deg); }
+.pond-center { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+.koi-tail { transform-box: fill-box; transform-origin: 100% 50%; animation: tail 0.8s ease-in-out infinite alternate; }
+@keyframes koi-spin { to { transform: rotate(360deg); } }
+@keyframes tail { from { transform: rotate(-14deg); } to { transform: rotate(14deg); } }
+
+.float-item { position: absolute; }
+.bob { animation: bob 4.5s ease-in-out infinite alternate; }
+.bob-slow { animation: bob 6.5s ease-in-out infinite alternate; }
+.pond-center.bob-slow { animation-name: bob-center; }
+@keyframes bob-center { from { transform: translate(-50%, -50%); } to { transform: translate(-50%, calc(-50% + 5px)); } }
+
+.whale-shade { color: rgba(10, 64, 88, 0.24); }
+.dark .whale-shade { color: rgba(0, 6, 12, 0.6); }
+.whale-swim { position: absolute; top: 22%; left: 0; }
+/* delay âm: mở trang là cá voi đã ở giữa panel */
+.whale-swim svg { animation: whale 70s linear -30s infinite; }
+@keyframes whale {
+  from { transform: translateX(-320px); }
+  to { transform: translateX(calc(50vw - 21rem + 20px)); }
+}
+.koi-dive { position: absolute; top: 0; left: 0; animation: koi-dive 32s linear infinite; }
+@keyframes koi-dive {
+  from { transform: translate(calc(50vw - 21rem), 8vh) rotate(150deg); }
+  to { transform: translate(-90px, 72vh) rotate(150deg); }
+}
+.coin-fall { position: absolute; top: -30px; animation: coin 17s linear infinite; }
+@keyframes coin {
+  0% { transform: translateY(0) rotateY(0deg); opacity: 0; }
+  8% { opacity: 0.9; }
+  85% { opacity: 0.9; }
+  100% { transform: translateY(78vh) rotateY(720deg); opacity: 0; }
+}
+.lotus-cluster { position: absolute; left: 50%; bottom: 150px; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; }
+.seabed { position: absolute; left: 0; right: 0; bottom: 78px; display: flex; justify-content: space-evenly; align-items: flex-end; opacity: 0.9; }
+.sparkle { position: absolute; animation: twinkle 4s ease-in-out infinite; }
+@keyframes twinkle {
+  0%, 100% { opacity: 0; transform: scale(0.4) rotate(0deg); }
+  50% { opacity: 0.95; transform: scale(1) rotate(45deg); }
+}
+.ripple-spot { position: absolute; width: 0; height: 0; }
+.ripple-spot i {
+  position: absolute;
+  left: -60px;
+  top: -24px;
+  width: 120px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(15, 118, 110, 0.35);
+  animation: ring 3.9s ease-out infinite;
+  opacity: 0;
+}
+.dark .ripple-spot i { border-color: rgba(160, 225, 235, 0.3); }
+@keyframes ring {
+  0% { transform: scale(0.15); opacity: 0.8; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .koi-orbit, .koi-tail, .bob, .bob-slow, .whale-swim svg, .koi-dive, .coin-fall, .sparkle, .ripple-spot i { animation: none !important; }
+  .koi-dive, .coin-fall, .ripple-spot { display: none; }
+  .sparkle { opacity: 0.6; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .caustic, .bubble, .wave-track, .wave-bob, .ocean-hero .rays, .surface-in, .page-enter, .ripple { animation: none !important; }
   .bubble, .ripple { display: none; }

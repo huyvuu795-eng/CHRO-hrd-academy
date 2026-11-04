@@ -3,6 +3,7 @@ import { useRoute } from './lib/router';
 import { useStore } from './lib/store';
 import { BottomNav } from './components/BottomNav';
 import { OceanBackdrop } from './components/Ocean';
+import { WaterSides } from './components/WaterSides';
 import Dashboard from './pages/Dashboard';
 import Learn from './pages/Learn';
 import Week from './pages/Week';
@@ -86,6 +87,7 @@ export default function App() {
         </div>
       )}
       <OceanBackdrop />
+      <WaterSides />
       <main className={`px-4 ${hideNav ? 'pb-8' : 'pb-28'}`}>
         <div key={parts.join('/')} className="page-enter">
           {page}
