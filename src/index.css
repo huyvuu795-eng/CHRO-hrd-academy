@@ -310,6 +310,82 @@
   100% { transform: scale(1.6); opacity: 0; }
 }
 
+/* ================= Rương kho báu (mốc streak) ================= */
+.treasure-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 24px max(16px, env(safe-area-inset-right, 0px)) calc(24px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
+  background: radial-gradient(80% 60% at 50% 40%, rgba(10, 60, 80, 0.92), rgba(2, 14, 22, 0.97));
+  animation: fade-in 0.3s ease-out both;
+}
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+.treasure-stage { position: relative; width: 260px; height: 230px; display: grid; place-items: center; }
+.treasure-svg { position: relative; width: 210px; z-index: 2; animation: chest-pop 0.5s cubic-bezier(0.3, 1.6, 0.5, 1) both; }
+@keyframes chest-pop {
+  0% { transform: translateY(30px) scale(0.6); opacity: 0; }
+  100% { transform: none; opacity: 1; }
+}
+.treasure-lid { transform-box: fill-box; transform-origin: 50% 100%; animation: lid-open 0.7s cubic-bezier(0.2, 1.4, 0.4, 1) 0.45s both; }
+@keyframes lid-open {
+  0% { transform: none; }
+  30% { transform: translateY(-3px) rotate(2deg); }
+  100% { transform: translate(-6px, -30px) rotate(-22deg); }
+}
+.treasure-glow {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 236, 160, 0.95), rgba(255, 200, 80, 0.35) 40%, transparent 70%);
+  animation: glow-in 0.9s ease-out 0.7s both;
+}
+@keyframes glow-in {
+  from { transform: scale(0.2); opacity: 0; }
+  to { transform: scale(1.4); opacity: 1; }
+}
+.treasure-rays {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: repeating-conic-gradient(from 0deg, rgba(255, 225, 140, 0.32) 0deg 8deg, transparent 8deg 22deg);
+  mask-image: radial-gradient(circle, #000 20%, transparent 68%);
+  -webkit-mask-image: radial-gradient(circle, #000 20%, transparent 68%);
+  animation: rays-in 1s ease-out 0.75s both, rays-spin 22s linear 0.75s infinite;
+}
+@keyframes rays-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes rays-spin { to { rotate: 360deg; } }
+.treasure-coin {
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  z-index: 3;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #fff6c4, #e8b93a 55%, #a5731b);
+  box-shadow: inset 0 0 0 2px rgba(255, 240, 180, 0.6);
+  opacity: 0;
+  animation: coin-burst 1.6s cubic-bezier(0.2, 0.8, 0.3, 1) both;
+}
+@keyframes coin-burst {
+  0% { transform: translate(-50%, -50%) scale(0.3); opacity: 0; }
+  15% { opacity: 1; }
+  60% { transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) rotate(var(--r)) scale(1); opacity: 1; }
+  100% { transform: translate(calc(-50% + var(--dx) * 1.1), calc(-50% + var(--dy) + 80px)) rotate(var(--r)) scale(0.9); opacity: 0; }
+}
+.treasure-text { text-align: center; animation: surface 0.6s ease-out 1.1s both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .treasure-svg, .treasure-lid, .treasure-glow, .treasure-rays, .treasure-text, .treasure-overlay { animation: none !important; }
+  .treasure-lid { transform: translate(-6px, -30px) rotate(-22deg); }
+  .treasure-coin { display: none; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .koi-orbit, .koi-tail, .bob, .bob-slow, .whale-swim svg, .koi-dive, .coin-fall, .sparkle, .ripple-spot i { animation: none !important; }
   .koi-dive, .coin-fall, .ripple-spot { display: none; }

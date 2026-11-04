@@ -148,5 +148,15 @@ export interface AppState {
   studyDays: string[];
   selfAssessments: SelfAssessment[];
   reflections: Record<string, Reflection>;
-  settings: { theme: Theme; dailyNewCards: number };
+  /** các rương streak đã mở, dạng "<ngày bắt đầu chuỗi>:<mốc>" */
+  streakRewards: string[];
+  settings: { theme: Theme; dailyNewCards: number; sound: SoundSettings };
+}
+
+export interface SoundSettings {
+  sfx: boolean;
+  sfxVolume: number;
+  ambient: boolean;
+  ambientVolume: number;
+  haptics: boolean;
 }

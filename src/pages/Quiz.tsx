@@ -1,4 +1,5 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import { sfx } from '../lib/sound';
 import { PageHeader, Progress } from '../components/ui';
 import { getWeek } from '../lib/content';
 import { go } from '../lib/router';
@@ -197,7 +198,15 @@ function McqView({
           Tiếp tục
         </button>
       ) : (
-        <button className="btn-primary w-full" disabled={picked === null} onClick={() => setChecked(true)}>
+        <button
+          className="btn-primary w-full"
+          disabled={picked === null}
+          onClick={() => {
+            if (picked === q.answer) sfx.chime();
+            else sfx.wrong();
+            setChecked(true);
+          }}
+        >
           Kiểm tra
         </button>
       )}
@@ -208,6 +217,11 @@ function McqView({
 function ResultView({ week, pct, correct, mcq, answers }: { week: number; pct: number; correct: number; mcq: MCQ[]; answers: number[] }) {
   const total = mcq.length;
   const pass = pct >= PASS_PCT;
+  useEffect(() => {
+    if (pass) sfx.fanfare();
+    // chỉ phát một lần khi màn kết quả hiện ra
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const wrong = mcq.map((q, i) => ({ q, i })).filter(({ q, i }) => answers[i] !== q.answer);
   return (
     <section>

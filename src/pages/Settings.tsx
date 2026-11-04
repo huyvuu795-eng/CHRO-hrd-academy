@@ -3,9 +3,35 @@ import { PageHeader } from '../components/ui';
 import { today } from '../lib/date';
 import { defaultState, normalize, useStore } from '../lib/store';
 import type { Theme } from '../types';
+import { sfx } from '../lib/sound';
+
+function Toggle({ label, hint, on, onChange }: { label: string; hint?: string; on: boolean; onChange: (v: boolean) => void }) {
+  return (
+    <button className="flex w-full items-center gap-3 text-left" role="switch" aria-checked={on} onClick={() => onChange(!on)}>
+      <span className="min-w-0 flex-1">
+        <span className="block text-sm font-medium">{label}</span>
+        {hint && <span className="block text-xs text-stone-500 dark:text-stone-400">{hint}</span>}
+      </span>
+      <span className={`relative h-6 w-11 shrink-0 rounded-full transition ${on ? 'bg-brand-600' : 'bg-stone-300 dark:bg-stone-700'}`}>
+        <span className={`absolute top-0.5 h-5 w-5 rounded-full bg-white shadow transition-all ${on ? 'left-[22px]' : 'left-0.5'}`} />
+      </span>
+    </button>
+  );
+}
+
+function Slider({ value, onChange, label }: { value: number; onChange: (v: number) => void; label: string }) {
+  return (
+    <label className="flex items-center gap-3 pl-1 text-xs text-stone-500 dark:text-stone-400">
+      <span className="w-28 shrink-0">{label}</span>
+      <input type="range" min={0.05} max={1} step={0.05} value={value} onChange={(e) => onChange(Number(e.target.value))} className="flex-1 accent-brand-600" />
+      <span className="w-8 text-right tabular-nums">{Math.round(value * 100)}</span>
+    </label>
+  );
+}
 
 export default function Settings() {
   const { state, update, replace } = useStore();
+  const sound = state.settings.sound;
   const fileRef = useRef<HTMLInputElement>(null);
   const [msg, setMsg] = useState('');
 
@@ -59,6 +85,60 @@ export default function Settings() {
               {t.label}
             </button>
           ))}
+        </div>
+      </section>
+
+      <section className="card mb-4">
+        <div className="label mb-3">Âm thanh & rung</div>
+        <div className="space-y-4">
+          <Toggle
+            label="Hiệu ứng âm thanh"
+            hint="Giọt nước khi tick, chuông khi trả lời đúng, rương kho báu…"
+            on={sound.sfx}
+            onChange={(v) => update((d) => void (d.settings.sound.sfx = v))}
+          />
+          {sound.sfx && (
+            <Slider value={sound.sfxVolume} onChange={(v) => update((d) => void (d.settings.sound.sfxVolume = v))} label="Âm lượng hiệu ứng" />
+          )}
+          <Toggle
+            label="Tiếng sóng biển nền"
+            hint="Rì rào khi học, giúp tập trung. Bắt đầu sau lần chạm đầu tiên."
+            on={sound.ambient}
+            onChange={(v) => update((d) => void (d.settings.sound.ambient = v))}
+          />
+          {sound.ambient && (
+            <Slider value={sound.ambientVolume} onChange={(v) => update((d) => void (d.settings.sound.ambientVolume = v))} label="Âm lượng sóng" />
+          )}
+          <Toggle
+            label="Rung nhẹ (Android)"
+            hint="Khi tick checklist, trả lời đúng/sai, mở rương."
+            on={sound.haptics}
+            onChange={(v) => update((d) => void (d.settings.sound.haptics = v))}
+          />
+          <div>
+            <div className="mb-2 text-sm font-medium">Nghe thử</div>
+            <div className="flex flex-wrap gap-2">
+              {(
+                [
+                  ['💧 Giọt nước', sfx.drop],
+                  ['🫧 Bọt nước', sfx.bubble],
+                  ['🔔 Đúng', sfx.chime],
+                  ['🌊 Sai', sfx.wrong],
+                  ['✨ Hoàn thành', sfx.fanfare],
+                ] as const
+              ).map(([name, play]) => (
+                <button key={name} className="btn-ghost min-h-[36px] px-3 text-xs" onClick={() => play()} disabled={!sound.sfx}>
+                  {name}
+                </button>
+              ))}
+              <button
+                className="btn-ghost min-h-[36px] px-3 text-xs"
+                onClick={() => window.dispatchEvent(new CustomEvent('hrd:preview-treasure', { detail: 10 }))}
+              >
+                🗝️ Xem thử rương kho báu
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 

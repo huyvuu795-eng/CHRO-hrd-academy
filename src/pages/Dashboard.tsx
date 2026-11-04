@@ -17,6 +17,7 @@ import {
 } from 'recharts';
 import { Check, Empty, Progress, Stat } from '../components/ui';
 import { OceanHero, QuoteCard } from '../components/Ocean';
+import { sfx } from '../lib/sound';
 import { allCards, competencies, stages } from '../lib/content';
 import { DAYS, formatDate, streak, thisMonth, todayKey } from '../lib/date';
 import { currentWeek, weekPct } from '../lib/progress';
@@ -26,6 +27,7 @@ import { PASS_PCT, markStudied, useStore } from '../lib/store';
 
 export default function Dashboard() {
   const { state, update } = useStore();
+  const sound = state.settings.sound;
   const cw = currentWeek(state);
   const stage = stages.find((s) => s.id === state.currentStage);
   const dueCount = allCards.filter((c) => isDue(state.cards[c.id])).length;
@@ -59,9 +61,29 @@ export default function Dashboard() {
             <h1 className="text-2xl font-bold tracking-tight">HRD Academy</h1>
             <p className="mt-1 text-xs text-white/70">Từ Recruiter đến HR Director · lặn sâu mỗi ngày một chút</p>
           </div>
-          <button onClick={() => go('/roadmap')} className="btn min-h-[34px] shrink-0 rounded-full bg-white/15 px-3 text-xs text-white backdrop-blur hover:bg-white/25">
-            {stage?.title.split(' · ')[0] ?? 'Chọn giai đoạn'} →
-          </button>
+          <div className="flex shrink-0 flex-col items-end gap-2">
+            <button onClick={() => go('/roadmap')} className="btn min-h-[34px] rounded-full bg-white/15 px-3 text-xs text-white backdrop-blur hover:bg-white/25">
+              {stage?.title.split(' · ')[0] ?? 'Chọn giai đoạn'} →
+            </button>
+            <div className="flex gap-1.5">
+              <button
+                onClick={() => update((d) => void (d.settings.sound.sfx = !d.settings.sound.sfx))}
+                className={`btn min-h-[32px] rounded-full px-2.5 text-sm backdrop-blur ${sound.sfx ? 'bg-white/25' : 'bg-white/10 opacity-70'}`}
+                aria-pressed={sound.sfx}
+                title={sound.sfx ? 'Tắt hiệu ứng âm thanh' : 'Bật hiệu ứng âm thanh'}
+              >
+                {sound.sfx ? '🔊' : '🔈'}
+              </button>
+              <button
+                onClick={() => update((d) => void (d.settings.sound.ambient = !d.settings.sound.ambient))}
+                className={`btn min-h-[32px] rounded-full px-2.5 text-sm backdrop-blur ${sound.ambient ? 'bg-white/25' : 'bg-white/10 opacity-70'}`}
+                aria-pressed={sound.ambient}
+                title={sound.ambient ? 'Tắt tiếng sóng biển' : 'Bật tiếng sóng biển'}
+              >
+                🌊
+              </button>
+            </div>
+          </div>
         </div>
       </OceanHero>
       <QuoteCard />
@@ -154,6 +176,7 @@ function SelfAssessCard() {
       d.selfAssessments.push({ month, scores: draft });
       markStudied(d);
     });
+    sfx.chime();
     setEditing(false);
   };
 

@@ -2,6 +2,7 @@ import { createContext, useCallback, useContext, useEffect, useState, type React
 import type { AppState, QuizAttempt } from '../types';
 import { today } from './date';
 import { stages } from './content';
+import { defaultSound } from './sound';
 
 const KEY = 'hrd-academy:v1';
 export const PASS_PCT = 70;
@@ -18,7 +19,8 @@ export function defaultState(): AppState {
     studyDays: [],
     selfAssessments: [],
     reflections: {},
-    settings: { theme: 'system', dailyNewCards: 10 },
+    streakRewards: [],
+    settings: { theme: 'system', dailyNewCards: 10, sound: { ...defaultSound } },
   };
 }
 
@@ -31,7 +33,11 @@ export function normalize(raw: unknown): AppState {
     ...base,
     ...r,
     version: 1,
-    settings: { ...base.settings, ...(r.settings ?? {}) },
+    settings: {
+      ...base.settings,
+      ...(r.settings ?? {}),
+      sound: { ...base.settings.sound, ...(r.settings?.sound ?? {}) },
+    },
   };
 }
 

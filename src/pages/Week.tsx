@@ -7,6 +7,7 @@ import { weekPct } from '../lib/progress';
 import { go } from '../lib/router';
 import { PASS_PCT, bestScore, isUnlocked, markStudied, useStore } from '../lib/store';
 import type { DayKey } from '../types';
+import { sfx } from '../lib/sound';
 
 type Tab = 'lesson' | 'checklist' | 'practice' | 'test' | 'journal';
 const TABS: { id: Tab; label: string }[] = [
@@ -269,6 +270,7 @@ function JournalTab({ weekNo }: { weekNo: number }) {
       d.reflections[weekNo] = { learned, applied, updated: new Date().toISOString() };
       markStudied(d);
     });
+    sfx.drop();
     setFlash(true);
   };
 

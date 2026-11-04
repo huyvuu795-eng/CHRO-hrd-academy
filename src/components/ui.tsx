@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { back } from '../lib/router';
+import { sfx, vibrate } from '../lib/sound';
 
 export function PageHeader({
   title,
@@ -57,7 +58,10 @@ export function Tabs<T extends string>({
       {tabs.map((t) => (
         <button
           key={t.id}
-          onClick={() => onChange(t.id)}
+          onClick={() => {
+            if (t.id !== value) sfx.bubble();
+            onChange(t.id);
+          }}
           className={`shrink-0 rounded-full px-4 py-2 text-sm font-medium transition ${
             value === t.id
               ? 'bg-stone-900 text-white dark:bg-stone-100 dark:text-stone-900'
@@ -74,7 +78,13 @@ export function Tabs<T extends string>({
 export function Check({ checked, onChange, children }: { checked: boolean; onChange: () => void; children: ReactNode }) {
   return (
     <button
-      onClick={onChange}
+      onClick={() => {
+        if (!checked) {
+          sfx.drop();
+          vibrate(12);
+        }
+        onChange();
+      }}
       className="flex w-full items-start gap-3 rounded-xl px-2 py-2.5 text-left hover:bg-stone-100 dark:hover:bg-stone-800/60"
       role="checkbox"
       aria-checked={checked}

@@ -1,6 +1,9 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRoute } from './lib/router';
 import { useStore } from './lib/store';
+import { setSoundConfig, unlockAudio } from './lib/sound';
+import { pendingTreasure, treasureFor, type Treasure } from './lib/streak';
+import { TreasureChest } from './components/TreasureChest';
 import { BottomNav } from './components/BottomNav';
 import { OceanBackdrop } from './components/Ocean';
 import { WaterSides } from './components/WaterSides';
@@ -50,9 +53,48 @@ function useRipple() {
   }, []);
 }
 
+/** Đồng bộ cài đặt âm thanh; mở khoá audio ở lần chạm/phím đầu tiên (luật của trình duyệt) */
+function useSound() {
+  const sound = useStore().state.settings.sound;
+  useEffect(() => setSoundConfig(sound), [sound]);
+  useEffect(() => {
+    const unlock = () => unlockAudio();
+    document.addEventListener('pointerdown', unlock);
+    document.addEventListener('keydown', unlock);
+    return () => {
+      document.removeEventListener('pointerdown', unlock);
+      document.removeEventListener('keydown', unlock);
+    };
+  }, []);
+}
+
+/** Mở rương kho báu khi chuỗi ngày học chạm mốc mới (3, 10, 30, 90, 100, 365, 1.000, 2.000…) */
+function useTreasure() {
+  const { state, update } = useStore();
+  const [shown, setShown] = useState<Treasure | null>(null);
+  useEffect(() => {
+    if (shown) return;
+    const pending = pendingTreasure(state.studyDays, state.streakRewards);
+    if (!pending) return;
+    update((d) => {
+      for (const k of pending.keys) if (!d.streakRewards.includes(k)) d.streakRewards.push(k);
+    });
+    setShown(pending.treasure);
+  }, [state.studyDays, state.streakRewards, shown, update]);
+  useEffect(() => {
+    // Cho phép xem thử rương từ trang Cài đặt
+    const preview = (e: Event) => setShown(treasureFor((e as CustomEvent<number>).detail));
+    window.addEventListener('hrd:preview-treasure', preview);
+    return () => window.removeEventListener('hrd:preview-treasure', preview);
+  }, []);
+  return { shown, close: () => setShown(null) };
+}
+
 export default function App() {
   useTheme();
   useRipple();
+  useSound();
+  const treasure = useTreasure();
   const { parts, query } = useRoute();
   const { saveError } = useStore();
   const [p0, p1, p2] = parts;
@@ -94,6 +136,7 @@ export default function App() {
         </div>
       </main>
       {!hideNav && <BottomNav active={tab === 'week' ? 'learn' : tab} />}
+      {treasure.shown && <TreasureChest treasure={treasure.shown} onClose={treasure.close} />}
     </div>
   );
 }

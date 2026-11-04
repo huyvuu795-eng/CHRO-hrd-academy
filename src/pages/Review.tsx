@@ -4,6 +4,7 @@ import { allCards, decks } from '../lib/content';
 import { go } from '../lib/router';
 import { type Grade, isDue, previewInterval, review } from '../lib/sm2';
 import { markStudied, useStore } from '../lib/store';
+import { sfx } from '../lib/sound';
 
 const BUTTONS: { grade: Grade; label: string; cls: string }[] = [
   { grade: 'again', label: 'Quên', cls: 'bg-red-50 text-red-700 border-red-200 dark:bg-red-900/20 dark:text-red-300 dark:border-red-900' },
@@ -28,6 +29,10 @@ export default function Review({ topic }: { topic: string }) {
   const [flipped, setFlipped] = useState(false);
 
   const card = allCards.find((c) => c.id === queue[0]);
+  const flip = () => {
+    if (!flipped) sfx.bubble();
+    setFlipped(true);
+  };
 
   const grade = (g: Grade) => {
     if (!card) return;
@@ -36,6 +41,9 @@ export default function Review({ topic }: { topic: string }) {
       markStudied(d);
     });
     setFlipped(false);
+    if (g !== 'again' && queue.length === 1) sfx.fanfare(); // thẻ cuối của phiên
+    else if (g === 'again') sfx.bubble();
+    else sfx.drop();
     if (g === 'again') {
       // đưa thẻ quên về cuối hàng để gặp lại ngay trong phiên
       setQueue((q) => [...q.slice(1), q[0]]);
@@ -74,7 +82,7 @@ export default function Review({ topic }: { topic: string }) {
         </div>
       ) : (
         <>
-          <button onClick={() => setFlipped(true)} className="card mb-4 flex min-h-[320px] w-full flex-col text-left">
+          <button onClick={flip} className="card mb-4 flex min-h-[320px] w-full flex-col text-left">
             <div className="label mb-3">{decks.find((d) => d.topic.id === card.topicId)?.topic.name}</div>
             <p className="text-lg font-semibold leading-snug">{card.front}</p>
             {flipped ? (
@@ -101,7 +109,7 @@ export default function Review({ topic }: { topic: string }) {
               ))}
             </div>
           ) : (
-            <button className="btn-primary w-full" onClick={() => setFlipped(true)}>
+            <button className="btn-primary w-full" onClick={flip}>
               Hiện đáp án
             </button>
           )}

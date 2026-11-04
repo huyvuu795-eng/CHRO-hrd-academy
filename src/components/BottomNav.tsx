@@ -1,4 +1,5 @@
 import { go } from '../lib/router';
+import { sfx } from '../lib/sound';
 
 const items = [
   { id: '', label: 'Tổng quan', icon: 'M3 12l9-8 9 8M5 10v10h5v-6h4v6h5V10' },
@@ -18,7 +19,10 @@ export function BottomNav({ active }: { active: string }) {
           return (
             <button
               key={it.id}
-              onClick={() => go('/' + it.id)}
+              onClick={() => {
+                if (!on) sfx.bubble();
+                go('/' + it.id);
+              }}
               className={`flex flex-col items-center gap-0.5 py-2 text-[11px] font-medium ${
                 on ? 'text-brand-700 dark:text-brand-400' : 'text-stone-500 dark:text-stone-400'
               }`}
