@@ -29,7 +29,7 @@
       "Điều 69: nội dung nội quy; dưới 10 NLĐ phải thoả thuận kỷ luật trong HĐLĐ",
       "Điều 70: thông báo họp kỷ luật ít nhất 5 ngày làm việc",
       "Điều 80: nghỉ hành kinh 30 phút/ngày, tối thiểu 3 ngày làm việc/tháng",
-      "Tra được nguyên văn Điều 1–101 trong mục Hỏi đáp (bản Công báo đã tải chưa có Điều 102–115)"
+      "Tra được nguyên văn đủ 115 Điều trong mục Hỏi đáp"
     ],
     "links": [
       { "label": "PDF gốc (Công báo Chính phủ)", "url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2020/12/32732/33806-1-20201203-1204145-2020-nd-cp.pdf" },
@@ -107,6 +107,28 @@
     ]
   },
   {
+    "id": "luat-41-2024",
+    "group": "BHXH",
+    "number": "41/2024/QH15",
+    "title": "Luật Bảo hiểm xã hội",
+    "issued": "29/06/2024",
+    "effective": "01/07/2025",
+    "status": "verified",
+    "highlights": [
+      "Khoản 1 Điều 2: BHXH bắt buộc với HĐLĐ từ đủ 01 tháng, NLĐ không trọn thời gian, chủ hộ kinh doanh, người quản lý DN không hưởng lương",
+      "Điều 31–34: lương đóng tối đa 20 lần mức tham chiếu; NSDLĐ 3% + 14%, NLĐ 8%; hạn đóng là ngày cuối tháng sau",
+      "Điều 38–41: chậm đóng, trốn đóng; nộp thêm 0,03%/ngày",
+      "Điều 53: nam nghỉ 05–14 ngày khi vợ sinh, trong 60 ngày, được nghỉ nhiều lần",
+      "Điều 64, 70: lương hưu từ đủ 15 năm đóng; thu hẹp BHXH một lần với người tham gia từ 01/7/2025",
+      "Tra được nguyên văn 141 Điều trong mục Hỏi đáp"
+    ],
+    "links": [
+      { "label": "PDF gốc (Cổng TTĐT Chính phủ)", "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2024/9/41-2024-qh15.pdf" },
+      { "label": "Trang văn bản (Cổng TTĐT Chính phủ)", "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=211199" },
+      { "label": "Công báo Chính phủ", "url": "https://congbao.chinhphu.vn/van-ban/luat-so-41-2024-qh15-42576.htm" }
+    ]
+  },
+  {
     "id": "nd-158-2025",
     "group": "BHXH",
     "number": "158/2025/NĐ-CP",
@@ -144,9 +166,16 @@
     "title": "Luật Việc làm",
     "issued": "16/06/2025",
     "effective": "01/01/2026",
-    "status": "link",
-    "highlights": ["Thay Luật Việc làm 2013; quy định bảo hiểm thất nghiệp — app chưa đối chiếu nội dung"],
+    "status": "verified",
+    "highlights": [
+      "Thay Luật Việc làm 2013; bảo hiểm thất nghiệp ở Chương VII (Điều 30–52)",
+      "Điều 31: BHTN với HĐLĐ từ đủ 01 tháng; không áp dụng với HĐ thử việc, người đủ điều kiện hưởng lương hưu",
+      "Điều 33, 34: mỗi bên đóng tối đa 1%; lương đóng tối đa 20 lần lương tối thiểu vùng",
+      "Điều 38, 39: hưởng 60% lương bình quân 06 tháng, tối đa 05 lần lương tối thiểu vùng; hưởng từ ngày làm việc thứ 11",
+      "Tra được nguyên văn 55 Điều trong mục Hỏi đáp"
+    ],
     "links": [
+      { "label": "PDF Công báo", "url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/6/45562/57700-1-2025967-96874-2025-qh15.pdf" },
       { "label": "Trang văn bản (Cổng TTĐT Chính phủ)", "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=214560" },
       { "label": "CSDL quốc gia (vbpl.vn)", "url": "https://vbpl.vn/van-ban/chi-tiet/luat-viec-lam-so-74-2025-qh15--179273" }
     ]

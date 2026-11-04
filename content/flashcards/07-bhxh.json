@@ -3,45 +3,53 @@
   "cards": [
     {
       "id": "bh-01",
-      "front": "Văn bản luật BHXH hiện hành và ngày có hiệu lực?",
-      "back": "Luật Bảo hiểm xã hội số 41/2024/QH15, có hiệu lực từ 01/7/2025, thay thế Luật BHXH 2014 (58/2014/QH13).\n⚠️ Các nghị định, thông tư hướng dẫn mới ban hành rải rác trong 2025–2026 — cần kiểm tra lại văn bản gốc.",
-      "ref": "Luật BHXH 41/2024/QH15",
-      "verify": true
+      "front": "Văn bản luật BHXH và BHTN hiện hành, ngày có hiệu lực?",
+      "back": "• BHXH: Luật Bảo hiểm xã hội số 41/2024/QH15, hiệu lực 01/7/2025, thay Luật BHXH 58/2014/QH13 và Nghị quyết 93/2015/QH13 (BHXH một lần).\n• BHTN: Luật Việc làm số 74/2025/QH15, hiệu lực 01/01/2026, thay Luật Việc làm 38/2013/QH13 — BHTN nằm ở Chương VII.\nNghị định hướng dẫn chính: NĐ 158/2025 (BHXH bắt buộc), NĐ 274/2025 (chậm đóng, trốn đóng), NĐ 374/2025 (BHTN).",
+      "ref": "Điều 140 Luật BHXH 41/2024/QH15; Điều 54 Luật Việc làm 74/2025/QH15"
     },
     {
       "id": "bh-02",
       "front": "Tỷ lệ đóng BHXH, BHYT, BHTN bắt buộc của NSDLĐ và NLĐ (DN thông thường)?",
-      "back": "• NSDLĐ: BHXH 17,5% (ốm đau–thai sản 3%, TNLĐ–BNN 0,5%, hưu trí–tử tuất 14%) + BHYT 3% + BHTN 1% = 21,5%.\n• NLĐ: BHXH 8% (hưu trí–tử tuất) + BHYT 1,5% + BHTN 1% = 10,5%.\n• Tổng: 32% trên tiền lương tháng đóng BHXH.\n⚠️ Tỷ lệ quỹ TNLĐ–BNN có thể thấp hơn (0,3%) với DN đủ điều kiện — cần kiểm tra lại văn bản gốc.",
-      "ref": "Luật BHXH 2024; Luật BHYT; Luật Việc làm",
+      "back": "• NSDLĐ: BHXH 17,5% (ốm đau–thai sản 3% + hưu trí–tử tuất 14% + TNLĐ–BNN 0,5%) + BHYT 3% + BHTN 1% = 21,5%.\n• NLĐ: BHXH 8% (hưu trí–tử tuất) + BHYT 1,5% + BHTN 1% = 10,5%.\n• Tổng: 32% trên tiền lương tháng đóng BHXH.\nĐã đối chiếu: 3% + 14% (NSDLĐ) và 8% (NLĐ) — Điều 33, 34 Luật BHXH 2024; BHTN tối đa 1% mỗi bên — Điều 33 Luật Việc làm 2025.\n⚠️ TNLĐ–BNN 0,5% (Luật ATVSLĐ) và BHYT 3%/1,5% (Luật BHYT) chưa có bản gốc trong app — cần kiểm tra lại văn bản gốc.",
+      "ref": "Điều 33, 34 Luật BHXH 41/2024/QH15; Điều 33 Luật Việc làm 74/2025/QH15",
       "verify": true
     },
     {
       "id": "bh-03",
-      "front": "NLĐ ký HĐLĐ thời hạn bao lâu thì thuộc diện tham gia BHXH bắt buộc?",
-      "back": "NLĐ làm việc theo HĐLĐ có thời hạn từ đủ 01 tháng trở lên (kể cả trường hợp hai bên ký thoả thuận với tên gọi khác nhưng có nội dung thể hiện việc làm có trả công, tiền lương và sự quản lý, điều hành, giám sát).\nLuật BHXH 2024 còn mở rộng sang một số nhóm như NLĐ làm việc không trọn thời gian có tiền lương từ mức thấp nhất làm căn cứ đóng trở lên, chủ hộ kinh doanh có đăng ký kinh doanh…\n⚠️ Danh sách đối tượng mở rộng và lộ trình áp dụng — cần kiểm tra lại văn bản gốc.",
-      "ref": "Khoản 1 Điều 2 Luật BHXH 41/2024/QH15",
-      "verify": true
+      "front": "NLĐ nào thuộc diện tham gia BHXH bắt buộc theo Luật BHXH 2024?",
+      "back": "• Làm việc theo HĐLĐ không xác định thời hạn hoặc có thời hạn từ đủ 01 tháng trở lên — kể cả khi hai bên đặt tên khác nhưng có nội dung việc làm có trả công, tiền lương và sự quản lý, điều hành, giám sát (điểm a).\n• NLĐ làm việc không trọn thời gian có tiền lương tháng từ mức thấp nhất làm căn cứ đóng trở lên (điểm l).\n• Người quản lý DN có hưởng lương (điểm i); chủ hộ kinh doanh có đăng ký kinh doanh (điểm m); người quản lý DN, HTX không hưởng lương (điểm n).\n• NLĐ nước ngoài: HĐLĐ có thời hạn từ đủ 12 tháng (khoản 2).\nKhông thuộc diện: người đang hưởng lương hưu, người giúp việc gia đình (khoản 7).",
+      "ref": "Khoản 1, 2, 7 Điều 2 Luật BHXH 41/2024/QH15"
     },
     {
       "id": "bh-04",
-      "front": "Tiền lương tháng đóng BHXH bắt buộc gồm những khoản nào? Mức trần?",
-      "back": "Gồm mức lương theo công việc/chức danh, phụ cấp lương và các khoản bổ sung khác được thoả thuận trả thường xuyên, ổn định trong mỗi kỳ trả lương.\n• Mức sàn: không thấp hơn mức lương tối thiểu vùng (với NLĐ theo HĐLĐ).\n• Mức trần: 20 lần mức tham chiếu (trước đây là lương cơ sở).\n⚠️ Danh mục khoản không tính đóng và mức tham chiếu — cần kiểm tra lại văn bản gốc.",
-      "ref": "Điều 31 Luật BHXH 41/2024/QH15",
+      "front": "Tiền lương tháng đóng BHXH bắt buộc gồm những khoản nào? Mức sàn, mức trần?",
+      "back": "Với NLĐ hưởng lương do NSDLĐ quyết định: mức lương theo công việc/chức danh, phụ cấp lương và các khoản bổ sung khác được thoả thuận trả thường xuyên, ổn định trong mỗi kỳ trả lương.\n• Trần: 20 lần mức tham chiếu tại thời điểm đóng.\n• Mức tham chiếu: khi chưa bãi bỏ lương cơ sở thì bằng mức lương cơ sở.\n• Sàn: theo Luật là mức tham chiếu; nhưng mức lương theo HĐLĐ không được thấp hơn lương tối thiểu vùng (Điều 90 BLLĐ), nên thực tế sàn là lương tối thiểu vùng.\n⚠️ Danh mục khoản không tính đóng do NĐ 158/2025 hướng dẫn — cần kiểm tra lại văn bản gốc.",
+      "ref": "Điều 31, khoản 13 Điều 141 Luật BHXH 41/2024/QH15; khoản 2 Điều 90 BLLĐ 2019",
       "verify": true
     },
     {
       "id": "bh-05",
-      "front": "Thời hạn tối đa NSDLĐ phải hoàn thành thủ tục và đóng BHXH, nếu chậm đóng thì sao?",
-      "back": "NSDLĐ phải đóng BHXH hằng tháng; chậm đóng/trốn đóng là hành vi bị xử lý (phạt hành chính, tính lãi chậm đóng, và có thể truy cứu hình sự với hành vi trốn đóng ở mức nghiêm trọng). Luật BHXH 2024 quy định cụ thể khái niệm chậm đóng, trốn đóng và biện pháp xử lý.\n⚠️ Thời điểm xác định chậm đóng, mức lãi — cần kiểm tra lại văn bản gốc.",
-      "ref": "Điều 38–41 Luật BHXH 41/2024/QH15",
-      "verify": true
+      "front": "Hạn đóng BHXH hằng tháng của NSDLĐ? Thế nào là chậm đóng, trốn đóng và bị xử lý ra sao?",
+      "back": "• Hạn đóng: chậm nhất ngày cuối cùng của tháng tiếp theo (khoản 4 Điều 34).\n• Chậm đóng: qua hạn trên mà chưa đóng/đóng thiếu; hoặc không đăng ký đủ người phải tham gia trong 60 ngày kể từ hạn đăng ký (Điều 38).\n• Trốn đóng: sau 60 ngày vẫn không đăng ký/đăng ký thiếu người; đăng ký lương đóng thấp hơn quy định; không đóng sau 60 ngày kể từ hạn và đã bị đôn đốc (Điều 39).\n• Xử lý cả hai: đóng đủ số tiền + nộp 0,03%/ngày trên số tiền và số ngày chậm/trốn đóng; phạt hành chính (trốn đóng có thể bị truy cứu hình sự); không được xét khen thưởng (Điều 40, 41).",
+      "ref": "Điều 34, 38–41 Luật BHXH 41/2024/QH15"
     },
     {
       "id": "bh-06",
-      "front": "Điều kiện cơ bản để NLĐ hưởng trợ cấp thất nghiệp?",
-      "back": "• Đã chấm dứt HĐLĐ (trừ trường hợp đơn phương trái luật, hưởng lương hưu…).\n• Đã đóng BHTN từ đủ 12 tháng trở lên trong 24 tháng trước khi chấm dứt HĐLĐ (với HĐ từ đủ 12 tháng).\n• Đã nộp hồ sơ tại trung tâm dịch vụ việc làm trong 03 tháng kể từ ngày chấm dứt HĐLĐ.\n• Chưa tìm được việc làm sau 15 ngày kể từ ngày nộp hồ sơ.\n⚠️ Luật Việc làm 2025 (thay Luật Việc làm 2013, hiệu lực 01/01/2026) có thể điều chỉnh điều kiện — cần kiểm tra lại văn bản gốc.",
-      "ref": "Điều 49 Luật Việc làm 2013 (đối chiếu Luật Việc làm 2025)",
-      "verify": true
+      "front": "Điều kiện hưởng trợ cấp thất nghiệp theo Luật Việc làm 2025?",
+      "back": "Đang đóng BHTN và có đủ:\n• Chấm dứt HĐLĐ, trừ khi NLĐ đơn phương chấm dứt trái luật hoặc nghỉ việc khi đủ điều kiện hưởng lương hưu.\n• Đóng BHTN đủ 12 tháng trở lên trong 24 tháng trước khi chấm dứt HĐ (HĐ từ 01 đến dưới 12 tháng: đủ 12 tháng trong 36 tháng).\n• Nộp đủ hồ sơ trong 03 tháng kể từ ngày chấm dứt HĐ.\n• Trong 10 ngày làm việc kể từ ngày nộp đủ hồ sơ chưa có việc làm thuộc diện đóng BHXH bắt buộc (trước đây là 15 ngày).",
+      "ref": "Điều 38 Luật Việc làm 74/2025/QH15"
+    },
+    {
+      "id": "bh-07",
+      "front": "Mức hưởng, thời gian hưởng và thời điểm hưởng trợ cấp thất nghiệp?",
+      "back": "• Mức: 60% bình quân tiền lương tháng đóng BHTN của 06 tháng gần nhất, tối đa 05 lần lương tối thiểu vùng.\n• Thời gian: đóng đủ 12–36 tháng → 03 tháng; mỗi 12 tháng đóng thêm → thêm 01 tháng; tối đa 12 tháng.\n• Thời điểm: từ ngày làm việc thứ 11 kể từ ngày nộp đủ hồ sơ.\n• Trong thời gian hưởng được Quỹ BHTN đóng BHYT; hằng tháng phải thông báo tìm việc (Điều 40).\nVí dụ: đóng 14 tháng, lương đóng 10 triệu → hưởng 03 tháng × 6 triệu.",
+      "ref": "Điều 39, 40 Luật Việc làm 74/2025/QH15"
+    },
+    {
+      "id": "bh-08",
+      "front": "Điều kiện hưởng lương hưu và BHXH một lần theo Luật BHXH 2024?",
+      "back": "• Lương hưu: đủ tuổi nghỉ hưu và đóng BHXH bắt buộc từ đủ 15 năm (trước đây 20 năm) (Điều 64).\n• BHXH một lần chỉ khi: đủ tuổi hưu mà chưa đủ 15 năm đóng (có thể chọn trợ cấp hằng tháng theo Điều 23 thay vì nhận một lần); ra nước ngoài định cư; mắc ung thư, bại liệt, xơ gan mất bù, lao nặng, AIDS; suy giảm KNLĐ từ 81% hoặc khuyết tật đặc biệt nặng.\n• Riêng người có thời gian đóng trước 01/7/2025: sau 12 tháng không đóng BHXH và chưa đủ 20 năm đóng vẫn được rút một lần (điểm đ khoản 1 Điều 70).",
+      "ref": "Điều 64, 70 Luật BHXH 41/2024/QH15"
     }
   ]
 }

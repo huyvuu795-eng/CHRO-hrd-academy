@@ -1,5 +1,9 @@
 {
-  "topic": { "id": "lao-dong-nu", "name": "Lao động nữ & bình đẳng giới", "order": 8 },
+  "topic": {
+    "id": "lao-dong-nu",
+    "name": "Lao động nữ & bình đẳng giới",
+    "order": 8
+  },
   "cards": [
     {
       "id": "nu-01",
@@ -34,9 +38,8 @@
     {
       "id": "nu-06",
       "front": "Lao động nam được nghỉ bao nhiêu ngày hưởng chế độ thai sản khi vợ sinh con?",
-      "back": "Theo Luật BHXH 2014 (Điều 34): 05 ngày làm việc (sinh thường); 07 ngày (sinh phẫu thuật, sinh con dưới 32 tuần); 10 ngày (sinh đôi), thêm 03 ngày cho mỗi con từ con thứ 3; 14 ngày (sinh đôi trở lên phải phẫu thuật). Nghỉ trong 30 ngày đầu kể từ ngày vợ sinh.\n⚠️ Luật BHXH 2024 (hiệu lực 01/7/2025) có điều chỉnh cách nghỉ (có thể nghỉ nhiều lần trong 60 ngày) — cần kiểm tra lại văn bản gốc.",
-      "ref": "Điều 34 Luật BHXH 2014; Điều 53 Luật BHXH 2024",
-      "verify": true
+      "back": "• 05 ngày làm việc; 07 ngày khi vợ sinh phẫu thuật hoặc sinh con dưới 32 tuần tuổi.\n• Vợ sinh đôi: 10 ngày; sinh ba trở lên: thêm 03 ngày cho mỗi con từ con thứ ba.\n• Vợ sinh đôi phải phẫu thuật: 14 ngày; sinh ba trở lên phải phẫu thuật: thêm 03 ngày mỗi con từ con thứ ba.\nĐiểm mới Luật BHXH 2024: được nghỉ trong 60 ngày kể từ ngày vợ sinh (trước đây 30 ngày) và được nghỉ nhiều lần, miễn lần cuối bắt đầu trong 60 ngày đầu và tổng số ngày không vượt mức trên.",
+      "ref": "Khoản 2, 3 Điều 53 Luật BHXH 41/2024/QH15"
     },
     {
       "id": "nu-07",

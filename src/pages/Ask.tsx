@@ -51,7 +51,7 @@ export default function Ask() {
             </li>
           ))}
         </ul>
-        <p className="mt-2 text-xs text-stone-500">Luật BHXH 2024 và Luật Việc làm 2025 chưa có bản gốc trong app — Claude sẽ đánh dấu ⚠️ khi câu hỏi chạm tới.</p>
+        <p className="mt-2 text-xs text-stone-500">Đọc được nguyên văn BLLĐ 2019, NĐ 145/2020, Luật BHXH 2024 và Luật Việc làm 2025. Các nghị định hướng dẫn BHXH (NĐ 158, 274…) chưa có nguyên văn — Claude sẽ đánh dấu ⚠️ khi câu hỏi chạm tới.</p>
       </section>
     </div>
   );

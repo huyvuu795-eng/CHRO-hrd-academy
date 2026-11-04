@@ -135,7 +135,7 @@ button:focus-visible, textarea:focus-visible, input:focus-visible, .chip:focus-v
   <header>
     <div class="brand">
       <h1>Hỏi đáp Luật Lao động</h1>
-      <span class="src">Hỏi Trưởng lão · BLLĐ 45/2019/QH14 · NĐ 145/2020 · Thuế TNCN 2025 · Lương tối thiểu 2026–2027 · dữ liệu __BUILT__</span>
+      <span class="src">Hỏi Trưởng lão · BLLĐ 2019 · NĐ 145/2020 · Luật BHXH 2024 · Luật Việc làm 2025 · Thuế TNCN 2025 · Lương tối thiểu 2026–2027 · dữ liệu __BUILT__</span>
     </div>
     <div class="modes" role="tablist" aria-label="Chế độ">
       <button id="tab-ask" role="tab" aria-selected="true">Hỏi Claude</button>
@@ -145,7 +145,7 @@ button:focus-visible, textarea:focus-visible, input:focus-visible, .chip:focus-v
 
   <main id="ask-view">
     <section class="intro" id="intro">
-      <p>Hỏi bằng tiếng Việt như khi hỏi một đồng nghiệp pháp chế. Trưởng lão đọc nguyên văn Bộ luật Lao động 2019 và Nghị định 145/2020 (Điều 1–101) ngay trong trang này cùng các điểm đã đối chiếu (thuế TNCN, lương tối thiểu), rồi trả lời kèm số Điều. Câu hỏi dùng hạn mức tài khoản Claude của bạn.</p>
+      <p>Hỏi bằng tiếng Việt như khi hỏi một đồng nghiệp pháp chế. Trưởng lão đọc nguyên văn Bộ luật Lao động 2019, Nghị định 145/2020, Luật BHXH 2024 và Luật Việc làm 2025 ngay trong trang này cùng các điểm đã đối chiếu (thuế TNCN, lương tối thiểu), rồi trả lời kèm số Điều. Câu hỏi dùng hạn mức tài khoản Claude của bạn.</p>
       <div class="label">Thử hỏi</div>
       <div class="chips" id="chips"></div>
     </section>
@@ -161,7 +161,7 @@ button:focus-visible, textarea:focus-visible, input:focus-visible, .chip:focus-v
   <div class="composer" id="composer">
     <div class="row-actions"><button class="btn ghost" id="new-chat" hidden>Hội thoại mới</button></div>
     <form class="box" id="ask-form">
-      <textarea id="q" rows="1" maxlength="2000" placeholder="Hỏi về HĐLĐ, thử việc, giờ làm, kỷ luật, thuế TNCN…"></textarea>
+      <textarea id="q" rows="1" maxlength="2000" placeholder="Hỏi về HĐLĐ, thử việc, giờ làm, kỷ luật, BHXH, thất nghiệp, thuế TNCN…"></textarea>
       <button class="btn primary" id="send" type="submit" disabled>Gửi</button>
       <button class="btn ghost" id="stop" type="button" hidden>Dừng</button>
     </form>
@@ -185,13 +185,17 @@ button:focus-visible, textarea:focus-visible, input:focus-visible, .chip:focus-v
 <script>
 const ARTICLES = /*__ARTICLES__*/[];
 const ND145 = /*__ND145__*/[];
+const BHXH = /*__BHXH__*/[];
+const VIECLAM = /*__VIECLAM__*/[];
 const FACTS = /*__FACTS__*/"";
 const $ = (id) => document.getElementById(id);
 
-// Hai văn bản tra cứu được: Bộ luật Lao động 2019 và Nghị định 145/2020 (bản đã tải có Điều 1–101)
+// Các văn bản tra được nguyên văn; `match` nhận ra tên văn bản khi người hỏi hoặc câu trả lời nhắc tới
 const DOCS = {
-  blld: { name: 'Bộ luật Lao động 2019', short: 'BLLĐ 2019', list: ARTICLES },
-  nd145: { name: 'Nghị định 145/2020/NĐ-CP', short: 'NĐ 145/2020', list: ND145 },
+  blld: { name: 'Bộ luật Lao động 2019', short: 'BLLĐ 2019', list: ARTICLES, match: /BLLĐ|Bộ luật Lao động/i },
+  nd145: { name: 'Nghị định 145/2020/NĐ-CP', short: 'NĐ 145/2020', list: ND145, match: /145/ },
+  bhxh: { name: 'Luật Bảo hiểm xã hội 2024 (41/2024/QH15)', short: 'Luật BHXH 2024', list: BHXH, match: /BHXH|bảo hiểm xã hội|41\/2024/i },
+  vl: { name: 'Luật Việc làm 2025 (74/2025/QH15)', short: 'Luật Việc làm 2025', list: VIECLAM, match: /việc làm|thất nghiệp|BHTN|74\/2025/i },
 };
 for (const d of Object.values(DOCS)) d.byN = new Map(d.list.map((a) => [a.n, a]));
 const byN = DOCS.blld.byN;
@@ -205,10 +209,13 @@ const DF = new Map();
 for (const d of INDEX) for (const g of new Set([...d.title, ...d.body])) DF.set(g, (DF.get(g) || 0) + 1);
 const idf = (g) => Math.log((INDEX.length + 1) / ((DF.get(g) || 0) + 1));
 
-/** Tìm Điều liên quan trong cả hai văn bản; trả về [{doc, a}] */
+/** Văn bản mà câu chữ nhắc tới (ngoài BLLĐ), theo thứ tự xuất hiện */
+const docsMentioned = (text) => ['nd145', 'bhxh', 'vl'].filter((k) => DOCS[k].match.test(text));
+
+/** Tìm Điều liên quan trong mọi văn bản; trả về [{doc, a}] */
 function searchLaw(query, k = 5, onlyDoc) {
   const text = String(query);
-  const wantNd = /145|ngh[iị] đ[iị]nh|\bnđ\b/i.test(text);
+  const want = docsMentioned(text);
   const nums = [...text.matchAll(/(?:điều|dieu)\s*(\d{1,3})/gi)].map((m) => Number(m[1]));
   const q = grams(toks(text));
   const scored = INDEX.filter((d) => !onlyDoc || d.doc === onlyDoc).map((d) => {
@@ -218,11 +225,12 @@ function searchLaw(query, k = 5, onlyDoc) {
       if (d.title.has(g)) s += 4 * w;
       if (d.body.has(g)) s += w;
     }
+    if (want.includes(d.doc)) s *= 1.5;
     return { doc: d.doc, a: d.a, s };
   }).filter((r) => r.s > 0).sort((x, y) => y.s - x.s);
   const out = [];
   for (const n of nums) {
-    const doc = onlyDoc || (wantNd && DOCS.nd145.byN.has(n) ? 'nd145' : 'blld');
+    const doc = onlyDoc || want.find((w) => DOCS[w].byN.has(n)) || 'blld';
     const a = DOCS[doc].byN.get(n);
     if (a) out.push({ doc, a });
   }
@@ -245,15 +253,17 @@ function closeArticle() { $('sheet').hidden = true; $('sheet-bg').hidden = true;
 $('sheet-close').onclick = closeArticle; $('sheet-bg').onclick = closeArticle;
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !$('sheet').hidden) closeArticle(); });
 
-// ---------- Hiển thị Markdown + biến "Điều N" (BLLĐ hoặc NĐ 145) thành nút ----------
-const OTHER_DOC = /(NĐ|Nghị định|Nghị quyết|NQ|Thông tư|Luật (?!Lao động)|Luật BHXH|Luật Thuế|Luật Việc làm)/;
-/** Đoán "Điều N" thuộc văn bản nào từ phần chữ ngay sau nó; null nếu là văn bản không có trong trang */
+// ---------- Hiển thị Markdown + biến "Điều N" của các văn bản có trong trang thành nút ----------
+const ANY_DOC = /(BLLĐ|Bộ luật|NĐ|Nghị định|Nghị quyết|NQ|Thông tư|Luật|VBHN)/;
+/** Đoán "Điều N" thuộc văn bản nào từ tên văn bản đầu tiên nhắc sau nó; null nếu là văn bản không có trong trang */
 function docOf(n, tail) {
-  const before = tail.split(OTHER_DOC)[0];
-  if (/BLLĐ|Bộ luật Lao động/.test(before)) return DOCS.blld.byN.has(n) ? 'blld' : null;
-  if (/145/.test(tail) && OTHER_DOC.test(tail)) return DOCS.nd145.byN.has(n) ? 'nd145' : null;
-  if (OTHER_DOC.test(tail)) return null;
-  return DOCS.blld.byN.has(n) ? 'blld' : null;
+  const g = tail.search(ANY_DOC);
+  if (g < 0) return DOCS.blld.byN.has(n) ? 'blld' : null;
+  // Tên văn bản đầu tiên: chỉ xét đoạn ngắn quanh vị trí đó để không bắt nhầm văn bản nhắc sau
+  const head = tail.slice(g, g + 30);
+  let doc = null, at = Infinity;
+  for (const k of Object.keys(DOCS)) { const i = head.search(DOCS[k].match); if (i >= 0 && i < at) { doc = k; at = i; } }
+  return doc && DOCS[doc].byN.has(n) ? doc : null;
 }
 function linkify(root) {
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
@@ -292,6 +302,7 @@ const EXAMPLES = [
   'Mùa sale cho nhân viên làm thêm 4 tiếng/ngày liên tục 3 tuần có vượt giới hạn không? Trả lương thế nào?',
   'Nhân viên tự ý nghỉ 3 ngày đầu tháng và 2 ngày giữa tháng thì xử lý kỷ luật thế nào cho đúng trình tự?',
   'Gross 25 triệu, 1 người phụ thuộc thì thuế TNCN năm 2026 bao nhiêu?',
+  'Nhân viên nghỉ việc sau 14 tháng đóng BHTN thì được hưởng trợ cấp thất nghiệp mấy tháng, mức bao nhiêu?',
 ];
 for (const q of EXAMPLES) { const b = document.createElement('button'); b.className = 'chip'; b.textContent = q; b.onclick = () => ask(q); $('chips').append(b); }
 
@@ -310,20 +321,23 @@ function note(kind, text) { const n = $('ask-note'); if (!text) { n.hidden = tru
 const RULES = `Bạn là trợ lý tra cứu pháp luật lao động Việt Nam cho một chuyên viên nhân sự (tuyển dụng nội bộ ở công ty thương mại điện tử tại TP.HCM, định hướng lên HR Director).
 
 NGUỒN, theo thứ tự ưu tiên:
-1. Nguyên văn hai văn bản, đọc qua công cụ doc_dieu (theo số Điều, chọn van_ban) và tra_cuu_luat (theo từ khoá, tìm cả hai):
+1. Nguyên văn bốn văn bản (bản Công báo), đọc qua công cụ doc_dieu (theo số Điều, chọn van_ban) và tra_cuu_luat (theo từ khoá, tìm trong cả bốn):
    - Bộ luật Lao động 45/2019/QH14 (van_ban "blld", 220 Điều) — bản gốc 2019, chưa hợp nhất các lần sửa đổi (nếu có).
-   - Nghị định 145/2020/NĐ-CP hướng dẫn BLLĐ (van_ban "nd145") — bản trong trang chỉ có Điều 1–101; Điều 102–115 (trọng tài lao động, đình công, hiệu lực) không có, nếu cần hãy nói rõ.
-   Hai MỤC LỤC ở cuối giúp bạn chọn đúng Điều. NĐ 145 hướng dẫn chi tiết: công thức lương làm thêm giờ, trình tự kỷ luật, nội quy, trợ cấp thôi việc, lao động nữ…
+   - Nghị định 145/2020/NĐ-CP hướng dẫn BLLĐ (van_ban "nd145", 115 Điều): công thức lương làm thêm giờ, trình tự kỷ luật, nội quy, trợ cấp thôi việc, lao động nữ, đình công…
+   - Luật Bảo hiểm xã hội 41/2024/QH15 (van_ban "bhxh", 141 Điều, hiệu lực 01/7/2025): đối tượng, tiền lương đóng, tỷ lệ đóng, chậm/trốn đóng, ốm đau, thai sản, hưu trí, BHXH một lần, tử tuất.
+   - Luật Việc làm 74/2025/QH15 (van_ban "vl", 55 Điều, hiệu lực 01/01/2026): bảo hiểm thất nghiệp (Chương VII) — đối tượng, mức đóng, điều kiện và mức hưởng trợ cấp thất nghiệp.
+   Các MỤC LỤC ở cuối giúp bạn chọn đúng Điều.
 2. CÁC ĐIỂM ĐÃ TÓM TẮT bên dưới: đã đối chiếu văn bản gốc (Luật Thuế TNCN 109/2025, NQ 110/2025, NĐ 293/2025, NĐ 399/2026…), trừ ý ghi "chưa đối chiếu".
-3. Kiến thức chung — chỉ khi hai nguồn trên không đủ, và phải nói rõ.
+3. Kiến thức chung — chỉ khi hai nguồn trên không đủ, và phải nói rõ. Các nghị định hướng dẫn Luật BHXH (NĐ 158/2025, 159/2025, 274/2025…) và Luật BHYT chưa có nguyên văn trong trang.
 
 QUY TẮC:
-- Trước khi trích một Điều của BLLĐ hoặc NĐ 145, hãy đọc nguyên văn Điều đó bằng doc_dieu (gọi một lần cho nhiều Điều). Không trích số Điều chưa đọc.
-- Khi BLLĐ chỉ quy định khung và NĐ 145 hướng dẫn chi tiết, trích cả hai.
+- Trước khi trích một Điều, hãy đọc nguyên văn Điều đó bằng doc_dieu (gọi một lần cho nhiều Điều). Không trích số Điều chưa đọc.
+- Khi luật chỉ quy định khung và nghị định hướng dẫn chi tiết, trích cả hai.
+- Câu hỏi về BHXH/BHTN: dùng Luật BHXH 2024 và Luật Việc làm 2025, không dùng Luật BHXH 2014 hay Luật Việc làm 2013 (đã hết hiệu lực), trừ khi hỏi về quy định chuyển tiếp.
 - Tiếng Việt, giữ thuật ngữ tiếng Anh trong ngoặc khi cần.
 - Mở đầu bằng câu trả lời trực tiếp (có/không, con số, thời hạn); rồi giải thích ngắn; ví dụ áp dụng nếu giúp ích (bối cảnh e-commerce/startup).
-- Kết thúc bằng "**Căn cứ:**" liệt kê Điều, Khoản, Điểm và tên văn bản. Ghi "BLLĐ 2019" sau số Điều của Bộ luật, "NĐ 145/2020" sau số Điều của Nghị định; ghi rõ tên văn bản khác.
-- Nội dung không có trong nguồn 1–2 (chi tiết Luật BHXH 41/2024, Luật Việc làm 74/2025, văn bản chưa có, quy định có thể đã sửa): đánh dấu "⚠️ Cần kiểm tra lại văn bản gốc". Không bịa số hiệu văn bản hay số Điều.
+- Kết thúc bằng "**Căn cứ:**" liệt kê Điều, Khoản, Điểm và tên văn bản. Ghi ngay sau số Điều: "BLLĐ 2019", "NĐ 145/2020", "Luật BHXH 2024" hoặc "Luật Việc làm 2025"; ghi rõ tên văn bản khác.
+- Nội dung không có trong nguồn 1–2 (nghị định hướng dẫn chưa có nguyên văn, quy định có thể đã sửa): đánh dấu "⚠️ Cần kiểm tra lại văn bản gốc". Không bịa số hiệu văn bản hay số Điều.
 - Câu hỏi thiếu dữ kiện quyết định (loại HĐ, số lao động, thời gian làm việc…): nêu giả định hoặc hỏi lại ngắn.
 - Chỉ nhắc "không thay thế tư vấn luật sư" khi câu hỏi liên quan tranh chấp, kiện tụng.
 - Markdown gọn: đoạn ngắn, gạch đầu dòng, bảng khi so sánh.
@@ -333,8 +347,14 @@ ${FACTS}
 # MỤC LỤC BỘ LUẬT LAO ĐỘNG 2019 (van_ban "blld")
 ${ARTICLES.map((a) => `Điều ${a.n}. ${a.t}`).join('\n')}
 
-# MỤC LỤC NGHỊ ĐỊNH 145/2020/NĐ-CP (van_ban "nd145", Điều 1–101)
-${ND145.map((a) => `Điều ${a.n}. ${a.t}`).join('\n')}`;
+# MỤC LỤC NGHỊ ĐỊNH 145/2020/NĐ-CP (van_ban "nd145")
+${ND145.map((a) => `Điều ${a.n}. ${a.t}`).join('\n')}
+
+# MỤC LỤC LUẬT BẢO HIỂM XÃ HỘI 41/2024/QH15 (van_ban "bhxh")
+${BHXH.map((a) => `Điều ${a.n}. ${a.t}`).join('\n')}
+
+# MỤC LỤC LUẬT VIỆC LÀM 74/2025/QH15 (van_ban "vl")
+${VIECLAM.map((a) => `Điều ${a.n}. ${a.t}`).join('\n')}`;
 
 let sample = null, canTools = false, busy = false, ctl = null;
 (async () => {
@@ -348,26 +368,26 @@ let sample = null, canTools = false, busy = false, ctl = null;
 const TOOLS = [
   {
     name: 'doc_dieu',
-    description: 'Đọc NGUYÊN VĂN các Điều theo số Điều, tối đa 5 Điều mỗi lần. van_ban: "blld" = Bộ luật Lao động 2019 (Điều 1–220, mặc định); "nd145" = Nghị định 145/2020 (Điều 1–101).',
+    description: 'Đọc NGUYÊN VĂN các Điều theo số Điều, tối đa 5 Điều mỗi lần. van_ban: "blld" = Bộ luật Lao động 2019 (Điều 1–220, mặc định); "nd145" = Nghị định 145/2020 (Điều 1–115); "bhxh" = Luật Bảo hiểm xã hội 2024 (Điều 1–141); "vl" = Luật Việc làm 2025 (Điều 1–55).',
     inputSchema: {
       type: 'object',
       properties: {
         so_dieu: { type: 'array', items: { type: 'integer' }, description: 'Danh sách số Điều, vd [24, 25, 26]' },
-        van_ban: { type: 'string', enum: ['blld', 'nd145'], description: 'Văn bản cần đọc; mặc định blld' },
+        van_ban: { type: 'string', enum: Object.keys(DOCS), description: 'Văn bản cần đọc; mặc định blld' },
       },
       required: ['so_dieu'],
     },
     execute(input) {
-      const doc = input.van_ban === 'nd145' ? 'nd145' : 'blld';
+      const doc = DOCS[input.van_ban] ? input.van_ban : 'blld';
       const ns = (Array.isArray(input.so_dieu) ? input.so_dieu : [input.so_dieu]).map(Number).filter((n) => DOCS[doc].byN.has(n)).slice(0, 5);
-      if (!ns.length) throw new Error(doc === 'nd145' ? 'Không có số Điều hợp lệ (NĐ 145: 1–101).' : 'Không có số Điều hợp lệ (BLLĐ: 1–220).');
+      if (!ns.length) throw new Error(`Không có số Điều hợp lệ (${DOCS[doc].short}: 1–${DOCS[doc].list.length}).`);
       setStatus(`Đang đọc ${ns.map((n) => 'Điều ' + n).join(', ')} ${DOCS[doc].short}…`);
       return ns.map((n) => artText(doc, DOCS[doc].byN.get(n), 6000)).join('\n\n---\n\n');
     },
   },
   {
     name: 'tra_cuu_luat',
-    description: 'Tìm theo từ khoá tiếng Việt trong toàn văn BLLĐ 2019 và NĐ 145/2020 khi chưa biết số Điều. Trả về tối đa 6 Điều liên quan nhất, ghi rõ thuộc văn bản nào (nội dung có thể bị rút gọn).',
+    description: 'Tìm theo từ khoá tiếng Việt trong toàn văn BLLĐ 2019, NĐ 145/2020, Luật BHXH 2024 và Luật Việc làm 2025 khi chưa biết số Điều. Trả về tối đa 6 Điều liên quan nhất, ghi rõ thuộc văn bản nào (nội dung có thể bị rút gọn).',
     inputSchema: { type: 'object', properties: { tu_khoa: { type: 'string', description: 'Từ khoá, vd "thời gian thử việc", "làm thêm giờ ban đêm"' } }, required: ['tu_khoa'] },
     execute(input) {
       const q = String(input.tu_khoa || '').slice(0, 200);
@@ -456,8 +476,8 @@ $('tab-ask').onclick = () => showMode('ask'); $('tab-find').onclick = () => show
 function renderFind() {
   const q = $('find-q').value.trim();
   const pick = (doc, ns) => ns.map((n) => DOCS[doc].byN.get(n)).filter(Boolean).map((a) => ({ doc, a }));
-  const list = !q ? [...pick('blld', [24, 25, 35, 36, 98, 107, 113, 125, 137]), ...pick('nd145', [8, 55, 57, 69, 70])]
-    : /^\d{1,3}$/.test(q) ? [...pick('blld', [Number(q)]), ...pick('nd145', [Number(q)])] : searchLaw(q, 12);
+  const list = !q ? [...pick('blld', [24, 25, 35, 36, 98, 107, 113, 125, 137]), ...pick('nd145', [8, 55, 57, 69, 70]), ...pick('bhxh', [2, 31, 32, 38, 53]), ...pick('vl', [31, 33, 38, 39])]
+    : /^\d{1,3}$/.test(q) ? Object.keys(DOCS).flatMap((d) => pick(d, [Number(q)])) : searchLaw(q, 12);
   $('find-res').replaceChildren(...(list.length ? list.map(({ doc, a }) => {
     const b = document.createElement('button'); b.className = 'res'; b.type = 'button'; b.onclick = () => openArticle(a.n, doc);
     const t = document.createElement('b'); t.textContent = `Điều ${a.n}. ${a.t}`;

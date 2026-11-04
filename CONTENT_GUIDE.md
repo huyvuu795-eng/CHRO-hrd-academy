@@ -211,10 +211,10 @@ Mỗi văn bản là một object trong mảng:
 
 Trang Hỏi đáp trên claude.ai được sinh từ chính `/content`:
 
-- `content/legal/blld-2019.txt` — toàn văn Bộ luật Lao động (script tự tách thành 220 Điều).
+- `content/legal/*.txt` — toàn văn lấy từ bản Công báo: Bộ luật Lao động 2019 (220 Điều), NĐ 145/2020 (115 Điều), Luật BHXH 41/2024 (141 Điều), Luật Việc làm 74/2025 (55 Điều). Định dạng: `Chương X` và tên chương trên dòng sau; `Mục N` và tên mục trên dòng sau; mỗi `Điều N. Tên` một dòng riêng, nội dung ở các dòng tiếp theo.
 - `content/flashcards/*.json` và `content/library.json` — các điểm đã tóm tắt, đã đối chiếu.
 
-Sau khi sửa những file này: `npm run qa` → nhờ Claude Code đăng lại `qa-page/hoi-dap-luat.html` lên link cũ. Script sẽ báo lỗi nếu tách Bộ luật không ra đúng 220 Điều.
+Sau khi sửa những file này: `npm run qa` → nhờ Claude Code đăng lại `qa-page/hoi-dap-luat.html` lên link cũ. Script sẽ báo lỗi nếu tách văn bản không ra đúng số Điều.
 
 ## 8. Quote trên trang Tổng quan — `quotes.json`
 

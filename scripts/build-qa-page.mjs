@@ -21,6 +21,11 @@ function parseLaw(file, expected) {
       articles.push({ n: Number(m[1]), title: m[2].trim(), chapter, lines: [] });
       continue;
     }
+    // "Mục N" + tên Mục ở dòng sau là tiêu đề cấu trúc, không thuộc nội dung Điều trước đó
+    if (/^Mục \d+\.?\s*$/.test(line)) {
+      i++;
+      continue;
+    }
     if (articles.length && !/^Mục \d+\./.test(line)) articles[articles.length - 1].lines.push(line);
   }
   // Tiêu đề Điều dài bị xuống dòng: dòng kế tiếp bắt đầu bằng chữ thường (không phải "a) ") là phần nối
@@ -37,8 +42,9 @@ function parseLaw(file, expected) {
 }
 
 const articles = parseLaw('content/legal/blld-2019.txt', 220);
-// Bản Công báo đã tải chỉ có Điều 1–101 của NĐ 145 (Điều 102–115 nằm ở số Công báo kế tiếp)
-const nd145 = parseLaw('content/legal/nd-145-2020.txt', 101);
+const nd145 = parseLaw('content/legal/nd-145-2020.txt', 115);
+const bhxh = parseLaw('content/legal/luat-bhxh-41-2024.txt', 141);
+const vieclam = parseLaw('content/legal/luat-viec-lam-74-2025.txt', 55);
 
 // ---- Thẻ luật + thư viện văn bản ----
 const decks = readdirSync('content/flashcards')
@@ -62,11 +68,13 @@ const template = readFileSync('scripts/qa-page.template.html', 'utf8');
 const html = template
   .replace('/*__ARTICLES__*/[]', embed(articles))
   .replace('/*__ND145__*/[]', embed(nd145))
+  .replace('/*__BHXH__*/[]', embed(bhxh))
+  .replace('/*__VIECLAM__*/[]', embed(vieclam))
   .replace('/*__FACTS__*/""', embed(facts))
   .replace('__BUILT__', built);
 
 mkdirSync('qa-page', { recursive: true });
 writeFileSync('qa-page/hoi-dap-luat.html', html);
 console.log(
-  `qa-page/hoi-dap-luat.html — BLLĐ ${articles.length} Điều · NĐ 145 ${nd145.length} Điều · ${(html.length / 1024).toFixed(0)} KB · tóm tắt ${(Buffer.byteLength(facts) / 1024).toFixed(0)} KB`,
+  `qa-page/hoi-dap-luat.html — BLLĐ ${articles.length} Điều · NĐ 145 ${nd145.length} · BHXH ${bhxh.length} · Việc làm ${vieclam.length} Điều · ${(html.length / 1024).toFixed(0)} KB · tóm tắt ${(Buffer.byteLength(facts) / 1024).toFixed(0)} KB`,
 );
