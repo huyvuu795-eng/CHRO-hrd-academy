@@ -153,6 +153,7 @@ Mỗi giai đoạn trong mảng `stages`:
 {
   "id": "senior",
   "title": "Giai đoạn 2 · Senior HR / HRBP Junior",
+  "realm": "Trúc Cơ",
   "role": "Chức danh",
   "years": "Năm 2 – 4 (2028 – 2030)",
   "summary": "Mô tả ngắn",
@@ -163,7 +164,7 @@ Mỗi giai đoạn trong mảng `stages`:
 }
 ```
 
-Không đổi `id` của giai đoạn bạn đang đánh dấu "hiện tại" (app lưu theo id). Phần trước dấu ` · ` trong `title` được hiển thị làm nhãn ngắn trên Dashboard.
+`realm` là tên cảnh giới tu tiên hiển thị kèm tên giai đoạn (không bắt buộc). Không đổi `id` của giai đoạn bạn đang đánh dấu "hiện tại" (app lưu theo id). Phần trước dấu ` · ` trong `title` được hiển thị làm nhãn ngắn trên Dashboard.
 
 ## 4. Sửa mảng năng lực — `competencies.json`
 

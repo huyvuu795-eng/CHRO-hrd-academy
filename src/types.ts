@@ -46,6 +46,8 @@ export interface OutlineWeek {
 export interface Stage {
   id: string;
   title: string;
+  /** tên cảnh giới tu tiên hiển thị kèm (vd. "Luyện Khí") */
+  realm?: string;
   role: string;
   years: string;
   summary: string;

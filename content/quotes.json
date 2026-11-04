@@ -274,5 +274,101 @@
     "underline": "almost any how",
     "author": "Friedrich Nietzsche, Twilight of the Idols (bản dịch phổ biến)",
     "vi": "Ai có lý do để sống thì có thể chịu đựng gần như mọi hoàn cảnh."
+  },
+  {
+    "id": "khong-tu-hoc-tu",
+    "text": "Học nhi bất tư tắc võng, tư nhi bất học tắc đãi.",
+    "highlight": "tư nhi bất học",
+    "underline": "Học nhi bất tư",
+    "author": "Khổng Tử, Luận Ngữ — Vi chính",
+    "vi": "Học mà không suy nghĩ thì mờ mịt, nghĩ mà không học thì nguy hiểm."
+  },
+  {
+    "id": "khong-tu-tam-nhan",
+    "text": "Tam nhân hành, tất hữu ngã sư yên.",
+    "highlight": "tất hữu ngã sư",
+    "underline": "Tam nhân hành",
+    "author": "Khổng Tử, Luận Ngữ — Thuật nhi",
+    "vi": "Ba người cùng đi, ắt có người là thầy ta."
+  },
+  {
+    "id": "khong-tu-ky-so",
+    "text": "Kỷ sở bất dục, vật thi ư nhân.",
+    "highlight": "vật thi ư nhân",
+    "underline": "Kỷ sở bất dục",
+    "author": "Khổng Tử, Luận Ngữ — Vệ Linh Công",
+    "vi": "Điều mình không muốn, đừng làm cho người khác."
+  },
+  {
+    "id": "manh-tu-nhan-hoa",
+    "text": "Thiên thời bất như địa lợi, địa lợi bất như nhân hoà.",
+    "highlight": "nhân hoà",
+    "underline": "Thiên thời bất như địa lợi",
+    "author": "Mạnh Tử — Công Tôn Sửu hạ",
+    "vi": "Thời trời không bằng lợi đất, lợi đất không bằng lòng người hoà thuận."
+  },
+  {
+    "id": "lao-tu-thien-ly",
+    "text": "Thiên lý chi hành, thuỷ ư túc hạ.",
+    "highlight": "thuỷ ư túc hạ",
+    "underline": "Thiên lý chi hành",
+    "author": "Lão Tử, Đạo Đức Kinh — chương 64",
+    "vi": "Đi nghìn dặm bắt đầu từ một bước chân."
+  },
+  {
+    "id": "lao-tu-thuong-thien",
+    "text": "Thượng thiện nhược thuỷ.",
+    "highlight": "nhược thuỷ",
+    "underline": "Thượng thiện",
+    "author": "Lão Tử, Đạo Đức Kinh — chương 8",
+    "vi": "Đức cao nhất giống như nước: làm lợi cho muôn vật mà không tranh giành."
+  },
+  {
+    "id": "trang-tu-vo-nhai",
+    "text": "Ngô sinh dã hữu nhai, nhi tri dã vô nhai.",
+    "highlight": "tri dã vô nhai",
+    "underline": "Ngô sinh dã hữu nhai",
+    "author": "Trang Tử — Dưỡng sinh chủ",
+    "vi": "Đời ta có giới hạn, mà hiểu biết thì không có giới hạn."
+  },
+  {
+    "id": "tuan-tu-khue-bo",
+    "text": "Bất tích khuể bộ, vô dĩ chí thiên lý.",
+    "highlight": "vô dĩ chí thiên lý",
+    "underline": "Bất tích khuể bộ",
+    "author": "Tuân Tử — Khuyến học",
+    "vi": "Không tích từng nửa bước, không thể đi tới nghìn dặm."
+  },
+  {
+    "id": "tuan-tu-thanh-lam",
+    "text": "Thanh, thủ chi ư lam, nhi thanh ư lam.",
+    "highlight": "nhi thanh ư lam",
+    "underline": "thủ chi ư lam",
+    "author": "Tuân Tử — Khuyến học",
+    "vi": "Màu xanh lấy từ cây chàm mà xanh hơn chàm — trò có thể giỏi hơn thầy."
+  },
+  {
+    "id": "han-du-nghiep-tinh",
+    "text": "Nghiệp tinh ư cần, hoang ư hi.",
+    "highlight": "Nghiệp tinh ư cần",
+    "underline": "hoang ư hi",
+    "author": "Hàn Dũ — Tiến học giải",
+    "vi": "Nghề tinh thông nhờ chăm chỉ, bị bỏ phế vì ham chơi."
+  },
+  {
+    "id": "dai-hoc-tu-than",
+    "text": "Tu thân, tề gia, trị quốc, bình thiên hạ.",
+    "highlight": "Tu thân",
+    "underline": "bình thiên hạ",
+    "author": "Đại Học (Lễ Ký)",
+    "vi": "Sửa mình, rồi lo cho nhà, trị nước, đến bình yên thiên hạ — mọi việc lớn bắt đầu từ chính mình."
+  },
+  {
+    "id": "thanh-ngu-thu-can",
+    "text": "Thiên đạo thù cần.",
+    "highlight": "thù cần",
+    "underline": "Thiên đạo",
+    "author": "Thành ngữ Hán Việt",
+    "vi": "Đạo trời đền đáp người chăm chỉ."
   }
 ]

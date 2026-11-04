@@ -3,6 +3,7 @@
     {
       "id": "specialist",
       "title": "Giai đoạn 1 · HR Specialist → Generalist",
+      "realm": "Luyện Khí",
       "role": "Recruiter / Talent Acquisition Specialist → HR Generalist",
       "years": "Năm 0 – 2 (2026 – 2028)",
       "summary": "Biến thế mạnh tuyển dụng thành nền móng, đồng thời phủ kín các mảng HR vận hành: C&B, luật lao động, onboarding, hiệu suất cơ bản. Mục tiêu cuối giai đoạn: có thể một mình vận hành HR cho một team 50–100 người.",
@@ -33,6 +34,7 @@
     {
       "id": "senior",
       "title": "Giai đoạn 2 · Senior HR / HRBP Junior",
+      "realm": "Trúc Cơ",
       "role": "Senior HR Executive / HR Business Partner (Junior)",
       "years": "Năm 2 – 4 (2028 – 2030)",
       "summary": "Chuyển từ 'làm đúng việc HR' sang 'giải bài toán kinh doanh bằng con người'. Làm việc trực tiếp với trưởng bộ phận, hiểu P&L của khối mình phụ trách, đề xuất giải pháp thay vì chỉ thực thi.",
@@ -63,6 +65,7 @@
     {
       "id": "manager",
       "title": "Giai đoạn 3 · HR Manager / Senior HRBP",
+      "realm": "Kim Đan",
       "role": "HR Manager / Senior HR Business Partner",
       "years": "Năm 4 – 6 (2030 – 2032)",
       "summary": "Lần đầu quản lý đội ngũ HR và chịu trách nhiệm ngân sách nhân sự. Xây hệ thống thay vì giải quyết từng ca: khung lương, khung năng lực, quy trình, HRIS.",
@@ -93,6 +96,7 @@
     {
       "id": "head",
       "title": "Giai đoạn 4 · Head of HR / HR Senior Manager",
+      "realm": "Nguyên Anh",
       "role": "Head of People / HR Senior Manager",
       "years": "Năm 6 – 8 (2032 – 2034)",
       "summary": "Thành viên cấp quản lý cao, định hướng chiến lược con người và văn hoá. Ra quyết định ở cấp hệ thống, cân bằng lợi ích cổ đông – nhân viên – khách hàng.",
@@ -121,6 +125,7 @@
     {
       "id": "hrd",
       "title": "Giai đoạn 5 · HR Director / CHRO",
+      "realm": "Hoá Thần",
       "role": "Giám đốc Nhân sự (HR Director) / Chief Human Resources Officer",
       "years": "Năm 8 – 10 (2034 – 2036)",
       "summary": "Đối tác chiến lược của CEO và HĐQT. Chịu trách nhiệm năng lực tổ chức để thực thi chiến lược, quản trị rủi ro con người, và xây dựng thế hệ lãnh đạo kế tiếp.",

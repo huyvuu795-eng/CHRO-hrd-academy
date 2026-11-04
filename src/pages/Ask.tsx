@@ -16,7 +16,7 @@ export default function Ask() {
   const verified = library.filter((d) => d.status === 'verified');
   return (
     <div>
-      <PageHeader title="Hỏi đáp luật" subtitle="Claude trả lời dựa trên văn bản gốc" />
+      <PageHeader title="Hỏi đáp luật" subtitle="Hỏi Trưởng lão · Claude trả lời dựa trên văn bản gốc" />
 
       <section className="card mb-4">
         <h2 className="mb-1 text-lg font-semibold">Hỏi nhanh về luật lao động</h2>

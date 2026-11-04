@@ -3,10 +3,9 @@ import { useRoute } from './lib/router';
 import { useStore } from './lib/store';
 import { setSoundConfig, unlockAudio } from './lib/sound';
 import { pendingTreasure, treasureFor, type Treasure } from './lib/streak';
-import { TreasureChest } from './components/TreasureChest';
+import { Breakthrough } from './components/Breakthrough';
 import { BottomNav } from './components/BottomNav';
-import { OceanBackdrop } from './components/Ocean';
-import { WaterSides } from './components/WaterSides';
+import { PhuonHaiBen, TienBackground } from './components/Scenery';
 import Dashboard from './pages/Dashboard';
 import Learn from './pages/Learn';
 import Week from './pages/Week';
@@ -25,7 +24,7 @@ function useTheme() {
     const apply = () => {
       const dark = theme === 'dark' || (theme === 'system' && mq.matches);
       document.documentElement.classList.toggle('dark', dark);
-      document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#0c0a09' : '#0f766e');
+      document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#0d121c' : '#dfe8f2');
     };
     apply();
     mq.addEventListener('change', apply);
@@ -33,7 +32,7 @@ function useTheme() {
   }, [theme]);
 }
 
-/** Gợn sóng lan ra từ điểm chạm trên mọi nút có class .btn */
+/** Gợn sáng lan ra từ điểm chạm trên mọi nút có class .btn */
 function useRipple() {
   useEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
@@ -68,7 +67,7 @@ function useSound() {
   }, []);
 }
 
-/** Mở rương kho báu khi chuỗi ngày học chạm mốc mới (3, 10, 30, 90, 100, 365, 1.000, 2.000…) */
+/** Hiện màn đột phá cảnh giới khi chuỗi ngày học chạm mốc mới (3, 10, 30, 90, 100, 365, 1.000, 2.000…) */
 function useTreasure() {
   const { state, update } = useStore();
   const [shown, setShown] = useState<Treasure | null>(null);
@@ -128,15 +127,15 @@ export default function App() {
           Không lưu được vào bộ nhớ trình duyệt (chế độ ẩn danh?). Hãy Export JSON để không mất tiến độ.
         </div>
       )}
-      <OceanBackdrop />
-      <WaterSides />
+      <TienBackground />
+      <PhuonHaiBen />
       <main className={`px-4 ${hideNav ? 'pb-8' : 'pb-28'}`}>
         <div key={parts.join('/')} className="page-enter">
           {page}
         </div>
       </main>
       {!hideNav && <BottomNav active={tab === 'week' ? 'learn' : tab} />}
-      {treasure.shown && <TreasureChest treasure={treasure.shown} onClose={treasure.close} />}
+      {treasure.shown && <Breakthrough treasure={treasure.shown} onClose={treasure.close} />}
     </div>
   );
 }

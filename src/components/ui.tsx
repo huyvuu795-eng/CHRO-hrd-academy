@@ -14,7 +14,7 @@ export function PageHeader({
   right?: ReactNode;
 }) {
   return (
-    <header className="sticky top-0 z-20 -mx-4 mb-4 flex items-center gap-2 border-b border-stone-200/70 bg-stone-50/90 px-4 py-3 backdrop-blur dark:border-stone-800/70 dark:bg-stone-950/90">
+    <header className="sticky top-0 z-20 -mx-4 mb-4 flex items-center gap-2 border-b border-stone-200/70 bg-stone-50/95 px-4 py-3 dark:border-stone-800/70 dark:bg-stone-950/95">
       {backTo !== undefined && (
         <button
           onClick={() => back(backTo)}

@@ -10,7 +10,7 @@ export default function Library() {
 
   return (
     <div>
-      <PageHeader title="Thư viện văn bản" subtitle="Văn bản gốc từ cổng thông tin Chính phủ" backTo="/cards" />
+      <PageHeader title="Thư viện văn bản" subtitle="Tàng Kinh Các · văn bản gốc từ cổng thông tin Chính phủ" backTo="/cards" />
       <Tabs tabs={groups.map((g) => ({ id: g, label: g }))} value={group} onChange={setGroup} />
 
       <div className="space-y-2">

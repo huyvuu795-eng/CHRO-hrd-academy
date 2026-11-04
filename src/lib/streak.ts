@@ -24,18 +24,18 @@ export interface Treasure {
 }
 
 const TITLES: Record<number, [string, string]> = {
-  3: ['Giọt nước đầu tiên', 'Ba ngày liên tiếp — thói quen đã bắt đầu thấm.'],
-  10: ['Dòng suối nhỏ', 'Mười ngày không ngắt quãng. Nước chảy đá mòn.'],
-  30: ['Con sông', 'Một tháng bền bỉ — kiến thức đã thành dòng chảy.'],
-  90: ['Đại dương', 'Ba tháng: bạn đã đi hết một quý học HR.'],
-  100: ['Ngọc trai trăm ngày', 'Một trăm ngày, hạt cát đã thành ngọc.'],
-  365: ['Một vòng thuỷ triều', 'Tròn một năm học mỗi ngày — một năm của người làm nghề nghiêm túc.'],
-  1000: ['Huyền thoại biển sâu', 'Một nghìn ngày. Rất ít người đi được đến đây.'],
-  2000: ['Long Vương', 'Hai nghìn ngày — bạn chính là đại dương.'],
+  3: ['Dẫn khí nhập thể', 'Ba ngày liên tiếp — linh khí đầu tiên đã vào kinh mạch.'],
+  10: ['Luyện Khí viên mãn', 'Mười ngày không ngắt quãng. Nền móng đã vững.'],
+  30: ['Trúc Cơ', 'Một tháng bền bỉ — đạo cơ đã thành.'],
+  90: ['Kết Đan', 'Ba tháng tu luyện: đi hết một quý học HR.'],
+  100: ['Kim Đan đại thành', 'Một trăm ngày, kim đan sáng rực.'],
+  365: ['Nguyên Anh', 'Tròn một năm tu luyện mỗi ngày — nguyên anh đã thành hình.'],
+  1000: ['Hoá Thần', 'Một nghìn ngày. Rất ít người đi được đến cảnh giới này.'],
+  2000: ['Độ Kiếp phi thăng', 'Hai nghìn ngày — thiên kiếp cũng không cản được đạo tâm.'],
 };
 
 export function treasureFor(days: number): Treasure {
-  const [title, message] = TITLES[days] ?? ['Kho báu Long cung', `${days.toLocaleString('vi-VN')} ngày liên tiếp — kỷ lục của chính bạn.`];
+  const [title, message] = TITLES[days] ?? ['Đại Thừa', `${days.toLocaleString('vi-VN')} ngày bế quan liên tiếp — kỷ lục của chính đạo hữu.`];
   return { days, title, message };
 }
 

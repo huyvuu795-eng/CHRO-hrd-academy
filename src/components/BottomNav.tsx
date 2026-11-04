@@ -12,7 +12,7 @@ const items = [
 
 export function BottomNav({ active }: { active: string }) {
   return (
-    <nav className="pb-safe fixed inset-x-0 bottom-0 z-30 border-t border-stone-200 bg-white/95 backdrop-blur dark:border-stone-800 dark:bg-stone-950/95">
+    <nav className="pb-safe fixed inset-x-0 bottom-0 z-30 border-t border-stone-200 bg-white dark:border-stone-800 dark:bg-stone-950">
       <div className="mx-auto grid max-w-2xl grid-cols-6">
         {items.map((it) => {
           const on = active === it.id;

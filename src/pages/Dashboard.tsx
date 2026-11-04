@@ -16,7 +16,7 @@ import {
   YAxis,
 } from 'recharts';
 import { Check, Empty, Progress, Stat } from '../components/ui';
-import { OceanHero, QuoteCard } from '../components/Ocean';
+import { QuoteCard, TongMonHero } from '../components/Scenery';
 import { sfx } from '../lib/sound';
 import { allCards, competencies, stages } from '../lib/content';
 import { DAYS, formatDate, streak, thisMonth, todayKey } from '../lib/date';
@@ -54,44 +54,46 @@ export default function Dashboard() {
 
   return (
     <div>
-      <OceanHero>
+      <TongMonHero>
         <div className="flex items-start justify-between gap-3">
-          <div>
-            <p className="text-sm text-white/75">Xin chào 👋</p>
-            <h1 className="text-2xl font-bold tracking-tight">HRD Academy</h1>
-            <p className="mt-1 text-xs text-white/70">Từ Recruiter đến HR Director · lặn sâu mỗi ngày một chút</p>
-          </div>
-          <div className="flex shrink-0 flex-col items-end gap-2">
-            <button onClick={() => go('/roadmap')} className="btn min-h-[34px] rounded-full bg-white/15 px-3 text-xs text-white backdrop-blur hover:bg-white/25">
+          <div className="min-w-0">
+            <p className="text-sm text-stone-600 dark:text-stone-300">Đạo hữu, chào mừng trở lại</p>
+            <h1 className="font-serif text-[26px] font-bold leading-tight tracking-tight text-stone-900 dark:text-kim-100">HRD Academy</h1>
+            <p className="mt-1 text-xs text-stone-500 dark:text-stone-400">Tông môn tu luyện · Từ Recruiter đến HR Director</p>
+            <button
+              onClick={() => go('/roadmap')}
+              className="btn mt-3 min-h-[32px] rounded-full border border-kim-400/70 bg-kim-100 px-3 text-xs text-kim-700 hover:bg-kim-200 dark:border-kim-600 dark:bg-kim-700/30 dark:text-kim-200"
+            >
+              {stage?.realm ? `${stage.realm} · ` : ''}
               {stage?.title.split(' · ')[0] ?? 'Chọn giai đoạn'} →
             </button>
-            <div className="flex gap-1.5">
-              <button
-                onClick={() => update((d) => void (d.settings.sound.sfx = !d.settings.sound.sfx))}
-                className={`btn min-h-[32px] rounded-full px-2.5 text-sm backdrop-blur ${sound.sfx ? 'bg-white/25' : 'bg-white/10 opacity-70'}`}
-                aria-pressed={sound.sfx}
-                title={sound.sfx ? 'Tắt hiệu ứng âm thanh' : 'Bật hiệu ứng âm thanh'}
-              >
-                {sound.sfx ? '🔊' : '🔈'}
-              </button>
-              <button
-                onClick={() => update((d) => void (d.settings.sound.ambient = !d.settings.sound.ambient))}
-                className={`btn min-h-[32px] rounded-full px-2.5 text-sm backdrop-blur ${sound.ambient ? 'bg-white/25' : 'bg-white/10 opacity-70'}`}
-                aria-pressed={sound.ambient}
-                title={sound.ambient ? 'Tắt tiếng sóng biển' : 'Bật tiếng sóng biển'}
-              >
-                🌊
-              </button>
-            </div>
+          </div>
+          <div className="flex shrink-0 gap-1.5">
+            <button
+              onClick={() => update((d) => void (d.settings.sound.sfx = !d.settings.sound.sfx))}
+              className={`btn min-h-[34px] rounded-full border border-stone-300/70 px-2.5 text-sm dark:border-stone-600 ${sound.sfx ? 'bg-white dark:bg-stone-800' : 'bg-white/50 opacity-60 dark:bg-stone-800/50'}`}
+              aria-pressed={sound.sfx}
+              title={sound.sfx ? 'Tắt hiệu ứng âm thanh' : 'Bật hiệu ứng âm thanh'}
+            >
+              {sound.sfx ? '🔔' : '🔕'}
+            </button>
+            <button
+              onClick={() => update((d) => void (d.settings.sound.ambient = !d.settings.sound.ambient))}
+              className={`btn min-h-[34px] rounded-full border border-stone-300/70 px-2.5 text-sm dark:border-stone-600 ${sound.ambient ? 'bg-white dark:bg-stone-800' : 'bg-white/50 opacity-60 dark:bg-stone-800/50'}`}
+              aria-pressed={sound.ambient}
+              title={sound.ambient ? 'Tắt tiếng gió núi' : 'Bật tiếng gió núi'}
+            >
+              🎐
+            </button>
           </div>
         </div>
-      </OceanHero>
+      </TongMonHero>
       <QuoteCard />
 
       <div className="mb-4 grid grid-cols-3 gap-2">
-        <Stat label="Streak" value={<>🔥 {streak(state.studyDays)}</>} hint="ngày liên tiếp" />
-        <Stat label="Tuần này" value={`${cw ? weekPct(state, cw) : 0}%`} hint={cw ? `Tuần ${cw.week}` : '—'} />
-        <Stat label="Thẻ luật" value={dueCount} hint="đến hạn ôn" />
+        <Stat label="Bế quan" value={<>🔥 {streak(state.studyDays)}</>} hint="ngày streak" />
+        <Stat label="Tu vi" value={`${cw ? weekPct(state, cw) : 0}%`} hint={cw ? `tiến độ tuần ${cw.week}` : '—'} />
+        <Stat label="Ngọc giản" value={dueCount} hint="thẻ luật đến hạn" />
       </div>
 
       {cw && (
@@ -102,7 +104,7 @@ export default function Dashboard() {
           </div>
           <h2 className="mb-3 text-base font-semibold leading-snug">{cw.title}</h2>
           <Progress value={weekPct(state, cw)} className="mb-3" />
-          <div className="label mb-1">Hôm nay · {DAYS.find((d) => d.key === dk)?.label}</div>
+          <div className="label mb-1">Nhiệm vụ tu luyện · {DAYS.find((d) => d.key === dk)?.label}</div>
           {todayTasks.length ? (
             todayTasks.map((t, i) => (
               <Check key={i} checked={!!todayDone[i]} onChange={() => toggle(i)}>
@@ -130,15 +132,15 @@ export default function Dashboard() {
             <ResponsiveContainer>
               <LineChart data={scoreData} margin={{ top: 5, right: 10, bottom: 0, left: -20 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="currentColor" className="text-stone-200 dark:text-stone-800" />
-                <XAxis dataKey="name" tick={{ fontSize: 11 }} stroke="#a8a29e" />
-                <YAxis domain={[0, 100]} tick={{ fontSize: 11 }} stroke="#a8a29e" />
+                <XAxis dataKey="name" tick={{ fontSize: 11 }} stroke="#8395aa" />
+                <YAxis domain={[0, 100]} tick={{ fontSize: 11 }} stroke="#8395aa" />
                 <Tooltip
                   formatter={(v: number) => [`${v}%`, 'Điểm']}
                   labelFormatter={(_, p) => (p?.[0] ? `${p[0].payload.name} · ${p[0].payload.date}` : '')}
                   contentStyle={{ borderRadius: 12, fontSize: 12 }}
                 />
                 <ReferenceLine y={PASS_PCT} stroke="#f59e0b" strokeDasharray="4 4" />
-                <Line type="monotone" dataKey="pct" stroke="#0d9488" strokeWidth={2.5} dot={{ r: 4 }} />
+                <Line type="monotone" dataKey="pct" stroke="#178568" strokeWidth={2.5} dot={{ r: 4 }} />
               </LineChart>
             </ResponsiveContainer>
           </div>
@@ -183,7 +185,7 @@ function SelfAssessCard() {
   return (
     <section className="card mb-4">
       <div className="mb-2 flex items-center justify-between">
-        <span className="label">Bản đồ năng lực HR</span>
+        <span className="label">Bản đồ năng lực · Linh căn</span>
         {latest && <span className="text-xs text-stone-500">Cập nhật: {latest.month}</span>}
       </div>
 
@@ -191,11 +193,11 @@ function SelfAssessCard() {
         <div className="h-72">
           <ResponsiveContainer>
             <RadarChart data={data} outerRadius="70%">
-              <PolarGrid stroke="#d6d3d1" />
-              <PolarAngleAxis dataKey="area" tick={{ fontSize: 10, fill: '#78716c' }} />
+              <PolarGrid stroke="#aebccd" />
+              <PolarAngleAxis dataKey="area" tick={{ fontSize: 10, fill: '#5b6d83' }} />
               <PolarRadiusAxis domain={[0, 5]} tickCount={6} tick={false} axisLine={false} />
-              {prev && <Radar name={`Tháng ${prev.month}`} dataKey="before" stroke="#a8a29e" fill="#a8a29e" fillOpacity={0.15} />}
-              <Radar name={`Tháng ${latest.month}`} dataKey="now" stroke="#0d9488" fill="#14b8a6" fillOpacity={0.35} />
+              {prev && <Radar name={`Tháng ${prev.month}`} dataKey="before" stroke="#8395aa" fill="#8395aa" fillOpacity={0.15} />}
+              <Radar name={`Tháng ${latest.month}`} dataKey="now" stroke="#178568" fill="#3fb894" fillOpacity={0.35} />
               <Legend wrapperStyle={{ fontSize: 11 }} />
             </RadarChart>
           </ResponsiveContainer>

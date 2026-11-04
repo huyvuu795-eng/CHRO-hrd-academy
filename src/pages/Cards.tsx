@@ -19,7 +19,7 @@ export default function Cards() {
 
   return (
     <div>
-      <PageHeader title="Thẻ luật lao động" subtitle="BLLĐ 2019 & văn bản hướng dẫn · lặp lại ngắt quãng (SM-2)" />
+      <PageHeader title="Thẻ luật lao động" subtitle="Ngọc giản · BLLĐ 2019 & văn bản hướng dẫn · ôn ngắt quãng" />
 
       <section className="card mb-4">
         <div className="mb-3 grid grid-cols-3 text-center">

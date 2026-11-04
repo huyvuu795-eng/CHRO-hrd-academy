@@ -93,7 +93,7 @@ export default function Settings() {
         <div className="space-y-4">
           <Toggle
             label="Hiệu ứng âm thanh"
-            hint="Giọt nước khi tick, chuông khi trả lời đúng, rương kho báu…"
+            hint="Khánh đồng khi tick, chuông chùa khi trả lời đúng, đột phá cảnh giới…"
             on={sound.sfx}
             onChange={(v) => update((d) => void (d.settings.sound.sfx = v))}
           />
@@ -101,17 +101,17 @@ export default function Settings() {
             <Slider value={sound.sfxVolume} onChange={(v) => update((d) => void (d.settings.sound.sfxVolume = v))} label="Âm lượng hiệu ứng" />
           )}
           <Toggle
-            label="Tiếng sóng biển nền"
-            hint="Rì rào khi học, giúp tập trung. Bắt đầu sau lần chạm đầu tiên."
+            label="Tiếng gió núi nền"
+            hint="Gió núi và chuông gió xa, giúp tập trung. Bắt đầu sau lần chạm đầu tiên."
             on={sound.ambient}
             onChange={(v) => update((d) => void (d.settings.sound.ambient = v))}
           />
           {sound.ambient && (
-            <Slider value={sound.ambientVolume} onChange={(v) => update((d) => void (d.settings.sound.ambientVolume = v))} label="Âm lượng sóng" />
+            <Slider value={sound.ambientVolume} onChange={(v) => update((d) => void (d.settings.sound.ambientVolume = v))} label="Âm lượng gió" />
           )}
           <Toggle
             label="Rung nhẹ (Android)"
-            hint="Khi tick checklist, trả lời đúng/sai, mở rương."
+            hint="Khi tick nhiệm vụ, trả lời đúng/sai, đột phá cảnh giới."
             on={sound.haptics}
             onChange={(v) => update((d) => void (d.settings.sound.haptics = v))}
           />
@@ -120,10 +120,10 @@ export default function Settings() {
             <div className="flex flex-wrap gap-2">
               {(
                 [
-                  ['💧 Giọt nước', sfx.drop],
-                  ['🫧 Bọt nước', sfx.bubble],
-                  ['🔔 Đúng', sfx.chime],
-                  ['🌊 Sai', sfx.wrong],
+                  ['🔔 Khánh đồng', sfx.drop],
+                  ['🎵 Đàn tranh', sfx.bubble],
+                  ['🛕 Đúng', sfx.chime],
+                  ['🥁 Sai', sfx.wrong],
                   ['✨ Hoàn thành', sfx.fanfare],
                 ] as const
               ).map(([name, play]) => (
@@ -135,7 +135,7 @@ export default function Settings() {
                 className="btn-ghost min-h-[36px] px-3 text-xs"
                 onClick={() => window.dispatchEvent(new CustomEvent('hrd:preview-treasure', { detail: 10 }))}
               >
-                🗝️ Xem thử rương kho báu
+                ⚡ Xem thử đột phá cảnh giới
               </button>
             </div>
           </div>

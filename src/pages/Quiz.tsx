@@ -63,7 +63,8 @@ export default function Quiz({ week }: { week: number }) {
   return (
     <div>
       <PageHeader
-        title={`Mini test · Tuần ${week}`}
+        title={`Khảo hạch · Tuần ${week}`}
+        subtitle="Mini test cuối tuần"
         right={
           <button onClick={close} className="grid h-10 w-10 place-items-center rounded-full text-xl hover:bg-stone-200/60 dark:hover:bg-stone-800" aria-label="Đóng">
             ✕

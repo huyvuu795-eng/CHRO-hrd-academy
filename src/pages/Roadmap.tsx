@@ -10,7 +10,7 @@ export default function Roadmap() {
 
   return (
     <div>
-      <PageHeader title="Lộ trình 10 năm" subtitle="Recruiter → HR Director / CHRO" />
+      <PageHeader title="Lộ trình 10 năm" subtitle="Con đường tu luyện · Luyện Khí → Hoá Thần" />
       <ol className="relative">
         {stages.map((s, i) => {
           const isCur = i === curIdx;
@@ -38,6 +38,9 @@ export default function Roadmap() {
                     <span className="text-xs font-medium text-stone-500">{s.years}</span>
                     {isCur && <span className="rounded-full bg-brand-600 px-2 py-0.5 text-[10px] font-bold uppercase text-white">Hiện tại</span>}
                   </div>
+                  {s.realm && (
+                    <div className="mt-0.5 font-serif text-sm font-semibold text-kim-600 dark:text-kim-300">Cảnh giới {s.realm}</div>
+                  )}
                   <h2 className="font-semibold">{s.title}</h2>
                   <p className="text-sm text-stone-500">{s.role}</p>
                 </button>

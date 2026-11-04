@@ -11,7 +11,7 @@ export default function Learn() {
 
   return (
     <div>
-      <PageHeader title="Lộ trình năm 1" subtitle="52 tuần · mở khoá tuần sau khi đạt mini test ≥ 70%" />
+      <PageHeader title="Lộ trình năm 1" subtitle="Công pháp 52 tuần · qua khảo hạch ≥ 70% để mở tuần sau" />
       {quarters.map((list, qi) =>
         list.length ? (
           <section key={qi} className="mb-6">
