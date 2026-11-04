@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useRoute } from './lib/router';
 import { useStore } from './lib/store';
 import { BottomNav } from './components/BottomNav';
+import { OceanBackdrop } from './components/Ocean';
 import Dashboard from './pages/Dashboard';
 import Learn from './pages/Learn';
 import Week from './pages/Week';
@@ -28,8 +29,29 @@ function useTheme() {
   }, [theme]);
 }
 
+/** Gợn sóng lan ra từ điểm chạm trên mọi nút có class .btn */
+function useRipple() {
+  useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const onDown = (e: PointerEvent) => {
+      const el = (e.target as HTMLElement).closest<HTMLElement>('.btn, .btn-primary, .btn-ghost');
+      if (!el || (el as HTMLButtonElement).disabled) return;
+      const r = el.getBoundingClientRect();
+      const size = Math.max(r.width, r.height);
+      const dot = document.createElement('span');
+      dot.className = 'ripple';
+      dot.style.cssText = `width:${size}px;height:${size}px;left:${e.clientX - r.left - size / 2}px;top:${e.clientY - r.top - size / 2}px`;
+      el.appendChild(dot);
+      dot.addEventListener('animationend', () => dot.remove());
+    };
+    document.addEventListener('pointerdown', onDown);
+    return () => document.removeEventListener('pointerdown', onDown);
+  }, []);
+}
+
 export default function App() {
   useTheme();
+  useRipple();
   const { parts, query } = useRoute();
   const { saveError } = useStore();
   const [p0, p1, p2] = parts;
@@ -63,7 +85,12 @@ export default function App() {
           Không lưu được vào bộ nhớ trình duyệt (chế độ ẩn danh?). Hãy Export JSON để không mất tiến độ.
         </div>
       )}
-      <main className={`px-4 ${hideNav ? 'pb-8' : 'pb-28'}`}>{page}</main>
+      <OceanBackdrop />
+      <main className={`px-4 ${hideNav ? 'pb-8' : 'pb-28'}`}>
+        <div key={parts.join('/')} className="page-enter">
+          {page}
+        </div>
+      </main>
       {!hideNav && <BottomNav active={tab === 'week' ? 'learn' : tab} />}
     </div>
   );

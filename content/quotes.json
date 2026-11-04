@@ -1,0 +1,278 @@
+[
+  {
+    "id": "ca-dao-long-nguoi",
+    "text": "Dò sông dò biển dễ dò, nào ai lấy thước mà đo lòng người.",
+    "highlight": "đo lòng người",
+    "underline": "Dò sông dò biển dễ dò",
+    "author": "Ca dao Việt Nam"
+  },
+  {
+    "id": "epictetus-views",
+    "text": "Men are disturbed not by things, but by the views which they take of things.",
+    "highlight": "the views which they take of things",
+    "underline": "not by things",
+    "author": "Epictetus, Enchiridion",
+    "vi": "Con người bị xáo trộn không phải bởi sự việc, mà bởi cách họ nhìn sự việc."
+  },
+  {
+    "id": "kahneman-focusing",
+    "text": "Nothing in life is as important as you think it is, while you are thinking about it.",
+    "highlight": "as important as you think it is",
+    "underline": "while you are thinking about it",
+    "author": "Daniel Kahneman, Thinking, Fast and Slow",
+    "vi": "Không điều gì trong đời quan trọng như bạn nghĩ, vào đúng lúc bạn đang nghĩ về nó."
+  },
+  {
+    "id": "carnegie-emotion",
+    "text": "When dealing with people, remember you are not dealing with creatures of logic, but creatures of emotion.",
+    "highlight": "creatures of emotion",
+    "underline": "not dealing with creatures of logic",
+    "author": "Dale Carnegie, How to Win Friends and Influence People",
+    "vi": "Khi làm việc với con người, hãy nhớ bạn không làm việc với những sinh vật của lý trí, mà của cảm xúc."
+  },
+  {
+    "id": "covey-listen",
+    "text": "Most people do not listen with the intent to understand; they listen with the intent to reply.",
+    "highlight": "the intent to reply",
+    "underline": "listen with the intent to understand",
+    "author": "Stephen R. Covey, The 7 Habits of Highly Effective People",
+    "vi": "Phần lớn mọi người không lắng nghe để hiểu; họ lắng nghe để đáp lại."
+  },
+  {
+    "id": "jung-irritates",
+    "text": "Everything that irritates us about others can lead us to an understanding of ourselves.",
+    "highlight": "an understanding of ourselves",
+    "underline": "irritates us about others",
+    "author": "Carl Jung, Memories, Dreams, Reflections",
+    "vi": "Mọi điều khiến ta khó chịu ở người khác đều có thể dẫn ta đến chỗ hiểu chính mình."
+  },
+  {
+    "id": "frankl-attitude",
+    "text": "Everything can be taken from a man but one thing: the last of the human freedoms — to choose one's attitude in any given set of circumstances.",
+    "highlight": "to choose one's attitude",
+    "underline": "the last of the human freedoms",
+    "author": "Viktor E. Frankl, Man's Search for Meaning",
+    "vi": "Người ta có thể bị tước đi mọi thứ, trừ một điều: quyền tự do cuối cùng — tự chọn thái độ của mình trước mọi hoàn cảnh."
+  },
+  {
+    "id": "socrates-examined",
+    "text": "The unexamined life is not worth living.",
+    "highlight": "not worth living",
+    "underline": "unexamined life",
+    "author": "Socrates, theo Plato — Apology",
+    "vi": "Một cuộc đời không tự vấn thì không đáng sống."
+  },
+  {
+    "id": "lao-tzu-knowing",
+    "text": "Knowing others is intelligence; knowing yourself is true wisdom.",
+    "highlight": "knowing yourself is true wisdom",
+    "underline": "Knowing others is intelligence",
+    "author": "Lão Tử, Đạo Đức Kinh — chương 33 (bản dịch)",
+    "vi": "Biết người là trí, biết mình là sáng."
+  },
+  {
+    "id": "ton-tu-biet-nguoi",
+    "text": "Biết người biết ta, trăm trận không nguy.",
+    "highlight": "Biết người biết ta",
+    "underline": "trăm trận không nguy",
+    "author": "Tôn Tử, Binh pháp — thiên Mưu công"
+  },
+  {
+    "id": "kahneman-blind",
+    "text": "We can be blind to the obvious, and we are also blind to our blindness.",
+    "highlight": "blind to our blindness",
+    "underline": "blind to the obvious",
+    "author": "Daniel Kahneman, Thinking, Fast and Slow",
+    "vi": "Ta có thể không thấy điều hiển nhiên, và ta cũng không thấy rằng mình đang không thấy."
+  },
+  {
+    "id": "seneca-imagination",
+    "text": "We suffer more often in imagination than in reality.",
+    "highlight": "in imagination",
+    "underline": "than in reality",
+    "author": "Seneca, Thư gửi Lucilius — thư 13 (bản dịch)",
+    "vi": "Ta đau khổ trong tưởng tượng nhiều hơn ngoài đời thực."
+  },
+  {
+    "id": "durant-habit",
+    "text": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+    "highlight": "not an act, but a habit",
+    "underline": "what we repeatedly do",
+    "author": "Will Durant, diễn ý tư tưởng của Aristotle",
+    "vi": "Ta là những gì ta lặp đi lặp lại. Vì thế, xuất sắc không phải một hành động, mà là một thói quen."
+  },
+  {
+    "id": "heraclitus-river",
+    "text": "No man ever steps in the same river twice, for it is not the same river and he is not the same man.",
+    "highlight": "he is not the same man",
+    "underline": "the same river twice",
+    "author": "Heraclitus (diễn ý)",
+    "vi": "Không ai tắm hai lần trên cùng một dòng sông, vì dòng sông đã khác và người cũng đã khác."
+  },
+  {
+    "id": "ca-dao-lua-loi",
+    "text": "Lời nói chẳng mất tiền mua, lựa lời mà nói cho vừa lòng nhau.",
+    "highlight": "lựa lời mà nói",
+    "underline": "chẳng mất tiền mua",
+    "author": "Ca dao Việt Nam"
+  },
+  {
+    "id": "maslow-hammer",
+    "text": "If the only tool you have is a hammer, it is tempting to treat everything as if it were a nail.",
+    "highlight": "as if it were a nail",
+    "underline": "the only tool you have",
+    "author": "Abraham Maslow, The Psychology of Science",
+    "vi": "Nếu công cụ duy nhất bạn có là cái búa, bạn sẽ dễ coi mọi thứ như cái đinh."
+  },
+  {
+    "id": "nin-as-we-are",
+    "text": "We don't see things as they are, we see them as we are.",
+    "highlight": "as we are",
+    "underline": "as they are",
+    "author": "Anaïs Nin",
+    "vi": "Ta không nhìn sự vật như chúng vốn là, ta nhìn chúng như chính ta là."
+  },
+  {
+    "id": "zeno-two-ears",
+    "text": "We have two ears and one mouth, so we should listen more than we say.",
+    "highlight": "listen more",
+    "underline": "two ears and one mouth",
+    "author": "Zeno xứ Citium, theo Diogenes Laërtius (diễn ý)",
+    "vi": "Ta có hai tai và một miệng, nên hãy nghe nhiều hơn nói."
+  },
+  {
+    "id": "marcus-be-one",
+    "text": "Waste no more time arguing about what a good man should be. Be one.",
+    "highlight": "Be one.",
+    "underline": "what a good man should be",
+    "author": "Marcus Aurelius, Suy tưởng — quyển 10 (bản dịch)",
+    "vi": "Đừng tốn thêm thời gian tranh luận người tốt phải như thế nào. Hãy là người như thế."
+  },
+  {
+    "id": "brown-vulnerability",
+    "text": "Vulnerability is the birthplace of innovation, creativity and change.",
+    "highlight": "the birthplace of innovation",
+    "underline": "Vulnerability",
+    "author": "Brené Brown, Daring Greatly",
+    "vi": "Sự dám bộc lộ điểm yếu là nơi khai sinh của đổi mới, sáng tạo và thay đổi."
+  },
+  {
+    "id": "confucius-knowledge",
+    "text": "When you know a thing, to hold that you know it; and when you do not know a thing, to allow that you do not know it — this is knowledge.",
+    "highlight": "to allow that you do not know it",
+    "underline": "this is knowledge",
+    "author": "Khổng Tử, Luận Ngữ — Vi chính 2.17 (bản dịch James Legge)",
+    "vi": "Biết thì nói là biết, không biết thì nói là không biết — thế mới là biết."
+  },
+  {
+    "id": "ca-dao-mot-cay",
+    "text": "Một cây làm chẳng nên non, ba cây chụm lại nên hòn núi cao.",
+    "highlight": "ba cây chụm lại",
+    "underline": "Một cây làm chẳng nên non",
+    "author": "Ca dao Việt Nam"
+  },
+  {
+    "id": "sinek-why",
+    "text": "People don't buy what you do; they buy why you do it.",
+    "highlight": "why you do it",
+    "underline": "what you do",
+    "author": "Simon Sinek, Start with Why",
+    "vi": "Người ta không mua thứ bạn làm; họ mua lý do bạn làm điều đó."
+  },
+  {
+    "id": "rumi-change-myself",
+    "text": "Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.",
+    "highlight": "I am changing myself",
+    "underline": "I wanted to change the world",
+    "author": "Rumi (bản dịch phổ biến)",
+    "vi": "Hôm qua tôi khôn ngoan nên muốn thay đổi thế giới. Hôm nay tôi sáng suốt nên đang thay đổi chính mình."
+  },
+  {
+    "id": "delphi-know-thyself",
+    "text": "Know thyself.",
+    "highlight": "thyself",
+    "underline": "Know",
+    "author": "Châm ngôn khắc ở đền Delphi, Hy Lạp cổ đại",
+    "vi": "Hãy tự biết mình."
+  },
+  {
+    "id": "buffett-hire",
+    "text": "In looking for people to hire, you look for three qualities: integrity, intelligence, and energy. And if they don't have the first, the other two will kill you.",
+    "highlight": "integrity",
+    "underline": "the other two will kill you",
+    "author": "Warren Buffett — nhà đầu tư, tỉ phú",
+    "vi": "Khi tuyển người, hãy tìm ba phẩm chất: chính trực, thông minh và năng lượng. Nếu thiếu điều đầu tiên, hai điều còn lại sẽ giết chết bạn."
+  },
+  {
+    "id": "buffett-reputation",
+    "text": "It takes 20 years to build a reputation and five minutes to ruin it. If you think about that, you'll do things differently.",
+    "highlight": "five minutes to ruin it",
+    "underline": "you'll do things differently",
+    "author": "Warren Buffett — nhà đầu tư, tỉ phú",
+    "vi": "Phải mất 20 năm để xây dựng danh tiếng và 5 phút để huỷ hoại nó. Nghĩ về điều đó, bạn sẽ hành xử khác đi."
+  },
+  {
+    "id": "munger-incentive",
+    "text": "Show me the incentive and I will show you the outcome.",
+    "highlight": "the incentive",
+    "underline": "the outcome",
+    "author": "Charlie Munger — nhà đầu tư, tỉ phú",
+    "vi": "Cho tôi xem cơ chế khuyến khích, tôi sẽ cho bạn thấy kết quả."
+  },
+  {
+    "id": "jobs-hire-smart",
+    "text": "It doesn't make sense to hire smart people and tell them what to do; we hire smart people so they can tell us what to do.",
+    "highlight": "so they can tell us what to do",
+    "underline": "hire smart people",
+    "author": "Steve Jobs — đồng sáng lập Apple",
+    "vi": "Tuyển người giỏi rồi bảo họ phải làm gì thì thật vô lý; chúng tôi tuyển người giỏi để họ bảo chúng tôi nên làm gì."
+  },
+  {
+    "id": "jobs-time-limited",
+    "text": "Your time is limited, so don't waste it living someone else's life.",
+    "highlight": "someone else's life",
+    "underline": "Your time is limited",
+    "author": "Steve Jobs, diễn văn tại Đại học Stanford (2005)",
+    "vi": "Thời gian của bạn có hạn, đừng lãng phí nó để sống cuộc đời của người khác."
+  },
+  {
+    "id": "gates-unhappy-customers",
+    "text": "Your most unhappy customers are your greatest source of learning.",
+    "highlight": "your greatest source of learning",
+    "underline": "most unhappy customers",
+    "author": "Bill Gates, Business @ the Speed of Thought",
+    "vi": "Những khách hàng kém hài lòng nhất là nguồn học hỏi lớn nhất của bạn."
+  },
+  {
+    "id": "bezos-brand",
+    "text": "Your brand is what other people say about you when you're not in the room.",
+    "highlight": "when you're not in the room",
+    "underline": "what other people say about you",
+    "author": "Jeff Bezos — nhà sáng lập Amazon",
+    "vi": "Thương hiệu của bạn là điều người khác nói về bạn khi bạn không có mặt."
+  },
+  {
+    "id": "branson-train",
+    "text": "Train people well enough so they can leave, treat them well enough so they don't want to.",
+    "highlight": "so they don't want to",
+    "underline": "Train people well enough",
+    "author": "Richard Branson — nhà sáng lập Virgin Group",
+    "vi": "Hãy đào tạo nhân viên đủ tốt để họ có thể ra đi, và đối xử đủ tốt để họ không muốn đi."
+  },
+  {
+    "id": "carnegie-leader",
+    "text": "No man will make a great leader who wants to do it all himself, or to get all the credit for doing it.",
+    "highlight": "get all the credit",
+    "underline": "do it all himself",
+    "author": "Andrew Carnegie — nhà công nghiệp, tỉ phú thép",
+    "vi": "Không ai trở thành nhà lãnh đạo vĩ đại nếu muốn tự làm mọi việc, hoặc muốn nhận hết công lao về mình."
+  },
+  {
+    "id": "nietzsche-why",
+    "text": "He who has a why to live can bear almost any how.",
+    "highlight": "a why to live",
+    "underline": "almost any how",
+    "author": "Friedrich Nietzsche, Twilight of the Idols (bản dịch phổ biến)",
+    "vi": "Ai có lý do để sống thì có thể chịu đựng gần như mọi hoàn cảnh."
+  }
+]

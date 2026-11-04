@@ -7,6 +7,20 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Trung tính ngả xanh biển: thay "stone" mặc định để cả app mang tông đại dương
+        stone: {
+          50: '#f1f7f8',
+          100: '#e2eef1',
+          200: '#c8dce1',
+          300: '#a3c1c8',
+          400: '#74989f',
+          500: '#4c737c',
+          600: '#3c5f68',
+          700: '#2e4b53',
+          800: '#183846',
+          900: '#0c2733',
+          950: '#04161f',
+        },
         brand: {
           50: '#f0fdfa',
           100: '#ccfbf1',

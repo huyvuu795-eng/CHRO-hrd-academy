@@ -5,9 +5,17 @@
 @layer base {
   html {
     -webkit-tap-highlight-color: transparent;
+    --sea-floor: #e3f1f4;
+  }
+  html.dark {
+    --sea-floor: #072433;
   }
   body {
-    @apply bg-stone-50 text-stone-900 antialiased dark:bg-stone-950 dark:text-stone-100;
+    @apply text-stone-900 antialiased dark:text-stone-100;
+    background: linear-gradient(180deg, #dff0f3 0%, #eef6f8 32%, #f1f7f8 100%) fixed;
+  }
+  .dark body {
+    background: radial-gradient(120% 60% at 50% -10%, #0b3a4c 0%, #062230 45%, #04161f 100%) fixed;
   }
 }
 
@@ -16,7 +24,7 @@
     @apply rounded-2xl border border-stone-200 bg-white p-4 dark:border-stone-800 dark:bg-stone-900;
   }
   .btn {
-    @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-xl px-4 text-sm font-semibold transition active:scale-[0.98] disabled:opacity-40;
+    @apply relative inline-flex min-h-[44px] items-center justify-center gap-2 overflow-hidden rounded-xl px-4 text-sm font-semibold transition active:scale-[0.98] disabled:opacity-40;
   }
   .btn-primary {
     @apply btn bg-brand-700 text-white hover:bg-brand-800 dark:bg-brand-600 dark:hover:bg-brand-500;
@@ -41,4 +49,161 @@
 
 .pb-safe {
   padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* ================= Hiệu ứng đại dương ================= */
+
+/* Nền: vệt sáng lăn tăn như ánh nắng xuyên mặt nước (caustics) */
+.ocean-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+.caustic {
+  position: absolute;
+  width: 70vmax;
+  height: 70vmax;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.55;
+  background: radial-gradient(circle, rgba(94, 214, 214, 0.35) 0%, rgba(94, 214, 214, 0) 65%);
+  animation: drift 38s ease-in-out infinite alternate;
+  will-change: transform;
+}
+.caustic.c2 { left: 45%; top: 35%; animation-duration: 46s; animation-delay: -12s; background: radial-gradient(circle, rgba(56, 152, 214, 0.28) 0%, rgba(56, 152, 214, 0) 65%); }
+.caustic.c3 { left: -20%; top: 60%; animation-duration: 54s; animation-delay: -24s; }
+.dark .caustic { opacity: 0.4; }
+@keyframes drift {
+  0% { transform: translate3d(-10%, -6%, 0) scale(1); }
+  50% { transform: translate3d(8%, 6%, 0) scale(1.12); }
+  100% { transform: translate3d(-4%, 10%, 0) scale(0.95); }
+}
+
+/* Bọt nước nổi lên */
+.bubble {
+  position: absolute;
+  bottom: -40px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.15) 45%, rgba(255, 255, 255, 0.05) 70%);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+  animation: rise linear infinite;
+  will-change: transform, opacity;
+}
+.ocean-backdrop .bubble { opacity: 0.35; }
+.dark .ocean-backdrop .bubble { opacity: 0.25; }
+@keyframes rise {
+  0% { transform: translate3d(0, 0, 0); opacity: 0; }
+  10% { opacity: 1; }
+  50% { transform: translate3d(14px, -55vh, 0); }
+  100% { transform: translate3d(-10px, -110vh, 0); opacity: 0; }
+}
+@keyframes rise-hero {
+  0% { transform: translate3d(0, 0, 0) scale(0.6); opacity: 0; }
+  15% { opacity: 0.9; }
+  100% { transform: translate3d(12px, -260px, 0) scale(1); opacity: 0; }
+}
+
+/* Dải sóng ở đầu trang Tổng quan */
+.ocean-hero {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: linear-gradient(165deg, #0e7a83 0%, #0b5c78 45%, #083b5a 100%);
+}
+.dark .ocean-hero { background: linear-gradient(165deg, #0a4f5c 0%, #073850 50%, #041f33 100%); }
+.ocean-hero .rays {
+  position: absolute;
+  inset: -40% -10% auto;
+  height: 160%;
+  z-index: -1;
+  background: repeating-linear-gradient(100deg, rgba(255, 255, 255, 0.07) 0 22px, transparent 22px 70px);
+  mask-image: linear-gradient(180deg, #000 0%, transparent 75%);
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, transparent 75%);
+  animation: sway 12s ease-in-out infinite alternate;
+}
+@keyframes sway {
+  from { transform: translateX(-4%) skewX(-4deg); }
+  to { transform: translateX(4%) skewX(4deg); }
+}
+.ocean-hero .bubble { animation-name: rise-hero; }
+.wave-track {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 200%;
+  height: 46px;
+  animation: wave-x linear infinite;
+  will-change: transform;
+}
+@keyframes wave-x {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+.wave-bob { animation: bob 6s ease-in-out infinite alternate; }
+@keyframes bob {
+  from { transform: translateY(0); }
+  to { transform: translateY(5px); }
+}
+
+/* Thẻ quote kiểu trang giấy */
+.paper {
+  position: relative;
+  background-color: #f2eee6;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.45 0 0 0 0 0.42 0 0 0 0 0.38 0 0 0 0.09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  color: #1f1d1a;
+  font-family: 'Noto Serif', Georgia, 'Times New Roman', serif;
+  box-shadow: 0 18px 40px -18px rgba(4, 22, 31, 0.55), 0 2px 6px rgba(4, 22, 31, 0.12);
+}
+.mark {
+  background-image: linear-gradient(transparent 12%, #fbef4f 12%, #f6e63a 88%, transparent 88%);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  animation: marker 0.9s ease-out 0.55s forwards;
+  padding: 0 0.12em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+@keyframes marker {
+  to { background-size: 100% 100%; }
+}
+.pen-line {
+  text-decoration-line: underline;
+  text-decoration-style: double;
+  text-decoration-color: #d9464f;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+}
+.surface-in { animation: surface 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+@keyframes surface {
+  from { opacity: 0; transform: translateY(14px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Gợn sóng khi chạm nút */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  background: currentColor;
+  opacity: 0.25;
+  transform: scale(0);
+  animation: ripple 0.6s ease-out forwards;
+}
+@keyframes ripple {
+  to { transform: scale(2.6); opacity: 0; }
+}
+
+/* Chuyển trang như nổi lên mặt nước */
+.page-enter { animation: page-in 0.35s ease-out both; }
+@keyframes page-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .caustic, .bubble, .wave-track, .wave-bob, .ocean-hero .rays, .surface-in, .page-enter, .ripple { animation: none !important; }
+  .bubble, .ripple { display: none; }
+  .mark { animation: none; background-size: 100% 100%; }
 }

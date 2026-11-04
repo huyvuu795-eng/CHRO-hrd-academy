@@ -77,6 +77,18 @@ export interface FlashcardDeck {
   cards: Flashcard[];
 }
 
+export interface Quote {
+  id: string;
+  text: string;
+  /** cụm tô highlight vàng — phải nằm trong text */
+  highlight?: string;
+  /** cụm gạch chân đỏ — phải nằm trong text */
+  underline?: string;
+  author: string;
+  /** bản dịch tiếng Việt (bỏ trống nếu câu gốc đã là tiếng Việt) */
+  vi?: string;
+}
+
 export interface LegalDoc {
   id: string;
   group: string;

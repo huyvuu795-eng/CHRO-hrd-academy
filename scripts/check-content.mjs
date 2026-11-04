@@ -68,11 +68,22 @@ for (const d of lib) {
   for (const l of d.links ?? []) if (!/^https:\/\//.test(l.url ?? '')) errors.push(`${where} link phải bắt đầu bằng https://`);
 }
 
+const quotes = read(join(root, 'quotes.json')) ?? [];
+const quoteIds = new Set();
+for (const q of quotes) {
+  const where = `quotes.json: "${q.id ?? '?'}"`;
+  if (!q.id || !q.text || !q.author) errors.push(`${where} thiếu id/text/author`);
+  if (quoteIds.has(q.id)) errors.push(`${where} trùng id`);
+  quoteIds.add(q.id);
+  for (const k of ['highlight', 'underline'])
+    if (q[k] && !q.text.includes(q[k])) errors.push(`${where} "${k}" không nằm trong câu (phải chép đúng từng chữ)`);
+}
+
 read(join(root, 'roadmap.json'));
 read(join(root, 'competencies.json'));
 read(join(root, 'year1-outline.json'));
 
-console.log(`✔ ${weekNums.size} tuần · ${cardCount} thẻ luật · ${lib.length} văn bản trong thư viện`);
+console.log(`✔ ${weekNums.size} tuần · ${cardCount} thẻ luật · ${lib.length} văn bản trong thư viện · ${quotes.length} quote`);
 warn.forEach((w) => console.log('⚠ ' + w));
 if (errors.length) {
   errors.forEach((e) => console.error('✖ ' + e));

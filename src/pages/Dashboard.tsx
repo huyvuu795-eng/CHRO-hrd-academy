@@ -16,6 +16,7 @@ import {
   YAxis,
 } from 'recharts';
 import { Check, Empty, Progress, Stat } from '../components/ui';
+import { OceanHero, QuoteCard } from '../components/Ocean';
 import { allCards, competencies, stages } from '../lib/content';
 import { DAYS, formatDate, streak, thisMonth, todayKey } from '../lib/date';
 import { currentWeek, weekPct } from '../lib/progress';
@@ -50,16 +51,20 @@ export default function Dashboard() {
   }));
 
   return (
-    <div className="pt-5">
-      <div className="mb-5 flex items-center justify-between">
-        <div>
-          <p className="text-sm text-stone-500 dark:text-stone-400">Xin chào 👋</p>
-          <h1 className="text-2xl font-bold tracking-tight">HRD Academy</h1>
+    <div>
+      <OceanHero>
+        <div className="flex items-start justify-between gap-3">
+          <div>
+            <p className="text-sm text-white/75">Xin chào 👋</p>
+            <h1 className="text-2xl font-bold tracking-tight">HRD Academy</h1>
+            <p className="mt-1 text-xs text-white/70">Từ Recruiter đến HR Director · lặn sâu mỗi ngày một chút</p>
+          </div>
+          <button onClick={() => go('/roadmap')} className="btn min-h-[34px] shrink-0 rounded-full bg-white/15 px-3 text-xs text-white backdrop-blur hover:bg-white/25">
+            {stage?.title.split(' · ')[0] ?? 'Chọn giai đoạn'} →
+          </button>
         </div>
-        <button onClick={() => go('/roadmap')} className="shrink-0 rounded-full bg-brand-50 px-3 py-1.5 text-xs font-semibold text-brand-800 dark:bg-brand-900/40 dark:text-brand-200">
-          {stage?.title.split(' · ')[0] ?? 'Chọn giai đoạn'} →
-        </button>
-      </div>
+      </OceanHero>
+      <QuoteCard />
 
       <div className="mb-4 grid grid-cols-3 gap-2">
         <Stat label="Streak" value={<>🔥 {streak(state.studyDays)}</>} hint="ngày liên tiếp" />

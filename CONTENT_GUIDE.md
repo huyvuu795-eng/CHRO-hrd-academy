@@ -215,7 +215,26 @@ Trang Hỏi đáp trên claude.ai được sinh từ chính `/content`:
 
 Sau khi sửa những file này: `npm run qa` → nhờ Claude Code đăng lại `qa-page/hoi-dap-luat.html` lên link cũ. Script sẽ báo lỗi nếu tách Bộ luật không ra đúng 220 Điều.
 
-## 8. Lỗi thường gặp
+## 8. Quote trên trang Tổng quan — `quotes.json`
+
+Mỗi lần mở app hiện ngẫu nhiên một câu (không lặp câu vừa xem). Thêm câu mới:
+
+```json
+{
+  "id": "buffett-reputation",
+  "text": "It takes 20 years to build a reputation and five minutes to ruin it.",
+  "highlight": "five minutes to ruin it",
+  "underline": "build a reputation",
+  "author": "Warren Buffett — nhà đầu tư, tỉ phú",
+  "vi": "Phải mất 20 năm để xây dựng danh tiếng và 5 phút để huỷ hoại nó."
+}
+```
+
+- `highlight` (tô vàng) và `underline` (gạch chân đỏ) không bắt buộc, nhưng nếu có phải **chép đúng từng chữ** trong `text` — `npm run check` sẽ báo nếu sai.
+- `vi`: bản dịch; bỏ trống nếu câu gốc là tiếng Việt.
+- Kiểm tra tác giả trước khi thêm: rất nhiều quote trên mạng bị gán nhầm (vd. "What gets measured gets managed" không phải của Peter Drucker). Câu là diễn ý thì ghi rõ "(diễn ý)" trong `author`.
+
+## 9. Lỗi thường gặp
 
 | Thông báo | Cách sửa |
 |---|---|
